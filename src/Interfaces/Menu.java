@@ -189,6 +189,9 @@ public class Menu extends javax.swing.JFrame {
         Limpar_BT3 = new javax.swing.JButton();
         Remover_BT = new javax.swing.JButton();
         Mostrar_Clientes = new javax.swing.JPanel();
+        jLb_Topo_menuInserir3 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         Buscar_Cliente = new javax.swing.JPanel();
         Mostrar_Qtd = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
@@ -285,7 +288,7 @@ public class Menu extends javax.swing.JFrame {
 
         Menu_Principal.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLb_Topo_menu.setFont(new java.awt.Font("Tahoma", 1, 26)); // NOI18N
+        jLb_Topo_menu.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
         jLb_Topo_menu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLb_Topo_menu.setText("MENU DE ESCOLHAS");
         jLb_Topo_menu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -466,7 +469,7 @@ public class Menu extends javax.swing.JFrame {
 
         Centro.setLayout(new javax.swing.OverlayLayout(Centro));
 
-        jLb_Topo_menuInserir.setFont(new java.awt.Font("Tahoma", 1, 32)); // NOI18N
+        jLb_Topo_menuInserir.setFont(new java.awt.Font("Tahoma", 1, 29)); // NOI18N
         jLb_Topo_menuInserir.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLb_Topo_menuInserir.setText("CADASTRAR CLIENTE");
         jLb_Topo_menuInserir.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -849,7 +852,7 @@ public class Menu extends javax.swing.JFrame {
 
         Centro.add(Cadastrar_Cliente);
 
-        jLb_Topo_menuInserir1.setFont(new java.awt.Font("Tahoma", 1, 32)); // NOI18N
+        jLb_Topo_menuInserir1.setFont(new java.awt.Font("Tahoma", 1, 29)); // NOI18N
         jLb_Topo_menuInserir1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLb_Topo_menuInserir1.setText("ALTERAR CLIENTE");
         jLb_Topo_menuInserir1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -1345,7 +1348,7 @@ public class Menu extends javax.swing.JFrame {
 
         Centro.add(Alterar_Cliente);
 
-        jLb_Topo_menuInserir2.setFont(new java.awt.Font("Tahoma", 1, 32)); // NOI18N
+        jLb_Topo_menuInserir2.setFont(new java.awt.Font("Tahoma", 1, 29)); // NOI18N
         jLb_Topo_menuInserir2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLb_Topo_menuInserir2.setText("REMOVER CLIENTE");
         jLb_Topo_menuInserir2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -1841,15 +1844,37 @@ public class Menu extends javax.swing.JFrame {
 
         Centro.add(Remover_Cliente1);
 
+        jLb_Topo_menuInserir3.setFont(new java.awt.Font("Tahoma", 1, 29)); // NOI18N
+        jLb_Topo_menuInserir3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLb_Topo_menuInserir3.setText("MOSTRAR CLIENTES");
+        jLb_Topo_menuInserir3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
         javax.swing.GroupLayout Mostrar_ClientesLayout = new javax.swing.GroupLayout(Mostrar_Clientes);
         Mostrar_Clientes.setLayout(Mostrar_ClientesLayout);
         Mostrar_ClientesLayout.setHorizontalGroup(
             Mostrar_ClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 843, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 843, Short.MAX_VALUE)
+            .addComponent(jLb_Topo_menuInserir3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         Mostrar_ClientesLayout.setVerticalGroup(
             Mostrar_ClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 729, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Mostrar_ClientesLayout.createSequentialGroup()
+                .addComponent(jLb_Topo_menuInserir3, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 674, Short.MAX_VALUE))
         );
 
         Centro.add(Mostrar_Clientes);
@@ -2540,12 +2565,15 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLb_Topo_menuInserir;
     private javax.swing.JLabel jLb_Topo_menuInserir1;
     private javax.swing.JLabel jLb_Topo_menuInserir2;
+    private javax.swing.JLabel jLb_Topo_menuInserir3;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel7;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }
