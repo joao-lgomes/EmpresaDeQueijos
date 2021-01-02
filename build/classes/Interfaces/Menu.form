@@ -539,7 +539,7 @@
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLb_Topo_menuInserir" alignment="0" max="32767" attributes="0"/>
-                          <Component id="DadosPan9" alignment="0" max="32767" attributes="0"/>
+                          <Component id="DadosPanCadastro" alignment="0" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
@@ -547,7 +547,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLb_Topo_menuInserir" min="-2" pref="39" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="DadosPan9" min="-2" max="-2" attributes="0"/>
+                              <Component id="DadosPanCadastro" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -566,7 +566,7 @@
                         </Property>
                       </Properties>
                     </Component>
-                    <Container class="javax.swing.JPanel" name="DadosPan9">
+                    <Container class="javax.swing.JPanel" name="DadosPanCadastro">
                       <Properties>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -587,7 +587,7 @@
                                               <Component id="InstaPan" alignment="0" max="32767" attributes="0"/>
                                               <Component id="RuaPan" alignment="0" max="32767" attributes="0"/>
                                               <Component id="TelResPan" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="CpfPan9" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="CpfPan" alignment="0" max="32767" attributes="0"/>
                                               <Component id="FacePan" max="32767" attributes="0"/>
                                           </Group>
                                           <EmptySpace max="32767" attributes="0"/>
@@ -608,7 +608,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="CpfPan9" max="32767" attributes="0"/>
+                                      <Component id="CpfPan" max="32767" attributes="0"/>
                                       <Component id="NomePan" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" max="-2" attributes="0"/>
@@ -639,7 +639,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Container class="javax.swing.JPanel" name="CpfPan9">
+                        <Container class="javax.swing.JPanel" name="CpfPan">
 
                           <Layout>
                             <DimensionLayout dim="0">
@@ -647,7 +647,7 @@
                                   <Component id="LB_Cpf" alignment="0" max="32767" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="Cpf_TF9" max="32767" attributes="0"/>
+                                      <Component id="Cpf_TF" max="32767" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -658,7 +658,7 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="LB_Cpf" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="Cpf_TF9" min="-2" pref="36" max="-2" attributes="0"/>
+                                      <Component id="Cpf_TF" min="-2" pref="36" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                               </Group>
@@ -674,7 +674,7 @@
                                 <Property name="text" type="java.lang.String" value="CPF"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JTextField" name="Cpf_TF9">
+                            <Component class="javax.swing.JTextField" name="Cpf_TF">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Times New Roman" size="20" style="0"/>
@@ -1180,7 +1180,7 @@
                     </Component>
                     <Container class="javax.swing.JLayeredPane" name="jLayeredPane4">
                       <SubComponents>
-                        <Container class="javax.swing.JPanel" name="BuscaPan">
+                        <Container class="javax.swing.JPanel" name="BuscaPanAlterar">
 
                           <Layout>
                             <DimensionLayout dim="0">
@@ -1366,7 +1366,7 @@
                             </Container>
                           </SubComponents>
                         </Container>
-                        <Container class="javax.swing.JPanel" name="DadosPan10">
+                        <Container class="javax.swing.JPanel" name="DadosPanAlterar">
                           <Properties>
                             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -1380,23 +1380,23 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
                                       <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="ButtonsPan1" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="ButtonsPan2" alignment="0" max="32767" attributes="0"/>
                                           <Group type="102" alignment="1" attributes="0">
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                                  <Component id="InstaPan1" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="RuaPan1" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="TelResPan1" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="CpfPan10" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="FacePan1" alignment="1" max="32767" attributes="0"/>
+                                                  <Component id="InstaPan2" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="RuaPan2" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="TelResPan2" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="CpfPan2" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="FacePan2" alignment="1" max="32767" attributes="0"/>
                                               </Group>
                                               <EmptySpace max="32767" attributes="0"/>
                                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                  <Component id="BairroPan1" alignment="1" max="32767" attributes="0"/>
-                                                  <Component id="NumCasaPan1" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="NumCartaoPan1" alignment="1" max="32767" attributes="0"/>
-                                                  <Component id="NomePan1" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="TelCelPan1" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="BairroPan2" alignment="1" max="32767" attributes="0"/>
+                                                  <Component id="NumCasaPan2" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="NumCartaoPan2" alignment="1" max="32767" attributes="0"/>
+                                                  <Component id="NomePan2" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="TelCelPan2" alignment="0" max="32767" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -1408,38 +1408,38 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="CpfPan10" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="NomePan1" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="CpfPan2" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="NomePan2" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="TelResPan1" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="TelCelPan1" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="TelResPan2" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="TelCelPan2" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="RuaPan1" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="BairroPan1" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="RuaPan2" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="BairroPan2" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="NumCasaPan1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="InstaPan1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="NumCasaPan2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="InstaPan2" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="NumCartaoPan1" alignment="1" max="32767" attributes="0"/>
-                                          <Component id="FacePan1" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="NumCartaoPan2" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="FacePan2" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                       <EmptySpace type="separate" max="32767" attributes="0"/>
-                                      <Component id="ButtonsPan1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="ButtonsPan2" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
                           </Layout>
                           <SubComponents>
-                            <Container class="javax.swing.JPanel" name="CpfPan10">
+                            <Container class="javax.swing.JPanel" name="CpfPan2">
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -1483,7 +1483,7 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="NomePan1">
+                            <Container class="javax.swing.JPanel" name="NomePan2">
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -1527,7 +1527,7 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="TelResPan1">
+                            <Container class="javax.swing.JPanel" name="TelResPan2">
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -1574,7 +1574,7 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="TelCelPan1">
+                            <Container class="javax.swing.JPanel" name="TelCelPan2">
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -1621,7 +1621,7 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="BairroPan1">
+                            <Container class="javax.swing.JPanel" name="BairroPan2">
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -1665,7 +1665,7 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="RuaPan1">
+                            <Container class="javax.swing.JPanel" name="RuaPan2">
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -1709,7 +1709,7 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="NumCasaPan1">
+                            <Container class="javax.swing.JPanel" name="NumCasaPan2">
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -1753,7 +1753,7 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="InstaPan1">
+                            <Container class="javax.swing.JPanel" name="InstaPan2">
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -1797,7 +1797,7 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="FacePan1">
+                            <Container class="javax.swing.JPanel" name="FacePan2">
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -1841,7 +1841,7 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="NumCartaoPan1">
+                            <Container class="javax.swing.JPanel" name="NumCartaoPan2">
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -1885,7 +1885,7 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="ButtonsPan1">
+                            <Container class="javax.swing.JPanel" name="ButtonsPan2">
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -2009,7 +2009,7 @@
                     </Component>
                     <Container class="javax.swing.JLayeredPane" name="jLayeredPane6">
                       <SubComponents>
-                        <Container class="javax.swing.JPanel" name="BuscaPan1">
+                        <Container class="javax.swing.JPanel" name="BuscaPanRemover">
 
                           <Layout>
                             <DimensionLayout dim="0">
@@ -2195,7 +2195,7 @@
                             </Container>
                           </SubComponents>
                         </Container>
-                        <Container class="javax.swing.JPanel" name="DadosPan11">
+                        <Container class="javax.swing.JPanel" name="DadosPanRemover">
                           <Properties>
                             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -2209,23 +2209,23 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
                                       <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="ButtonsPan2" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="ButtonsPan3" alignment="0" max="32767" attributes="0"/>
                                           <Group type="102" alignment="1" attributes="0">
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                                  <Component id="InstaPan2" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="RuaPan2" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="TelResPan2" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="CpfPan11" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="FacePan2" alignment="1" max="32767" attributes="0"/>
+                                                  <Component id="InstaPan3" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="RuaPan3" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="TelResPan3" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="CpfPan3" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="FacePan3" alignment="1" max="32767" attributes="0"/>
                                               </Group>
                                               <EmptySpace max="32767" attributes="0"/>
                                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                  <Component id="BairroPan2" alignment="1" max="32767" attributes="0"/>
-                                                  <Component id="NumCasaPan2" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="NumCartaoPan2" alignment="1" max="32767" attributes="0"/>
-                                                  <Component id="NomePan2" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="TelCelPan2" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="BairroPan3" alignment="1" max="32767" attributes="0"/>
+                                                  <Component id="NumCasaPan3" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="NumCartaoPan3" alignment="1" max="32767" attributes="0"/>
+                                                  <Component id="NomePan3" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="TelCelPan3" alignment="0" max="32767" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -2237,38 +2237,38 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="CpfPan11" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="NomePan2" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="CpfPan3" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="NomePan3" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="TelResPan2" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="TelCelPan2" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="TelResPan3" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="TelCelPan3" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="RuaPan2" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="BairroPan2" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="RuaPan3" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="BairroPan3" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="NumCasaPan2" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="InstaPan2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="NumCasaPan3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="InstaPan3" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="NumCartaoPan2" alignment="1" max="32767" attributes="0"/>
-                                          <Component id="FacePan2" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="NumCartaoPan3" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="FacePan3" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                       <EmptySpace type="separate" max="32767" attributes="0"/>
-                                      <Component id="ButtonsPan2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="ButtonsPan3" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
                           </Layout>
                           <SubComponents>
-                            <Container class="javax.swing.JPanel" name="CpfPan11">
+                            <Container class="javax.swing.JPanel" name="CpfPan3">
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -2312,7 +2312,7 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="NomePan2">
+                            <Container class="javax.swing.JPanel" name="NomePan3">
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -2356,7 +2356,7 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="TelResPan2">
+                            <Container class="javax.swing.JPanel" name="TelResPan3">
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -2403,7 +2403,7 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="TelCelPan2">
+                            <Container class="javax.swing.JPanel" name="TelCelPan3">
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -2450,7 +2450,7 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="BairroPan2">
+                            <Container class="javax.swing.JPanel" name="BairroPan3">
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -2494,7 +2494,7 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="RuaPan2">
+                            <Container class="javax.swing.JPanel" name="RuaPan3">
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -2538,7 +2538,7 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="NumCasaPan2">
+                            <Container class="javax.swing.JPanel" name="NumCasaPan3">
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -2582,7 +2582,7 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="InstaPan2">
+                            <Container class="javax.swing.JPanel" name="InstaPan3">
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -2626,7 +2626,7 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="FacePan2">
+                            <Container class="javax.swing.JPanel" name="FacePan3">
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -2670,7 +2670,7 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="NumCartaoPan2">
+                            <Container class="javax.swing.JPanel" name="NumCartaoPan3">
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -2714,7 +2714,7 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="ButtonsPan2">
+                            <Container class="javax.swing.JPanel" name="ButtonsPan3">
 
                               <Layout>
                                 <DimensionLayout dim="0">
@@ -2804,14 +2804,14 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLb_Topo_menuInserir3" pref="843" max="32767" attributes="0"/>
+                          <Component id="jLb_Topo_menuMostrar" pref="843" max="32767" attributes="0"/>
                           <Component id="jLayeredPane1" alignment="0" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLb_Topo_menuInserir3" min="-2" pref="48" max="-2" attributes="0"/>
+                              <Component id="jLb_Topo_menuMostrar" min="-2" pref="48" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLayeredPane1" max="32767" attributes="0"/>
                           </Group>
@@ -2819,7 +2819,7 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLb_Topo_menuInserir3">
+                    <Component class="javax.swing.JLabel" name="jLb_Topo_menuMostrar">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="29" style="1"/>
@@ -2837,7 +2837,7 @@
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jScrollPane2" max="32767" attributes="0"/>
-                              <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+                              <Component id="OrdernarPan" alignment="0" max="32767" attributes="0"/>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
@@ -2845,7 +2845,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jScrollPane2" min="-2" pref="540" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="OrdernarPan" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -2855,7 +2855,7 @@
 
                           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                           <SubComponents>
-                            <Component class="javax.swing.JTable" name="jTable2">
+                            <Component class="javax.swing.JTable" name="JTb_MostrarClientes">
                               <Properties>
                                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                                   <Table columnCount="4" rowCount="4">
@@ -2865,29 +2865,56 @@
                                     <Column editable="true" title="Title 4" type="java.lang.Object"/>
                                   </Table>
                                 </Property>
+                                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                                  <TableColumnModel selectionModel="0">
+                                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                      <Title/>
+                                      <Editor/>
+                                      <Renderer/>
+                                    </Column>
+                                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                      <Title/>
+                                      <Editor/>
+                                      <Renderer/>
+                                    </Column>
+                                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                      <Title/>
+                                      <Editor/>
+                                      <Renderer/>
+                                    </Column>
+                                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                      <Title/>
+                                      <Editor/>
+                                      <Renderer/>
+                                    </Column>
+                                  </TableColumnModel>
+                                </Property>
+                                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                                </Property>
                               </Properties>
                             </Component>
                           </SubComponents>
                         </Container>
-                        <Container class="javax.swing.JPanel" name="jPanel1">
+                        <Container class="javax.swing.JPanel" name="OrdernarPan">
 
                           <Layout>
                             <DimensionLayout dim="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel5" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="JLb_OrdenarPor" alignment="0" max="32767" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
-                                      <Component id="jButton4" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <Component id="JBt_Nome_Decrescente" min="-2" pref="44" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jLabel6" min="-2" pref="81" max="-2" attributes="0"/>
+                                      <Component id="JLb_Nome" min="-2" pref="81" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jButton5" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <Component id="JBt_Nome_Crescente" min="-2" pref="44" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="jButton6" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <Component id="JBt_Cpf_Decrescente" min="-2" pref="44" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jLabel7" min="-2" pref="56" max="-2" attributes="0"/>
+                                      <Component id="JLb_Cpf" min="-2" pref="56" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jButton7" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <Component id="JBt_Cpf_Crescente" min="-2" pref="44" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="168" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -2895,17 +2922,17 @@
                             <DimensionLayout dim="1">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel5" min="-2" pref="31" max="-2" attributes="0"/>
+                                      <Component id="JLb_OrdenarPor" min="-2" pref="31" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="jLabel7" min="-2" pref="38" max="-2" attributes="0"/>
-                                              <Component id="jButton5" alignment="0" pref="0" max="32767" attributes="0"/>
-                                              <Component id="jButton6" alignment="0" pref="0" max="32767" attributes="0"/>
+                                              <Component id="JLb_Cpf" min="-2" pref="38" max="-2" attributes="0"/>
+                                              <Component id="JBt_Nome_Crescente" alignment="0" pref="0" max="32767" attributes="0"/>
+                                              <Component id="JBt_Cpf_Decrescente" alignment="0" pref="0" max="32767" attributes="0"/>
                                           </Group>
-                                          <Component id="jButton7" min="-2" pref="38" max="-2" attributes="0"/>
-                                          <Component id="jLabel6" min="-2" pref="38" max="-2" attributes="0"/>
-                                          <Component id="jButton4" min="-2" pref="38" max="-2" attributes="0"/>
+                                          <Component id="JBt_Cpf_Crescente" min="-2" pref="38" max="-2" attributes="0"/>
+                                          <Component id="JLb_Nome" min="-2" pref="38" max="-2" attributes="0"/>
+                                          <Component id="JBt_Nome_Decrescente" min="-2" pref="38" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="0" pref="38" max="32767" attributes="0"/>
                                   </Group>
@@ -2913,7 +2940,7 @@
                             </DimensionLayout>
                           </Layout>
                           <SubComponents>
-                            <Component class="javax.swing.JLabel" name="jLabel5">
+                            <Component class="javax.swing.JLabel" name="JLb_OrdenarPor">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="28" style="0"/>
@@ -2922,7 +2949,7 @@
                                 <Property name="text" type="java.lang.String" value="ORDENAR POR:"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel6">
+                            <Component class="javax.swing.JLabel" name="JLb_Nome">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="24" style="0"/>
@@ -2931,7 +2958,7 @@
                                 <Property name="text" type="java.lang.String" value="NOME"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel7">
+                            <Component class="javax.swing.JLabel" name="JLb_Cpf">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="24" style="0"/>
@@ -2940,38 +2967,38 @@
                                 <Property name="text" type="java.lang.String" value="CPF"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JButton" name="jButton4">
+                            <Component class="javax.swing.JButton" name="JBt_Nome_Decrescente">
                               <Properties>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                                   <Image iconType="3" name="/Interfaces/down_new.jpg"/>
                                 </Property>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JButton" name="jButton5">
+                            <Component class="javax.swing.JButton" name="JBt_Nome_Crescente">
                               <Properties>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                                   <Image iconType="3" name="/Interfaces/up_new.jpg"/>
                                 </Property>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JButton" name="jButton6">
+                            <Component class="javax.swing.JButton" name="JBt_Cpf_Decrescente">
                               <Properties>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                                   <Image iconType="3" name="/Interfaces/down_new.jpg"/>
                                 </Property>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton6ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_Cpf_DecrescenteActionPerformed"/>
                               </Events>
                             </Component>
-                            <Component class="javax.swing.JButton" name="jButton7">
+                            <Component class="javax.swing.JButton" name="JBt_Cpf_Crescente">
                               <Properties>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                                   <Image iconType="3" name="/Interfaces/up_new.jpg"/>
                                 </Property>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton7ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_Cpf_CrescenteActionPerformed"/>
                               </Events>
                             </Component>
                           </SubComponents>
@@ -2996,21 +3023,6 @@
                   </Layout>
                 </Container>
                 <Container class="javax.swing.JPanel" name="Mostrar_Qtd">
-
-                  <Layout>
-                    <DimensionLayout dim="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="843" max="32767" attributes="0"/>
-                      </Group>
-                    </DimensionLayout>
-                    <DimensionLayout dim="1">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="729" max="32767" attributes="0"/>
-                      </Group>
-                    </DimensionLayout>
-                  </Layout>
-                </Container>
-                <Container class="javax.swing.JPanel" name="jPanel7">
 
                   <Layout>
                     <DimensionLayout dim="0">
