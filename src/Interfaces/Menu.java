@@ -46,30 +46,36 @@ public class Menu extends javax.swing.JFrame {
         Cadastrar_Cliente = new javax.swing.JPanel();
         jLb_Topo_menuInserir = new javax.swing.JLabel();
         DadosPan9 = new javax.swing.JPanel();
-        ChassiPan9 = new javax.swing.JPanel();
+        CpfPan9 = new javax.swing.JPanel();
         LB_Chassi9 = new javax.swing.JLabel();
         Chassi_TF9 = new javax.swing.JTextField();
-        AnoPan = new javax.swing.JPanel();
+        NomePan = new javax.swing.JPanel();
         LB_Ano = new javax.swing.JLabel();
         Ano_TF = new javax.swing.JTextField();
-        ModeloPan = new javax.swing.JPanel();
+        TelResPan = new javax.swing.JPanel();
         LB_Modelo = new javax.swing.JLabel();
         Modelo_TF = new javax.swing.JTextField();
-        FabricantePan = new javax.swing.JPanel();
+        TelCelPan = new javax.swing.JPanel();
         LB_Fabricante = new javax.swing.JLabel();
         Fabricante_TF = new javax.swing.JTextField();
-        ACPan = new javax.swing.JPanel();
+        BairroPan = new javax.swing.JPanel();
         LB_AC = new javax.swing.JLabel();
         Potencia_TF1 = new javax.swing.JTextField();
-        PotenciaPan = new javax.swing.JPanel();
+        RuaPan = new javax.swing.JPanel();
         LB_Potencia = new javax.swing.JLabel();
         Potencia_TF = new javax.swing.JTextField();
-        jPanel1 = new javax.swing.JPanel();
+        NumCasaPan = new javax.swing.JPanel();
         LB_Potencia3 = new javax.swing.JLabel();
         Potencia_TF4 = new javax.swing.JTextField();
-        jPanel2 = new javax.swing.JPanel();
+        InstaPan = new javax.swing.JPanel();
         LB_Potencia2 = new javax.swing.JLabel();
         Potencia_TF3 = new javax.swing.JTextField();
+        FacePan = new javax.swing.JPanel();
+        LB_Potencia4 = new javax.swing.JLabel();
+        Potencia_TF5 = new javax.swing.JTextField();
+        NumCartaoPan = new javax.swing.JPanel();
+        LB_Potencia5 = new javax.swing.JLabel();
+        Potencia_TF6 = new javax.swing.JTextField();
         Alterar_Cliente = new javax.swing.JPanel();
         Remover_Cliente = new javax.swing.JPanel();
         Mostrar_Clientes = new javax.swing.JPanel();
@@ -233,19 +239,19 @@ public class Menu extends javax.swing.JFrame {
 
         Chassi_TF9.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
 
-        javax.swing.GroupLayout ChassiPan9Layout = new javax.swing.GroupLayout(ChassiPan9);
-        ChassiPan9.setLayout(ChassiPan9Layout);
-        ChassiPan9Layout.setHorizontalGroup(
-            ChassiPan9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout CpfPan9Layout = new javax.swing.GroupLayout(CpfPan9);
+        CpfPan9.setLayout(CpfPan9Layout);
+        CpfPan9Layout.setHorizontalGroup(
+            CpfPan9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(LB_Chassi9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(ChassiPan9Layout.createSequentialGroup()
+            .addGroup(CpfPan9Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Chassi_TF9)
                 .addContainerGap())
         );
-        ChassiPan9Layout.setVerticalGroup(
-            ChassiPan9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ChassiPan9Layout.createSequentialGroup()
+        CpfPan9Layout.setVerticalGroup(
+            CpfPan9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CpfPan9Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(LB_Chassi9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -259,19 +265,19 @@ public class Menu extends javax.swing.JFrame {
 
         Ano_TF.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
 
-        javax.swing.GroupLayout AnoPanLayout = new javax.swing.GroupLayout(AnoPan);
-        AnoPan.setLayout(AnoPanLayout);
-        AnoPanLayout.setHorizontalGroup(
-            AnoPanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout NomePanLayout = new javax.swing.GroupLayout(NomePan);
+        NomePan.setLayout(NomePanLayout);
+        NomePanLayout.setHorizontalGroup(
+            NomePanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(LB_Ano, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(AnoPanLayout.createSequentialGroup()
+            .addGroup(NomePanLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Ano_TF)
                 .addContainerGap())
         );
-        AnoPanLayout.setVerticalGroup(
-            AnoPanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(AnoPanLayout.createSequentialGroup()
+        NomePanLayout.setVerticalGroup(
+            NomePanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NomePanLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(LB_Ano)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -290,19 +296,19 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout ModeloPanLayout = new javax.swing.GroupLayout(ModeloPan);
-        ModeloPan.setLayout(ModeloPanLayout);
-        ModeloPanLayout.setHorizontalGroup(
-            ModeloPanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout TelResPanLayout = new javax.swing.GroupLayout(TelResPan);
+        TelResPan.setLayout(TelResPanLayout);
+        TelResPanLayout.setHorizontalGroup(
+            TelResPanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(LB_Modelo, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
-            .addGroup(ModeloPanLayout.createSequentialGroup()
+            .addGroup(TelResPanLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Modelo_TF)
                 .addContainerGap())
         );
-        ModeloPanLayout.setVerticalGroup(
-            ModeloPanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ModeloPanLayout.createSequentialGroup()
+        TelResPanLayout.setVerticalGroup(
+            TelResPanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TelResPanLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(LB_Modelo)
                 .addGap(18, 18, 18)
@@ -321,19 +327,19 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout FabricantePanLayout = new javax.swing.GroupLayout(FabricantePan);
-        FabricantePan.setLayout(FabricantePanLayout);
-        FabricantePanLayout.setHorizontalGroup(
-            FabricantePanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(LB_Fabricante, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
-            .addGroup(FabricantePanLayout.createSequentialGroup()
+        javax.swing.GroupLayout TelCelPanLayout = new javax.swing.GroupLayout(TelCelPan);
+        TelCelPan.setLayout(TelCelPanLayout);
+        TelCelPanLayout.setHorizontalGroup(
+            TelCelPanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(LB_Fabricante, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(TelCelPanLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Fabricante_TF)
                 .addContainerGap())
         );
-        FabricantePanLayout.setVerticalGroup(
-            FabricantePanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(FabricantePanLayout.createSequentialGroup()
+        TelCelPanLayout.setVerticalGroup(
+            TelCelPanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TelCelPanLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(LB_Fabricante)
                 .addGap(18, 18, 18)
@@ -347,19 +353,19 @@ public class Menu extends javax.swing.JFrame {
 
         Potencia_TF1.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
 
-        javax.swing.GroupLayout ACPanLayout = new javax.swing.GroupLayout(ACPan);
-        ACPan.setLayout(ACPanLayout);
-        ACPanLayout.setHorizontalGroup(
-            ACPanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout BairroPanLayout = new javax.swing.GroupLayout(BairroPan);
+        BairroPan.setLayout(BairroPanLayout);
+        BairroPanLayout.setHorizontalGroup(
+            BairroPanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(LB_AC, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(ACPanLayout.createSequentialGroup()
+            .addGroup(BairroPanLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Potencia_TF1)
                 .addContainerGap())
         );
-        ACPanLayout.setVerticalGroup(
-            ACPanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ACPanLayout.createSequentialGroup()
+        BairroPanLayout.setVerticalGroup(
+            BairroPanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BairroPanLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(LB_AC)
                 .addGap(18, 18, 18)
@@ -373,19 +379,19 @@ public class Menu extends javax.swing.JFrame {
 
         Potencia_TF.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
 
-        javax.swing.GroupLayout PotenciaPanLayout = new javax.swing.GroupLayout(PotenciaPan);
-        PotenciaPan.setLayout(PotenciaPanLayout);
-        PotenciaPanLayout.setHorizontalGroup(
-            PotenciaPanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout RuaPanLayout = new javax.swing.GroupLayout(RuaPan);
+        RuaPan.setLayout(RuaPanLayout);
+        RuaPanLayout.setHorizontalGroup(
+            RuaPanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(LB_Potencia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(PotenciaPanLayout.createSequentialGroup()
+            .addGroup(RuaPanLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Potencia_TF)
                 .addContainerGap())
         );
-        PotenciaPanLayout.setVerticalGroup(
-            PotenciaPanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PotenciaPanLayout.createSequentialGroup()
+        RuaPanLayout.setVerticalGroup(
+            RuaPanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RuaPanLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(LB_Potencia)
                 .addGap(18, 18, 18)
@@ -395,54 +401,106 @@ public class Menu extends javax.swing.JFrame {
 
         LB_Potencia3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         LB_Potencia3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LB_Potencia3.setText("BAIRRO");
+        LB_Potencia3.setText("INSTAGRAM");
 
         Potencia_TF4.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout NumCasaPanLayout = new javax.swing.GroupLayout(NumCasaPan);
+        NumCasaPan.setLayout(NumCasaPanLayout);
+        NumCasaPanLayout.setHorizontalGroup(
+            NumCasaPanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(LB_Potencia3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+            .addGroup(NumCasaPanLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Potencia_TF4)
                 .addContainerGap())
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        NumCasaPanLayout.setVerticalGroup(
+            NumCasaPanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NumCasaPanLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(LB_Potencia3)
                 .addGap(18, 18, 18)
                 .addComponent(Potencia_TF4, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         LB_Potencia2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         LB_Potencia2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LB_Potencia2.setText("BAIRRO");
+        LB_Potencia2.setText("NÚMERO DA CASA");
 
         Potencia_TF3.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout InstaPanLayout = new javax.swing.GroupLayout(InstaPan);
+        InstaPan.setLayout(InstaPanLayout);
+        InstaPanLayout.setHorizontalGroup(
+            InstaPanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(LB_Potencia2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+            .addGroup(InstaPanLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Potencia_TF3)
                 .addContainerGap())
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        InstaPanLayout.setVerticalGroup(
+            InstaPanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(InstaPanLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(LB_Potencia2)
                 .addGap(18, 18, 18)
                 .addComponent(Potencia_TF3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        LB_Potencia4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        LB_Potencia4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LB_Potencia4.setText("FACEBOOK");
+
+        Potencia_TF5.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
+
+        javax.swing.GroupLayout FacePanLayout = new javax.swing.GroupLayout(FacePan);
+        FacePan.setLayout(FacePanLayout);
+        FacePanLayout.setHorizontalGroup(
+            FacePanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(LB_Potencia4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(FacePanLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Potencia_TF5)
+                .addContainerGap())
+        );
+        FacePanLayout.setVerticalGroup(
+            FacePanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(FacePanLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(LB_Potencia4)
+                .addGap(18, 18, 18)
+                .addComponent(Potencia_TF5, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        LB_Potencia5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        LB_Potencia5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LB_Potencia5.setText("NÚMERO DO CARTÃO");
+
+        Potencia_TF6.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
+
+        javax.swing.GroupLayout NumCartaoPanLayout = new javax.swing.GroupLayout(NumCartaoPan);
+        NumCartaoPan.setLayout(NumCartaoPanLayout);
+        NumCartaoPanLayout.setHorizontalGroup(
+            NumCartaoPanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(LB_Potencia5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
+            .addGroup(NumCartaoPanLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Potencia_TF6)
+                .addContainerGap())
+        );
+        NumCartaoPanLayout.setVerticalGroup(
+            NumCartaoPanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NumCartaoPanLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(LB_Potencia5)
+                .addGap(18, 18, 18)
+                .addComponent(Potencia_TF6, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout DadosPan9Layout = new javax.swing.GroupLayout(DadosPan9);
@@ -451,43 +509,44 @@ public class Menu extends javax.swing.JFrame {
             DadosPan9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DadosPan9Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(DadosPan9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(DadosPan9Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(DadosPan9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(PotenciaPan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(ModeloPan, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(ChassiPan9, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(DadosPan9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(FabricantePan, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(AnoPan, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(ACPan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, DadosPan9Layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addComponent(InstaPan, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(RuaPan, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(TelResPan, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(CpfPan9, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(FacePan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
+                .addGroup(DadosPan9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(BairroPan, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(NumCasaPan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(NumCartaoPan, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(NomePan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(TelCelPan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(22, 22, 22))
         );
         DadosPan9Layout.setVerticalGroup(
             DadosPan9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DadosPan9Layout.createSequentialGroup()
                 .addGroup(DadosPan9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(ChassiPan9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(AnoPan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(CpfPan9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(NomePan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(DadosPan9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(ModeloPan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(FabricantePan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(TelResPan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(TelCelPan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(DadosPan9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(PotenciaPan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(ACPan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(RuaPan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(BairroPan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(DadosPan9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(175, Short.MAX_VALUE))
+                    .addComponent(NumCasaPan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(InstaPan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(DadosPan9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(NumCartaoPan, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(FacePan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(122, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout Cadastrar_ClienteLayout = new javax.swing.GroupLayout(Cadastrar_Cliente);
@@ -496,16 +555,15 @@ public class Menu extends javax.swing.JFrame {
             Cadastrar_ClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLb_Topo_menuInserir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(Cadastrar_ClienteLayout.createSequentialGroup()
-                .addComponent(DadosPan9, javax.swing.GroupLayout.PREFERRED_SIZE, 787, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 499, Short.MAX_VALUE))
+                .addComponent(DadosPan9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 453, Short.MAX_VALUE))
         );
         Cadastrar_ClienteLayout.setVerticalGroup(
             Cadastrar_ClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Cadastrar_ClienteLayout.createSequentialGroup()
                 .addComponent(jLb_Topo_menuInserir, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(DadosPan9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 21, Short.MAX_VALUE))
+                .addComponent(DadosPan9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jLayeredPane1.add(Cadastrar_Cliente);
@@ -593,7 +651,7 @@ public class Menu extends javax.swing.JFrame {
         JP_ClientesLayout.setHorizontalGroup(
             JP_ClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(Menu_Principal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jLayeredPane1)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1286, Short.MAX_VALUE)
         );
         JP_ClientesLayout.setVerticalGroup(
             JP_ClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -936,10 +994,9 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel ACPan;
     private javax.swing.JPanel Alterar_Cliente;
-    private javax.swing.JPanel AnoPan;
     private javax.swing.JTextField Ano_TF;
+    private javax.swing.JPanel BairroPan;
     private javax.swing.JPanel Buscar_Cliente;
     private javax.swing.JPanel Cadastrar_Cliente;
     private javax.swing.JPanel ChassiPan;
@@ -951,7 +1008,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel ChassiPan6;
     private javax.swing.JPanel ChassiPan7;
     private javax.swing.JPanel ChassiPan8;
-    private javax.swing.JPanel ChassiPan9;
     private javax.swing.JTextField Chassi_TF;
     private javax.swing.JTextField Chassi_TF1;
     private javax.swing.JTextField Chassi_TF2;
@@ -962,6 +1018,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JTextField Chassi_TF7;
     private javax.swing.JTextField Chassi_TF8;
     private javax.swing.JTextField Chassi_TF9;
+    private javax.swing.JPanel CpfPan9;
     private javax.swing.JPanel DadosPan;
     private javax.swing.JPanel DadosPan1;
     private javax.swing.JPanel DadosPan2;
@@ -972,8 +1029,9 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel DadosPan7;
     private javax.swing.JPanel DadosPan8;
     private javax.swing.JPanel DadosPan9;
-    private javax.swing.JPanel FabricantePan;
     private javax.swing.JTextField Fabricante_TF;
+    private javax.swing.JPanel FacePan;
+    private javax.swing.JPanel InstaPan;
     private javax.swing.JButton JB_acao;
     private javax.swing.JPanel JP_Clientes;
     private javax.swing.JPanel JP_Dashboard;
@@ -997,17 +1055,25 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel LB_Potencia;
     private javax.swing.JLabel LB_Potencia2;
     private javax.swing.JLabel LB_Potencia3;
+    private javax.swing.JLabel LB_Potencia4;
+    private javax.swing.JLabel LB_Potencia5;
     private javax.swing.JPanel Menu_Principal;
-    private javax.swing.JPanel ModeloPan;
     private javax.swing.JTextField Modelo_TF;
     private javax.swing.JPanel Mostrar_Clientes;
     private javax.swing.JPanel Mostrar_Qtd;
-    private javax.swing.JPanel PotenciaPan;
+    private javax.swing.JPanel NomePan;
+    private javax.swing.JPanel NumCartaoPan;
+    private javax.swing.JPanel NumCasaPan;
     private javax.swing.JTextField Potencia_TF;
     private javax.swing.JTextField Potencia_TF1;
     private javax.swing.JTextField Potencia_TF3;
     private javax.swing.JTextField Potencia_TF4;
+    private javax.swing.JTextField Potencia_TF5;
+    private javax.swing.JTextField Potencia_TF6;
     private javax.swing.JPanel Remover_Cliente;
+    private javax.swing.JPanel RuaPan;
+    private javax.swing.JPanel TelCelPan;
+    private javax.swing.JPanel TelResPan;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -1023,8 +1089,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel7;
     // End of variables declaration//GEN-END:variables
 }

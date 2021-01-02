@@ -222,7 +222,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="Menu_Principal" max="32767" attributes="0"/>
-                  <Component id="jLayeredPane1" alignment="0" max="32767" attributes="0"/>
+                  <Component id="jLayeredPane1" alignment="0" pref="1286" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
@@ -340,8 +340,8 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLb_Topo_menuInserir" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="DadosPan9" min="-2" pref="787" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="499" max="32767" attributes="0"/>
+                              <Component id="DadosPan9" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="453" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -350,8 +350,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLb_Topo_menuInserir" min="-2" pref="39" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="DadosPan9" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="21" max="32767" attributes="0"/>
+                              <Component id="DadosPan9" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -376,28 +375,22 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                              <Component id="PotenciaPan" max="32767" attributes="0"/>
-                                              <Component id="ModeloPan" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="ChassiPan9" alignment="0" max="32767" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                      </Group>
-                                      <Component id="jPanel2" alignment="1" max="32767" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                      <Component id="FabricantePan" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="AnoPan" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="ACPan" max="32767" attributes="0"/>
-                                      <Group type="102" attributes="0">
-                                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                                          <Component id="jPanel1" max="32767" attributes="0"/>
-                                      </Group>
+                                      <Component id="InstaPan" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="RuaPan" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="TelResPan" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="CpfPan9" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="FacePan" max="32767" attributes="0"/>
                                   </Group>
+                                  <EmptySpace pref="19" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="BairroPan" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="NumCasaPan" max="32767" attributes="0"/>
+                                      <Component id="NumCartaoPan" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="NomePan" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="TelCelPan" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -405,31 +398,36 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="ChassiPan9" max="32767" attributes="0"/>
-                                      <Component id="AnoPan" max="32767" attributes="0"/>
+                                      <Component id="CpfPan9" max="32767" attributes="0"/>
+                                      <Component id="NomePan" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="ModeloPan" max="32767" attributes="0"/>
-                                      <Component id="FabricantePan" max="32767" attributes="0"/>
+                                      <Component id="TelResPan" max="32767" attributes="0"/>
+                                      <Component id="TelCelPan" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="PotenciaPan" max="32767" attributes="0"/>
-                                      <Component id="ACPan" max="32767" attributes="0"/>
+                                      <Component id="RuaPan" max="32767" attributes="0"/>
+                                      <Component id="BairroPan" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="NumCasaPan" min="-2" max="-2" attributes="0"/>
+                                      <Component id="InstaPan" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace pref="175" max="32767" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="NumCartaoPan" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="FacePan" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace pref="122" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Container class="javax.swing.JPanel" name="ChassiPan9">
+                        <Container class="javax.swing.JPanel" name="CpfPan9">
 
                           <Layout>
                             <DimensionLayout dim="0">
@@ -473,7 +471,7 @@
                             </Component>
                           </SubComponents>
                         </Container>
-                        <Container class="javax.swing.JPanel" name="AnoPan">
+                        <Container class="javax.swing.JPanel" name="NomePan">
 
                           <Layout>
                             <DimensionLayout dim="0">
@@ -517,7 +515,7 @@
                             </Component>
                           </SubComponents>
                         </Container>
-                        <Container class="javax.swing.JPanel" name="ModeloPan">
+                        <Container class="javax.swing.JPanel" name="TelResPan">
 
                           <Layout>
                             <DimensionLayout dim="0">
@@ -564,12 +562,12 @@
                             </Component>
                           </SubComponents>
                         </Container>
-                        <Container class="javax.swing.JPanel" name="FabricantePan">
+                        <Container class="javax.swing.JPanel" name="TelCelPan">
 
                           <Layout>
                             <DimensionLayout dim="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="LB_Fabricante" alignment="0" pref="400" max="32767" attributes="0"/>
+                                  <Component id="LB_Fabricante" alignment="0" max="32767" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="Fabricante_TF" max="32767" attributes="0"/>
@@ -611,7 +609,7 @@
                             </Component>
                           </SubComponents>
                         </Container>
-                        <Container class="javax.swing.JPanel" name="ACPan">
+                        <Container class="javax.swing.JPanel" name="BairroPan">
 
                           <Layout>
                             <DimensionLayout dim="0">
@@ -655,7 +653,7 @@
                             </Component>
                           </SubComponents>
                         </Container>
-                        <Container class="javax.swing.JPanel" name="PotenciaPan">
+                        <Container class="javax.swing.JPanel" name="RuaPan">
 
                           <Layout>
                             <DimensionLayout dim="0">
@@ -699,7 +697,7 @@
                             </Component>
                           </SubComponents>
                         </Container>
-                        <Container class="javax.swing.JPanel" name="jPanel1">
+                        <Container class="javax.swing.JPanel" name="NumCasaPan">
 
                           <Layout>
                             <DimensionLayout dim="0">
@@ -719,7 +717,7 @@
                                       <Component id="LB_Potencia3" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="Potencia_TF4" min="-2" pref="36" max="-2" attributes="0"/>
-                                      <EmptySpace pref="34" max="32767" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -731,7 +729,7 @@
                                   <Font name="Tahoma" size="24" style="0"/>
                                 </Property>
                                 <Property name="horizontalAlignment" type="int" value="0"/>
-                                <Property name="text" type="java.lang.String" value="BAIRRO"/>
+                                <Property name="text" type="java.lang.String" value="INSTAGRAM"/>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JTextField" name="Potencia_TF4">
@@ -743,7 +741,7 @@
                             </Component>
                           </SubComponents>
                         </Container>
-                        <Container class="javax.swing.JPanel" name="jPanel2">
+                        <Container class="javax.swing.JPanel" name="InstaPan">
 
                           <Layout>
                             <DimensionLayout dim="0">
@@ -763,7 +761,7 @@
                                       <Component id="LB_Potencia2" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="Potencia_TF3" min="-2" pref="36" max="-2" attributes="0"/>
-                                      <EmptySpace pref="34" max="32767" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -775,10 +773,98 @@
                                   <Font name="Tahoma" size="24" style="0"/>
                                 </Property>
                                 <Property name="horizontalAlignment" type="int" value="0"/>
-                                <Property name="text" type="java.lang.String" value="BAIRRO"/>
+                                <Property name="text" type="java.lang.String" value="N&#xda;MERO DA CASA"/>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JTextField" name="Potencia_TF3">
+                              <Properties>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Times New Roman" size="20" style="0"/>
+                                </Property>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Container class="javax.swing.JPanel" name="FacePan">
+
+                          <Layout>
+                            <DimensionLayout dim="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="LB_Potencia4" alignment="1" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="Potencia_TF5" max="32767" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                            <DimensionLayout dim="1">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="LB_Potencia4" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="Potencia_TF5" min="-2" pref="36" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                          </Layout>
+                          <SubComponents>
+                            <Component class="javax.swing.JLabel" name="LB_Potencia4">
+                              <Properties>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Tahoma" size="24" style="0"/>
+                                </Property>
+                                <Property name="horizontalAlignment" type="int" value="0"/>
+                                <Property name="text" type="java.lang.String" value="FACEBOOK"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="Potencia_TF5">
+                              <Properties>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Times New Roman" size="20" style="0"/>
+                                </Property>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Container class="javax.swing.JPanel" name="NumCartaoPan">
+
+                          <Layout>
+                            <DimensionLayout dim="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="LB_Potencia5" alignment="1" pref="390" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="Potencia_TF6" max="32767" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                            <DimensionLayout dim="1">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="LB_Potencia5" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="Potencia_TF6" min="-2" pref="36" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                          </Layout>
+                          <SubComponents>
+                            <Component class="javax.swing.JLabel" name="LB_Potencia5">
+                              <Properties>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Tahoma" size="24" style="0"/>
+                                </Property>
+                                <Property name="horizontalAlignment" type="int" value="0"/>
+                                <Property name="text" type="java.lang.String" value="N&#xda;MERO DO CART&#xc3;O"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="Potencia_TF6">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Times New Roman" size="20" style="0"/>
