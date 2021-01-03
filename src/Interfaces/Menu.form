@@ -1095,20 +1095,20 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                                      <Component id="Limpar_BT" min="-2" pref="365" max="-2" attributes="0"/>
-                                      <EmptySpace pref="52" max="32767" attributes="0"/>
-                                      <Component id="Inserir_BT" min="-2" pref="365" max="-2" attributes="0"/>
+                                      <Component id="JBt_Limpar" min="-2" pref="365" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                                      <Component id="JBt_Inserir" pref="364" max="32767" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
                             <DimensionLayout dim="1">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="Inserir_BT" max="32767" attributes="0"/>
-                                          <Component id="Limpar_BT" pref="48" max="32767" attributes="0"/>
+                                          <Component id="JBt_Limpar" pref="48" max="32767" attributes="0"/>
+                                          <Component id="JBt_Inserir" max="32767" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                   </Group>
@@ -1116,7 +1116,7 @@
                             </DimensionLayout>
                           </Layout>
                           <SubComponents>
-                            <Component class="javax.swing.JButton" name="Limpar_BT">
+                            <Component class="javax.swing.JButton" name="JBt_Limpar">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="28" style="0"/>
@@ -1124,19 +1124,16 @@
                                 <Property name="text" type="java.lang.String" value="LIMPAR"/>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Limpar_BTActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_LimparActionPerformed"/>
                               </Events>
                             </Component>
-                            <Component class="javax.swing.JButton" name="Inserir_BT">
+                            <Component class="javax.swing.JButton" name="JBt_Inserir">
                               <Properties>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Tahoma" size="28" style="0"/>
                                 </Property>
                                 <Property name="text" type="java.lang.String" value="INSERIR"/>
                               </Properties>
-                              <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Inserir_BTActionPerformed"/>
-                              </Events>
                             </Component>
                           </SubComponents>
                         </Container>

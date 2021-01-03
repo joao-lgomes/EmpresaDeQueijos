@@ -8,11 +8,15 @@ package Principal;
 import Conexao.Conexao;
 import java.sql.Connection;
 import java.sql.SQLException;
+import Interfaces.Menu;
 
 public class Principal {
 
     public static void main(String[] args) {
         
+        Menu menu = new Menu();
+        menu.setVisible(true);
+        menu.setLocationRelativeTo(null);
         
         
         /*try {
