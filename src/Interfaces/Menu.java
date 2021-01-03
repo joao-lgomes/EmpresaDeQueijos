@@ -239,7 +239,7 @@ public class Menu extends javax.swing.JFrame {
         JLB_NumPedidos7 = new javax.swing.JLabel();
         JTF_NumPedidos7 = new javax.swing.JTextField();
         jScrollPane7 = new javax.swing.JScrollPane();
-        JTB_Clientes2 = new javax.swing.JTable();
+        JTB_Queijos = new javax.swing.JTable();
         Centro1 = new javax.swing.JLayeredPane();
         Inserir_Queijo = new javax.swing.JPanel();
         jLb_Topo_menuInserir4 = new javax.swing.JLabel();
@@ -262,6 +262,7 @@ public class Menu extends javax.swing.JFrame {
         ButtonsPan1 = new javax.swing.JPanel();
         LimparQueijo_BT = new javax.swing.JButton();
         InserirQueijo_BT = new javax.swing.JButton();
+        Queijim = new javax.swing.JLabel();
         Alterar_Queijo = new javax.swing.JPanel();
         jLb_Topo_menuInserir5 = new javax.swing.JLabel();
         jLayeredPane7 = new javax.swing.JLayeredPane();
@@ -2540,7 +2541,7 @@ public class Menu extends javax.swing.JFrame {
 
         jScrollPane7.setViewportBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        JTB_Clientes2.setModel(new javax.swing.table.DefaultTableModel(
+        JTB_Queijos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -2551,7 +2552,7 @@ public class Menu extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane7.setViewportView(JTB_Clientes2);
+        jScrollPane7.setViewportView(JTB_Queijos);
 
         jLayeredPane14.setLayer(InformacoesPan9, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane14.setLayer(jScrollPane7, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -2772,6 +2773,10 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        Queijim.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Queijim.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/LosQueijitos.jpg"))); // NOI18N
+        Queijim.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+
         javax.swing.GroupLayout DadosPanCadastro1Layout = new javax.swing.GroupLayout(DadosPanCadastro1);
         DadosPanCadastro1.setLayout(DadosPanCadastro1Layout);
         DadosPanCadastro1Layout.setHorizontalGroup(
@@ -2790,6 +2795,10 @@ public class Menu extends javax.swing.JFrame {
                             .addComponent(NomePan1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(TelCelPan1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addGap(22, 22, 22))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DadosPanCadastro1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Queijim, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         DadosPanCadastro1Layout.setVerticalGroup(
             DadosPanCadastro1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2803,7 +2812,9 @@ public class Menu extends javax.swing.JFrame {
                     .addComponent(TelCelPan1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(RuaPan1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 250, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Queijim, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(ButtonsPan1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
         );
@@ -2820,7 +2831,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(Inserir_QueijoLayout.createSequentialGroup()
                 .addComponent(jLb_Topo_menuInserir4, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(DadosPanCadastro1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(DadosPanCadastro1, javax.swing.GroupLayout.PREFERRED_SIZE, 683, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -4853,7 +4864,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel JP_Pedidos;
     private javax.swing.JPanel JP_Queijos;
     private javax.swing.JTable JTB_Clientes1;
-    private javax.swing.JTable JTB_Clientes2;
+    private javax.swing.JTable JTB_Queijos;
     private javax.swing.JTextField JTF_NUmQueijos6;
     private javax.swing.JTextField JTF_NUmQueijos7;
     private javax.swing.JTextField JTF_NumClientes6;
@@ -4996,6 +5007,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel OrdernarPan;
     private javax.swing.JPanel OrdernarPan1;
     private javax.swing.JTextField Peso_TF;
+    private javax.swing.JLabel Queijim;
     private javax.swing.JButton Remover_BT;
     private javax.swing.JButton Remover_BT1;
     private javax.swing.JPanel Remover_Cliente1;
