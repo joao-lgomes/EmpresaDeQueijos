@@ -4145,13 +4145,8 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="jLb_Topo_menuInserir5" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jLayeredPane7" alignment="0" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="32767" attributes="0"/>
-                          </Group>
+                          <Component id="jLb_Topo_menuInserir5" alignment="0" max="32767" attributes="0"/>
+                          <Component id="jLayeredPane7" alignment="0" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
@@ -4186,7 +4181,7 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="BuscaPan5" alignment="0" max="32767" attributes="0"/>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <EmptySpace pref="40" max="32767" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                       <Component id="jScrollPane8" min="-2" pref="794" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                                   </Group>
@@ -4198,7 +4193,8 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="BuscaPan5" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jScrollPane8" min="-2" pref="466" max="-2" attributes="0"/>
+                                      <Component id="jScrollPane8" pref="471" max="32767" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -4222,7 +4218,7 @@
                                               <Group type="102" alignment="0" attributes="0">
                                                   <EmptySpace max="32767" attributes="0"/>
                                                   <Component id="Jbt_LimpaIdQueijo" min="-2" pref="300" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                                                   <Component id="JBt_BuscaIdQueijo" min="-2" pref="300" max="-2" attributes="0"/>
                                                   <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
                                               </Group>
@@ -4612,7 +4608,7 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                                           <Component id="LimparQueijo_BT2" min="-2" pref="365" max="-2" attributes="0"/>
-                                          <EmptySpace pref="83" max="32767" attributes="0"/>
+                                          <EmptySpace pref="55" max="32767" attributes="0"/>
                                           <Component id="AlterarQueijo_BT" min="-2" pref="365" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                       </Group>
@@ -4703,102 +4699,86 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLb_Topo_menuInserir8" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="jLb_Topo_menuInserir6" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jLayeredPane12" alignment="0" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jLayeredPane8" min="-2" pref="843" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLb_Topo_menuInserir6" min="-2" pref="39" max="-2" attributes="0"/>
+                              <Component id="jLb_Topo_menuInserir8" min="-2" pref="39" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                              <Component id="jLayeredPane12" max="32767" attributes="0"/>
+                              <Component id="jLayeredPane8" pref="690" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLb_Topo_menuInserir6">
+                    <Component class="javax.swing.JLabel" name="jLb_Topo_menuInserir8">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Tahoma" size="29" style="1"/>
                         </Property>
                         <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="REMOVER CLIENTE"/>
+                        <Property name="text" type="java.lang.String" value="REMOVER QUEIJO"/>
                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                           <Color id="Default Cursor"/>
                         </Property>
                       </Properties>
                     </Component>
-                    <Container class="javax.swing.JLayeredPane" name="jLayeredPane12">
+                    <Container class="javax.swing.JLayeredPane" name="jLayeredPane8">
                       <SubComponents>
-                        <Container class="javax.swing.JPanel" name="BuscaPanRemover1">
+                        <Container class="javax.swing.JPanel" name="BuscaPanAlterar2">
 
                           <Layout>
                             <DimensionLayout dim="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="BuscaPan6" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jScrollPane9" alignment="0" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="BuscaPan8" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="4" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                      <Component id="jScrollPane13" min="-2" pref="794" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                  </Group>
                               </Group>
                             </DimensionLayout>
                             <DimensionLayout dim="1">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
+                                      <Component id="BuscaPan8" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="jScrollPane13" min="-2" pref="453" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="BuscaPan6" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jScrollPane9" min="-2" pref="466" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
                           </Layout>
                           <SubComponents>
-                            <Container class="javax.swing.JPanel" name="BuscaPan6">
+                            <Container class="javax.swing.JPanel" name="BuscaPan8">
 
                               <Layout>
                                 <DimensionLayout dim="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                              <Component id="Jlb_BuscaCPF4" alignment="1" min="-2" pref="410" max="-2" attributes="0"/>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="JTf_BuscaCPF4" alignment="0" max="32767" attributes="0"/>
-                                                      <Group type="102" alignment="1" attributes="0">
-                                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                                          <Component id="Jbt_LimpaCpf4" min="-2" pref="160" max="-2" attributes="0"/>
-                                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                          <Component id="JBt_BuscaCPF4" min="-2" pref="160" max="-2" attributes="0"/>
-                                                          <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                              </Group>
-                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="JTf_BuscaIdQueijo1" max="32767" attributes="0"/>
+                                              <Component id="Jlb_BuscaIdQueijo1" max="32767" attributes="0"/>
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace pref="32" max="32767" attributes="0"/>
-                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="JLb_BuscaNome4" alignment="0" min="-2" pref="410" max="-2" attributes="0"/>
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <Component id="JTf_BuscaNome4" max="32767" attributes="0"/>
-                                                          <EmptySpace max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                              </Group>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
-                                                  <Component id="JBt_LimpaNome4" min="-2" pref="160" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="JBt_BuscaNome4" min="-2" pref="160" max="-2" attributes="0"/>
-                                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                                  <EmptySpace pref="101" max="32767" attributes="0"/>
+                                                  <Component id="Jbt_LimpaIdQueijo1" min="-2" pref="300" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="JBt_BuscaIdQueijo1" min="-2" pref="300" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
@@ -4806,63 +4786,37 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="Jlb_BuscaCPF4" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                                              <Component id="JLb_BuscaNome4" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                                          </Group>
+                                          <Component id="Jlb_BuscaIdQueijo1" min="-2" pref="35" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="JTf_BuscaCPF4" alignment="0" pref="49" max="32767" attributes="0"/>
-                                              <Component id="JTf_BuscaNome4" alignment="0" max="32767" attributes="0"/>
-                                          </Group>
+                                          <Component id="JTf_BuscaIdQueijo1" min="-2" pref="49" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                                  <Component id="Jbt_LimpaCpf4" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
-                                                  <Component id="JBt_BuscaCPF4" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Component id="JBt_LimpaNome4" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="JBt_BuscaNome4" alignment="0" max="32767" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="Jbt_LimpaIdQueijo1" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                                              <Component id="JBt_BuscaIdQueijo1" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace min="0" pref="30" max="32767" attributes="0"/>
+                                          <EmptySpace min="0" pref="65" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
                               </Layout>
                               <SubComponents>
-                                <Component class="javax.swing.JLabel" name="Jlb_BuscaCPF4">
+                                <Component class="javax.swing.JLabel" name="Jlb_BuscaIdQueijo1">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Tahoma" size="27" style="0"/>
                                     </Property>
                                     <Property name="horizontalAlignment" type="int" value="0"/>
-                                    <Property name="text" type="java.lang.String" value="Buscar por CPF"/>
+                                    <Property name="text" type="java.lang.String" value="Buscar pelo ID do queijo"/>
                                   </Properties>
                                 </Component>
-                                <Component class="javax.swing.JTextField" name="JTf_BuscaCPF4">
+                                <Component class="javax.swing.JTextField" name="JTf_BuscaIdQueijo1">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Tahoma" size="18" style="0"/>
                                     </Property>
                                   </Properties>
                                 </Component>
-                                <Component class="javax.swing.JLabel" name="JLb_BuscaNome4">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Tahoma" size="27" style="0"/>
-                                    </Property>
-                                    <Property name="horizontalAlignment" type="int" value="0"/>
-                                    <Property name="text" type="java.lang.String" value="BUSCAR POR NOME"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="JTf_BuscaNome4">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Tahoma" size="18" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JButton" name="Jbt_LimpaCpf4">
+                                <Component class="javax.swing.JButton" name="Jbt_LimpaIdQueijo1">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Tahoma" size="24" style="0"/>
@@ -4870,7 +4824,7 @@
                                     <Property name="text" type="java.lang.String" value="LIMPAR"/>
                                   </Properties>
                                 </Component>
-                                <Component class="javax.swing.JButton" name="JBt_BuscaCPF4">
+                                <Component class="javax.swing.JButton" name="JBt_BuscaIdQueijo1">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Tahoma" size="24" style="0"/>
@@ -4878,33 +4832,20 @@
                                     <Property name="text" type="java.lang.String" value="BUSCAR"/>
                                   </Properties>
                                   <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_BuscaCPF4ActionPerformed"/>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_BuscaIdQueijo1ActionPerformed"/>
                                   </Events>
-                                </Component>
-                                <Component class="javax.swing.JButton" name="JBt_LimpaNome4">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Tahoma" size="24" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="LIMPAR"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JButton" name="JBt_BuscaNome4">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Tahoma" size="24" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="BUSCAR"/>
-                                  </Properties>
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JScrollPane" name="jScrollPane9">
+                            <Container class="javax.swing.JScrollPane" name="jScrollPane13">
 
                               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                               <SubComponents>
-                                <Component class="javax.swing.JList" name="ListaCpf_Nome4">
+                                <Component class="javax.swing.JList" name="ListaIdQueijos_tipo1">
                                   <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="18" style="0"/>
+                                    </Property>
                                     <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                                       <StringArray count="5">
                                         <StringItem index="0" value="Item 1"/>
@@ -4923,7 +4864,7 @@
                             </Container>
                           </SubComponents>
                         </Container>
-                        <Container class="javax.swing.JPanel" name="DadosPanRemover1">
+                        <Container class="javax.swing.JPanel" name="DadosPanCadastro3">
                           <Properties>
                             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                               <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -4936,24 +4877,28 @@
                             <DimensionLayout dim="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="Queijim2" max="32767" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
                                       <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="ButtonsPan6" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="ButtonsPan9" alignment="0" max="32767" attributes="0"/>
                                           <Group type="102" alignment="1" attributes="0">
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                                  <Component id="InstaPan5" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="RuaPan5" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="TelResPan5" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="CpfPan5" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="FacePan5" alignment="1" max="32767" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace max="32767" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                  <Component id="BairroPan5" alignment="1" max="32767" attributes="0"/>
-                                                  <Component id="NumCasaPan5" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="NumCartaoPan5" alignment="1" max="32767" attributes="0"/>
-                                                  <Component id="NomePan5" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="TelCelPan5" alignment="0" max="32767" attributes="0"/>
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Component id="RuaPan7" alignment="1" max="32767" attributes="0"/>
+                                                  <Group type="102" alignment="1" attributes="0">
+                                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                          <Component id="TelResPan7" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="CpfPan7" alignment="0" max="32767" attributes="0"/>
+                                                      </Group>
+                                                      <EmptySpace max="32767" attributes="0"/>
+                                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                          <Component id="TelCelPan7" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="NomePan7" alignment="0" max="32767" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -4965,46 +4910,35 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="CpfPan5" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="NomePan5" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="CpfPan7" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="NomePan7" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="TelResPan5" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="TelCelPan5" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="TelResPan7" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="TelCelPan7" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="RuaPan5" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="BairroPan5" alignment="0" max="32767" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="-2" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="NumCasaPan5" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="InstaPan5" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      </Group>
+                                      <Component id="RuaPan7" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="NumCartaoPan5" alignment="1" max="32767" attributes="0"/>
-                                          <Component id="FacePan5" alignment="0" max="32767" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace type="separate" max="32767" attributes="0"/>
-                                      <Component id="ButtonsPan6" min="-2" max="-2" attributes="0"/>
+                                      <Component id="Queijim2" min="-2" pref="256" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="ButtonsPan9" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
                           </Layout>
                           <SubComponents>
-                            <Container class="javax.swing.JPanel" name="CpfPan5">
+                            <Container class="javax.swing.JPanel" name="CpfPan7">
 
                               <Layout>
                                 <DimensionLayout dim="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="LB_Cpf5" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="LB_IdQueijo2" alignment="0" max="32767" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="Cpf_TF5" max="32767" attributes="0"/>
+                                          <Component id="IdQueijo_TF2" max="32767" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -5013,25 +4947,25 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="LB_Cpf5" min="-2" max="-2" attributes="0"/>
+                                          <Component id="LB_IdQueijo2" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="Cpf_TF5" min="-2" pref="36" max="-2" attributes="0"/>
+                                          <Component id="IdQueijo_TF2" min="-2" pref="36" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
                               </Layout>
                               <SubComponents>
-                                <Component class="javax.swing.JLabel" name="LB_Cpf5">
+                                <Component class="javax.swing.JLabel" name="LB_IdQueijo2">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Tahoma" size="24" style="0"/>
                                     </Property>
                                     <Property name="horizontalAlignment" type="int" value="0"/>
-                                    <Property name="text" type="java.lang.String" value="CPF"/>
+                                    <Property name="text" type="java.lang.String" value="ID DO QUEIJO"/>
                                   </Properties>
                                 </Component>
-                                <Component class="javax.swing.JTextField" name="Cpf_TF5">
+                                <Component class="javax.swing.JTextField" name="IdQueijo_TF2">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Times New Roman" size="20" style="0"/>
@@ -5040,15 +4974,15 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="NomePan5">
+                            <Container class="javax.swing.JPanel" name="NomePan7">
 
                               <Layout>
                                 <DimensionLayout dim="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="LB_Nome5" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="LB_Peso2" alignment="0" max="32767" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="Nome_TF5" max="32767" attributes="0"/>
+                                          <Component id="Peso_TF2" max="32767" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -5057,25 +4991,25 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="LB_Nome5" min="-2" max="-2" attributes="0"/>
+                                          <Component id="LB_Peso2" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="Nome_TF5" min="-2" pref="36" max="-2" attributes="0"/>
+                                          <Component id="Peso_TF2" min="-2" pref="36" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
                               </Layout>
                               <SubComponents>
-                                <Component class="javax.swing.JLabel" name="LB_Nome5">
+                                <Component class="javax.swing.JLabel" name="LB_Peso2">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Tahoma" size="24" style="0"/>
                                     </Property>
                                     <Property name="horizontalAlignment" type="int" value="0"/>
-                                    <Property name="text" type="java.lang.String" value="NOME"/>
+                                    <Property name="text" type="java.lang.String" value="PESO"/>
                                   </Properties>
                                 </Component>
-                                <Component class="javax.swing.JTextField" name="Nome_TF5">
+                                <Component class="javax.swing.JTextField" name="Peso_TF2">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Times New Roman" size="20" style="0"/>
@@ -5084,15 +5018,15 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="TelResPan5">
+                            <Container class="javax.swing.JPanel" name="TelResPan7">
 
                               <Layout>
                                 <DimensionLayout dim="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="LB_TelRes5" alignment="0" pref="390" max="32767" attributes="0"/>
+                                      <Component id="LB_ValorKg2" alignment="0" pref="390" max="32767" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="TelRes_TF5" max="32767" attributes="0"/>
+                                          <Component id="ValorKg_TF2" max="32767" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -5101,45 +5035,45 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="LB_TelRes5" min="-2" max="-2" attributes="0"/>
+                                          <Component id="LB_ValorKg2" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="TelRes_TF5" min="-2" pref="36" max="-2" attributes="0"/>
+                                          <Component id="ValorKg_TF2" min="-2" pref="36" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
                               </Layout>
                               <SubComponents>
-                                <Component class="javax.swing.JLabel" name="LB_TelRes5">
+                                <Component class="javax.swing.JLabel" name="LB_ValorKg2">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Tahoma" size="24" style="0"/>
                                     </Property>
                                     <Property name="horizontalAlignment" type="int" value="0"/>
-                                    <Property name="text" type="java.lang.String" value="TELEFONE RESIDENCIAL"/>
+                                    <Property name="text" type="java.lang.String" value="VALOR POR KG"/>
                                   </Properties>
                                 </Component>
-                                <Component class="javax.swing.JTextField" name="TelRes_TF5">
+                                <Component class="javax.swing.JTextField" name="ValorKg_TF2">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Times New Roman" size="20" style="0"/>
                                     </Property>
                                   </Properties>
                                   <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TelRes_TF5ActionPerformed"/>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ValorKg_TF2ActionPerformed"/>
                                   </Events>
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="TelCelPan5">
+                            <Container class="javax.swing.JPanel" name="TelCelPan7">
 
                               <Layout>
                                 <DimensionLayout dim="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="LB_TelCel5" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="LB_TempIdeal2" alignment="0" pref="390" max="32767" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="TelCel_TF5" max="32767" attributes="0"/>
+                                          <Component id="TempIdeal_TF2" max="32767" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -5148,45 +5082,45 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="LB_TelCel5" min="-2" max="-2" attributes="0"/>
+                                          <Component id="LB_TempIdeal2" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="TelCel_TF5" min="-2" pref="36" max="-2" attributes="0"/>
+                                          <Component id="TempIdeal_TF2" min="-2" pref="36" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
                               </Layout>
                               <SubComponents>
-                                <Component class="javax.swing.JLabel" name="LB_TelCel5">
+                                <Component class="javax.swing.JLabel" name="LB_TempIdeal2">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Tahoma" size="24" style="0"/>
                                     </Property>
                                     <Property name="horizontalAlignment" type="int" value="0"/>
-                                    <Property name="text" type="java.lang.String" value="TELEFONE CELULAR"/>
+                                    <Property name="text" type="java.lang.String" value="TEMPERATURA IDEAL EM &#xb0;C"/>
                                   </Properties>
                                 </Component>
-                                <Component class="javax.swing.JTextField" name="TelCel_TF5">
+                                <Component class="javax.swing.JTextField" name="TempIdeal_TF2">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Times New Roman" size="20" style="0"/>
                                     </Property>
                                   </Properties>
                                   <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TelCel_TF5ActionPerformed"/>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TempIdeal_TF2ActionPerformed"/>
                                   </Events>
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="BairroPan5">
+                            <Container class="javax.swing.JPanel" name="RuaPan7">
 
                               <Layout>
                                 <DimensionLayout dim="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="LB_Rua5" alignment="0" max="32767" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="Rua_TF5" max="32767" attributes="0"/>
+                                      <Component id="LB_TipoQueijo2" alignment="0" max="32767" attributes="0"/>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="TipoQueijo_TF2" min="-2" pref="781" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -5195,25 +5129,25 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="LB_Rua5" min="-2" max="-2" attributes="0"/>
+                                          <Component id="LB_TipoQueijo2" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="Rua_TF5" min="-2" pref="36" max="-2" attributes="0"/>
+                                          <Component id="TipoQueijo_TF2" min="-2" pref="36" max="-2" attributes="0"/>
                                           <EmptySpace max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                 </DimensionLayout>
                               </Layout>
                               <SubComponents>
-                                <Component class="javax.swing.JLabel" name="LB_Rua5">
+                                <Component class="javax.swing.JLabel" name="LB_TipoQueijo2">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Tahoma" size="24" style="0"/>
                                     </Property>
                                     <Property name="horizontalAlignment" type="int" value="0"/>
-                                    <Property name="text" type="java.lang.String" value="RUA"/>
+                                    <Property name="text" type="java.lang.String" value="TIPO DO QUEIJO"/>
                                   </Properties>
                                 </Component>
-                                <Component class="javax.swing.JTextField" name="Rua_TF5">
+                                <Component class="javax.swing.JTextField" name="TipoQueijo_TF2">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Times New Roman" size="20" style="0"/>
@@ -5222,236 +5156,16 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Container class="javax.swing.JPanel" name="RuaPan5">
-
-                              <Layout>
-                                <DimensionLayout dim="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="LB_Bairro5" alignment="0" max="32767" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="Bairro_TF5" max="32767" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                </DimensionLayout>
-                                <DimensionLayout dim="1">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="LB_Bairro5" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="Bairro_TF5" min="-2" pref="36" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                </DimensionLayout>
-                              </Layout>
-                              <SubComponents>
-                                <Component class="javax.swing.JLabel" name="LB_Bairro5">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Tahoma" size="24" style="0"/>
-                                    </Property>
-                                    <Property name="horizontalAlignment" type="int" value="0"/>
-                                    <Property name="text" type="java.lang.String" value="BAIRRO"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="Bairro_TF5">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Times New Roman" size="20" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                </Component>
-                              </SubComponents>
-                            </Container>
-                            <Container class="javax.swing.JPanel" name="NumCasaPan5">
-
-                              <Layout>
-                                <DimensionLayout dim="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="LB_Instagram5" alignment="1" max="32767" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="Instagram_TF5" max="32767" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                </DimensionLayout>
-                                <DimensionLayout dim="1">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="LB_Instagram5" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="Instagram_TF5" min="-2" pref="36" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                </DimensionLayout>
-                              </Layout>
-                              <SubComponents>
-                                <Component class="javax.swing.JLabel" name="LB_Instagram5">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Tahoma" size="24" style="0"/>
-                                    </Property>
-                                    <Property name="horizontalAlignment" type="int" value="0"/>
-                                    <Property name="text" type="java.lang.String" value="INSTAGRAM"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="Instagram_TF5">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Times New Roman" size="20" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                </Component>
-                              </SubComponents>
-                            </Container>
-                            <Container class="javax.swing.JPanel" name="InstaPan5">
-
-                              <Layout>
-                                <DimensionLayout dim="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="LB_NumCasa5" alignment="1" max="32767" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="NumCasa_TF5" max="32767" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                </DimensionLayout>
-                                <DimensionLayout dim="1">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="LB_NumCasa5" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="NumCasa_TF5" min="-2" pref="36" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                </DimensionLayout>
-                              </Layout>
-                              <SubComponents>
-                                <Component class="javax.swing.JLabel" name="LB_NumCasa5">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Tahoma" size="24" style="0"/>
-                                    </Property>
-                                    <Property name="horizontalAlignment" type="int" value="0"/>
-                                    <Property name="text" type="java.lang.String" value="N&#xda;MERO DA CASA"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="NumCasa_TF5">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Times New Roman" size="20" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                </Component>
-                              </SubComponents>
-                            </Container>
-                            <Container class="javax.swing.JPanel" name="FacePan5">
-
-                              <Layout>
-                                <DimensionLayout dim="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="LB_Facebook5" alignment="1" max="32767" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="Face_TF5" max="32767" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                </DimensionLayout>
-                                <DimensionLayout dim="1">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="LB_Facebook5" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="Face_TF5" min="-2" pref="36" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                </DimensionLayout>
-                              </Layout>
-                              <SubComponents>
-                                <Component class="javax.swing.JLabel" name="LB_Facebook5">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Tahoma" size="24" style="0"/>
-                                    </Property>
-                                    <Property name="horizontalAlignment" type="int" value="0"/>
-                                    <Property name="text" type="java.lang.String" value="FACEBOOK"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="Face_TF5">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Times New Roman" size="20" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                </Component>
-                              </SubComponents>
-                            </Container>
-                            <Container class="javax.swing.JPanel" name="NumCartaoPan5">
-
-                              <Layout>
-                                <DimensionLayout dim="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="LB_NumCartao5" alignment="1" pref="390" max="32767" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="NumCartao_TF5" max="32767" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                </DimensionLayout>
-                                <DimensionLayout dim="1">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="LB_NumCartao5" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="NumCartao_TF5" min="-2" pref="36" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                </DimensionLayout>
-                              </Layout>
-                              <SubComponents>
-                                <Component class="javax.swing.JLabel" name="LB_NumCartao5">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Tahoma" size="24" style="0"/>
-                                    </Property>
-                                    <Property name="horizontalAlignment" type="int" value="0"/>
-                                    <Property name="text" type="java.lang.String" value="N&#xda;MERO DO CART&#xc3;O"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="NumCartao_TF5">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Times New Roman" size="20" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                </Component>
-                              </SubComponents>
-                            </Container>
-                            <Container class="javax.swing.JPanel" name="ButtonsPan6">
+                            <Container class="javax.swing.JPanel" name="ButtonsPan9">
 
                               <Layout>
                                 <DimensionLayout dim="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                                          <Component id="Limpar_BT5" min="-2" pref="365" max="-2" attributes="0"/>
-                                          <EmptySpace pref="61" max="32767" attributes="0"/>
-                                          <Component id="Remover_BT1" min="-2" pref="365" max="-2" attributes="0"/>
+                                          <Component id="LimparQueijo_BT3" min="-2" pref="365" max="-2" attributes="0"/>
+                                          <EmptySpace pref="52" max="32767" attributes="0"/>
+                                          <Component id="RemoverQueijo_BT" min="-2" pref="365" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -5461,8 +5175,8 @@
                                       <Group type="102" alignment="1" attributes="0">
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="Remover_BT1" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="Limpar_BT5" alignment="0" pref="48" max="32767" attributes="0"/>
+                                              <Component id="RemoverQueijo_BT" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="LimparQueijo_BT3" alignment="0" pref="48" max="32767" attributes="0"/>
                                           </Group>
                                           <EmptySpace max="-2" attributes="0"/>
                                       </Group>
@@ -5470,7 +5184,7 @@
                                 </DimensionLayout>
                               </Layout>
                               <SubComponents>
-                                <Component class="javax.swing.JButton" name="Limpar_BT5">
+                                <Component class="javax.swing.JButton" name="LimparQueijo_BT3">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Tahoma" size="28" style="0"/>
@@ -5478,10 +5192,10 @@
                                     <Property name="text" type="java.lang.String" value="LIMPAR"/>
                                   </Properties>
                                   <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Limpar_BT5ActionPerformed"/>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="LimparQueijo_BT3ActionPerformed"/>
                                   </Events>
                                 </Component>
-                                <Component class="javax.swing.JButton" name="Remover_BT1">
+                                <Component class="javax.swing.JButton" name="RemoverQueijo_BT">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Tahoma" size="28" style="0"/>
@@ -5489,21 +5203,30 @@
                                     <Property name="text" type="java.lang.String" value="REMOVER"/>
                                   </Properties>
                                   <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Remover_BT1ActionPerformed"/>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RemoverQueijo_BTActionPerformed"/>
                                   </Events>
                                 </Component>
                               </SubComponents>
                             </Container>
+                            <Component class="javax.swing.JLabel" name="Queijim2">
+                              <Properties>
+                                <Property name="horizontalAlignment" type="int" value="0"/>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Interfaces/LosQueijitos.jpg"/>
+                                </Property>
+                                <Property name="verticalAlignment" type="int" value="3"/>
+                              </Properties>
+                            </Component>
                           </SubComponents>
                         </Container>
                       </SubComponents>
                       <LayoutCode>
                         <CodeStatement>
-                          <CodeExpression id="11_jLayeredPane12">
-                            <CodeVariable name="jLayeredPane12" type="8194" declaredType="javax.swing.JLayeredPane"/>
+                          <CodeExpression id="11_jLayeredPane8">
+                            <CodeVariable name="jLayeredPane8" type="8194" declaredType="javax.swing.JLayeredPane"/>
                             <ExpressionOrigin>
                               <ExpressionProvider type="ComponentRef">
-                                <ComponentRef name="jLayeredPane12"/>
+                                <ComponentRef name="jLayeredPane8"/>
                               </ExpressionProvider>
                             </ExpressionOrigin>
                           </CodeExpression>
@@ -5517,7 +5240,7 @@
                                   <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
                                 </ExpressionProvider>
                                 <Parameters>
-                                  <CodeExpression id="11_jLayeredPane12"/>
+                                  <CodeExpression id="11_jLayeredPane8"/>
                                 </Parameters>
                               </ExpressionOrigin>
                             </CodeExpression>
@@ -5532,7 +5255,7 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLb_Topo_menuMostrar1" alignment="0" pref="843" max="32767" attributes="0"/>
+                          <Component id="jLb_Topo_menuMostrar1" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLayeredPane3" alignment="0" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
@@ -5553,7 +5276,7 @@
                           <Font name="Tahoma" size="29" style="1"/>
                         </Property>
                         <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="MOSTRAR CLIENTES"/>
+                        <Property name="text" type="java.lang.String" value="MOSTRAR QUEIJOS"/>
                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                           <Color id="Default Cursor"/>
                         </Property>
@@ -5583,7 +5306,7 @@
 
                           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                           <SubComponents>
-                            <Component class="javax.swing.JTable" name="JTb_MostrarClientes1">
+                            <Component class="javax.swing.JTable" name="JTb_MostrarQueijos">
                               <Properties>
                                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                                   <Table columnCount="4" rowCount="4">
@@ -5631,19 +5354,31 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="JLb_OrdenarPor1" alignment="0" max="32767" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
-                                      <Component id="JBt_Nome_Decrescente1" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                      <Component id="JBt_Id_Decrescente" min="-2" pref="44" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="JLb_Nome1" min="-2" pref="81" max="-2" attributes="0"/>
+                                      <Component id="JLb_Nome1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="JBt_Nome_Crescente1" min="-2" pref="44" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="JBt_Cpf_Decrescente1" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <Component id="JBt_Id_Crescente" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                                      <Component id="JBt_Peso_Decrescente" min="-2" pref="44" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="JLb_Cpf1" min="-2" pref="56" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="JBt_Cpf_Crescente1" min="-2" pref="44" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="168" max="-2" attributes="0"/>
+                                      <Component id="JBt_Peso_Crescente" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                                      <Component id="JBt_Valor_Decrescente" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="JLb_Nome2" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="JBt_Valor_Crescente" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                                      <Component id="JBt_temp_Decrescente" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="JLb_Cpf2" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="JBt_Temp_Crescente" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -5653,14 +5388,28 @@
                                       <Component id="JLb_OrdenarPor1" min="-2" pref="31" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="JLb_Cpf1" alignment="0" min="-2" pref="38" max="-2" attributes="0"/>
-                                              <Component id="JBt_Nome_Crescente1" alignment="0" pref="0" max="32767" attributes="0"/>
-                                              <Component id="JBt_Cpf_Decrescente1" alignment="0" pref="0" max="32767" attributes="0"/>
-                                          </Group>
-                                          <Component id="JBt_Cpf_Crescente1" alignment="0" min="-2" pref="38" max="-2" attributes="0"/>
+                                          <Component id="JBt_Id_Crescente" alignment="0" min="-2" pref="38" max="-2" attributes="0"/>
                                           <Component id="JLb_Nome1" alignment="0" min="-2" pref="38" max="-2" attributes="0"/>
-                                          <Component id="JBt_Nome_Decrescente1" alignment="0" min="-2" pref="38" max="-2" attributes="0"/>
+                                          <Component id="JBt_Id_Decrescente" alignment="0" min="-2" pref="38" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                                      <Component id="JLb_Cpf1" alignment="1" min="-2" pref="38" max="-2" attributes="0"/>
+                                                      <Component id="JBt_Peso_Decrescente" alignment="0" pref="0" max="32767" attributes="0"/>
+                                                  </Group>
+                                                  <Component id="JBt_Peso_Crescente" alignment="1" min="-2" pref="38" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                                      <Component id="JLb_Cpf2" alignment="1" min="-2" pref="38" max="-2" attributes="0"/>
+                                                      <Component id="JBt_Valor_Crescente" alignment="0" pref="0" max="32767" attributes="0"/>
+                                                      <Component id="JBt_temp_Decrescente" alignment="0" min="-2" pref="38" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Component id="JBt_Temp_Crescente" alignment="1" min="-2" pref="38" max="-2" attributes="0"/>
+                                                  <Component id="JLb_Nome2" alignment="0" min="-2" pref="38" max="-2" attributes="0"/>
+                                                  <Component id="JBt_Valor_Decrescente" alignment="0" min="-2" pref="38" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
                                       </Group>
                                       <EmptySpace min="0" pref="38" max="32767" attributes="0"/>
                                   </Group>
@@ -5683,7 +5432,7 @@
                                   <Font name="Tahoma" size="24" style="0"/>
                                 </Property>
                                 <Property name="horizontalAlignment" type="int" value="0"/>
-                                <Property name="text" type="java.lang.String" value="NOME"/>
+                                <Property name="text" type="java.lang.String" value="ID"/>
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JLabel" name="JLb_Cpf1">
@@ -5692,41 +5441,99 @@
                                   <Font name="Tahoma" size="24" style="0"/>
                                 </Property>
                                 <Property name="horizontalAlignment" type="int" value="0"/>
-                                <Property name="text" type="java.lang.String" value="CPF"/>
+                                <Property name="text" type="java.lang.String" value="PESO"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JButton" name="JBt_Nome_Decrescente1">
-                              <Properties>
-                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/Interfaces/down_new.jpg"/>
-                                </Property>
-                              </Properties>
-                            </Component>
-                            <Component class="javax.swing.JButton" name="JBt_Nome_Crescente1">
-                              <Properties>
-                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                                  <Image iconType="3" name="/Interfaces/up_new.jpg"/>
-                                </Property>
-                              </Properties>
-                            </Component>
-                            <Component class="javax.swing.JButton" name="JBt_Cpf_Decrescente1">
+                            <Component class="javax.swing.JButton" name="JBt_Id_Decrescente">
                               <Properties>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                                   <Image iconType="3" name="/Interfaces/down_new.jpg"/>
                                 </Property>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_Cpf_Decrescente1ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_Id_DecrescenteActionPerformed"/>
                               </Events>
                             </Component>
-                            <Component class="javax.swing.JButton" name="JBt_Cpf_Crescente1">
+                            <Component class="javax.swing.JButton" name="JBt_Id_Crescente">
+                              <Properties>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Interfaces/up_new.jpg"/>
+                                </Property>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JButton" name="JBt_Peso_Decrescente">
+                              <Properties>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Interfaces/down_new.jpg"/>
+                                </Property>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_Peso_DecrescenteActionPerformed"/>
+                              </Events>
+                            </Component>
+                            <Component class="javax.swing.JButton" name="JBt_Peso_Crescente">
                               <Properties>
                                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                                   <Image iconType="3" name="/Interfaces/up_new.jpg"/>
                                 </Property>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_Cpf_Crescente1ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_Peso_CrescenteActionPerformed"/>
+                              </Events>
+                            </Component>
+                            <Component class="javax.swing.JButton" name="JBt_Valor_Decrescente">
+                              <Properties>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Interfaces/down_new.jpg"/>
+                                </Property>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_Valor_DecrescenteActionPerformed"/>
+                              </Events>
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="JLb_Nome2">
+                              <Properties>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Tahoma" size="24" style="0"/>
+                                </Property>
+                                <Property name="horizontalAlignment" type="int" value="0"/>
+                                <Property name="text" type="java.lang.String" value="VALOR"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JButton" name="JBt_Valor_Crescente">
+                              <Properties>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Interfaces/up_new.jpg"/>
+                                </Property>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JButton" name="JBt_temp_Decrescente">
+                              <Properties>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Interfaces/down_new.jpg"/>
+                                </Property>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_temp_DecrescenteActionPerformed"/>
+                              </Events>
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="JLb_Cpf2">
+                              <Properties>
+                                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                  <Font name="Tahoma" size="24" style="0"/>
+                                </Property>
+                                <Property name="horizontalAlignment" type="int" value="0"/>
+                                <Property name="text" type="java.lang.String" value="TEMPERATURA"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JButton" name="JBt_Temp_Crescente">
+                              <Properties>
+                                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                                  <Image iconType="3" name="/Interfaces/up_new.jpg"/>
+                                </Property>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_Temp_CrescenteActionPerformed"/>
                               </Events>
                             </Component>
                           </SubComponents>
