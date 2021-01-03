@@ -215,4 +215,33 @@ public class QueijoDAO {
         
         return ListaRetorno;
     }
+    
+    public int quantQueijos(){
+        PreparedStatement instrucao;
+        ResultSet res;
+        ArrayList <Queijo> ListaRetorno = new ArrayList();
+        
+        String codigo = "select * from Queijo";
+
+        try{
+            instrucao = this.conexao.prepareStatement(codigo);
+            res = instrucao.executeQuery();
+            while(res.next()){
+                Queijo queijo = new Queijo();
+                queijo.setId_queijo(res.getInt("id_queijo"));
+                queijo.setPeso(res.getFloat("peso"));
+                queijo.setValorKG(res.getFloat("valorKG"));
+                queijo.setTipo(res.getString("tipo"));
+                queijo.setTempIdeal(res.getFloat("tempIdeal"));
+                
+                ListaRetorno.add(queijo);
+            }
+            
+            res.close();
+            instrucao.close();
+        }catch(SQLException e){
+            System.out.println("Erro ao tentar recuperar a lista "+e.toString());
+        }
+        return (ListaRetorno.size());
+    }
 }

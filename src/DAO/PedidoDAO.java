@@ -210,4 +210,36 @@ public class PedidoDAO {
         System.out.println("Pedido buscado com sucesso");
         return ListaRetorno;
     }
+    
+    public int quantPedidos(){
+        PreparedStatement instrucao;
+        ResultSet res;
+        ArrayList <Pedido> ListaRetorno = new ArrayList();
+        
+        String codigo = "select * from Pedido";
+
+        try{
+            instrucao = this.conexao.prepareStatement(codigo);
+            res = instrucao.executeQuery();
+            while(res.next()){
+                Pedido pedido = new Pedido();
+                pedido.setId_pedido(res.getInt("id_pedido"));
+                pedido.setFk_cpf(res.getString("fk_cpf"));
+                
+                Timestamp tempo = res.getTimestamp("data_pedido");
+                pedido.setdata_pedido(tempo.toLocalDateTime());
+                
+                pedido.setPrazoEntrega(res.getInt("prazoEntrega"));
+
+                
+                ListaRetorno.add(pedido);
+            }
+            
+            res.close();
+            instrucao.close();
+        }catch(SQLException e){
+            System.out.println("Erro ao tentar recuperar a lista "+e.toString());
+        }
+        return (ListaRetorno.size());
+    }
 }

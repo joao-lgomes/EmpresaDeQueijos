@@ -169,4 +169,35 @@ public class Queijo_PedidoDAO {
         }
     
     }
+    
+    public int quant_QP(){
+        PreparedStatement instrucao;
+        ResultSet res;
+        ArrayList <Queijo_Pedido> ListaRetorno = new ArrayList();
+        
+        String codigo = "select * from Queijo_Pedido";
+
+        try{
+            instrucao = this.conexao.prepareStatement(codigo);
+            res = instrucao.executeQuery();
+            while(res.next()){
+                Queijo_Pedido qp = new Queijo_Pedido();
+                qp.setFk_id_queijo(res.getInt("id_queijo_pedido"));
+                qp.setFk_id_pedido(res.getInt("fk_id_pedido"));
+                
+                qp.setFk_id_queijo(res.getInt("fk_id_queijo"));
+                
+                qp.setQuantidade(res.getInt("quantidade"));
+
+                
+                ListaRetorno.add(qp);
+            }
+            
+            res.close();
+            instrucao.close();
+        }catch(SQLException e){
+            System.out.println("Erro ao tentar recuperar a lista "+e.toString());
+        }
+        return (ListaRetorno.size());
+    }
 }

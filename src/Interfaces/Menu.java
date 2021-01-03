@@ -11,14 +11,13 @@ import java.util.logging.Logger;
 import javax.swing.table.DefaultTableModel;
 
 public class Menu extends javax.swing.JFrame {
-
-    
-    public Menu() {
+   
+    public Menu() throws SQLException, ClassNotFoundException {
         initComponents();
         limpar();
         
         jCB_EscolhasCliente.removeAllItems();
-        jCB_EscolhasCliente.addItem("-----------------------------------------------------------");
+        jCB_EscolhasCliente.addItem("----------------------------------------------------------------------");
         jCB_EscolhasCliente.addItem("1- Cadastrar Cliente");
         jCB_EscolhasCliente.addItem("2- Mostrar Clientes Cadastrados");
         jCB_EscolhasCliente.addItem("3- Alterar Dados do Cliente");
@@ -26,7 +25,7 @@ public class Menu extends javax.swing.JFrame {
         jCB_EscolhasCliente.addItem("5- Buscar Clientes");
         
         jCB_EscolhasQueijo.removeAllItems();
-        jCB_EscolhasQueijo.addItem("-----------------------------------------------------------");
+        jCB_EscolhasQueijo.addItem("----------------------------------------------------------------------");
         jCB_EscolhasQueijo.addItem("1- Inserir Queijo");
         jCB_EscolhasQueijo.addItem("2- Mostrar Queijos Cadastrados");
         jCB_EscolhasQueijo.addItem("3- Alterar Queijo");
@@ -36,7 +35,7 @@ public class Menu extends javax.swing.JFrame {
         jCB_EscolhasQueijo.addItem("7- Mostrar o queijo mais caro");
         
         jCB_EscolhasPedido.removeAllItems();
-        jCB_EscolhasPedido.addItem("-----------------------------------------------------------");
+        jCB_EscolhasPedido.addItem("----------------------------------------------------------------------");
         jCB_EscolhasPedido.addItem("1- Inserir Novo Pedido");
         jCB_EscolhasPedido.addItem("2- Inserir um Pedido de Queijo a um Pedido");
         jCB_EscolhasPedido.addItem("3- Alterar Um Pedido Realizado");
@@ -46,6 +45,8 @@ public class Menu extends javax.swing.JFrame {
         jCB_EscolhasPedido.addItem("7- Mostrar Pedidos");
         jCB_EscolhasPedido.addItem("8- Buscar um Certo Pedido");
         jCB_EscolhasPedido.addItem("9- Buscar o Pedido Mais Antigo De Dado Cliente");
+        
+        inicializa_barras_laterais();
     }
 
     /**
@@ -84,6 +85,21 @@ public class Menu extends javax.swing.JFrame {
         Buscar_Pedidos.setVisible(false);
         Pedido_MaisAntigo.setVisible(false);
         Mostrar_Qtd2.setVisible(false);
+    }
+    
+    private void inicializa_barras_laterais() throws SQLException, ClassNotFoundException{
+        ClienteDAO clienteDAO = new ClienteDAO();
+        QueijoDAO queijoDAO = new QueijoDAO();
+        PedidoDAO pedidoDAO = new PedidoDAO();
+        Queijo_PedidoDAO queijoPedidoDAO = new Queijo_PedidoDAO();
+        
+        JTF_NumClientes6.setText(String.valueOf(clienteDAO.quantClientes()));
+        JTF_NUmQueijos6.setText(String.valueOf(queijoDAO.quantQueijos()));
+        JTF_NumPedidos6.setText(String.valueOf(pedidoDAO.quantPedidos()));
+        
+        JTF_NumClientes7.setText(String.valueOf(clienteDAO.quantClientes()));
+        JTF_NUmQueijos7.setText(String.valueOf(queijoDAO.quantQueijos()));
+        JTF_NumPedidos7.setText(String.valueOf(pedidoDAO.quantPedidos()));
     }
     
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -851,11 +867,11 @@ public class Menu extends javax.swing.JFrame {
             .addComponent(jLb_Escolha_Opcao, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jLb_Topo_menu, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Menu_PrincipalLayout.createSequentialGroup()
-                .addGap(216, 216, 216)
-                .addComponent(jCB_EscolhasCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 635, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(160, 160, 160)
+                .addComponent(jCB_EscolhasCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 670, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
                 .addComponent(JB_acaoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(168, Short.MAX_VALUE))
         );
         Menu_PrincipalLayout.setVerticalGroup(
             Menu_PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -876,7 +892,9 @@ public class Menu extends javax.swing.JFrame {
         JLb_NumClientes6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         JLb_NumClientes6.setText("Nosso atual número de clientes é:");
 
-        JTF_NumClientes6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JTF_NumClientes6.setEditable(false);
+        JTF_NumClientes6.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        JTF_NumClientes6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         JTF_NumClientes6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 JTF_NumClientes6JTF_NumClientesActionPerformed(evt);
@@ -887,7 +905,9 @@ public class Menu extends javax.swing.JFrame {
         JLB_NumQueijos6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         JLB_NumQueijos6.setText("Nossa quantidade de queijos é:");
 
-        JTF_NUmQueijos6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JTF_NUmQueijos6.setEditable(false);
+        JTF_NUmQueijos6.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        JTF_NUmQueijos6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         JTF_NUmQueijos6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 JTF_NUmQueijos6JTF_NUmQueijosActionPerformed(evt);
@@ -898,7 +918,9 @@ public class Menu extends javax.swing.JFrame {
         JLB_NumPedidos6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         JLB_NumPedidos6.setText("Nosso número de pedidos é:");
 
-        JTF_NumPedidos6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JTF_NumPedidos6.setEditable(false);
+        JTF_NumPedidos6.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        JTF_NumPedidos6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         JTF_NumPedidos6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 JTF_NumPedidos6JTF_NumPedidosActionPerformed(evt);
@@ -2767,9 +2789,9 @@ public class Menu extends javax.swing.JFrame {
             .addComponent(jLb_Escolha_Opcao1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jLb_Topo_menu1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Menu_Principal1Layout.createSequentialGroup()
-                .addGap(216, 216, 216)
-                .addComponent(jCB_EscolhasQueijo, javax.swing.GroupLayout.PREFERRED_SIZE, 635, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(161, 161, 161)
+                .addComponent(jCB_EscolhasQueijo, javax.swing.GroupLayout.PREFERRED_SIZE, 670, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38)
                 .addComponent(JB_acaoQueijo, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -2792,7 +2814,9 @@ public class Menu extends javax.swing.JFrame {
         JLb_NumClientes7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         JLb_NumClientes7.setText("Nosso atual número de clientes é:");
 
-        JTF_NumClientes7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JTF_NumClientes7.setEditable(false);
+        JTF_NumClientes7.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        JTF_NumClientes7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         JTF_NumClientes7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 JTF_NumClientes7JTF_NumClientesActionPerformed(evt);
@@ -2803,7 +2827,9 @@ public class Menu extends javax.swing.JFrame {
         JLB_NumQueijos7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         JLB_NumQueijos7.setText("Nossa quantidade de queijos é:");
 
-        JTF_NUmQueijos7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JTF_NUmQueijos7.setEditable(false);
+        JTF_NUmQueijos7.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        JTF_NUmQueijos7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         JTF_NUmQueijos7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 JTF_NUmQueijos7JTF_NUmQueijosActionPerformed(evt);
@@ -2814,7 +2840,9 @@ public class Menu extends javax.swing.JFrame {
         JLB_NumPedidos7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         JLB_NumPedidos7.setText("Nosso número de pedidos é:");
 
-        JTF_NumPedidos7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JTF_NumPedidos7.setEditable(false);
+        JTF_NumPedidos7.setFont(new java.awt.Font("Tahoma", 0, 26)); // NOI18N
+        JTF_NumPedidos7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         JTF_NumPedidos7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 JTF_NumPedidos7JTF_NumPedidosActionPerformed(evt);
@@ -4298,9 +4326,9 @@ public class Menu extends javax.swing.JFrame {
             .addComponent(jLb_Escolha_Opcao2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jLb_Topo_menu2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Menu_Principal2Layout.createSequentialGroup()
-                .addGap(216, 216, 216)
-                .addComponent(jCB_EscolhasPedido, javax.swing.GroupLayout.PREFERRED_SIZE, 635, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(161, 161, 161)
+                .addComponent(jCB_EscolhasPedido, javax.swing.GroupLayout.PREFERRED_SIZE, 670, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38)
                 .addComponent(JB_acaoPedido, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -8054,7 +8082,13 @@ public class Menu extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Menu().setVisible(true);
+                try {
+                    new Menu().setVisible(true);
+                } catch (SQLException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         });
     }

@@ -262,11 +262,11 @@
                       <Component id="jLb_Escolha_Opcao" alignment="1" max="32767" attributes="0"/>
                       <Component id="jLb_Topo_menu" alignment="1" max="32767" attributes="0"/>
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="-2" pref="216" max="-2" attributes="0"/>
-                          <Component id="jCB_EscolhasCliente" min="-2" pref="635" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="160" max="-2" attributes="0"/>
+                          <Component id="jCB_EscolhasCliente" min="-2" pref="670" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                           <Component id="JB_acaoCliente" min="-2" pref="247" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace pref="168" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -457,9 +457,11 @@
                         </Component>
                         <Component class="javax.swing.JTextField" name="JTF_NumClientes6">
                           <Properties>
+                            <Property name="editable" type="boolean" value="false"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Tahoma" size="24" style="0"/>
+                              <Font name="Tahoma" size="26" style="0"/>
                             </Property>
+                            <Property name="horizontalAlignment" type="int" value="0"/>
                           </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JTF_NumClientes6JTF_NumClientesActionPerformed"/>
@@ -476,9 +478,11 @@
                         </Component>
                         <Component class="javax.swing.JTextField" name="JTF_NUmQueijos6">
                           <Properties>
+                            <Property name="editable" type="boolean" value="false"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Tahoma" size="24" style="0"/>
+                              <Font name="Tahoma" size="26" style="0"/>
                             </Property>
+                            <Property name="horizontalAlignment" type="int" value="0"/>
                           </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JTF_NUmQueijos6JTF_NUmQueijosActionPerformed"/>
@@ -495,9 +499,11 @@
                         </Component>
                         <Component class="javax.swing.JTextField" name="JTF_NumPedidos6">
                           <Properties>
+                            <Property name="editable" type="boolean" value="false"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Tahoma" size="24" style="0"/>
+                              <Font name="Tahoma" size="26" style="0"/>
                             </Property>
+                            <Property name="horizontalAlignment" type="int" value="0"/>
                           </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JTF_NumPedidos6JTF_NumPedidosActionPerformed"/>
@@ -3478,9 +3484,9 @@
                       <Component id="jLb_Escolha_Opcao1" alignment="1" max="32767" attributes="0"/>
                       <Component id="jLb_Topo_menu1" alignment="1" max="32767" attributes="0"/>
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="-2" pref="216" max="-2" attributes="0"/>
-                          <Component id="jCB_EscolhasQueijo" min="-2" pref="635" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="161" max="-2" attributes="0"/>
+                          <Component id="jCB_EscolhasQueijo" min="-2" pref="670" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                           <Component id="JB_acaoQueijo" min="-2" pref="247" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
@@ -3673,9 +3679,11 @@
                         </Component>
                         <Component class="javax.swing.JTextField" name="JTF_NumClientes7">
                           <Properties>
+                            <Property name="editable" type="boolean" value="false"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Tahoma" size="24" style="0"/>
+                              <Font name="Tahoma" size="26" style="0"/>
                             </Property>
+                            <Property name="horizontalAlignment" type="int" value="0"/>
                           </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JTF_NumClientes7JTF_NumClientesActionPerformed"/>
@@ -3692,9 +3700,11 @@
                         </Component>
                         <Component class="javax.swing.JTextField" name="JTF_NUmQueijos7">
                           <Properties>
+                            <Property name="editable" type="boolean" value="false"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Tahoma" size="24" style="0"/>
+                              <Font name="Tahoma" size="26" style="0"/>
                             </Property>
+                            <Property name="horizontalAlignment" type="int" value="0"/>
                           </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JTF_NUmQueijos7JTF_NUmQueijosActionPerformed"/>
@@ -3711,9 +3721,11 @@
                         </Component>
                         <Component class="javax.swing.JTextField" name="JTF_NumPedidos7">
                           <Properties>
+                            <Property name="editable" type="boolean" value="false"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Tahoma" size="24" style="0"/>
+                              <Font name="Tahoma" size="26" style="0"/>
                             </Property>
+                            <Property name="horizontalAlignment" type="int" value="0"/>
                           </Properties>
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JTF_NumPedidos7JTF_NumPedidosActionPerformed"/>
@@ -6005,9 +6017,9 @@
                       <Component id="jLb_Escolha_Opcao2" alignment="1" max="32767" attributes="0"/>
                       <Component id="jLb_Topo_menu2" alignment="1" max="32767" attributes="0"/>
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="-2" pref="216" max="-2" attributes="0"/>
-                          <Component id="jCB_EscolhasPedido" min="-2" pref="635" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="161" max="-2" attributes="0"/>
+                          <Component id="jCB_EscolhasPedido" min="-2" pref="670" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                           <Component id="JB_acaoPedido" min="-2" pref="247" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
