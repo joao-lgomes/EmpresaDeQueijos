@@ -135,7 +135,7 @@ public class ClienteDAO {
         }
     }
     
-    public ArrayList<Cliente> getAll(int ordenar ){
+    public ArrayList<Cliente> getAll(){
         PreparedStatement instrucao;
         ResultSet res;
         ArrayList <Cliente> ListaRetorno = new ArrayList();

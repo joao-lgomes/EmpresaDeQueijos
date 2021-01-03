@@ -4,7 +4,9 @@ import Classes.*;
 import DAO.*;
 
 import java.sql.SQLException;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Scanner;
 import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -97,9 +99,71 @@ public class Menu extends javax.swing.JFrame {
         JTF_NUmQueijos6.setText(String.valueOf(queijoDAO.quantQueijos()));
         JTF_NumPedidos6.setText(String.valueOf(pedidoDAO.quantPedidos()));
         
+        ArrayList <Cliente> ListaClientes = clienteDAO.getAll();
+        
+        DefaultTableModel model;
+        model = new DefaultTableModel(new String[] {"cpf", "nome", "NumCartao"}, 0);
+        
+        ListaClientes.forEach((Cliente cliente) -> {
+                        String cpf = cliente.getCpf();
+                        String nome = cliente.getNome();
+                        String NumCartao = cliente.getNumCartao();
+                        Vector row = new Vector();
+                        row.add(cpf);
+                        row.add(nome);
+                        row.add(NumCartao);
+                        model.addRow(row);
+                    });
+
+                    JTB_Clientes1.setModel(model);
+        
+        
         JTF_NumClientes7.setText(String.valueOf(clienteDAO.quantClientes()));
         JTF_NUmQueijos7.setText(String.valueOf(queijoDAO.quantQueijos()));
         JTF_NumPedidos7.setText(String.valueOf(pedidoDAO.quantPedidos()));
+        
+        ArrayList <Queijo> ListaQueijos = queijoDAO.getAll();
+        
+        DefaultTableModel model2;
+        model2 = new DefaultTableModel(new String[] {"id_queijo", "peso", "valorKG", "tipo", "tempIdeal"}, 0);
+        
+        ListaQueijos.forEach((Queijo queijo) -> {
+                        int id_queijo = queijo.getId_queijo();
+                        float peso = queijo.getPeso();
+                        float valorKG = queijo.getValorKG();
+                        String tipo = queijo.getTipo();
+                        float tempIdeal = queijo.getTempIdeal();
+                        Vector row2 = new Vector();
+                        row2.add(id_queijo);
+                        row2.add(peso);
+                        row2.add(valorKG);
+                        row2.add(tipo);
+                        row2.add(tempIdeal);
+                        model2.addRow(row2);
+                    });
+
+        JTB_Queijos.setModel(model2);
+        Tabela_Clientes.setModel(model);
+        Tabela_Queijos.setModel(model2);
+        
+        ArrayList <Pedido> ListaPedidos = pedidoDAO.getAll();
+        
+        DefaultTableModel model3;
+        model3 = new DefaultTableModel(new String[] {"id_pedido", "fk_cpf", "data_pedido", "prazoEntrega"}, 0);
+        
+        ListaPedidos.forEach((Pedido pedido) -> {
+                        int id_pedido = pedido.getId_pedido();
+                        String fk_cpf = pedido.getFk_cpf();
+                        LocalDateTime data_pedido = pedido.getdata_pedido();
+                        int prazoEntrega = pedido.getPrazoEntrega();
+                        Vector row3 = new Vector();
+                        row3.add(id_pedido);
+                        row3.add(fk_cpf);
+                        row3.add(data_pedido);
+                        row3.add(prazoEntrega);
+                        model3.addRow(row3);
+                    });
+        Tabela_Pedidos.setModel(model3);
     }
     
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -457,8 +521,8 @@ public class Menu extends javax.swing.JFrame {
         jScrollPane9 = new javax.swing.JScrollPane();
         Tabela_Clientes = new javax.swing.JTable();
         Queijos = new javax.swing.JPanel();
-        Tabela_Queijos = new javax.swing.JScrollPane();
-        jTable5 = new javax.swing.JTable();
+        JScrollPane_Queijos = new javax.swing.JScrollPane();
+        Tabela_Queijos = new javax.swing.JTable();
         jTabbedPane2 = new javax.swing.JTabbedPane();
         Pedidos = new javax.swing.JPanel();
         jScrollPane20 = new javax.swing.JScrollPane();
@@ -974,6 +1038,7 @@ public class Menu extends javax.swing.JFrame {
 
         jScrollPane6.setViewportBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        JTB_Clientes1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         JTB_Clientes1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -2896,6 +2961,7 @@ public class Menu extends javax.swing.JFrame {
 
         jScrollPane7.setViewportBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        JTB_Queijos.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         JTB_Queijos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -4345,8 +4411,9 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
+        jTabbedPane1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
+        Tabela_Clientes.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         Tabela_Clientes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -4368,12 +4435,13 @@ public class Menu extends javax.swing.JFrame {
         );
         ClientesLayout.setVerticalGroup(
             ClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane9, javax.swing.GroupLayout.DEFAULT_SIZE, 233, Short.MAX_VALUE)
+            .addComponent(jScrollPane9, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Clientes", Clientes);
 
-        jTable5.setModel(new javax.swing.table.DefaultTableModel(
+        Tabela_Queijos.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Tabela_Queijos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -4384,17 +4452,17 @@ public class Menu extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        Tabela_Queijos.setViewportView(jTable5);
+        JScrollPane_Queijos.setViewportView(Tabela_Queijos);
 
         javax.swing.GroupLayout QueijosLayout = new javax.swing.GroupLayout(Queijos);
         Queijos.setLayout(QueijosLayout);
         QueijosLayout.setHorizontalGroup(
             QueijosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Tabela_Queijos, javax.swing.GroupLayout.DEFAULT_SIZE, 405, Short.MAX_VALUE)
+            .addComponent(JScrollPane_Queijos, javax.swing.GroupLayout.DEFAULT_SIZE, 405, Short.MAX_VALUE)
         );
         QueijosLayout.setVerticalGroup(
             QueijosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Tabela_Queijos, javax.swing.GroupLayout.DEFAULT_SIZE, 233, Short.MAX_VALUE)
+            .addComponent(JScrollPane_Queijos, javax.swing.GroupLayout.DEFAULT_SIZE, 235, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Queijos", Queijos);
@@ -8336,6 +8404,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel JP_Dashboard;
     private javax.swing.JPanel JP_Pedidos;
     private javax.swing.JPanel JP_Queijos;
+    private javax.swing.JScrollPane JScrollPane_Queijos;
     private javax.swing.JTable JTB_Clientes1;
     private javax.swing.JTable JTB_Queijos;
     private javax.swing.JTextField JTF_NUmQueijos6;
@@ -8577,7 +8646,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JList<String> TabelaEscolhaClientes1;
     private javax.swing.JTable Tabela_Clientes;
     private javax.swing.JTable Tabela_Pedidos;
-    private javax.swing.JScrollPane Tabela_Queijos;
+    private javax.swing.JTable Tabela_Queijos;
     private javax.swing.JTable Tabela_QueijosPedidos;
     private javax.swing.JPanel TelCelPan;
     private javax.swing.JPanel TelCelPan1;
@@ -8732,7 +8801,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
-    private javax.swing.JTable jTable5;
     private javax.swing.JTable jTable6;
     private javax.swing.JTable jTb_Pedidos;
     private javax.swing.JTable jTb_QueijosPedidos;
