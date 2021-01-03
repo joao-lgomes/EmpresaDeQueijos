@@ -350,15 +350,15 @@ public class Menu extends javax.swing.JFrame {
         BuscaPanBusca1 = new javax.swing.JPanel();
         BuscaPan7 = new javax.swing.JPanel();
         Jlb_BuscaCPF5 = new javax.swing.JLabel();
-        JTf_BuscaCPF5 = new javax.swing.JTextField();
+        JTf_BuscaId = new javax.swing.JTextField();
         JLb_BuscaNome5 = new javax.swing.JLabel();
-        JTf_BuscaNome5 = new javax.swing.JTextField();
-        Jbt_LimpaCpf5 = new javax.swing.JButton();
-        JBt_BuscaCPF5 = new javax.swing.JButton();
-        JBt_LimpaNome5 = new javax.swing.JButton();
-        JBt_BuscaNome5 = new javax.swing.JButton();
+        JTf_BuscaTipo = new javax.swing.JTextField();
+        Jbt_LimpaId = new javax.swing.JButton();
+        JBt_BuscaId = new javax.swing.JButton();
+        JBt_LimpaTipo = new javax.swing.JButton();
+        JBt_BuscaTipo = new javax.swing.JButton();
         jScrollPane11 = new javax.swing.JScrollPane();
-        ListaCpf_Nome5 = new javax.swing.JList<>();
+        ListaId_Tipo = new javax.swing.JList<>();
         DadosPanBusca1 = new javax.swing.JPanel();
         jScrollPane12 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
@@ -3654,39 +3654,39 @@ public class Menu extends javax.swing.JFrame {
 
         jLb_Topo_menuInserir7.setFont(new java.awt.Font("Tahoma", 1, 29)); // NOI18N
         jLb_Topo_menuInserir7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLb_Topo_menuInserir7.setText("BUSCAR CLIENTE");
+        jLb_Topo_menuInserir7.setText("PROCURAR QUEIJOS");
         jLb_Topo_menuInserir7.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jLayeredPane15.setLayout(new javax.swing.OverlayLayout(jLayeredPane15));
 
         Jlb_BuscaCPF5.setFont(new java.awt.Font("Tahoma", 0, 27)); // NOI18N
         Jlb_BuscaCPF5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Jlb_BuscaCPF5.setText("Buscar por CPF");
+        Jlb_BuscaCPF5.setText("Buscar pelo ID do queijo");
 
-        JTf_BuscaCPF5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        JTf_BuscaId.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
         JLb_BuscaNome5.setFont(new java.awt.Font("Tahoma", 0, 27)); // NOI18N
         JLb_BuscaNome5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        JLb_BuscaNome5.setText("BUSCAR POR NOME");
+        JLb_BuscaNome5.setText("Buscar pelo tipo do queijo");
 
-        JTf_BuscaNome5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        JTf_BuscaTipo.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
-        Jbt_LimpaCpf5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        Jbt_LimpaCpf5.setText("LIMPAR");
+        Jbt_LimpaId.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        Jbt_LimpaId.setText("LIMPAR");
 
-        JBt_BuscaCPF5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        JBt_BuscaCPF5.setText("BUSCAR");
-        JBt_BuscaCPF5.addActionListener(new java.awt.event.ActionListener() {
+        JBt_BuscaId.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JBt_BuscaId.setText("BUSCAR");
+        JBt_BuscaId.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JBt_BuscaCPF5ActionPerformed(evt);
+                JBt_BuscaIdActionPerformed(evt);
             }
         });
 
-        JBt_LimpaNome5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        JBt_LimpaNome5.setText("LIMPAR");
+        JBt_LimpaTipo.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JBt_LimpaTipo.setText("LIMPAR");
 
-        JBt_BuscaNome5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        JBt_BuscaNome5.setText("BUSCAR");
+        JBt_BuscaTipo.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JBt_BuscaTipo.setText("BUSCAR");
 
         javax.swing.GroupLayout BuscaPan7Layout = new javax.swing.GroupLayout(BuscaPan7);
         BuscaPan7.setLayout(BuscaPan7Layout);
@@ -3698,12 +3698,12 @@ public class Menu extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, BuscaPan7Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(BuscaPan7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(JTf_BuscaCPF5)
+                            .addComponent(JTf_BuscaId)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BuscaPan7Layout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(Jbt_LimpaCpf5, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Jbt_LimpaId, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(JBt_BuscaCPF5, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(JBt_BuscaId, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(35, 35, 35)))))
                 .addGroup(BuscaPan7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(BuscaPan7Layout.createSequentialGroup()
@@ -3711,13 +3711,13 @@ public class Menu extends javax.swing.JFrame {
                         .addGroup(BuscaPan7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(JLb_BuscaNome5, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(BuscaPan7Layout.createSequentialGroup()
-                                .addComponent(JTf_BuscaNome5)
+                                .addComponent(JTf_BuscaTipo)
                                 .addContainerGap())))
                     .addGroup(BuscaPan7Layout.createSequentialGroup()
                         .addGap(64, 64, 64)
-                        .addComponent(JBt_LimpaNome5, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(JBt_LimpaTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(JBt_BuscaNome5, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(JBt_BuscaTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
         BuscaPan7Layout.setVerticalGroup(
@@ -3729,24 +3729,24 @@ public class Menu extends javax.swing.JFrame {
                     .addComponent(JLb_BuscaNome5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(BuscaPan7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(JTf_BuscaCPF5, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
-                    .addComponent(JTf_BuscaNome5))
+                    .addComponent(JTf_BuscaId, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
+                    .addComponent(JTf_BuscaTipo))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(BuscaPan7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(BuscaPan7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(Jbt_LimpaCpf5, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(JBt_BuscaCPF5, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(JBt_LimpaNome5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(JBt_BuscaNome5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(Jbt_LimpaId, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(JBt_BuscaId, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(JBt_LimpaTipo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(JBt_BuscaTipo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(0, 30, Short.MAX_VALUE))
         );
 
-        ListaCpf_Nome5.setModel(new javax.swing.AbstractListModel<String>() {
+        ListaId_Tipo.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane11.setViewportView(ListaCpf_Nome5);
+        jScrollPane11.setViewportView(ListaId_Tipo);
 
         javax.swing.GroupLayout BuscaPanBusca1Layout = new javax.swing.GroupLayout(BuscaPanBusca1);
         BuscaPanBusca1.setLayout(BuscaPanBusca1Layout);
@@ -4347,9 +4347,9 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_JBt_Peso_CrescenteActionPerformed
 
-    private void JBt_BuscaCPF5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaCPF5ActionPerformed
+    private void JBt_BuscaIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaIdActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_JBt_BuscaCPF5ActionPerformed
+    }//GEN-LAST:event_JBt_BuscaIdActionPerformed
 
     private void VoltarDashboard_BT1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VoltarDashboard_BT1ActionPerformed
         // TODO add your handling code here:
@@ -4526,13 +4526,13 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton JBt_BuscaCPF;
     private javax.swing.JButton JBt_BuscaCPF1;
     private javax.swing.JButton JBt_BuscaCPF2;
-    private javax.swing.JButton JBt_BuscaCPF5;
+    private javax.swing.JButton JBt_BuscaId;
     private javax.swing.JButton JBt_BuscaIdQueijo;
     private javax.swing.JButton JBt_BuscaIdQueijo1;
     private javax.swing.JButton JBt_BuscaNome;
     private javax.swing.JButton JBt_BuscaNome1;
     private javax.swing.JButton JBt_BuscaNome2;
-    private javax.swing.JButton JBt_BuscaNome5;
+    private javax.swing.JButton JBt_BuscaTipo;
     private javax.swing.JButton JBt_Cpf_Crescente;
     private javax.swing.JButton JBt_Cpf_Decrescente;
     private javax.swing.JButton JBt_Id_Crescente;
@@ -4540,7 +4540,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton JBt_LimpaNome;
     private javax.swing.JButton JBt_LimpaNome1;
     private javax.swing.JButton JBt_LimpaNome2;
-    private javax.swing.JButton JBt_LimpaNome5;
+    private javax.swing.JButton JBt_LimpaTipo;
     private javax.swing.JButton JBt_Nome_Crescente;
     private javax.swing.JButton JBt_Nome_Decrescente;
     private javax.swing.JButton JBt_Peso_Crescente;
@@ -4585,17 +4585,17 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JTextField JTf_BuscaCPF;
     private javax.swing.JTextField JTf_BuscaCPF1;
     private javax.swing.JTextField JTf_BuscaCPF2;
-    private javax.swing.JTextField JTf_BuscaCPF5;
+    private javax.swing.JTextField JTf_BuscaId;
     private javax.swing.JTextField JTf_BuscaIdQueijo;
     private javax.swing.JTextField JTf_BuscaIdQueijo1;
     private javax.swing.JTextField JTf_BuscaNome;
     private javax.swing.JTextField JTf_BuscaNome1;
     private javax.swing.JTextField JTf_BuscaNome2;
-    private javax.swing.JTextField JTf_BuscaNome5;
+    private javax.swing.JTextField JTf_BuscaTipo;
     private javax.swing.JButton Jbt_LimpaCpf;
     private javax.swing.JButton Jbt_LimpaCpf1;
     private javax.swing.JButton Jbt_LimpaCpf2;
-    private javax.swing.JButton Jbt_LimpaCpf5;
+    private javax.swing.JButton Jbt_LimpaId;
     private javax.swing.JButton Jbt_LimpaIdQueijo;
     private javax.swing.JButton Jbt_LimpaIdQueijo1;
     private javax.swing.JLabel Jlb_BuscaCPF;
@@ -4660,9 +4660,9 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JList<String> ListaCpf_Nome;
     private javax.swing.JList<String> ListaCpf_Nome1;
     private javax.swing.JList<String> ListaCpf_Nome2;
-    private javax.swing.JList<String> ListaCpf_Nome5;
     private javax.swing.JList<String> ListaIdQueijos_tipo;
     private javax.swing.JList<String> ListaIdQueijos_tipo1;
+    private javax.swing.JList<String> ListaId_Tipo;
     private javax.swing.JPanel Menu_Principal;
     private javax.swing.JPanel Menu_Principal1;
     private javax.swing.JPanel Mostrar_Clientes;
