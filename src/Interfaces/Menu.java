@@ -202,6 +202,26 @@ public class Menu extends javax.swing.JFrame {
         JBt_Cpf_Decrescente = new javax.swing.JButton();
         JBt_Cpf_Crescente = new javax.swing.JButton();
         Buscar_Cliente = new javax.swing.JPanel();
+        jLb_Topo_menuInserir3 = new javax.swing.JLabel();
+        jLayeredPane5 = new javax.swing.JLayeredPane();
+        BuscaPanBusca = new javax.swing.JPanel();
+        BuscaPan4 = new javax.swing.JPanel();
+        Jlb_BuscaCPF2 = new javax.swing.JLabel();
+        JTf_BuscaCPF2 = new javax.swing.JTextField();
+        JLb_BuscaNome2 = new javax.swing.JLabel();
+        JTf_BuscaNome2 = new javax.swing.JTextField();
+        Jbt_LimpaCpf2 = new javax.swing.JButton();
+        JBt_BuscaCPF2 = new javax.swing.JButton();
+        JBt_LimpaNome2 = new javax.swing.JButton();
+        JBt_BuscaNome2 = new javax.swing.JButton();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        ListaCpf_Nome2 = new javax.swing.JList<>();
+        DadosPanBusca = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        ButtonsPan4 = new javax.swing.JPanel();
+        VoltarDashboard_BT = new javax.swing.JButton();
+        BuscarNovamente_BT = new javax.swing.JButton();
         Mostrar_Qtd = new javax.swing.JPanel();
         JP_Queijos = new javax.swing.JPanel();
         JP_Pedidos = new javax.swing.JPanel();
@@ -1971,15 +1991,209 @@ public class Menu extends javax.swing.JFrame {
 
         Centro.add(Mostrar_Clientes);
 
+        jLb_Topo_menuInserir3.setFont(new java.awt.Font("Tahoma", 1, 29)); // NOI18N
+        jLb_Topo_menuInserir3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLb_Topo_menuInserir3.setText("BUSCAR CLIENTE");
+        jLb_Topo_menuInserir3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+
+        jLayeredPane5.setLayout(new javax.swing.OverlayLayout(jLayeredPane5));
+
+        Jlb_BuscaCPF2.setFont(new java.awt.Font("Tahoma", 0, 27)); // NOI18N
+        Jlb_BuscaCPF2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Jlb_BuscaCPF2.setText("Buscar por CPF");
+
+        JTf_BuscaCPF2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+
+        JLb_BuscaNome2.setFont(new java.awt.Font("Tahoma", 0, 27)); // NOI18N
+        JLb_BuscaNome2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLb_BuscaNome2.setText("BUSCAR POR NOME");
+
+        JTf_BuscaNome2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+
+        Jbt_LimpaCpf2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        Jbt_LimpaCpf2.setText("LIMPAR");
+
+        JBt_BuscaCPF2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JBt_BuscaCPF2.setText("BUSCAR");
+        JBt_BuscaCPF2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_BuscaCPF2ActionPerformed(evt);
+            }
+        });
+
+        JBt_LimpaNome2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JBt_LimpaNome2.setText("LIMPAR");
+
+        JBt_BuscaNome2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JBt_BuscaNome2.setText("BUSCAR");
+
+        javax.swing.GroupLayout BuscaPan4Layout = new javax.swing.GroupLayout(BuscaPan4);
+        BuscaPan4.setLayout(BuscaPan4Layout);
+        BuscaPan4Layout.setHorizontalGroup(
+            BuscaPan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BuscaPan4Layout.createSequentialGroup()
+                .addGroup(BuscaPan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(Jlb_BuscaCPF2, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, BuscaPan4Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(BuscaPan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(JTf_BuscaCPF2)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BuscaPan4Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(Jbt_LimpaCpf2, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(JBt_BuscaCPF2, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(35, 35, 35)))))
+                .addGroup(BuscaPan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(BuscaPan4Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                        .addGroup(BuscaPan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(JLb_BuscaNome2, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(BuscaPan4Layout.createSequentialGroup()
+                                .addComponent(JTf_BuscaNome2)
+                                .addContainerGap())))
+                    .addGroup(BuscaPan4Layout.createSequentialGroup()
+                        .addGap(64, 64, 64)
+                        .addComponent(JBt_LimpaNome2, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(JBt_BuscaNome2, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))))
+        );
+        BuscaPan4Layout.setVerticalGroup(
+            BuscaPan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BuscaPan4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(BuscaPan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Jlb_BuscaCPF2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JLb_BuscaNome2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(BuscaPan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(JTf_BuscaCPF2, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
+                    .addComponent(JTf_BuscaNome2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(BuscaPan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(BuscaPan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(Jbt_LimpaCpf2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(JBt_BuscaCPF2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(JBt_LimpaNome2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(JBt_BuscaNome2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 30, Short.MAX_VALUE))
+        );
+
+        ListaCpf_Nome2.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane4.setViewportView(ListaCpf_Nome2);
+
+        javax.swing.GroupLayout BuscaPanBuscaLayout = new javax.swing.GroupLayout(BuscaPanBusca);
+        BuscaPanBusca.setLayout(BuscaPanBuscaLayout);
+        BuscaPanBuscaLayout.setHorizontalGroup(
+            BuscaPanBuscaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(BuscaPan4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jScrollPane4)
+        );
+        BuscaPanBuscaLayout.setVerticalGroup(
+            BuscaPanBuscaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BuscaPanBuscaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(BuscaPan4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 466, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jLayeredPane5.add(BuscaPanBusca);
+
+        DadosPanBusca.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        VoltarDashboard_BT.setFont(new java.awt.Font("Tahoma", 0, 28)); // NOI18N
+        VoltarDashboard_BT.setText("VOLTAR AO DASHBOARD");
+        VoltarDashboard_BT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VoltarDashboard_BTActionPerformed(evt);
+            }
+        });
+
+        BuscarNovamente_BT.setFont(new java.awt.Font("Tahoma", 0, 28)); // NOI18N
+        BuscarNovamente_BT.setText("BUSCAR OUTRO CLIENTE");
+        BuscarNovamente_BT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BuscarNovamente_BTActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout ButtonsPan4Layout = new javax.swing.GroupLayout(ButtonsPan4);
+        ButtonsPan4.setLayout(ButtonsPan4Layout);
+        ButtonsPan4Layout.setHorizontalGroup(
+            ButtonsPan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ButtonsPan4Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(VoltarDashboard_BT, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
+                .addComponent(BuscarNovamente_BT, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        ButtonsPan4Layout.setVerticalGroup(
+            ButtonsPan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ButtonsPan4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(ButtonsPan4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(BuscarNovamente_BT, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(VoltarDashboard_BT, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout DadosPanBuscaLayout = new javax.swing.GroupLayout(DadosPanBusca);
+        DadosPanBusca.setLayout(DadosPanBuscaLayout);
+        DadosPanBuscaLayout.setHorizontalGroup(
+            DadosPanBuscaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane1)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DadosPanBuscaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(ButtonsPan4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        DadosPanBuscaLayout.setVerticalGroup(
+            DadosPanBuscaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DadosPanBuscaLayout.createSequentialGroup()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 581, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ButtonsPan4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21))
+        );
+
+        jLayeredPane5.add(DadosPanBusca);
+
         javax.swing.GroupLayout Buscar_ClienteLayout = new javax.swing.GroupLayout(Buscar_Cliente);
         Buscar_Cliente.setLayout(Buscar_ClienteLayout);
         Buscar_ClienteLayout.setHorizontalGroup(
             Buscar_ClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 843, Short.MAX_VALUE)
+            .addGroup(Buscar_ClienteLayout.createSequentialGroup()
+                .addGroup(Buscar_ClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jLb_Topo_menuInserir3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLayeredPane5, javax.swing.GroupLayout.Alignment.LEADING))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         Buscar_ClienteLayout.setVerticalGroup(
             Buscar_ClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 729, Short.MAX_VALUE)
+            .addGroup(Buscar_ClienteLayout.createSequentialGroup()
+                .addComponent(jLb_Topo_menuInserir3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(9, 9, 9)
+                .addComponent(jLayeredPane5))
         );
 
         Centro.add(Buscar_Cliente);
@@ -2015,7 +2229,7 @@ public class Menu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(JP_ClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(Lateral, javax.swing.GroupLayout.PREFERRED_SIZE, 729, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Centro, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)))
+                    .addComponent(Centro, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
         );
 
         JTP_PainelGuias.addTab("Clientes", JP_Clientes);
@@ -2413,6 +2627,18 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_JBt_Cpf_CrescenteActionPerformed
 
+    private void JBt_BuscaCPF2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaCPF2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JBt_BuscaCPF2ActionPerformed
+
+    private void BuscarNovamente_BTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarNovamente_BTActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BuscarNovamente_BTActionPerformed
+
+    private void VoltarDashboard_BTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VoltarDashboard_BTActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_VoltarDashboard_BTActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2459,12 +2685,16 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JTextField Bairro_TF3;
     private javax.swing.JPanel BuscaPan2;
     private javax.swing.JPanel BuscaPan3;
+    private javax.swing.JPanel BuscaPan4;
     private javax.swing.JPanel BuscaPanAlterar;
+    private javax.swing.JPanel BuscaPanBusca;
     private javax.swing.JPanel BuscaPanRemover;
+    private javax.swing.JButton BuscarNovamente_BT;
     private javax.swing.JPanel Buscar_Cliente;
     private javax.swing.JPanel ButtonsPan;
     private javax.swing.JPanel ButtonsPan2;
     private javax.swing.JPanel ButtonsPan3;
+    private javax.swing.JPanel ButtonsPan4;
     private javax.swing.JPanel Cadastrar_Cliente;
     private javax.swing.JLayeredPane Centro;
     private javax.swing.JPanel CpfPan;
@@ -2474,6 +2704,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JTextField Cpf_TF2;
     private javax.swing.JTextField Cpf_TF3;
     private javax.swing.JPanel DadosPanAlterar;
+    private javax.swing.JPanel DadosPanBusca;
     private javax.swing.JPanel DadosPanCadastro;
     private javax.swing.JPanel DadosPanRemover;
     private javax.swing.JPanel FacePan;
@@ -2498,12 +2729,15 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton JB_acao;
     private javax.swing.JButton JBt_BuscaCPF;
     private javax.swing.JButton JBt_BuscaCPF1;
+    private javax.swing.JButton JBt_BuscaCPF2;
     private javax.swing.JButton JBt_BuscaNome;
     private javax.swing.JButton JBt_BuscaNome1;
+    private javax.swing.JButton JBt_BuscaNome2;
     private javax.swing.JButton JBt_Cpf_Crescente;
     private javax.swing.JButton JBt_Cpf_Decrescente;
     private javax.swing.JButton JBt_LimpaNome;
     private javax.swing.JButton JBt_LimpaNome1;
+    private javax.swing.JButton JBt_LimpaNome2;
     private javax.swing.JButton JBt_Nome_Crescente;
     private javax.swing.JButton JBt_Nome_Decrescente;
     private javax.swing.JLabel JLB_NumPedidos;
@@ -2520,6 +2754,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel JLB_NumQueijos6;
     private javax.swing.JLabel JLb_BuscaNome;
     private javax.swing.JLabel JLb_BuscaNome1;
+    private javax.swing.JLabel JLb_BuscaNome2;
     private javax.swing.JLabel JLb_Cpf;
     private javax.swing.JLabel JLb_Nome;
     private javax.swing.JLabel JLb_NumClientes;
@@ -2556,12 +2791,16 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JTable JTb_MostrarClientes;
     private javax.swing.JTextField JTf_BuscaCPF;
     private javax.swing.JTextField JTf_BuscaCPF1;
+    private javax.swing.JTextField JTf_BuscaCPF2;
     private javax.swing.JTextField JTf_BuscaNome;
     private javax.swing.JTextField JTf_BuscaNome1;
+    private javax.swing.JTextField JTf_BuscaNome2;
     private javax.swing.JButton Jbt_LimpaCpf;
     private javax.swing.JButton Jbt_LimpaCpf1;
+    private javax.swing.JButton Jbt_LimpaCpf2;
     private javax.swing.JLabel Jlb_BuscaCPF;
     private javax.swing.JLabel Jlb_BuscaCPF1;
+    private javax.swing.JLabel Jlb_BuscaCPF2;
     private javax.swing.JLabel LB_Bairro;
     private javax.swing.JLabel LB_Bairro2;
     private javax.swing.JLabel LB_Bairro3;
@@ -2598,6 +2837,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton Limpar_BT3;
     private javax.swing.JList<String> ListaCpf_Nome;
     private javax.swing.JList<String> ListaCpf_Nome1;
+    private javax.swing.JList<String> ListaCpf_Nome2;
     private javax.swing.JPanel Menu_Principal;
     private javax.swing.JPanel Mostrar_Clientes;
     private javax.swing.JPanel Mostrar_Qtd;
@@ -2640,6 +2880,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JTextField TelRes_TF;
     private javax.swing.JTextField TelRes_TF2;
     private javax.swing.JTextField TelRes_TF3;
+    private javax.swing.JButton VoltarDashboard_BT;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -2654,6 +2895,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLayeredPane jLayeredPane13;
     private javax.swing.JLayeredPane jLayeredPane2;
     private javax.swing.JLayeredPane jLayeredPane4;
+    private javax.swing.JLayeredPane jLayeredPane5;
     private javax.swing.JLayeredPane jLayeredPane6;
     private javax.swing.JLayeredPane jLayeredPane8;
     private javax.swing.JLayeredPane jLayeredPane9;
@@ -2662,13 +2904,17 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLb_Topo_menuInserir;
     private javax.swing.JLabel jLb_Topo_menuInserir1;
     private javax.swing.JLabel jLb_Topo_menuInserir2;
+    private javax.swing.JLabel jLb_Topo_menuInserir3;
     private javax.swing.JLabel jLb_Topo_menuMostrar;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }
