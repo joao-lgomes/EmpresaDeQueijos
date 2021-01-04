@@ -98,7 +98,7 @@ public class Queijo_PedidoDAO {
             res = instrucao.executeQuery();
             while(res.next()){
                 Queijo_Pedido qp = new Queijo_Pedido();
-                qp.setFk_id_queijo(res.getInt("id_queijo_pedido"));
+                qp.setId_queijo_pedido(res.getInt("id_queijo_pedido"));
                 qp.setFk_id_pedido(res.getInt("fk_id_pedido"));
                 
                 qp.setFk_id_queijo(res.getInt("fk_id_queijo"));
@@ -130,7 +130,7 @@ public class Queijo_PedidoDAO {
             ListaRetorno = new ArrayList<>();
             while(res.next()){
                 Queijo_Pedido qp = new Queijo_Pedido();
-                qp.setFk_id_queijo(res.getInt("id_queijo_pedido"));
+                qp.setId_queijo_pedido(res.getInt("id_queijo_pedido"));
                 qp.setFk_id_pedido(res.getInt("fk_id_pedido"));
                 
                 qp.setFk_id_queijo(res.getInt("fk_id_queijo"));
@@ -182,7 +182,7 @@ public class Queijo_PedidoDAO {
             res = instrucao.executeQuery();
             while(res.next()){
                 Queijo_Pedido qp = new Queijo_Pedido();
-                qp.setFk_id_queijo(res.getInt("id_queijo_pedido"));
+                qp.setId_queijo_pedido(res.getInt("id_queijo_pedido"));
                 qp.setFk_id_pedido(res.getInt("fk_id_pedido"));
                 
                 qp.setFk_id_queijo(res.getInt("fk_id_queijo"));
@@ -214,7 +214,7 @@ public class Queijo_PedidoDAO {
             ListaRetorno = new ArrayList<>();
             while(res.next()){
                 Queijo_Pedido qp = new Queijo_Pedido();
-                qp.setFk_id_queijo(res.getInt("id_queijo_pedido"));
+                qp.setId_queijo_pedido(res.getInt("id_queijo_pedido"));
                 qp.setFk_id_pedido(res.getInt("fk_id_pedido"));
                 
                 qp.setFk_id_queijo(res.getInt("fk_id_queijo"));

@@ -4519,6 +4519,11 @@ public class Menu extends javax.swing.JFrame {
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
+        Lista_Pedidos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Lista_PedidosMouseClicked(evt);
+            }
+        });
         jScrollPane21.setViewportView(Lista_Pedidos);
 
         Tabela_QueijosPedidos.setModel(new javax.swing.table.DefaultTableModel(
@@ -8138,6 +8143,37 @@ public class Menu extends javax.swing.JFrame {
     private void BuscarNovamente_BT4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarNovamente_BT4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BuscarNovamente_BT4ActionPerformed
+
+    private void Lista_PedidosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Lista_PedidosMouseClicked
+        try{
+        String selecionado = Lista_Pedidos.getSelectedValue();
+        String valor = selecionado.substring(15, (16+(selecionado.length()-56)));
+        
+        Queijo_PedidoDAO qj = new Queijo_PedidoDAO();
+        ArrayList <Queijo_Pedido> ListaQJ = qj.QueijosPedidosDeUmPedido(Integer.parseInt(valor));
+        
+        DefaultTableModel model4;
+        model4 = new DefaultTableModel(new String[] {"id_queijo_pedido", "Id Pedido", "Id queijo", "Quant"}, 0);
+        
+        ListaQJ.forEach((Queijo_Pedido qp) -> {
+                        int id_queijo_pedido = qp.getId_queijo_pedido();
+                        int fk_id_pedido = qp.getFk_id_pedido();
+                        int fk_id_queijo = qp.getFk_id_queijo();
+                        int quantidade = qp.getQuantidade();
+                        Vector row4 = new Vector();
+                        row4.add(id_queijo_pedido);
+                        row4.add(fk_id_pedido);
+                        row4.add(fk_id_queijo);
+                        row4.add(quantidade);
+                        model4.addRow(row4);
+                    });
+        Tabela_QueijosPedidos.setModel(model4);
+        }catch(SQLException e){
+            System.out.println("Erro: "+e);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_Lista_PedidosMouseClicked
 
     /**
      * @param args the command line arguments
