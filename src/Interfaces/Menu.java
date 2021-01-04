@@ -10,6 +10,7 @@ import java.util.Scanner;
 import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.DefaultListModel;
 import javax.swing.table.DefaultTableModel;
 
 public class Menu extends javax.swing.JFrame {
@@ -164,6 +165,24 @@ public class Menu extends javax.swing.JFrame {
                         model3.addRow(row3);
                     });
         Tabela_Pedidos.setModel(model3);
+        
+        ArrayList <Pedido> ListaPedidos2 = pedidoDAO.getAll();
+        DefaultListModel DLM = new DefaultListModel();
+        
+        ListaPedidos2.forEach((Pedido pedido) -> {
+                        int id_pedido = pedido.getId_pedido();
+                        String fk_cpf = pedido.getFk_cpf();
+                        int prazoEntrega = pedido.getPrazoEntrega();
+                        String escrita = "Pedido número: "+id_pedido+"    ||    do cliente de cpf: "+fk_cpf;
+                        /*Vector row4 = new Vector();
+                        row4.add(id_pedido);
+                        row4.add(fk_cpf);
+                        row4.add(prazoEntrega); */
+                        DLM.addElement(escrita);
+                    });
+        Lista_Pedidos.setModel(DLM);
+        
+        
     }
     
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -3296,7 +3315,6 @@ public class Menu extends javax.swing.JFrame {
                             .addComponent(Jlb_BuscaIdQueijo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addContainerGap())
                     .addGroup(BuscaPan5Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(Jbt_LimpaIdQueijo, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(58, 58, 58)
                         .addComponent(JBt_BuscaIdQueijo, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -4495,6 +4513,7 @@ public class Menu extends javax.swing.JFrame {
 
         jTabbedPane2.addTab("Pedidos", Pedidos);
 
+        Lista_Pedidos.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
         Lista_Pedidos.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }

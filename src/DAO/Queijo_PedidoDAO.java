@@ -200,4 +200,37 @@ public class Queijo_PedidoDAO {
         }
         return (ListaRetorno.size());
     }
+    
+    public ArrayList<Queijo_Pedido> QueijosPedidosDeUmPedido(int fk_id_pedido) throws SQLException{
+        PreparedStatement instrucao;
+        ResultSet res;
+        ArrayList <Queijo_Pedido> ListaRetorno = new ArrayList();
+        
+        String codigo = "select * from Queijo_Pedido where fk_id_pedido='"+fk_id_pedido+"';";
+        
+        try{
+            instrucao = this.conexao.prepareStatement(codigo);
+            res = instrucao.executeQuery();
+            ListaRetorno = new ArrayList<>();
+            while(res.next()){
+                Queijo_Pedido qp = new Queijo_Pedido();
+                qp.setFk_id_queijo(res.getInt("id_queijo_pedido"));
+                qp.setFk_id_pedido(res.getInt("fk_id_pedido"));
+                
+                qp.setFk_id_queijo(res.getInt("fk_id_queijo"));
+                
+                qp.setQuantidade(res.getInt("quantidade"));
+
+                
+                ListaRetorno.add(qp);
+            }
+            
+            res.close();
+            instrucao.close();
+        }catch(SQLException e){
+            System.out.println("Erro ao tentar recuperar a lista "+e.toString());
+        }
+        System.out.println("Queijo pedido buscado com sucesso");
+        return ListaRetorno;
+    }
 }
