@@ -264,11 +264,10 @@ public class ClienteDAO {
     public void deleteNome(String nome) throws SQLException{
         PreparedStatement instrucao;
         
-        String codigo = "delete from Cliente where nome=?;";
+        String codigo = "delete from Cliente, Pedido where nome='"+nome+"';";
         
         try{
             instrucao = this.conexao.prepareStatement(codigo);
-            instrucao.setString(1, nome);
             
             instrucao.execute();
             instrucao.close();

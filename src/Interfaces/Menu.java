@@ -7380,9 +7380,9 @@ public class Menu extends javax.swing.JFrame {
     private void Alterar_BTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Alterar_BTActionPerformed
         try{
             ClienteDAO clienteDAO = new ClienteDAO();
-            Cliente cliente = new Cliente(Cpf_TF.getText(), Nome_TF.getText(), TelRes_TF.getText(), 
-                                    TelCel_TF.getText(), Bairro_TF.getText(), Rua_TF.getText(), Integer.parseInt(NumCasa_TF.getText()), 
-                                    Insta_TF.getText(), Face_TF.getText(), NumCartao_TF.getText());
+            Cliente cliente = new Cliente(Cpf_TF2.getText(), Nome_TF2.getText(), TelRes_TF2.getText(), 
+                                    TelCel_TF2.getText(), Bairro_TF2.getText(), Rua_TF2.getText(), Integer.parseInt(NumCasa_TF2.getText()), 
+                                    Insta_TF2.getText(), Face_TF2.getText(), NumCartao_TF2.getText());
             
             clienteDAO.update(cliente);
             
@@ -7396,6 +7396,19 @@ public class Menu extends javax.swing.JFrame {
             Insta_TF2.setText("");
             Face_TF2.setText("");
             NumCartao_TF2.setText("");
+            
+            ArrayList <Cliente> ListaClientes = clienteDAO.getAll();
+            DefaultListModel DLM = new DefaultListModel();
+            ListaClientes.forEach((Cliente cliente2) -> {
+                String cpf = cliente2.getCpf();
+                String nome = cliente2.getNome();
+                String escrita = "Cpf: "+cpf+"       ||       Nome: "+nome;
+                DLM.addElement(escrita);
+            });
+            ListaCpf_Nome.setModel(DLM);
+            
+            JTf_BuscaCPF.setText("");
+            JTf_BuscaNome.setText("");
             
             DadosPanAlterar.setVisible(false);
             BuscaPanAlterar.setVisible(true);
@@ -7465,6 +7478,25 @@ public class Menu extends javax.swing.JFrame {
                 } catch (ClassNotFoundException ex) {
                     Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
                 }
+        
+                try{
+                ClienteDAO clienteDAO = new ClienteDAO();
+                ArrayList <Cliente> ListaClientes = clienteDAO.getAll();
+                DefaultListModel DLM = new DefaultListModel();
+
+                ListaClientes.forEach((Cliente cliente) -> {
+                        String cpf = cliente.getCpf();
+                        String nome = cliente.getNome();
+                        String escrita = "Cpf: "+cpf+"       ||       Nome: "+nome;
+                        DLM.addElement(escrita);
+                    });
+                ListaCpf_Nome1.setModel(DLM);
+                }catch (SQLException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                
                 Remover_Cliente1.setVisible(true);
     }//GEN-LAST:event_JBt_BuscaCPF1ActionPerformed
 
@@ -8130,7 +8162,7 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_JBt_BuscaNomeActionPerformed
 
     private void JBt_LimpaNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_LimpaNomeActionPerformed
-        JTf_BuscaCPF.setText("");
+        JTf_BuscaNome.setText("");
     }//GEN-LAST:event_JBt_LimpaNomeActionPerformed
 
     private void JBt_BuscaNome1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaNome1ActionPerformed
@@ -8160,6 +8192,26 @@ public class Menu extends javax.swing.JFrame {
                 } catch (ClassNotFoundException ex) {
                     Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
                 }
+        
+        
+            try{
+                ClienteDAO clienteDAO = new ClienteDAO();
+                ArrayList <Cliente> ListaClientes = clienteDAO.getAll();
+                DefaultListModel DLM = new DefaultListModel();
+
+                ListaClientes.forEach((Cliente cliente) -> {
+                        String cpf = cliente.getCpf();
+                        String nome = cliente.getNome();
+                        String escrita = "Cpf: "+cpf+"       ||       Nome: "+nome;
+                        DLM.addElement(escrita);
+                    });
+                ListaCpf_Nome1.setModel(DLM);
+                }catch (SQLException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                
                 Remover_Cliente1.setVisible(true);
     }//GEN-LAST:event_JBt_BuscaNome1ActionPerformed
 
