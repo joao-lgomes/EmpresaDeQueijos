@@ -551,6 +551,7 @@ public class Menu extends javax.swing.JFrame {
         Lista_Pedidos = new javax.swing.JList<>();
         jScrollPane22 = new javax.swing.JScrollPane();
         Tabela_QueijosPedidos = new javax.swing.JTable();
+        jLabel11 = new javax.swing.JLabel();
         Centro2 = new javax.swing.JLayeredPane();
         Inserir_Pedido = new javax.swing.JPanel();
         jLb_Topo_menuInserir6 = new javax.swing.JLabel();
@@ -4508,7 +4509,7 @@ public class Menu extends javax.swing.JFrame {
         );
         PedidosLayout.setVerticalGroup(
             PedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane20, javax.swing.GroupLayout.DEFAULT_SIZE, 410, Short.MAX_VALUE)
+            .addComponent(jScrollPane20, javax.swing.GroupLayout.DEFAULT_SIZE, 457, Short.MAX_VALUE)
         );
 
         jTabbedPane2.addTab("Pedidos", Pedidos);
@@ -4539,19 +4540,28 @@ public class Menu extends javax.swing.JFrame {
         ));
         jScrollPane22.setViewportView(Tabela_QueijosPedidos);
 
+        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 19)); // NOI18N
+        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel11.setText("CLIQUE NO PEDIDO QUE QUER ACESSAR");
+
         javax.swing.GroupLayout Queijos_PedidosLayout = new javax.swing.GroupLayout(Queijos_Pedidos);
         Queijos_Pedidos.setLayout(Queijos_PedidosLayout);
         Queijos_PedidosLayout.setHorizontalGroup(
             Queijos_PedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jScrollPane21)
-            .addComponent(jScrollPane22, javax.swing.GroupLayout.DEFAULT_SIZE, 405, Short.MAX_VALUE)
+            .addComponent(jScrollPane22, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         Queijos_PedidosLayout.setVerticalGroup(
             Queijos_PedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Queijos_PedidosLayout.createSequentialGroup()
-                .addComponent(jScrollPane21, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane22, javax.swing.GroupLayout.DEFAULT_SIZE, 253, Short.MAX_VALUE))
+                .addComponent(jScrollPane21, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane22, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33))
         );
 
         jTabbedPane2.addTab("Queijos Pedidos", Queijos_Pedidos);
@@ -4564,7 +4574,7 @@ public class Menu extends javax.swing.JFrame {
         jLayeredPane16Layout.setHorizontalGroup(
             jLayeredPane16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING)
-            .addComponent(jTabbedPane2)
+            .addComponent(jTabbedPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
         jLayeredPane16Layout.setVerticalGroup(
             jLayeredPane16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -8760,6 +8770,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jCB_EscolhasQueijo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
