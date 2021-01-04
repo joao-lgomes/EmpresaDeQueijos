@@ -261,6 +261,26 @@ public class ClienteDAO {
     
     }
     
+    public void deleteNome(String nome) throws SQLException{
+        PreparedStatement instrucao;
+        
+        String codigo = "delete from Cliente where nome=?;";
+        
+        try{
+            instrucao = this.conexao.prepareStatement(codigo);
+            instrucao.setString(1, nome);
+            
+            instrucao.execute();
+            instrucao.close();
+            
+            System.out.println("Cliente deletado com sucesso");
+        
+        }catch(SQLException e){
+            System.out.println("Erro ao tentar deletar: "+e.toString());
+        }
+    
+    }
+    
     public int quantClientes(){
         ArrayList <Cliente> ListaClientes = new ArrayList();
         PreparedStatement instrucao;
@@ -294,4 +314,80 @@ public class ClienteDAO {
         return (ListaClientes.size());
     }
     
+    public ArrayList<Cliente> OrdenarCPF(int ord){
+        PreparedStatement instrucao;
+        ResultSet res;
+        ArrayList <Cliente> ListaRetorno = new ArrayList();
+        
+        String codigo = "select * from Cliente";
+        
+        if(ord==1)
+            codigo = codigo+" order by cpf asc";
+        if(ord==-1)
+            codigo = codigo+" order by cpf desc";
+        try{
+            instrucao = this.conexao.prepareStatement(codigo);
+            res = instrucao.executeQuery();
+            while(res.next()){
+                Cliente cliente = new Cliente();
+                cliente.setCpf(res.getString("cpf"));
+                cliente.setNome(res.getString("nome"));
+                cliente.setTelefone_residencial(res.getString("telefone_residencial"));
+                cliente.setTelefone_celular(res.getString("telefone_celular"));
+                cliente.setBairro(res.getString("bairro"));
+                cliente.setRua(res.getString("rua"));
+                cliente.setNumeroCasa(res.getInt("numeroCasa"));
+                cliente.setInstagram(res.getString("instagram"));
+                cliente.setFacebook(res.getString("facebook"));
+                cliente.setNumCartao(res.getString("NumCartao"));
+                
+                ListaRetorno.add(cliente);
+            }
+            
+            res.close();
+            instrucao.close();
+        }catch(SQLException e){
+            System.out.println("Erro ao tentar recuperar a lista "+e.toString());
+        }
+        return ListaRetorno;
+    }
+    
+    public ArrayList<Cliente> OrdenarNome(int ord){
+        PreparedStatement instrucao;
+        ResultSet res;
+        ArrayList <Cliente> ListaRetorno = new ArrayList();
+        
+        String codigo = "select * from Cliente";
+        
+        if(ord==1)
+            codigo = codigo+" order by nome asc";
+        if(ord==-1)
+            codigo = codigo+" order by nome desc";
+        
+        try{
+            instrucao = this.conexao.prepareStatement(codigo);
+            res = instrucao.executeQuery();
+            while(res.next()){
+                Cliente cliente = new Cliente();
+                cliente.setCpf(res.getString("cpf"));
+                cliente.setNome(res.getString("nome"));
+                cliente.setTelefone_residencial(res.getString("telefone_residencial"));
+                cliente.setTelefone_celular(res.getString("telefone_celular"));
+                cliente.setBairro(res.getString("bairro"));
+                cliente.setRua(res.getString("rua"));
+                cliente.setNumeroCasa(res.getInt("numeroCasa"));
+                cliente.setInstagram(res.getString("instagram"));
+                cliente.setFacebook(res.getString("facebook"));
+                cliente.setNumCartao(res.getString("NumCartao"));
+                
+                ListaRetorno.add(cliente);
+            }
+            
+            res.close();
+            instrucao.close();
+        }catch(SQLException e){
+            System.out.println("Erro ao tentar recuperar a lista "+e.toString());
+        }
+        return ListaRetorno;
+    }
 }

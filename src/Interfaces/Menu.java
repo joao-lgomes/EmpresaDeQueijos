@@ -232,16 +232,16 @@ public class Menu extends javax.swing.JFrame {
         TelCel_TF = new javax.swing.JTextField();
         BairroPan = new javax.swing.JPanel();
         LB_Bairro = new javax.swing.JLabel();
-        Bairro_TF = new javax.swing.JTextField();
+        Rua_TF = new javax.swing.JTextField();
         RuaPan = new javax.swing.JPanel();
         LB_Rua = new javax.swing.JLabel();
-        Rua_TF = new javax.swing.JTextField();
+        Bairro_TF = new javax.swing.JTextField();
         NumCasaPan = new javax.swing.JPanel();
         LB_NumCasa = new javax.swing.JLabel();
-        NumCasa_TF = new javax.swing.JTextField();
+        Insta_TF = new javax.swing.JTextField();
         InstaPan = new javax.swing.JPanel();
         LB_Insta = new javax.swing.JLabel();
-        Insta_TF = new javax.swing.JTextField();
+        NumCasa_TF = new javax.swing.JTextField();
         FacePan = new javax.swing.JPanel();
         LB_Face = new javax.swing.JLabel();
         Face_TF = new javax.swing.JTextField();
@@ -287,7 +287,7 @@ public class Menu extends javax.swing.JFrame {
         Bairro_TF2 = new javax.swing.JTextField();
         NumCasaPan2 = new javax.swing.JPanel();
         LB_Instagram2 = new javax.swing.JLabel();
-        Instagram_TF2 = new javax.swing.JTextField();
+        Insta_TF2 = new javax.swing.JTextField();
         InstaPan2 = new javax.swing.JPanel();
         LB_NumCasa2 = new javax.swing.JLabel();
         NumCasa_TF2 = new javax.swing.JTextField();
@@ -315,40 +315,6 @@ public class Menu extends javax.swing.JFrame {
         JBt_BuscaNome1 = new javax.swing.JButton();
         jScrollPane5 = new javax.swing.JScrollPane();
         ListaCpf_Nome1 = new javax.swing.JList<>();
-        DadosPanRemover = new javax.swing.JPanel();
-        CpfPan3 = new javax.swing.JPanel();
-        LB_Cpf3 = new javax.swing.JLabel();
-        Cpf_TF3 = new javax.swing.JTextField();
-        NomePan3 = new javax.swing.JPanel();
-        LB_Nome3 = new javax.swing.JLabel();
-        Nome_TF3 = new javax.swing.JTextField();
-        TelResPan3 = new javax.swing.JPanel();
-        LB_TelRes3 = new javax.swing.JLabel();
-        TelRes_TF3 = new javax.swing.JTextField();
-        TelCelPan3 = new javax.swing.JPanel();
-        LB_TelCel3 = new javax.swing.JLabel();
-        TelCel_TF3 = new javax.swing.JTextField();
-        BairroPan3 = new javax.swing.JPanel();
-        LB_Rua3 = new javax.swing.JLabel();
-        Rua_TF3 = new javax.swing.JTextField();
-        RuaPan3 = new javax.swing.JPanel();
-        LB_Bairro3 = new javax.swing.JLabel();
-        Bairro_TF3 = new javax.swing.JTextField();
-        NumCasaPan3 = new javax.swing.JPanel();
-        LB_Instagram3 = new javax.swing.JLabel();
-        Instagram_TF3 = new javax.swing.JTextField();
-        InstaPan3 = new javax.swing.JPanel();
-        LB_NumCasa3 = new javax.swing.JLabel();
-        NumCasa_TF3 = new javax.swing.JTextField();
-        FacePan3 = new javax.swing.JPanel();
-        LB_Facebook3 = new javax.swing.JLabel();
-        Face_TF3 = new javax.swing.JTextField();
-        NumCartaoPan3 = new javax.swing.JPanel();
-        LB_NumCartao3 = new javax.swing.JLabel();
-        NumCartao_TF3 = new javax.swing.JTextField();
-        ButtonsPan3 = new javax.swing.JPanel();
-        Limpar_BT3 = new javax.swing.JButton();
-        Remover_BT = new javax.swing.JButton();
         Mostrar_Clientes = new javax.swing.JPanel();
         jLb_Topo_menuMostrar = new javax.swing.JLabel();
         jLayeredPane1 = new javax.swing.JLayeredPane();
@@ -912,7 +878,7 @@ public class Menu extends javax.swing.JFrame {
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 73, Short.MAX_VALUE))
+                .addGap(0, 62, Short.MAX_VALUE))
         );
 
         JTP_PainelGuias.addTab("Dashboard", JP_Dashboard);
@@ -1232,7 +1198,7 @@ public class Menu extends javax.swing.JFrame {
         LB_Bairro.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LB_Bairro.setText("RUA");
 
-        Bairro_TF.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
+        Rua_TF.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
 
         javax.swing.GroupLayout BairroPanLayout = new javax.swing.GroupLayout(BairroPan);
         BairroPan.setLayout(BairroPanLayout);
@@ -1241,7 +1207,7 @@ public class Menu extends javax.swing.JFrame {
             .addComponent(LB_Bairro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(BairroPanLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Bairro_TF)
+                .addComponent(Rua_TF)
                 .addContainerGap())
         );
         BairroPanLayout.setVerticalGroup(
@@ -1250,7 +1216,7 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(LB_Bairro)
                 .addGap(18, 18, 18)
-                .addComponent(Bairro_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Rua_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1258,7 +1224,7 @@ public class Menu extends javax.swing.JFrame {
         LB_Rua.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LB_Rua.setText("BAIRRO");
 
-        Rua_TF.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
+        Bairro_TF.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
 
         javax.swing.GroupLayout RuaPanLayout = new javax.swing.GroupLayout(RuaPan);
         RuaPan.setLayout(RuaPanLayout);
@@ -1267,7 +1233,7 @@ public class Menu extends javax.swing.JFrame {
             .addComponent(LB_Rua, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(RuaPanLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Rua_TF)
+                .addComponent(Bairro_TF)
                 .addContainerGap())
         );
         RuaPanLayout.setVerticalGroup(
@@ -1276,7 +1242,7 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(LB_Rua)
                 .addGap(18, 18, 18)
-                .addComponent(Rua_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Bairro_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1284,7 +1250,7 @@ public class Menu extends javax.swing.JFrame {
         LB_NumCasa.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LB_NumCasa.setText("INSTAGRAM");
 
-        NumCasa_TF.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
+        Insta_TF.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
 
         javax.swing.GroupLayout NumCasaPanLayout = new javax.swing.GroupLayout(NumCasaPan);
         NumCasaPan.setLayout(NumCasaPanLayout);
@@ -1293,7 +1259,7 @@ public class Menu extends javax.swing.JFrame {
             .addComponent(LB_NumCasa, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(NumCasaPanLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(NumCasa_TF)
+                .addComponent(Insta_TF)
                 .addContainerGap())
         );
         NumCasaPanLayout.setVerticalGroup(
@@ -1302,7 +1268,7 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(LB_NumCasa)
                 .addGap(18, 18, 18)
-                .addComponent(NumCasa_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Insta_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1310,7 +1276,7 @@ public class Menu extends javax.swing.JFrame {
         LB_Insta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LB_Insta.setText("NÚMERO DA CASA");
 
-        Insta_TF.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
+        NumCasa_TF.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
 
         javax.swing.GroupLayout InstaPanLayout = new javax.swing.GroupLayout(InstaPan);
         InstaPan.setLayout(InstaPanLayout);
@@ -1319,7 +1285,7 @@ public class Menu extends javax.swing.JFrame {
             .addComponent(LB_Insta, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(InstaPanLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Insta_TF)
+                .addComponent(NumCasa_TF)
                 .addContainerGap())
         );
         InstaPanLayout.setVerticalGroup(
@@ -1328,7 +1294,7 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(LB_Insta)
                 .addGap(18, 18, 18)
-                .addComponent(Insta_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(NumCasa_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1394,6 +1360,11 @@ public class Menu extends javax.swing.JFrame {
 
         JBt_Inserir.setFont(new java.awt.Font("Tahoma", 0, 28)); // NOI18N
         JBt_Inserir.setText("INSERIR");
+        JBt_Inserir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_InserirActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout ButtonsPanLayout = new javax.swing.GroupLayout(ButtonsPan);
         ButtonsPan.setLayout(ButtonsPanLayout);
@@ -1506,6 +1477,11 @@ public class Menu extends javax.swing.JFrame {
 
         Jbt_LimpaCpf.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         Jbt_LimpaCpf.setText("LIMPAR");
+        Jbt_LimpaCpf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Jbt_LimpaCpfActionPerformed(evt);
+            }
+        });
 
         JBt_BuscaCPF.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_BuscaCPF.setText("BUSCAR");
@@ -1517,9 +1493,19 @@ public class Menu extends javax.swing.JFrame {
 
         JBt_LimpaNome.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_LimpaNome.setText("LIMPAR");
+        JBt_LimpaNome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_LimpaNomeActionPerformed(evt);
+            }
+        });
 
         JBt_BuscaNome.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_BuscaNome.setText("BUSCAR");
+        JBt_BuscaNome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_BuscaNomeActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout BuscaPan2Layout = new javax.swing.GroupLayout(BuscaPan2);
         BuscaPan2.setLayout(BuscaPan2Layout);
@@ -1574,6 +1560,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGap(0, 30, Short.MAX_VALUE))
         );
 
+        ListaCpf_Nome.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         ListaCpf_Nome.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
@@ -1586,7 +1573,10 @@ public class Menu extends javax.swing.JFrame {
         BuscaPanAlterarLayout.setHorizontalGroup(
             BuscaPanAlterarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(BuscaPan2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jScrollPane3)
+            .addGroup(BuscaPanAlterarLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane3)
+                .addContainerGap())
         );
         BuscaPanAlterarLayout.setVerticalGroup(
             BuscaPanAlterarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1594,7 +1584,8 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(BuscaPan2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 466, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 451, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jLayeredPane4.add(BuscaPanAlterar);
@@ -1772,7 +1763,7 @@ public class Menu extends javax.swing.JFrame {
         LB_Instagram2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LB_Instagram2.setText("INSTAGRAM");
 
-        Instagram_TF2.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
+        Insta_TF2.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
 
         javax.swing.GroupLayout NumCasaPan2Layout = new javax.swing.GroupLayout(NumCasaPan2);
         NumCasaPan2.setLayout(NumCasaPan2Layout);
@@ -1781,7 +1772,7 @@ public class Menu extends javax.swing.JFrame {
             .addComponent(LB_Instagram2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(NumCasaPan2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Instagram_TF2)
+                .addComponent(Insta_TF2)
                 .addContainerGap())
         );
         NumCasaPan2Layout.setVerticalGroup(
@@ -1790,7 +1781,7 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(LB_Instagram2)
                 .addGap(18, 18, 18)
-                .addComponent(Instagram_TF2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Insta_TF2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1991,21 +1982,26 @@ public class Menu extends javax.swing.JFrame {
 
         Jlb_BuscaCPF1.setFont(new java.awt.Font("Tahoma", 0, 27)); // NOI18N
         Jlb_BuscaCPF1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Jlb_BuscaCPF1.setText("Buscar por CPF");
+        Jlb_BuscaCPF1.setText("REMOVER POR CPF");
 
         JTf_BuscaCPF1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
         JLb_BuscaNome1.setFont(new java.awt.Font("Tahoma", 0, 27)); // NOI18N
         JLb_BuscaNome1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        JLb_BuscaNome1.setText("BUSCAR POR NOME");
+        JLb_BuscaNome1.setText("REMOVER POR NOME");
 
         JTf_BuscaNome1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
         Jbt_LimpaCpf1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         Jbt_LimpaCpf1.setText("LIMPAR");
+        Jbt_LimpaCpf1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Jbt_LimpaCpf1ActionPerformed(evt);
+            }
+        });
 
         JBt_BuscaCPF1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        JBt_BuscaCPF1.setText("BUSCAR");
+        JBt_BuscaCPF1.setText("REMOVER");
         JBt_BuscaCPF1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 JBt_BuscaCPF1ActionPerformed(evt);
@@ -2014,9 +2010,19 @@ public class Menu extends javax.swing.JFrame {
 
         JBt_LimpaNome1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_LimpaNome1.setText("LIMPAR");
+        JBt_LimpaNome1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_LimpaNome1ActionPerformed(evt);
+            }
+        });
 
         JBt_BuscaNome1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        JBt_BuscaNome1.setText("BUSCAR");
+        JBt_BuscaNome1.setText("REMOVER");
+        JBt_BuscaNome1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_BuscaNome1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout BuscaPan3Layout = new javax.swing.GroupLayout(BuscaPan3);
         BuscaPan3.setLayout(BuscaPan3Layout);
@@ -2071,6 +2077,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGap(0, 30, Short.MAX_VALUE))
         );
 
+        ListaCpf_Nome1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         ListaCpf_Nome1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
@@ -2083,7 +2090,10 @@ public class Menu extends javax.swing.JFrame {
         BuscaPanRemoverLayout.setHorizontalGroup(
             BuscaPanRemoverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(BuscaPan3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jScrollPane5)
+            .addGroup(BuscaPanRemoverLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane5)
+                .addContainerGap())
         );
         BuscaPanRemoverLayout.setVerticalGroup(
             BuscaPanRemoverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2091,372 +2101,11 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(BuscaPan3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 466, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 449, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jLayeredPane6.add(BuscaPanRemover);
-
-        DadosPanRemover.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        LB_Cpf3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        LB_Cpf3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LB_Cpf3.setText("CPF");
-
-        Cpf_TF3.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
-
-        javax.swing.GroupLayout CpfPan3Layout = new javax.swing.GroupLayout(CpfPan3);
-        CpfPan3.setLayout(CpfPan3Layout);
-        CpfPan3Layout.setHorizontalGroup(
-            CpfPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(LB_Cpf3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(CpfPan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Cpf_TF3)
-                .addContainerGap())
-        );
-        CpfPan3Layout.setVerticalGroup(
-            CpfPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(CpfPan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(LB_Cpf3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Cpf_TF3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        LB_Nome3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        LB_Nome3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LB_Nome3.setText("NOME");
-
-        Nome_TF3.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
-
-        javax.swing.GroupLayout NomePan3Layout = new javax.swing.GroupLayout(NomePan3);
-        NomePan3.setLayout(NomePan3Layout);
-        NomePan3Layout.setHorizontalGroup(
-            NomePan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(LB_Nome3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(NomePan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Nome_TF3)
-                .addContainerGap())
-        );
-        NomePan3Layout.setVerticalGroup(
-            NomePan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NomePan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(LB_Nome3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Nome_TF3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        LB_TelRes3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        LB_TelRes3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LB_TelRes3.setText("TELEFONE RESIDENCIAL");
-
-        TelRes_TF3.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
-        TelRes_TF3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TelRes_TF3ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout TelResPan3Layout = new javax.swing.GroupLayout(TelResPan3);
-        TelResPan3.setLayout(TelResPan3Layout);
-        TelResPan3Layout.setHorizontalGroup(
-            TelResPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(LB_TelRes3, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
-            .addGroup(TelResPan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(TelRes_TF3)
-                .addContainerGap())
-        );
-        TelResPan3Layout.setVerticalGroup(
-            TelResPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(TelResPan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(LB_TelRes3)
-                .addGap(18, 18, 18)
-                .addComponent(TelRes_TF3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        LB_TelCel3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        LB_TelCel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LB_TelCel3.setText("TELEFONE CELULAR");
-
-        TelCel_TF3.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
-        TelCel_TF3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TelCel_TF3ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout TelCelPan3Layout = new javax.swing.GroupLayout(TelCelPan3);
-        TelCelPan3.setLayout(TelCelPan3Layout);
-        TelCelPan3Layout.setHorizontalGroup(
-            TelCelPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(LB_TelCel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(TelCelPan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(TelCel_TF3)
-                .addContainerGap())
-        );
-        TelCelPan3Layout.setVerticalGroup(
-            TelCelPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(TelCelPan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(LB_TelCel3)
-                .addGap(18, 18, 18)
-                .addComponent(TelCel_TF3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        LB_Rua3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        LB_Rua3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LB_Rua3.setText("RUA");
-
-        Rua_TF3.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
-
-        javax.swing.GroupLayout BairroPan3Layout = new javax.swing.GroupLayout(BairroPan3);
-        BairroPan3.setLayout(BairroPan3Layout);
-        BairroPan3Layout.setHorizontalGroup(
-            BairroPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(LB_Rua3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(BairroPan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Rua_TF3)
-                .addContainerGap())
-        );
-        BairroPan3Layout.setVerticalGroup(
-            BairroPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BairroPan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(LB_Rua3)
-                .addGap(18, 18, 18)
-                .addComponent(Rua_TF3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        LB_Bairro3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        LB_Bairro3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LB_Bairro3.setText("BAIRRO");
-
-        Bairro_TF3.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
-
-        javax.swing.GroupLayout RuaPan3Layout = new javax.swing.GroupLayout(RuaPan3);
-        RuaPan3.setLayout(RuaPan3Layout);
-        RuaPan3Layout.setHorizontalGroup(
-            RuaPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(LB_Bairro3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(RuaPan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Bairro_TF3)
-                .addContainerGap())
-        );
-        RuaPan3Layout.setVerticalGroup(
-            RuaPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(RuaPan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(LB_Bairro3)
-                .addGap(18, 18, 18)
-                .addComponent(Bairro_TF3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        LB_Instagram3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        LB_Instagram3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LB_Instagram3.setText("INSTAGRAM");
-
-        Instagram_TF3.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
-
-        javax.swing.GroupLayout NumCasaPan3Layout = new javax.swing.GroupLayout(NumCasaPan3);
-        NumCasaPan3.setLayout(NumCasaPan3Layout);
-        NumCasaPan3Layout.setHorizontalGroup(
-            NumCasaPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(LB_Instagram3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(NumCasaPan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Instagram_TF3)
-                .addContainerGap())
-        );
-        NumCasaPan3Layout.setVerticalGroup(
-            NumCasaPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NumCasaPan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(LB_Instagram3)
-                .addGap(18, 18, 18)
-                .addComponent(Instagram_TF3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        LB_NumCasa3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        LB_NumCasa3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LB_NumCasa3.setText("NÚMERO DA CASA");
-
-        NumCasa_TF3.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
-
-        javax.swing.GroupLayout InstaPan3Layout = new javax.swing.GroupLayout(InstaPan3);
-        InstaPan3.setLayout(InstaPan3Layout);
-        InstaPan3Layout.setHorizontalGroup(
-            InstaPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(LB_NumCasa3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(InstaPan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(NumCasa_TF3)
-                .addContainerGap())
-        );
-        InstaPan3Layout.setVerticalGroup(
-            InstaPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(InstaPan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(LB_NumCasa3)
-                .addGap(18, 18, 18)
-                .addComponent(NumCasa_TF3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        LB_Facebook3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        LB_Facebook3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LB_Facebook3.setText("FACEBOOK");
-
-        Face_TF3.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
-
-        javax.swing.GroupLayout FacePan3Layout = new javax.swing.GroupLayout(FacePan3);
-        FacePan3.setLayout(FacePan3Layout);
-        FacePan3Layout.setHorizontalGroup(
-            FacePan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(LB_Facebook3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(FacePan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Face_TF3)
-                .addContainerGap())
-        );
-        FacePan3Layout.setVerticalGroup(
-            FacePan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(FacePan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(LB_Facebook3)
-                .addGap(18, 18, 18)
-                .addComponent(Face_TF3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        LB_NumCartao3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        LB_NumCartao3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LB_NumCartao3.setText("NÚMERO DO CARTÃO");
-
-        NumCartao_TF3.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
-
-        javax.swing.GroupLayout NumCartaoPan3Layout = new javax.swing.GroupLayout(NumCartaoPan3);
-        NumCartaoPan3.setLayout(NumCartaoPan3Layout);
-        NumCartaoPan3Layout.setHorizontalGroup(
-            NumCartaoPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(LB_NumCartao3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
-            .addGroup(NumCartaoPan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(NumCartao_TF3)
-                .addContainerGap())
-        );
-        NumCartaoPan3Layout.setVerticalGroup(
-            NumCartaoPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NumCartaoPan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(LB_NumCartao3)
-                .addGap(18, 18, 18)
-                .addComponent(NumCartao_TF3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        Limpar_BT3.setFont(new java.awt.Font("Tahoma", 0, 28)); // NOI18N
-        Limpar_BT3.setText("LIMPAR");
-        Limpar_BT3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Limpar_BT3ActionPerformed(evt);
-            }
-        });
-
-        Remover_BT.setFont(new java.awt.Font("Tahoma", 0, 28)); // NOI18N
-        Remover_BT.setText("REMOVER");
-        Remover_BT.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Remover_BTActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout ButtonsPan3Layout = new javax.swing.GroupLayout(ButtonsPan3);
-        ButtonsPan3.setLayout(ButtonsPan3Layout);
-        ButtonsPan3Layout.setHorizontalGroup(
-            ButtonsPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ButtonsPan3Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(Limpar_BT3, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
-                .addComponent(Remover_BT, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        ButtonsPan3Layout.setVerticalGroup(
-            ButtonsPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ButtonsPan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(ButtonsPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Remover_BT, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Limpar_BT3, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-
-        javax.swing.GroupLayout DadosPanRemoverLayout = new javax.swing.GroupLayout(DadosPanRemover);
-        DadosPanRemover.setLayout(DadosPanRemoverLayout);
-        DadosPanRemoverLayout.setHorizontalGroup(
-            DadosPanRemoverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DadosPanRemoverLayout.createSequentialGroup()
-                .addGroup(DadosPanRemoverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(ButtonsPan3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(DadosPanRemoverLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(DadosPanRemoverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(InstaPan3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(RuaPan3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(TelResPan3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(CpfPan3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(FacePan3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(DadosPanRemoverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(BairroPan3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(NumCasaPan3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(NumCartaoPan3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(NomePan3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(TelCelPan3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addGap(22, 22, 22))
-        );
-        DadosPanRemoverLayout.setVerticalGroup(
-            DadosPanRemoverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DadosPanRemoverLayout.createSequentialGroup()
-                .addGroup(DadosPanRemoverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(CpfPan3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(NomePan3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(DadosPanRemoverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(TelResPan3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(TelCelPan3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(DadosPanRemoverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(RuaPan3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(BairroPan3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(DadosPanRemoverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(NumCasaPan3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(InstaPan3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(DadosPanRemoverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(NumCartaoPan3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(FacePan3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(18, 18, Short.MAX_VALUE)
-                .addComponent(ButtonsPan3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(21, 21, 21))
-        );
-
-        jLayeredPane6.add(DadosPanRemover);
 
         javax.swing.GroupLayout Remover_Cliente1Layout = new javax.swing.GroupLayout(Remover_Cliente1);
         Remover_Cliente1.setLayout(Remover_Cliente1Layout);
@@ -2509,8 +2158,18 @@ public class Menu extends javax.swing.JFrame {
         JLb_Cpf.setText("CPF");
 
         JBt_Nome_Decrescente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/down_new.jpg"))); // NOI18N
+        JBt_Nome_Decrescente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_Nome_DecrescenteActionPerformed(evt);
+            }
+        });
 
         JBt_Nome_Crescente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
+        JBt_Nome_Crescente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_Nome_CrescenteActionPerformed(evt);
+            }
+        });
 
         JBt_Cpf_Decrescente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/down_new.jpg"))); // NOI18N
         JBt_Cpf_Decrescente.addActionListener(new java.awt.event.ActionListener() {
@@ -2618,6 +2277,11 @@ public class Menu extends javax.swing.JFrame {
 
         Jbt_LimpaCpf2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         Jbt_LimpaCpf2.setText("LIMPAR");
+        Jbt_LimpaCpf2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Jbt_LimpaCpf2ActionPerformed(evt);
+            }
+        });
 
         JBt_BuscaCPF2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_BuscaCPF2.setText("BUSCAR");
@@ -2629,9 +2293,19 @@ public class Menu extends javax.swing.JFrame {
 
         JBt_LimpaNome2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_LimpaNome2.setText("LIMPAR");
+        JBt_LimpaNome2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_LimpaNome2ActionPerformed(evt);
+            }
+        });
 
         JBt_BuscaNome2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_BuscaNome2.setText("BUSCAR");
+        JBt_BuscaNome2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_BuscaNome2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout BuscaPan4Layout = new javax.swing.GroupLayout(BuscaPan4);
         BuscaPan4.setLayout(BuscaPan4Layout);
@@ -2686,6 +2360,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGap(0, 30, Short.MAX_VALUE))
         );
 
+        ListaCpf_Nome2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         ListaCpf_Nome2.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
@@ -2698,7 +2373,10 @@ public class Menu extends javax.swing.JFrame {
         BuscaPanBuscaLayout.setHorizontalGroup(
             BuscaPanBuscaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(BuscaPan4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jScrollPane4)
+            .addGroup(BuscaPanBuscaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane4)
+                .addContainerGap())
         );
         BuscaPanBuscaLayout.setVerticalGroup(
             BuscaPanBuscaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2706,7 +2384,8 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(BuscaPan4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 466, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 449, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jLayeredPane5.add(BuscaPanBusca);
@@ -2776,7 +2455,7 @@ public class Menu extends javax.swing.JFrame {
         DadosPanBuscaLayout.setVerticalGroup(
             DadosPanBuscaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DadosPanBuscaLayout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 581, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 577, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ButtonsPan4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
@@ -2835,7 +2514,7 @@ public class Menu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(JP_ClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(Lateral, javax.swing.GroupLayout.PREFERRED_SIZE, 729, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Centro, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
+                    .addComponent(Centro, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)))
         );
 
         JTP_PainelGuias.addTab("Clientes", JP_Clientes);
@@ -3941,7 +3620,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(Remover_QueijoLayout.createSequentialGroup()
                 .addComponent(jLb_Topo_menuInserir8, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
-                .addComponent(jLayeredPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 690, Short.MAX_VALUE)
+                .addComponent(jLayeredPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -6121,7 +5800,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(Remover_PedidoLayout.createSequentialGroup()
                 .addComponent(jLb_Topo_menuInserir10, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
-                .addComponent(jLayeredPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 690, Short.MAX_VALUE)
+                .addComponent(jLayeredPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -6456,7 +6135,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(Remover_QueijoPedidoLayout.createSequentialGroup()
                 .addComponent(jLb_Topo_menuInserir15, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
-                .addComponent(jLayeredPane18, javax.swing.GroupLayout.PREFERRED_SIZE, 690, Short.MAX_VALUE)
+                .addComponent(jLayeredPane18, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -7508,9 +7187,7 @@ public class Menu extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(JTP_PainelGuias, javax.swing.GroupLayout.PREFERRED_SIZE, 906, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(JTP_PainelGuias, javax.swing.GroupLayout.PREFERRED_SIZE, 895, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -7529,237 +7206,146 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jCB_EscolhasClienteActionPerformed
 
     private void JB_acaoClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JB_acaoClienteActionPerformed
-        /*if(!(jCB_EscolhasCliente.getSelectedItem().toString().equals("-------------------------------------------------"))){
+        if(!(jCB_EscolhasCliente.getSelectedItem().toString().equals("----------------------------------------------------------------------"))){
             String opc = jCB_EscolhasCliente.getSelectedItem().toString();
 
-            if(opc.equals("1- Inserir")){
+            if(opc.equals("1- Cadastrar Cliente")){
                 limpar();
-                Inserir.setVisible(true);
+                Cadastrar_Cliente.setVisible(true);
             }
 
-            if(opc.equals("2- Mostrar")){
-                CarroDAO carroDAO;
+            if(opc.equals("2- Mostrar Clientes Cadastrados")){
+                ClienteDAO clienteDAO;
                 try {
-                    carroDAO = new CarroDAO();
+                    clienteDAO = new ClienteDAO();
 
-                    ArrayList<Carro> carros = carroDAO.getAll(false);
+                    ArrayList<Cliente> clientes = clienteDAO.getAll();
 
                     DefaultTableModel model;
-                    model = new DefaultTableModel(new String[] {"Chassi", "Ano", "Fabricante", "Modelo", "Ar Condicionado", "Potência"}, 0);
-
-                    carros.forEach((Carro carro) -> {
-                        String chassi = carro.getChassi();
-                        int ano = carro.getAno();
-                        String fabricante = carro.getFabricante();
-                        String modelo = carro.getModelo();
-                        boolean ar = carro.isArCondicionado();
-                        float potencia = carro.getPotencia();
+                    model = new DefaultTableModel(new String[] {"cpf", "nome", "telefone", "celular", "bairro", "rua", "numeroCasa", "instagram", "facebook", "NumCartao"}, 0);
+        
+                    clientes.forEach((Cliente cliente) -> {
+                        String cpf = cliente.getCpf();
+                        String nome = cliente.getNome();
+                        String telefone = cliente.getTelefone_residencial();
+                        String celular = cliente.getTelefone_celular();
+                        String bairro = cliente.getBairro();
+                        String rua = cliente.getRua();
+                        int numeroCasa = cliente.getNumeroCasa();
+                        String instagram = cliente.getInstagram();
+                        String facebook = cliente.getFacebook();
+                        String NumCartao = cliente.getNumCartao();
+                        
                         Vector row = new Vector();
-                        row.add(chassi);
-                        row.add(ano);
-                        row.add(fabricante);
-                        row.add(modelo);
-                        row.add(ar);
-                        row.add(potencia);
+                        row.add(cpf);
+                        row.add(nome);
+                        row.add(telefone);
+                        row.add(celular);
+                        row.add(bairro);
+                        row.add(rua);
+                        row.add(numeroCasa);
+                        row.add(instagram);
+                        row.add(facebook);
+                        row.add(NumCartao);
+
                         model.addRow(row);
                     });
 
-                    Resultado_Mostra_Table.setModel(model);
+                    JTb_MostrarClientes.setModel(model);
 
                     limpar();
-                    Mostrar.setVisible(true);
+                    Mostrar_Clientes.setVisible(true);
                 } catch (SQLException | ClassNotFoundException ex) {
                     Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
 
-            if(opc.equals("3- Alterar")){
+            if(opc.equals("3- Alterar Dados do Cliente")){
                 limpar();
-                Alterar.setVisible(true);
-                Procurar_Chassi.setVisible(true);
-            }
-
-            if(opc.equals("4- Excluir")){
-                limpar();
-                Excluir.setVisible(true);
-            }
-
-            if(opc.equals("5- Mostrar o carro com maior potência")){
-                CarroDAO carroDAO;
-                try {
-                    carroDAO = new CarroDAO();
-
-                    ArrayList<Carro> carros = carroDAO.maiorPotencia();
-
-                    DefaultTableModel model;
-                    model = new DefaultTableModel(new String[] {"Chassi", "Ano", "Fabricante", "Modelo", "Ar Condicionado", "Potência"}, 0);
-
-                    carros.forEach((Carro carro) -> {
-                        String chassi = carro.getChassi();
-                        int ano = carro.getAno();
-                        String fabricante = carro.getFabricante();
-                        String modelo = carro.getModelo();
-                        boolean ar = carro.isArCondicionado();
-                        float potencia = carro.getPotencia();
-                        Vector row = new Vector();
-                        row.add(chassi);
-                        row.add(ano);
-                        row.add(fabricante);
-                        row.add(modelo);
-                        row.add(ar);
-                        row.add(potencia);
-                        model.addRow(row);
-                    });
-
-                    Resultado_Mostra_Table.setModel(model);
-
-                    limpar();
-                    Mostrar.setVisible(true);
-                } catch (SQLException | ClassNotFoundException ex) {
-                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
-                }
-            }
-
-            if(opc.equals("6- Mostrar a média dos anos")){
-
                 try{
-                    jLb_Topo_menuResultado.setText("MÉDIA DOS ANOS");
-                    LB_TextoResultado.setText("A média dos anos dos carros é: ");
+                ClienteDAO clienteDAO = new ClienteDAO();
+                ArrayList <Cliente> ListaClientes = clienteDAO.getAll();
+                DefaultListModel DLM = new DefaultListModel();
 
-                    CarroDAO CarroDAO = new CarroDAO();
-                    Chassi_ResultadoResultado.setText(String.valueOf(CarroDAO.MediaAnos()));
-
-                    limpar();
-                    Resultado.setVisible(true);
-                }catch (SQLException | ClassNotFoundException ex){
-                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
-                }
-            }
-
-            if(opc.equals("7- Ordenar por modelo")){
-                CarroDAO carroDAO;
-                try {
-                    carroDAO = new CarroDAO();
-
-                    ArrayList<Carro> carros = carroDAO.getAll(true);
-
-                    DefaultTableModel model;
-                    model = new DefaultTableModel(new String[] {"Chassi", "Ano", "Fabricante", "Modelo", "Ar Condicionado", "Potência"}, 0);
-
-                    carros.forEach((Carro carro) -> {
-                        String chassi = carro.getChassi();
-                        int ano = carro.getAno();
-                        String fabricante = carro.getFabricante();
-                        String modelo = carro.getModelo();
-                        boolean ar = carro.isArCondicionado();
-                        float potencia = carro.getPotencia();
-                        Vector row = new Vector();
-                        row.add(chassi);
-                        row.add(ano);
-                        row.add(fabricante);
-                        row.add(modelo);
-                        row.add(ar);
-                        row.add(potencia);
-                        model.addRow(row);
+                ListaClientes.forEach((Cliente cliente) -> {
+                        String cpf = cliente.getCpf();
+                        String nome = cliente.getNome();
+                        String escrita = "Cpf: "+cpf+"       ||       Nome: "+nome;
+                        DLM.addElement(escrita);
                     });
-
-                    Resultado_Mostra_Table.setModel(model);
-
-                    limpar();
-                    Mostrar.setVisible(true);
-                } catch (SQLException | ClassNotFoundException ex) {
+                ListaCpf_Nome.setModel(DLM);
+                }catch (SQLException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (ClassNotFoundException ex) {
                     Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
                 }
+                Alterar_Cliente.setVisible(true);
+                DadosPanAlterar.setVisible(false);
+                BuscaPanAlterar.setVisible(true);
             }
 
-            if(opc.equals("8- Mostrar quantos carros estão no registro")){
+            if(opc.equals("4- Excluir Cliente")){
+                limpar();
                 try{
-                    jLb_Topo_menuResultado.setText("QUANTIDADE DE CARROS");
-                    LB_TextoResultado.setText("A QUANTIDADE DE CARROS NO REGISTRO É DE:");
+                ClienteDAO clienteDAO = new ClienteDAO();
+                ArrayList <Cliente> ListaClientes = clienteDAO.getAll();
+                DefaultListModel DLM = new DefaultListModel();
 
-                    CarroDAO CarroDAO = new CarroDAO();
-                    Chassi_ResultadoResultado.setText(String.valueOf(CarroDAO.lenght()));
-
-                    limpar();
-                    Resultado.setVisible(true);
-                }catch (SQLException | ClassNotFoundException ex){
-                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
-                }
-            }
-
-            if(opc.equals("9- Carros do “menor ano” agrupados por fabricante")){
-                CarroDAO carroDAO;
-                try {
-                    carroDAO = new CarroDAO();
-
-                    ArrayList<String> fabricantes = carroDAO.menorAno();
-
-                    DefaultTableModel model;
-                    model = new DefaultTableModel(new String[] {"Fabricante"}, 0);
-
-                    fabricantes.forEach((String fabricante) -> {
-                        Vector row = new Vector();
-                        row.add(fabricante);
-                        model.addRow(row);
+                ListaClientes.forEach((Cliente cliente) -> {
+                        String cpf = cliente.getCpf();
+                        String nome = cliente.getNome();
+                        String escrita = "Cpf: "+cpf+"       ||       Nome: "+nome;
+                        DLM.addElement(escrita);
                     });
-
-                    Resultado_Mostra_Table.setModel(model);
-
-                    limpar();
-                    Mostrar.setVisible(true);
-                } catch (SQLException | ClassNotFoundException ex) {
+                ListaCpf_Nome1.setModel(DLM);
+                }catch (SQLException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (ClassNotFoundException ex) {
                     Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
                 }
+                Remover_Cliente1.setVisible(true);
             }
 
-            if(opc.equals("10- Mostrar carros com ar-condicionado")){
-                CarroDAO carroDAO;
-                try {
-                    carroDAO = new CarroDAO();
+            if(opc.equals("5- Buscar Clientes")){
+                limpar();
+                try{
+                ClienteDAO clienteDAO = new ClienteDAO();
+                ArrayList <Cliente> ListaClientes = clienteDAO.getAll();
+                DefaultListModel DLM = new DefaultListModel();
 
-                    ArrayList<Carro> carros = carroDAO.ComAr();
-
-                    DefaultTableModel model;
-                    model = new DefaultTableModel(new String[] {"Chassi", "Ano", "Fabricante", "Modelo", "Ar Condicionado", "Potência"}, 0);
-
-                    carros.forEach((Carro carro) -> {
-                        String chassi = carro.getChassi();
-                        int ano = carro.getAno();
-                        String fabricante = carro.getFabricante();
-                        String modelo = carro.getModelo();
-                        boolean ar = carro.isArCondicionado();
-                        float potencia = carro.getPotencia();
-                        Vector row = new Vector();
-                        row.add(chassi);
-                        row.add(ano);
-                        row.add(fabricante);
-                        row.add(modelo);
-                        row.add(ar);
-                        row.add(potencia);
-                        model.addRow(row);
+                ListaClientes.forEach((Cliente cliente) -> {
+                        String cpf = cliente.getCpf();
+                        String nome = cliente.getNome();
+                        String escrita = "Cpf: "+cpf+"       ||       Nome: "+nome;
+                        DLM.addElement(escrita);
                     });
-
-                    Resultado_Mostra_Table.setModel(model);
-
-                    limpar();
-                    Mostrar.setVisible(true);
-                } catch (SQLException | ClassNotFoundException ex) {
+                ListaCpf_Nome2.setModel(DLM);
+                }catch (SQLException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (ClassNotFoundException ex) {
                     Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
                 }
+                Buscar_Cliente.setVisible(true);
+                DadosPanBusca.setVisible(false);
+                BuscaPanBusca.setVisible(true);
             }
 
-        }*/
+            
+
+        }
     }//GEN-LAST:event_JB_acaoClienteActionPerformed
 
     private void JBt_LimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_LimparActionPerformed
-        // TODO add your handling code here:
-        /*Chassi_TF.setText("");
-        Nome_TF.setText("");
-        TelRes_TF.setText("");
-        TelCel_TF.setText("");
-        Rua_TF.setText("");
-        AC_Nao_RB.setSelected(false);
-        AC_Sim_RB.setSelected(true);*/
+            Cpf_TF.setText("");
+            Nome_TF.setText("");
+            TelRes_TF.setText("");
+            TelCel_TF.setText("");
+            Bairro_TF.setText("");
+            Rua_TF.setText("");
+            NumCasa_TF.setText("");
+            Insta_TF.setText("");
+            Face_TF.setText("");
+            NumCartao_TF.setText("");
     }//GEN-LAST:event_JBt_LimparActionPerformed
 
     private void TelCel_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TelCel_TFActionPerformed
@@ -7779,36 +7365,108 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_TelCel_TF2ActionPerformed
 
     private void Limpar_BT2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Limpar_BT2ActionPerformed
-        // TODO add your handling code here:
+            Cpf_TF2.setText("");
+            Nome_TF2.setText("");
+            TelRes_TF2.setText("");
+            TelCel_TF2.setText("");
+            Bairro_TF2.setText("");
+            Rua_TF2.setText("");
+            NumCasa_TF2.setText("");
+            Insta_TF2.setText("");
+            Face_TF2.setText("");
+            NumCartao_TF2.setText("");
     }//GEN-LAST:event_Limpar_BT2ActionPerformed
 
     private void Alterar_BTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Alterar_BTActionPerformed
-        // TODO add your handling code here:
+        try{
+            ClienteDAO clienteDAO = new ClienteDAO();
+            Cliente cliente = new Cliente(Cpf_TF.getText(), Nome_TF.getText(), TelRes_TF.getText(), 
+                                    TelCel_TF.getText(), Bairro_TF.getText(), Rua_TF.getText(), Integer.parseInt(NumCasa_TF.getText()), 
+                                    Insta_TF.getText(), Face_TF.getText(), NumCartao_TF.getText());
+            
+            clienteDAO.update(cliente);
+            
+            Cpf_TF2.setText("");
+            Nome_TF2.setText("");
+            TelRes_TF2.setText("");
+            TelCel_TF2.setText("");
+            Bairro_TF2.setText("");
+            Rua_TF2.setText("");
+            NumCasa_TF2.setText("");
+            Insta_TF2.setText("");
+            Face_TF2.setText("");
+            NumCartao_TF2.setText("");
+            
+            DadosPanAlterar.setVisible(false);
+            BuscaPanAlterar.setVisible(true);
+            
+            inicializa_barras_laterais();
+        }catch(SQLException | ClassNotFoundException e) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, e);
+        }  
     }//GEN-LAST:event_Alterar_BTActionPerformed
 
     private void JBt_BuscaCPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaCPFActionPerformed
-        // TODO add your handling code here:
+        try{
+            ClienteDAO clienteDAO = new ClienteDAO();
+            ArrayList <Cliente> lista = clienteDAO.getOne_CPF(JTf_BuscaCPF.getText());
+            
+            if(!(lista.isEmpty())){
+                
+                Cliente cliente = lista.get(0);
+                JTf_BuscaCPF.setText("");
+                BuscaPanAlterar.setVisible(false);
+                DadosPanAlterar.setVisible(true);
+                
+                Cpf_TF2.setText(cliente.getCpf());
+                Nome_TF2.setText(cliente.getNome());
+                TelRes_TF2.setText(cliente.getTelefone_residencial());
+                TelCel_TF2.setText(cliente.getTelefone_celular());        
+                Bairro_TF2.setText(cliente.getBairro());  
+                Rua_TF2.setText(cliente.getRua());
+                NumCasa_TF2.setText(String.valueOf(cliente.getNumeroCasa()));
+                Insta_TF2.setText(cliente.getInstagram());
+                Face_TF2.setText(cliente.getFacebook());        
+                NumCartao_TF2.setText(cliente.getNumCartao()); 
+                
+                
+            }else
+                Logger.getLogger(Menu.class.getName()).info("O CPF digitado não existe!!");
+            
+        }catch(SQLException | ClassNotFoundException e){
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, e);
+        }
     }//GEN-LAST:event_JBt_BuscaCPFActionPerformed
 
     private void JBt_BuscaCPF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaCPF1ActionPerformed
-        // TODO add your handling code here:
+        try{
+            ClienteDAO clienteDAO = new ClienteDAO();
+            
+            clienteDAO.delete(JTf_BuscaCPF1.getText());
+            
+            JTf_BuscaCPF1.setText("");
+        }catch(SQLException | ClassNotFoundException e){
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, e);
+        }
+        try{
+                ClienteDAO clienteDAO = new ClienteDAO();
+                ArrayList <Cliente> ListaClientes = clienteDAO.getAll();
+                DefaultListModel DLM = new DefaultListModel();
+
+                ListaClientes.forEach((Cliente cliente) -> {
+                        String cpf = cliente.getCpf();
+                        String nome = cliente.getNome();
+                        String escrita = "Cpf: "+cpf+"       ||       Nome: "+nome;
+                        DLM.addElement(escrita);
+                    });
+                ListaCpf_Nome1.setModel(DLM);
+                }catch (SQLException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                Remover_Cliente1.setVisible(true);
     }//GEN-LAST:event_JBt_BuscaCPF1ActionPerformed
-
-    private void TelRes_TF3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TelRes_TF3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TelRes_TF3ActionPerformed
-
-    private void TelCel_TF3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TelCel_TF3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TelCel_TF3ActionPerformed
-
-    private void Limpar_BT3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Limpar_BT3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Limpar_BT3ActionPerformed
-
-    private void Remover_BTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Remover_BTActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Remover_BTActionPerformed
 
     private void JTF_NumClientes6JTF_NumClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JTF_NumClientes6JTF_NumClientesActionPerformed
         // TODO add your handling code here:
@@ -7823,23 +7481,155 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_JTF_NumPedidos6JTF_NumPedidosActionPerformed
 
     private void JBt_Cpf_DecrescenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Cpf_DecrescenteActionPerformed
-        // TODO add your handling code here:
+        ClienteDAO clienteDAO;
+                try {
+                    clienteDAO = new ClienteDAO();
+
+                    ArrayList<Cliente> clientes = clienteDAO.OrdenarCPF(-1);
+
+                    DefaultTableModel model;
+                    model = new DefaultTableModel(new String[] {"cpf", "nome", "telefone", "celular", "bairro", "rua", "numeroCasa", "instagram", "facebook", "NumCartao"}, 0);
+        
+                    clientes.forEach((Cliente cliente) -> {
+                        String cpf = cliente.getCpf();
+                        String nome = cliente.getNome();
+                        String telefone = cliente.getTelefone_residencial();
+                        String celular = cliente.getTelefone_celular();
+                        String bairro = cliente.getBairro();
+                        String rua = cliente.getRua();
+                        int numeroCasa = cliente.getNumeroCasa();
+                        String instagram = cliente.getInstagram();
+                        String facebook = cliente.getFacebook();
+                        String NumCartao = cliente.getNumCartao();
+                        
+                        Vector row = new Vector();
+                        row.add(cpf);
+                        row.add(nome);
+                        row.add(telefone);
+                        row.add(celular);
+                        row.add(bairro);
+                        row.add(rua);
+                        row.add(numeroCasa);
+                        row.add(instagram);
+                        row.add(facebook);
+                        row.add(NumCartao);
+
+                        model.addRow(row);
+                    });
+
+                    JTb_MostrarClientes.setModel(model);
+
+                    limpar();
+                    Mostrar_Clientes.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
     }//GEN-LAST:event_JBt_Cpf_DecrescenteActionPerformed
 
     private void JBt_Cpf_CrescenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Cpf_CrescenteActionPerformed
-        // TODO add your handling code here:
+        ClienteDAO clienteDAO;
+                try {
+                    clienteDAO = new ClienteDAO();
+
+                    ArrayList<Cliente> clientes = clienteDAO.OrdenarCPF(1);
+
+                    DefaultTableModel model;
+                    model = new DefaultTableModel(new String[] {"cpf", "nome", "telefone", "celular", "bairro", "rua", "numeroCasa", "instagram", "facebook", "NumCartao"}, 0);
+        
+                    clientes.forEach((Cliente cliente) -> {
+                        String cpf = cliente.getCpf();
+                        String nome = cliente.getNome();
+                        String telefone = cliente.getTelefone_residencial();
+                        String celular = cliente.getTelefone_celular();
+                        String bairro = cliente.getBairro();
+                        String rua = cliente.getRua();
+                        int numeroCasa = cliente.getNumeroCasa();
+                        String instagram = cliente.getInstagram();
+                        String facebook = cliente.getFacebook();
+                        String NumCartao = cliente.getNumCartao();
+                        
+                        Vector row = new Vector();
+                        row.add(cpf);
+                        row.add(nome);
+                        row.add(telefone);
+                        row.add(celular);
+                        row.add(bairro);
+                        row.add(rua);
+                        row.add(numeroCasa);
+                        row.add(instagram);
+                        row.add(facebook);
+                        row.add(NumCartao);
+
+                        model.addRow(row);
+                    });
+
+                    JTb_MostrarClientes.setModel(model);
+
+                    limpar();
+                    Mostrar_Clientes.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
     }//GEN-LAST:event_JBt_Cpf_CrescenteActionPerformed
 
     private void JBt_BuscaCPF2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaCPF2ActionPerformed
-        // TODO add your handling code here:
+        
+                try {
+                    ClienteDAO clienteDAO = new ClienteDAO();
+                    ArrayList <Cliente> clientes = clienteDAO.getOne_CPF(JTf_BuscaCPF2.getText());
+
+                    DefaultTableModel model;
+                    model = new DefaultTableModel(new String[] {"cpf", "nome", "telefone", "celular", "bairro", "rua", "numeroCasa", "instagram", "facebook", "NumCartao"}, 0);
+        
+                        clientes.forEach((Cliente cliente) -> {
+                        String cpf = cliente.getCpf();
+                        String nome = cliente.getNome();
+                        String telefone = cliente.getTelefone_residencial();
+                        String celular = cliente.getTelefone_celular();
+                        String bairro = cliente.getBairro();
+                        String rua = cliente.getRua();
+                        int numeroCasa = cliente.getNumeroCasa();
+                        String instagram = cliente.getInstagram();
+                        String facebook = cliente.getFacebook();
+                        String NumCartao = cliente.getNumCartao();
+                        
+                        Vector row = new Vector();
+                        row.add(cpf);
+                        row.add(nome);
+                        row.add(telefone);
+                        row.add(celular);
+                        row.add(bairro);
+                        row.add(rua);
+                        row.add(numeroCasa);
+                        row.add(instagram);
+                        row.add(facebook);
+                        row.add(NumCartao);
+
+                        model.addRow(row);
+                    });
+
+                    jTable1.setModel(model);
+
+                    limpar();
+                    JTf_BuscaCPF2.setText("");
+                    Buscar_Cliente.setVisible(true);
+                    BuscaPanBusca.setVisible(false);
+                    DadosPanBusca.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
     }//GEN-LAST:event_JBt_BuscaCPF2ActionPerformed
 
     private void BuscarNovamente_BTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarNovamente_BTActionPerformed
-        // TODO add your handling code here:
+                limpar();
+                Buscar_Cliente.setVisible(true);
+                DadosPanBusca.setVisible(false);
+                BuscaPanBusca.setVisible(true);
     }//GEN-LAST:event_BuscarNovamente_BTActionPerformed
 
     private void VoltarDashboard_BTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VoltarDashboard_BTActionPerformed
-        // TODO add your handling code here:
+        limpar();
+        JP_Dashboard.setVisible(true);
     }//GEN-LAST:event_VoltarDashboard_BTActionPerformed
 
     private void jCB_EscolhasQueijoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCB_EscolhasQueijoActionPerformed
@@ -8185,6 +7975,257 @@ public class Menu extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_Lista_PedidosMouseClicked
 
+    private void JBt_InserirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_InserirActionPerformed
+        try{
+            ClienteDAO clienteDAO = new ClienteDAO();
+            Cliente cliente = new Cliente(Cpf_TF.getText(), Nome_TF.getText(), TelRes_TF.getText(), 
+                                    TelCel_TF.getText(), Bairro_TF.getText(), Rua_TF.getText(), Integer.parseInt(NumCasa_TF.getText()), 
+                                    Insta_TF.getText(), Face_TF.getText(), NumCartao_TF.getText());
+            
+            clienteDAO.inserir(cliente);
+            
+            Cpf_TF.setText("");
+            Nome_TF.setText("");
+            TelRes_TF.setText("");
+            TelCel_TF.setText("");
+            Bairro_TF.setText("");
+            Rua_TF.setText("");
+            NumCasa_TF.setText("");
+            Insta_TF.setText("");
+            Face_TF.setText("");
+            NumCartao_TF.setText("");
+            
+            inicializa_barras_laterais();
+        }catch(SQLException | ClassNotFoundException e) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, e);
+        }        
+    }//GEN-LAST:event_JBt_InserirActionPerformed
+
+    private void JBt_Nome_DecrescenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Nome_DecrescenteActionPerformed
+        ClienteDAO clienteDAO;
+                try {
+                    clienteDAO = new ClienteDAO();
+
+                    ArrayList<Cliente> clientes = clienteDAO.OrdenarNome(-1);
+
+                    DefaultTableModel model;
+                    model = new DefaultTableModel(new String[] {"cpf", "nome", "telefone", "celular", "bairro", "rua", "numeroCasa", "instagram", "facebook", "NumCartao"}, 0);
+        
+                    clientes.forEach((Cliente cliente) -> {
+                        String cpf = cliente.getCpf();
+                        String nome = cliente.getNome();
+                        String telefone = cliente.getTelefone_residencial();
+                        String celular = cliente.getTelefone_celular();
+                        String bairro = cliente.getBairro();
+                        String rua = cliente.getRua();
+                        int numeroCasa = cliente.getNumeroCasa();
+                        String instagram = cliente.getInstagram();
+                        String facebook = cliente.getFacebook();
+                        String NumCartao = cliente.getNumCartao();
+                        
+                        Vector row = new Vector();
+                        row.add(cpf);
+                        row.add(nome);
+                        row.add(telefone);
+                        row.add(celular);
+                        row.add(bairro);
+                        row.add(rua);
+                        row.add(numeroCasa);
+                        row.add(instagram);
+                        row.add(facebook);
+                        row.add(NumCartao);
+
+                        model.addRow(row);
+                    });
+
+                    JTb_MostrarClientes.setModel(model);
+
+                    limpar();
+                    Mostrar_Clientes.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+    }//GEN-LAST:event_JBt_Nome_DecrescenteActionPerformed
+
+    private void JBt_Nome_CrescenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Nome_CrescenteActionPerformed
+        ClienteDAO clienteDAO;
+                try {
+                    clienteDAO = new ClienteDAO();
+
+                    ArrayList<Cliente> clientes = clienteDAO.OrdenarNome(1);
+
+                    DefaultTableModel model;
+                    model = new DefaultTableModel(new String[] {"cpf", "nome", "telefone", "celular", "bairro", "rua", "numeroCasa", "instagram", "facebook", "NumCartao"}, 0);
+        
+                    clientes.forEach((Cliente cliente) -> {
+                        String cpf = cliente.getCpf();
+                        String nome = cliente.getNome();
+                        String telefone = cliente.getTelefone_residencial();
+                        String celular = cliente.getTelefone_celular();
+                        String bairro = cliente.getBairro();
+                        String rua = cliente.getRua();
+                        int numeroCasa = cliente.getNumeroCasa();
+                        String instagram = cliente.getInstagram();
+                        String facebook = cliente.getFacebook();
+                        String NumCartao = cliente.getNumCartao();
+                        
+                        Vector row = new Vector();
+                        row.add(cpf);
+                        row.add(nome);
+                        row.add(telefone);
+                        row.add(celular);
+                        row.add(bairro);
+                        row.add(rua);
+                        row.add(numeroCasa);
+                        row.add(instagram);
+                        row.add(facebook);
+                        row.add(NumCartao);
+
+                        model.addRow(row);
+                    });
+
+                    JTb_MostrarClientes.setModel(model);
+
+                    limpar();
+                    Mostrar_Clientes.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+    }//GEN-LAST:event_JBt_Nome_CrescenteActionPerformed
+
+    private void Jbt_LimpaCpfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Jbt_LimpaCpfActionPerformed
+        JTf_BuscaCPF.setText("");
+    }//GEN-LAST:event_Jbt_LimpaCpfActionPerformed
+
+    private void JBt_BuscaNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaNomeActionPerformed
+        try{
+            ClienteDAO clienteDAO = new ClienteDAO();
+            ArrayList <Cliente> lista = clienteDAO.getOne_nome(JTf_BuscaNome.getText());
+            
+            if(!(lista.isEmpty())){
+                
+                Cliente cliente = lista.get(0);
+                JTf_BuscaCPF.setText("");
+                BuscaPanAlterar.setVisible(false);
+                DadosPanAlterar.setVisible(true);
+                
+                Cpf_TF2.setText(cliente.getCpf());
+                Nome_TF2.setText(cliente.getNome());
+                TelRes_TF2.setText(cliente.getTelefone_residencial());
+                TelCel_TF2.setText(cliente.getTelefone_celular());        
+                Bairro_TF2.setText(cliente.getBairro());  
+                Rua_TF2.setText(cliente.getRua());
+                NumCasa_TF2.setText(String.valueOf(cliente.getNumeroCasa()));
+                Insta_TF2.setText(cliente.getInstagram());
+                Face_TF2.setText(cliente.getFacebook());        
+                NumCartao_TF2.setText(cliente.getNumCartao()); 
+                
+                
+            }else
+                Logger.getLogger(Menu.class.getName()).info("O CPF digitado não existe!!");
+            
+        }catch(SQLException | ClassNotFoundException e){
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, e);
+        }
+    }//GEN-LAST:event_JBt_BuscaNomeActionPerformed
+
+    private void JBt_LimpaNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_LimpaNomeActionPerformed
+        JTf_BuscaCPF.setText("");
+    }//GEN-LAST:event_JBt_LimpaNomeActionPerformed
+
+    private void JBt_BuscaNome1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaNome1ActionPerformed
+        try{
+            ClienteDAO clienteDAO = new ClienteDAO();
+            
+            clienteDAO.deleteNome(JTf_BuscaNome1.getText());
+            
+            JTf_BuscaNome1.setText("");
+        }catch(SQLException | ClassNotFoundException e){
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, e);
+        }
+        try{
+                ClienteDAO clienteDAO = new ClienteDAO();
+                ArrayList <Cliente> ListaClientes = clienteDAO.getAll();
+                DefaultListModel DLM = new DefaultListModel();
+
+                ListaClientes.forEach((Cliente cliente) -> {
+                        String cpf = cliente.getCpf();
+                        String nome = cliente.getNome();
+                        String escrita = "Cpf: "+cpf+"       ||       Nome: "+nome;
+                        DLM.addElement(escrita);
+                    });
+                ListaCpf_Nome1.setModel(DLM);
+                }catch (SQLException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                Remover_Cliente1.setVisible(true);
+    }//GEN-LAST:event_JBt_BuscaNome1ActionPerformed
+
+    private void JBt_LimpaNome1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_LimpaNome1ActionPerformed
+        JTf_BuscaNome1.setText("");
+    }//GEN-LAST:event_JBt_LimpaNome1ActionPerformed
+
+    private void Jbt_LimpaCpf1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Jbt_LimpaCpf1ActionPerformed
+        JTf_BuscaCPF1.setText("");
+    }//GEN-LAST:event_Jbt_LimpaCpf1ActionPerformed
+
+    private void Jbt_LimpaCpf2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Jbt_LimpaCpf2ActionPerformed
+        JTf_BuscaCPF2.setText("");
+    }//GEN-LAST:event_Jbt_LimpaCpf2ActionPerformed
+
+    private void JBt_BuscaNome2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaNome2ActionPerformed
+        try {
+                    ClienteDAO clienteDAO = new ClienteDAO();
+                    ArrayList <Cliente> clientes = clienteDAO.getOne_nome(JTf_BuscaNome2.getText());
+
+                    DefaultTableModel model;
+                    model = new DefaultTableModel(new String[] {"cpf", "nome", "telefone", "celular", "bairro", "rua", "numeroCasa", "instagram", "facebook", "NumCartao"}, 0);
+        
+                        clientes.forEach((Cliente cliente) -> {
+                        String cpf = cliente.getCpf();
+                        String nome = cliente.getNome();
+                        String telefone = cliente.getTelefone_residencial();
+                        String celular = cliente.getTelefone_celular();
+                        String bairro = cliente.getBairro();
+                        String rua = cliente.getRua();
+                        int numeroCasa = cliente.getNumeroCasa();
+                        String instagram = cliente.getInstagram();
+                        String facebook = cliente.getFacebook();
+                        String NumCartao = cliente.getNumCartao();
+                        
+                        Vector row = new Vector();
+                        row.add(cpf);
+                        row.add(nome);
+                        row.add(telefone);
+                        row.add(celular);
+                        row.add(bairro);
+                        row.add(rua);
+                        row.add(numeroCasa);
+                        row.add(instagram);
+                        row.add(facebook);
+                        row.add(NumCartao);
+
+                        model.addRow(row);
+                    });
+
+                    jTable1.setModel(model);
+
+                    limpar();
+                    JTf_BuscaNome2.setText("");
+                    Buscar_Cliente.setVisible(true);
+                    BuscaPanBusca.setVisible(false);
+                    DadosPanBusca.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+    }//GEN-LAST:event_JBt_BuscaNome2ActionPerformed
+
+    private void JBt_LimpaNome2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_LimpaNome2ActionPerformed
+        JTf_BuscaNome2.setText("");
+    }//GEN-LAST:event_JBt_LimpaNome2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -8237,10 +8278,8 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel Alterar_QueijoPedido;
     private javax.swing.JPanel BairroPan;
     private javax.swing.JPanel BairroPan2;
-    private javax.swing.JPanel BairroPan3;
     private javax.swing.JTextField Bairro_TF;
     private javax.swing.JTextField Bairro_TF2;
-    private javax.swing.JTextField Bairro_TF3;
     private javax.swing.JPanel BuscaPan10;
     private javax.swing.JPanel BuscaPan11;
     private javax.swing.JPanel BuscaPan12;
@@ -8283,7 +8322,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel ButtonsPan15;
     private javax.swing.JPanel ButtonsPan16;
     private javax.swing.JPanel ButtonsPan2;
-    private javax.swing.JPanel ButtonsPan3;
     private javax.swing.JPanel ButtonsPan4;
     private javax.swing.JPanel ButtonsPan5;
     private javax.swing.JPanel ButtonsPan6;
@@ -8306,14 +8344,12 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel CpfPan12;
     private javax.swing.JPanel CpfPan13;
     private javax.swing.JPanel CpfPan2;
-    private javax.swing.JPanel CpfPan3;
     private javax.swing.JPanel CpfPan4;
     private javax.swing.JPanel CpfPan6;
     private javax.swing.JPanel CpfPan7;
     private javax.swing.JPanel CpfPan9;
     private javax.swing.JTextField Cpf_TF;
     private javax.swing.JTextField Cpf_TF2;
-    private javax.swing.JTextField Cpf_TF3;
     private javax.swing.JPanel DadosPanAlterar;
     private javax.swing.JPanel DadosPanBusca;
     private javax.swing.JPanel DadosPanBusca1;
@@ -8329,17 +8365,14 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel DadosPanCadastro7;
     private javax.swing.JPanel DadosPanCadastro8;
     private javax.swing.JPanel DadosPanCadastro9;
-    private javax.swing.JPanel DadosPanRemover;
     private javax.swing.JTextField DataPedido_TF;
     private javax.swing.JTextField DataPedido_TF1;
     private javax.swing.JTextField DataPedido_TF2;
     private javax.swing.JTextField DataPedido_TF4;
     private javax.swing.JPanel FacePan;
     private javax.swing.JPanel FacePan2;
-    private javax.swing.JPanel FacePan3;
     private javax.swing.JTextField Face_TF;
     private javax.swing.JTextField Face_TF2;
-    private javax.swing.JTextField Face_TF3;
     private javax.swing.JTextField IdPedido_TF;
     private javax.swing.JTextField IdPedido_TF1;
     private javax.swing.JTextField IdPedido_TF2;
@@ -8360,10 +8393,8 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel Inserir_QueijoPedido;
     private javax.swing.JPanel InstaPan;
     private javax.swing.JPanel InstaPan2;
-    private javax.swing.JPanel InstaPan3;
     private javax.swing.JTextField Insta_TF;
-    private javax.swing.JTextField Instagram_TF2;
-    private javax.swing.JTextField Instagram_TF3;
+    private javax.swing.JTextField Insta_TF2;
     private javax.swing.JButton JB_acaoCliente;
     private javax.swing.JButton JB_acaoPedido;
     private javax.swing.JButton JB_acaoQueijo;
@@ -8533,10 +8564,8 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel Jlb_BuscaIdQueijo5;
     private javax.swing.JLabel LB_Bairro;
     private javax.swing.JLabel LB_Bairro2;
-    private javax.swing.JLabel LB_Bairro3;
     private javax.swing.JLabel LB_Cpf;
     private javax.swing.JLabel LB_Cpf2;
-    private javax.swing.JLabel LB_Cpf3;
     private javax.swing.JLabel LB_CpfCliente;
     private javax.swing.JLabel LB_CpfCliente1;
     private javax.swing.JLabel LB_CpfCliente2;
@@ -8547,7 +8576,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel LB_DataPedido4;
     private javax.swing.JLabel LB_Face;
     private javax.swing.JLabel LB_Facebook2;
-    private javax.swing.JLabel LB_Facebook3;
     private javax.swing.JLabel LB_IdPedido;
     private javax.swing.JLabel LB_IdPedido1;
     private javax.swing.JLabel LB_IdPedido2;
@@ -8559,16 +8587,12 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel LB_IdQueijo6;
     private javax.swing.JLabel LB_Insta;
     private javax.swing.JLabel LB_Instagram2;
-    private javax.swing.JLabel LB_Instagram3;
     private javax.swing.JLabel LB_Nome;
     private javax.swing.JLabel LB_Nome2;
-    private javax.swing.JLabel LB_Nome3;
     private javax.swing.JLabel LB_NumCartao;
     private javax.swing.JLabel LB_NumCartao2;
-    private javax.swing.JLabel LB_NumCartao3;
     private javax.swing.JLabel LB_NumCasa;
     private javax.swing.JLabel LB_NumCasa2;
-    private javax.swing.JLabel LB_NumCasa3;
     private javax.swing.JLabel LB_Peso;
     private javax.swing.JLabel LB_Peso1;
     private javax.swing.JLabel LB_Peso2;
@@ -8580,13 +8604,10 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel LB_PrazoEntrega4;
     private javax.swing.JLabel LB_Rua;
     private javax.swing.JLabel LB_Rua2;
-    private javax.swing.JLabel LB_Rua3;
     private javax.swing.JLabel LB_TelCel;
     private javax.swing.JLabel LB_TelCel2;
-    private javax.swing.JLabel LB_TelCel3;
     private javax.swing.JLabel LB_TelRes;
     private javax.swing.JLabel LB_TelRes2;
-    private javax.swing.JLabel LB_TelRes3;
     private javax.swing.JLabel LB_TempIdeal;
     private javax.swing.JLabel LB_TempIdeal1;
     private javax.swing.JLabel LB_TempIdeal2;
@@ -8615,7 +8636,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton LimparQueijo_BT5;
     private javax.swing.JButton LimparQueijo_BT6;
     private javax.swing.JButton Limpar_BT2;
-    private javax.swing.JButton Limpar_BT3;
     private javax.swing.JList<String> ListaCpf_Nome;
     private javax.swing.JList<String> ListaCpf_Nome1;
     private javax.swing.JList<String> ListaCpf_Nome2;
@@ -8644,26 +8664,20 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel NomePan12;
     private javax.swing.JPanel NomePan13;
     private javax.swing.JPanel NomePan2;
-    private javax.swing.JPanel NomePan3;
     private javax.swing.JPanel NomePan4;
     private javax.swing.JPanel NomePan6;
     private javax.swing.JPanel NomePan7;
     private javax.swing.JPanel NomePan9;
     private javax.swing.JTextField Nome_TF;
     private javax.swing.JTextField Nome_TF2;
-    private javax.swing.JTextField Nome_TF3;
     private javax.swing.JPanel NumCartaoPan;
     private javax.swing.JPanel NumCartaoPan2;
-    private javax.swing.JPanel NumCartaoPan3;
     private javax.swing.JTextField NumCartao_TF;
     private javax.swing.JTextField NumCartao_TF2;
-    private javax.swing.JTextField NumCartao_TF3;
     private javax.swing.JPanel NumCasaPan;
     private javax.swing.JPanel NumCasaPan2;
-    private javax.swing.JPanel NumCasaPan3;
     private javax.swing.JTextField NumCasa_TF;
     private javax.swing.JTextField NumCasa_TF2;
-    private javax.swing.JTextField NumCasa_TF3;
     private javax.swing.JPanel OrdernarPan;
     private javax.swing.JPanel OrdernarPan1;
     private javax.swing.JPanel OrdernarPan2;
@@ -8691,7 +8705,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton RemoverQueijo_BT;
     private javax.swing.JButton RemoverQueijo_BT1;
     private javax.swing.JButton RemoverQueijo_BT2;
-    private javax.swing.JButton Remover_BT;
     private javax.swing.JPanel Remover_Cliente1;
     private javax.swing.JPanel Remover_Pedido;
     private javax.swing.JPanel Remover_Queijo;
@@ -8700,13 +8713,11 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel RuaPan1;
     private javax.swing.JPanel RuaPan10;
     private javax.swing.JPanel RuaPan2;
-    private javax.swing.JPanel RuaPan3;
     private javax.swing.JPanel RuaPan6;
     private javax.swing.JPanel RuaPan7;
     private javax.swing.JPanel RuaPan9;
     private javax.swing.JTextField Rua_TF;
     private javax.swing.JTextField Rua_TF2;
-    private javax.swing.JTextField Rua_TF3;
     private javax.swing.JList<String> TabelaEscolhaClientes;
     private javax.swing.JList<String> TabelaEscolhaClientes1;
     private javax.swing.JTable Tabela_Clientes;
@@ -8720,14 +8731,12 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel TelCelPan12;
     private javax.swing.JPanel TelCelPan13;
     private javax.swing.JPanel TelCelPan2;
-    private javax.swing.JPanel TelCelPan3;
     private javax.swing.JPanel TelCelPan4;
     private javax.swing.JPanel TelCelPan6;
     private javax.swing.JPanel TelCelPan7;
     private javax.swing.JPanel TelCelPan9;
     private javax.swing.JTextField TelCel_TF;
     private javax.swing.JTextField TelCel_TF2;
-    private javax.swing.JTextField TelCel_TF3;
     private javax.swing.JPanel TelResPan;
     private javax.swing.JPanel TelResPan1;
     private javax.swing.JPanel TelResPan10;
@@ -8735,14 +8744,12 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel TelResPan12;
     private javax.swing.JPanel TelResPan13;
     private javax.swing.JPanel TelResPan2;
-    private javax.swing.JPanel TelResPan3;
     private javax.swing.JPanel TelResPan4;
     private javax.swing.JPanel TelResPan6;
     private javax.swing.JPanel TelResPan7;
     private javax.swing.JPanel TelResPan9;
     private javax.swing.JTextField TelRes_TF;
     private javax.swing.JTextField TelRes_TF2;
-    private javax.swing.JTextField TelRes_TF3;
     private javax.swing.JTextField TempIdeal_TF;
     private javax.swing.JTextField TempIdeal_TF1;
     private javax.swing.JTextField TempIdeal_TF2;
