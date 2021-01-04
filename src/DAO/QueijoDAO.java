@@ -244,4 +244,25 @@ public class QueijoDAO {
         }
         return (ListaRetorno.size());
     }
+    
+    public int MaiorID(){
+        PreparedStatement instrucao;
+        ResultSet res;
+        String codigo = "select MAX(id_queijo) from Queijo";
+        
+        int maxID = 0;
+        try{
+            instrucao = this.conexao.prepareStatement(codigo);
+            res = instrucao.executeQuery();
+            
+            while(res.next()){
+                maxID = res.getInt("max");
+            }
+        }catch(SQLException e){
+            System.out.println("erro: "+e.toString());
+        }
+       
+        return maxID;
+    }
+    
 }

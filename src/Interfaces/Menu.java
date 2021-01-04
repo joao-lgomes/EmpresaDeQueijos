@@ -432,26 +432,6 @@ public class Menu extends javax.swing.JFrame {
         JBt_BuscaIdQueijo1 = new javax.swing.JButton();
         jScrollPane13 = new javax.swing.JScrollPane();
         ListaIdQueijos_tipo1 = new javax.swing.JList<>();
-        DadosPanCadastro3 = new javax.swing.JPanel();
-        CpfPan7 = new javax.swing.JPanel();
-        LB_IdQueijo2 = new javax.swing.JLabel();
-        IdQueijo_TF2 = new javax.swing.JTextField();
-        NomePan7 = new javax.swing.JPanel();
-        LB_Peso2 = new javax.swing.JLabel();
-        Peso_TF2 = new javax.swing.JTextField();
-        TelResPan7 = new javax.swing.JPanel();
-        LB_ValorKg2 = new javax.swing.JLabel();
-        ValorKg_TF2 = new javax.swing.JTextField();
-        TelCelPan7 = new javax.swing.JPanel();
-        LB_TempIdeal2 = new javax.swing.JLabel();
-        TempIdeal_TF2 = new javax.swing.JTextField();
-        RuaPan7 = new javax.swing.JPanel();
-        LB_TipoQueijo2 = new javax.swing.JLabel();
-        TipoQueijo_TF2 = new javax.swing.JTextField();
-        ButtonsPan9 = new javax.swing.JPanel();
-        LimparQueijo_BT3 = new javax.swing.JButton();
-        RemoverQueijo_BT = new javax.swing.JButton();
-        Queijim2 = new javax.swing.JLabel();
         Mostrar_Queijo = new javax.swing.JPanel();
         jLb_Topo_menuMostrar1 = new javax.swing.JLabel();
         jLayeredPane3 = new javax.swing.JLayeredPane();
@@ -2514,7 +2494,7 @@ public class Menu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(JP_ClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(Lateral, javax.swing.GroupLayout.PREFERRED_SIZE, 729, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Centro, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)))
+                    .addComponent(Centro, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
         );
 
         JTP_PainelGuias.addTab("Clientes", JP_Clientes);
@@ -2721,7 +2701,8 @@ public class Menu extends javax.swing.JFrame {
         LB_IdQueijo.setText("ID DO QUEIJO");
 
         IdQueijo_TF.setEditable(false);
-        IdQueijo_TF.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
+        IdQueijo_TF.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        IdQueijo_TF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         javax.swing.GroupLayout CpfPan1Layout = new javax.swing.GroupLayout(CpfPan1);
         CpfPan1.setLayout(CpfPan1Layout);
@@ -2747,7 +2728,8 @@ public class Menu extends javax.swing.JFrame {
         LB_Peso.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LB_Peso.setText("PESO");
 
-        Peso_TF.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
+        Peso_TF.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        Peso_TF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         javax.swing.GroupLayout NomePan1Layout = new javax.swing.GroupLayout(NomePan1);
         NomePan1.setLayout(NomePan1Layout);
@@ -2773,7 +2755,8 @@ public class Menu extends javax.swing.JFrame {
         LB_ValorKg.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LB_ValorKg.setText("VALOR POR KG");
 
-        ValorKg_TF.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
+        ValorKg_TF.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        ValorKg_TF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ValorKg_TF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ValorKg_TFActionPerformed(evt);
@@ -2804,7 +2787,8 @@ public class Menu extends javax.swing.JFrame {
         LB_TempIdeal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LB_TempIdeal.setText("TEMPERATURA IDEAL EM °C");
 
-        TempIdeal_TF.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
+        TempIdeal_TF.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        TempIdeal_TF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         TempIdeal_TF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TempIdeal_TFActionPerformed(evt);
@@ -2835,7 +2819,8 @@ public class Menu extends javax.swing.JFrame {
         LB_TipoQueijo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LB_TipoQueijo.setText("TIPO DO QUEIJO");
 
-        TipoQueijo_TF.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
+        TipoQueijo_TF.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        TipoQueijo_TF.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         javax.swing.GroupLayout RuaPan1Layout = new javax.swing.GroupLayout(RuaPan1);
         RuaPan1.setLayout(RuaPan1Layout);
@@ -2880,7 +2865,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(ButtonsPan1Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(LimparQueijo_BT, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(InserirQueijo_BT, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -2969,10 +2954,16 @@ public class Menu extends javax.swing.JFrame {
         Jlb_BuscaIdQueijo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Jlb_BuscaIdQueijo.setText("Buscar pelo ID do queijo");
 
-        JTf_BuscaIdQueijo.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        JTf_BuscaIdQueijo.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JTf_BuscaIdQueijo.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         Jbt_LimpaIdQueijo.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         Jbt_LimpaIdQueijo.setText("LIMPAR");
+        Jbt_LimpaIdQueijo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Jbt_LimpaIdQueijoActionPerformed(evt);
+            }
+        });
 
         JBt_BuscaIdQueijo.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_BuscaIdQueijo.setText("BUSCAR");
@@ -2995,10 +2986,11 @@ public class Menu extends javax.swing.JFrame {
                             .addComponent(Jlb_BuscaIdQueijo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addContainerGap())
                     .addGroup(BuscaPan5Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(Jbt_LimpaIdQueijo, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(58, 58, 58)
+                        .addGap(35, 35, 35)
                         .addComponent(JBt_BuscaIdQueijo, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(103, 103, 103))))
+                        .addGap(99, 99, 99))))
         );
         BuscaPan5Layout.setVerticalGroup(
             BuscaPan5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3014,7 +3006,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGap(0, 30, Short.MAX_VALUE))
         );
 
-        ListaIdQueijos_tipo.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        ListaIdQueijos_tipo.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         ListaIdQueijos_tipo.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
@@ -3038,8 +3030,8 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(BuscaPan5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 471, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 448, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(36, Short.MAX_VALUE))
         );
 
         jLayeredPane7.add(BuscaPanAlterar1);
@@ -3051,7 +3043,8 @@ public class Menu extends javax.swing.JFrame {
         LB_IdQueijo1.setText("ID DO QUEIJO");
 
         IdQueijo_TF1.setEditable(false);
-        IdQueijo_TF1.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
+        IdQueijo_TF1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        IdQueijo_TF1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         javax.swing.GroupLayout CpfPan6Layout = new javax.swing.GroupLayout(CpfPan6);
         CpfPan6.setLayout(CpfPan6Layout);
@@ -3077,7 +3070,8 @@ public class Menu extends javax.swing.JFrame {
         LB_Peso1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LB_Peso1.setText("PESO");
 
-        Peso_TF1.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
+        Peso_TF1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        Peso_TF1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         javax.swing.GroupLayout NomePan6Layout = new javax.swing.GroupLayout(NomePan6);
         NomePan6.setLayout(NomePan6Layout);
@@ -3104,6 +3098,7 @@ public class Menu extends javax.swing.JFrame {
         LB_ValorKg1.setText("VALOR POR KG");
 
         ValorKg_TF1.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
+        ValorKg_TF1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ValorKg_TF1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ValorKg_TF1ActionPerformed(evt);
@@ -3134,7 +3129,8 @@ public class Menu extends javax.swing.JFrame {
         LB_TempIdeal1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LB_TempIdeal1.setText("TEMPERATURA IDEAL EM °C");
 
-        TempIdeal_TF1.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
+        TempIdeal_TF1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        TempIdeal_TF1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         TempIdeal_TF1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TempIdeal_TF1ActionPerformed(evt);
@@ -3165,7 +3161,8 @@ public class Menu extends javax.swing.JFrame {
         LB_TipoQueijo1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LB_TipoQueijo1.setText("TIPO DO QUEIJO");
 
-        TipoQueijo_TF1.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
+        TipoQueijo_TF1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        TipoQueijo_TF1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         javax.swing.GroupLayout RuaPan6Layout = new javax.swing.GroupLayout(RuaPan6);
         RuaPan6.setLayout(RuaPan6Layout);
@@ -3302,7 +3299,8 @@ public class Menu extends javax.swing.JFrame {
         Jlb_BuscaIdQueijo1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Jlb_BuscaIdQueijo1.setText("Buscar pelo ID do queijo");
 
-        JTf_BuscaIdQueijo1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        JTf_BuscaIdQueijo1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JTf_BuscaIdQueijo1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         Jbt_LimpaIdQueijo1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         Jbt_LimpaIdQueijo1.setText("LIMPAR");
@@ -3346,7 +3344,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGap(0, 65, Short.MAX_VALUE))
         );
 
-        ListaIdQueijos_tipo1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        ListaIdQueijos_tipo1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         ListaIdQueijos_tipo1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
@@ -3371,240 +3369,11 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(BuscaPanAlterar2Layout.createSequentialGroup()
                 .addComponent(BuscaPan8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 453, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 431, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35))
         );
 
         jLayeredPane8.add(BuscaPanAlterar2);
-
-        DadosPanCadastro3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        LB_IdQueijo2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        LB_IdQueijo2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LB_IdQueijo2.setText("ID DO QUEIJO");
-
-        IdQueijo_TF2.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
-
-        javax.swing.GroupLayout CpfPan7Layout = new javax.swing.GroupLayout(CpfPan7);
-        CpfPan7.setLayout(CpfPan7Layout);
-        CpfPan7Layout.setHorizontalGroup(
-            CpfPan7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(LB_IdQueijo2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(CpfPan7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(IdQueijo_TF2)
-                .addContainerGap())
-        );
-        CpfPan7Layout.setVerticalGroup(
-            CpfPan7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(CpfPan7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(LB_IdQueijo2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(IdQueijo_TF2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        LB_Peso2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        LB_Peso2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LB_Peso2.setText("PESO");
-
-        Peso_TF2.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
-
-        javax.swing.GroupLayout NomePan7Layout = new javax.swing.GroupLayout(NomePan7);
-        NomePan7.setLayout(NomePan7Layout);
-        NomePan7Layout.setHorizontalGroup(
-            NomePan7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(LB_Peso2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(NomePan7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Peso_TF2)
-                .addContainerGap())
-        );
-        NomePan7Layout.setVerticalGroup(
-            NomePan7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NomePan7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(LB_Peso2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Peso_TF2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        LB_ValorKg2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        LB_ValorKg2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LB_ValorKg2.setText("VALOR POR KG");
-
-        ValorKg_TF2.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
-        ValorKg_TF2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ValorKg_TF2ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout TelResPan7Layout = new javax.swing.GroupLayout(TelResPan7);
-        TelResPan7.setLayout(TelResPan7Layout);
-        TelResPan7Layout.setHorizontalGroup(
-            TelResPan7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(LB_ValorKg2, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
-            .addGroup(TelResPan7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(ValorKg_TF2)
-                .addContainerGap())
-        );
-        TelResPan7Layout.setVerticalGroup(
-            TelResPan7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(TelResPan7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(LB_ValorKg2)
-                .addGap(18, 18, 18)
-                .addComponent(ValorKg_TF2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        LB_TempIdeal2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        LB_TempIdeal2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LB_TempIdeal2.setText("TEMPERATURA IDEAL EM °C");
-
-        TempIdeal_TF2.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
-        TempIdeal_TF2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TempIdeal_TF2ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout TelCelPan7Layout = new javax.swing.GroupLayout(TelCelPan7);
-        TelCelPan7.setLayout(TelCelPan7Layout);
-        TelCelPan7Layout.setHorizontalGroup(
-            TelCelPan7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(LB_TempIdeal2, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
-            .addGroup(TelCelPan7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(TempIdeal_TF2)
-                .addContainerGap())
-        );
-        TelCelPan7Layout.setVerticalGroup(
-            TelCelPan7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(TelCelPan7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(LB_TempIdeal2)
-                .addGap(18, 18, 18)
-                .addComponent(TempIdeal_TF2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        LB_TipoQueijo2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        LB_TipoQueijo2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LB_TipoQueijo2.setText("TIPO DO QUEIJO");
-
-        TipoQueijo_TF2.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
-
-        javax.swing.GroupLayout RuaPan7Layout = new javax.swing.GroupLayout(RuaPan7);
-        RuaPan7.setLayout(RuaPan7Layout);
-        RuaPan7Layout.setHorizontalGroup(
-            RuaPan7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(LB_TipoQueijo2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RuaPan7Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(TipoQueijo_TF2, javax.swing.GroupLayout.PREFERRED_SIZE, 781, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        RuaPan7Layout.setVerticalGroup(
-            RuaPan7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(RuaPan7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(LB_TipoQueijo2)
-                .addGap(18, 18, 18)
-                .addComponent(TipoQueijo_TF2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        LimparQueijo_BT3.setFont(new java.awt.Font("Tahoma", 0, 28)); // NOI18N
-        LimparQueijo_BT3.setText("LIMPAR");
-        LimparQueijo_BT3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                LimparQueijo_BT3ActionPerformed(evt);
-            }
-        });
-
-        RemoverQueijo_BT.setFont(new java.awt.Font("Tahoma", 0, 28)); // NOI18N
-        RemoverQueijo_BT.setText("REMOVER");
-        RemoverQueijo_BT.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RemoverQueijo_BTActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout ButtonsPan9Layout = new javax.swing.GroupLayout(ButtonsPan9);
-        ButtonsPan9.setLayout(ButtonsPan9Layout);
-        ButtonsPan9Layout.setHorizontalGroup(
-            ButtonsPan9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ButtonsPan9Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(LimparQueijo_BT3, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
-                .addComponent(RemoverQueijo_BT, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        ButtonsPan9Layout.setVerticalGroup(
-            ButtonsPan9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ButtonsPan9Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(ButtonsPan9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(RemoverQueijo_BT, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(LimparQueijo_BT3, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-
-        Queijim2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Queijim2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/LosQueijitos.jpg"))); // NOI18N
-        Queijim2.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-
-        javax.swing.GroupLayout DadosPanCadastro3Layout = new javax.swing.GroupLayout(DadosPanCadastro3);
-        DadosPanCadastro3.setLayout(DadosPanCadastro3Layout);
-        DadosPanCadastro3Layout.setHorizontalGroup(
-            DadosPanCadastro3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DadosPanCadastro3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Queijim2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DadosPanCadastro3Layout.createSequentialGroup()
-                .addGroup(DadosPanCadastro3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(ButtonsPan9, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(DadosPanCadastro3Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(DadosPanCadastro3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(RuaPan7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(DadosPanCadastro3Layout.createSequentialGroup()
-                                .addGroup(DadosPanCadastro3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(TelResPan7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(CpfPan7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(DadosPanCadastro3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(TelCelPan7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(NomePan7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
-                .addGap(22, 22, 22))
-        );
-        DadosPanCadastro3Layout.setVerticalGroup(
-            DadosPanCadastro3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DadosPanCadastro3Layout.createSequentialGroup()
-                .addGroup(DadosPanCadastro3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(CpfPan7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(NomePan7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(DadosPanCadastro3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(TelResPan7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(TelCelPan7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(RuaPan7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Queijim2, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(ButtonsPan9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(21, 21, 21))
-        );
-
-        jLayeredPane8.add(DadosPanCadastro3);
 
         javax.swing.GroupLayout Remover_QueijoLayout = new javax.swing.GroupLayout(Remover_Queijo);
         Remover_Queijo.setLayout(Remover_QueijoLayout);
@@ -3620,7 +3389,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(Remover_QueijoLayout.createSequentialGroup()
                 .addComponent(jLb_Topo_menuInserir8, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
-                .addComponent(jLayeredPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
+                .addComponent(jLayeredPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 690, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -3631,6 +3400,7 @@ public class Menu extends javax.swing.JFrame {
         jLb_Topo_menuMostrar1.setText("MOSTRAR QUEIJOS");
         jLb_Topo_menuMostrar1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
+        JTb_MostrarQueijos.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
         JTb_MostrarQueijos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -3714,32 +3484,34 @@ public class Menu extends javax.swing.JFrame {
         OrdernarPan1.setLayout(OrdernarPan1Layout);
         OrdernarPan1Layout.setHorizontalGroup(
             OrdernarPan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(JLb_OrdenarPor1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(OrdernarPan1Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(JBt_Id_Decrescente, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(JLb_Nome1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(JBt_Id_Crescente, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(JBt_Peso_Decrescente, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(JLb_Cpf1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(JBt_Peso_Crescente, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addComponent(JBt_Valor_Decrescente, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(JLb_Nome2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(JBt_Valor_Crescente, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(34, 34, 34)
-                .addComponent(JBt_temp_Decrescente, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(JLb_Cpf2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(JBt_Temp_Crescente, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OrdernarPan1Layout.createSequentialGroup()
+                .addGroup(OrdernarPan1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(JLb_OrdenarPor1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, OrdernarPan1Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(JBt_Id_Decrescente, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(JLb_Nome1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(JBt_Id_Crescente, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(JBt_Peso_Decrescente, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(JLb_Cpf1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(JBt_Peso_Crescente, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35)
+                        .addComponent(JBt_Valor_Decrescente, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(JLb_Nome2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(JBt_Valor_Crescente, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(34, 34, 34)
+                        .addComponent(JBt_temp_Decrescente, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(JLb_Cpf2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(JBt_Temp_Crescente, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(30, 30, 30))
         );
         OrdernarPan1Layout.setVerticalGroup(
@@ -3765,7 +3537,7 @@ public class Menu extends javax.swing.JFrame {
                             .addComponent(JBt_Temp_Crescente, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(JLb_Nome2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(JBt_Valor_Decrescente, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(0, 38, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jLayeredPane3.setLayer(jScrollPane10, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -3775,15 +3547,20 @@ public class Menu extends javax.swing.JFrame {
         jLayeredPane3.setLayout(jLayeredPane3Layout);
         jLayeredPane3Layout.setHorizontalGroup(
             jLayeredPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane10)
-            .addComponent(OrdernarPan1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jLayeredPane3Layout.createSequentialGroup()
+                .addComponent(OrdernarPan1, javax.swing.GroupLayout.PREFERRED_SIZE, 837, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 2, Short.MAX_VALUE))
+            .addGroup(jLayeredPane3Layout.createSequentialGroup()
+                .addComponent(jScrollPane10)
+                .addContainerGap())
         );
         jLayeredPane3Layout.setVerticalGroup(
             jLayeredPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jLayeredPane3Layout.createSequentialGroup()
                 .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(OrdernarPan1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(OrdernarPan1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout Mostrar_QueijoLayout = new javax.swing.GroupLayout(Mostrar_Queijo);
@@ -3791,7 +3568,9 @@ public class Menu extends javax.swing.JFrame {
         Mostrar_QueijoLayout.setHorizontalGroup(
             Mostrar_QueijoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLb_Topo_menuMostrar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jLayeredPane3)
+            .addGroup(Mostrar_QueijoLayout.createSequentialGroup()
+                .addComponent(jLayeredPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 4, Short.MAX_VALUE))
         );
         Mostrar_QueijoLayout.setVerticalGroup(
             Mostrar_QueijoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3814,13 +3593,15 @@ public class Menu extends javax.swing.JFrame {
         Jlb_BuscaCPF5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Jlb_BuscaCPF5.setText("Buscar pelo ID do queijo");
 
-        JTf_BuscaId.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        JTf_BuscaId.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JTf_BuscaId.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         JLb_BuscaNome5.setFont(new java.awt.Font("Tahoma", 0, 27)); // NOI18N
         JLb_BuscaNome5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         JLb_BuscaNome5.setText("Buscar pelo tipo do queijo");
 
-        JTf_BuscaTipo.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        JTf_BuscaTipo.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JTf_BuscaTipo.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         Jbt_LimpaId.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         Jbt_LimpaId.setText("LIMPAR");
@@ -3892,6 +3673,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGap(0, 30, Short.MAX_VALUE))
         );
 
+        ListaId_Tipo.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         ListaId_Tipo.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
@@ -3904,7 +3686,10 @@ public class Menu extends javax.swing.JFrame {
         BuscaPanBusca1Layout.setHorizontalGroup(
             BuscaPanBusca1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(BuscaPan7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jScrollPane11)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BuscaPanBusca1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane11)
+                .addContainerGap())
         );
         BuscaPanBusca1Layout.setVerticalGroup(
             BuscaPanBusca1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3912,13 +3697,15 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(BuscaPan7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 466, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 445, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(17, Short.MAX_VALUE))
         );
 
         jLayeredPane15.add(BuscaPanBusca1);
 
         DadosPanBusca1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        jTable2.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -3982,7 +3769,7 @@ public class Menu extends javax.swing.JFrame {
         DadosPanBusca1Layout.setVerticalGroup(
             DadosPanBusca1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DadosPanBusca1Layout.createSequentialGroup()
-                .addComponent(jScrollPane12, javax.swing.GroupLayout.DEFAULT_SIZE, 581, Short.MAX_VALUE)
+                .addComponent(jScrollPane12, javax.swing.GroupLayout.DEFAULT_SIZE, 577, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ButtonsPan7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
@@ -4014,11 +3801,11 @@ public class Menu extends javax.swing.JFrame {
         Mostrar_Qtd1.setLayout(Mostrar_Qtd1Layout);
         Mostrar_Qtd1Layout.setHorizontalGroup(
             Mostrar_Qtd1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 843, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         Mostrar_Qtd1Layout.setVerticalGroup(
             Mostrar_Qtd1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 729, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         Centro1.add(Mostrar_Qtd1);
@@ -5800,7 +5587,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(Remover_PedidoLayout.createSequentialGroup()
                 .addComponent(jLb_Topo_menuInserir10, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
-                .addComponent(jLayeredPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
+                .addComponent(jLayeredPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 690, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -6135,7 +5922,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(Remover_QueijoPedidoLayout.createSequentialGroup()
                 .addComponent(jLb_Topo_menuInserir15, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
-                .addComponent(jLayeredPane18, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
+                .addComponent(jLayeredPane18, javax.swing.GroupLayout.PREFERRED_SIZE, 690, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -7669,7 +7456,211 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jCB_EscolhasQueijoActionPerformed
 
     private void JB_acaoQueijoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JB_acaoQueijoActionPerformed
-        // TODO add your handling code here:
+        /*
+    
+        */
+        if(!(jCB_EscolhasQueijo.getSelectedItem().toString().equals("----------------------------------------------------------------------"))){
+            String opc = jCB_EscolhasQueijo.getSelectedItem().toString();
+
+            if(opc.equals("1- Inserir Queijo")){
+                try {
+                    QueijoDAO queijoDAO = new QueijoDAO();
+                    limpar();
+                    IdQueijo_TF.setText(String.valueOf(queijoDAO.MaiorID()+1));
+                    Inserir_Queijo.setVisible(true);
+                    
+                } catch (SQLException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                
+            }
+
+            if(opc.equals("2- Mostrar Queijos Cadastrados")){
+                QueijoDAO queijoDAO;
+                try {
+                    queijoDAO = new QueijoDAO();
+
+                    ArrayList<Queijo> ListaQueijo = queijoDAO.getAll();
+
+                    DefaultTableModel model;
+                    model = new DefaultTableModel(new String[] {"id_queijo", "peso", "valorKG", "tipo", "tempIdeal"}, 0);
+        
+                    ListaQueijo.forEach((Queijo queijo) -> {
+                        int id_queijo = queijo.getId_queijo();
+                        float peso = queijo.getPeso();
+                        float valorKG = queijo.getValorKG();
+                        String tipo = queijo.getTipo();
+                        float tempIdeal = queijo.getTempIdeal();
+
+                        
+                        Vector row = new Vector();
+                        row.add(id_queijo);
+                        row.add(peso);
+                        row.add(valorKG);
+                        row.add(tipo);
+                        row.add(tempIdeal);
+
+                        model.addRow(row);
+                    });
+
+                    JTb_MostrarQueijos.setModel(model);
+
+                    limpar();
+                    Mostrar_Queijo.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+
+            if(opc.equals("3- Alterar Queijo")){
+                limpar();
+                try{
+                QueijoDAO queijoDAO = new QueijoDAO();
+                ArrayList <Queijo> ListaQueijos = queijoDAO.getAll();
+                DefaultListModel DLM = new DefaultListModel();
+
+                ListaQueijos.forEach((Queijo queijo) -> {
+                        int id = queijo.getId_queijo();
+                        String tipo = queijo.getTipo();
+                        String escrita = "ID DO QUEIJO: "+id+"       ||       TIPO: "+tipo;
+                        DLM.addElement(escrita);
+                    });
+                ListaIdQueijos_tipo.setModel(DLM);
+                }catch (SQLException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                Alterar_Queijo.setVisible(true);
+                DadosPanCadastro2.setVisible(false);
+                BuscaPanAlterar1.setVisible(true);
+                
+            }
+
+            if(opc.equals("4- Excluir Queijo")){
+                limpar();
+                try{
+                QueijoDAO queijoDAO = new QueijoDAO();
+                ArrayList <Queijo> ListaQueijos = queijoDAO.getAll();
+                DefaultListModel DLM = new DefaultListModel();
+
+                ListaQueijos.forEach((Queijo queijo) -> {
+                        int id = queijo.getId_queijo();
+                        String tipo = queijo.getTipo();
+                        String escrita = "ID DO QUEIJO: "+id+"       ||       TIPO: "+tipo;
+                        DLM.addElement(escrita);
+                    });
+                ListaIdQueijos_tipo1.setModel(DLM);
+                }catch (SQLException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                Remover_Queijo.setVisible(true);
+            }
+
+            if(opc.equals("5- Buscar Queijos")){
+                limpar();
+                try{
+                QueijoDAO queijoDAO = new QueijoDAO();
+                ArrayList <Queijo> ListaQueijos = queijoDAO.getAll();
+                DefaultListModel DLM = new DefaultListModel();
+
+                ListaQueijos.forEach((Queijo queijo) -> {
+                        int id = queijo.getId_queijo();
+                        String tipo = queijo.getTipo();
+                        String escrita = "ID DO QUEIJO: "+id+"       ||       TIPO: "+tipo;
+                        DLM.addElement(escrita);
+                    });
+                ListaId_Tipo.setModel(DLM);
+                }catch (SQLException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                Buscar_Queijo.setVisible(true);
+                DadosPanBusca1.setVisible(false);
+                BuscaPanBusca1.setVisible(true);
+                
+            }
+
+            if(opc.equals("6- Mostrar Queijo que deve ficar na temperatura mais baixa")){
+                QueijoDAO queijoDAO;
+                try {
+                    queijoDAO = new QueijoDAO();
+
+                    ArrayList<Queijo> ListaQueijo = queijoDAO.menorTemp();
+
+                    DefaultTableModel model;
+                    model = new DefaultTableModel(new String[] {"id_queijo", "peso", "valorKG", "tipo", "tempIdeal"}, 0);
+        
+                    ListaQueijo.forEach((Queijo queijo) -> {
+                        int id_queijo = queijo.getId_queijo();
+                        float peso = queijo.getPeso();
+                        float valorKG = queijo.getValorKG();
+                        String tipo = queijo.getTipo();
+                        float tempIdeal = queijo.getTempIdeal();
+
+                        
+                        Vector row = new Vector();
+                        row.add(id_queijo);
+                        row.add(peso);
+                        row.add(valorKG);
+                        row.add(tipo);
+                        row.add(tempIdeal);
+
+                        model.addRow(row);
+                    });
+
+                    JTb_MostrarQueijos.setModel(model);
+
+                    limpar();
+                    Mostrar_Queijo.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+            
+            if(opc.equals("7- Mostrar o queijo mais caro")){
+                QueijoDAO queijoDAO;
+                try {
+                    queijoDAO = new QueijoDAO();
+
+                    ArrayList<Queijo> ListaQueijo = queijoDAO.maiorPreco();
+
+                    DefaultTableModel model;
+                    model = new DefaultTableModel(new String[] {"id_queijo", "peso", "valorKG", "tipo", "tempIdeal"}, 0);
+        
+                    ListaQueijo.forEach((Queijo queijo) -> {
+                        int id_queijo = queijo.getId_queijo();
+                        float peso = queijo.getPeso();
+                        float valorKG = queijo.getValorKG();
+                        String tipo = queijo.getTipo();
+                        float tempIdeal = queijo.getTempIdeal();
+
+                        
+                        Vector row = new Vector();
+                        row.add(id_queijo);
+                        row.add(peso);
+                        row.add(valorKG);
+                        row.add(tipo);
+                        row.add(tempIdeal);
+
+                        model.addRow(row);
+                    });
+
+                    JTb_MostrarQueijos.setModel(model);
+
+                    limpar();
+                    Mostrar_Queijo.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+
+        }
     }//GEN-LAST:event_JB_acaoQueijoActionPerformed
 
     private void JTF_NumClientes7JTF_NumClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JTF_NumClientes7JTF_NumClientesActionPerformed
@@ -7693,15 +7684,71 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_TempIdeal_TFActionPerformed
 
     private void LimparQueijo_BTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LimparQueijo_BTActionPerformed
-        // TODO add your handling code here:
+
+        try {
+            QueijoDAO queijoDAO = new QueijoDAO();
+            
+            IdQueijo_TF.setText(String.valueOf(queijoDAO.MaiorID()+1));
+            Peso_TF.setText("");
+            ValorKg_TF.setText("");
+            TipoQueijo_TF.setText("");
+            TempIdeal_TF.setText("");
+        } catch (SQLException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
     }//GEN-LAST:event_LimparQueijo_BTActionPerformed
 
     private void InserirQueijo_BTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InserirQueijo_BTActionPerformed
-        // TODO add your handling code here:
+        try{
+            QueijoDAO queijoDAO = new QueijoDAO();
+            IdQueijo_TF.setText(String.valueOf(queijoDAO.MaiorID()+1));
+            Queijo queijo = new Queijo(Integer.parseInt(IdQueijo_TF.getText()), Float.parseFloat(Peso_TF.getText()),
+                                        Float.parseFloat(ValorKg_TF.getText()), TipoQueijo_TF.getText(), Float.parseFloat(TempIdeal_TF.getText()));
+                                        
+            
+            queijoDAO.inserir(queijo);
+            
+            IdQueijo_TF.setText(String.valueOf(queijoDAO.MaiorID()+1));
+            Peso_TF.setText("");
+            ValorKg_TF.setText("");
+            TipoQueijo_TF.setText("");
+            TempIdeal_TF.setText("");
+
+            
+            inicializa_barras_laterais();
+        }catch(SQLException | ClassNotFoundException e) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, e);
+        }        
     }//GEN-LAST:event_InserirQueijo_BTActionPerformed
 
     private void JBt_BuscaIdQueijoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaIdQueijoActionPerformed
-        // TODO add your handling code here:
+        try{
+            QueijoDAO queijoDAO = new QueijoDAO();
+            ArrayList <Queijo> lista = queijoDAO.getOne(Integer.parseInt(JTf_BuscaIdQueijo.getText()));
+            
+            if(!(lista.isEmpty())){
+                
+                Queijo queijo = lista.get(0);
+                JTf_BuscaIdQueijo.setText("");
+                BuscaPanAlterar1.setVisible(false);
+                DadosPanCadastro2.setVisible(true);
+                
+                IdQueijo_TF1.setText(String.valueOf(queijo.getId_queijo()));
+                Peso_TF1.setText(String.valueOf(queijo.getPeso()));
+                ValorKg_TF1.setText(String.valueOf(queijo.getValorKG()));
+                TempIdeal_TF1.setText(String.valueOf(queijo.getTempIdeal()));        
+                TipoQueijo_TF1.setText(queijo.getTipo());  
+                
+                
+            }else
+                Logger.getLogger(Menu.class.getName()).info("O CPF digitado não existe!!");
+            
+        }catch(SQLException | ClassNotFoundException e){
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, e);
+        }
     }//GEN-LAST:event_JBt_BuscaIdQueijoActionPerformed
 
     private void JBt_Peso_DecrescenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Peso_DecrescenteActionPerformed
@@ -7743,22 +7790,6 @@ public class Menu extends javax.swing.JFrame {
     private void JBt_BuscaIdQueijo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaIdQueijo1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_JBt_BuscaIdQueijo1ActionPerformed
-
-    private void ValorKg_TF2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ValorKg_TF2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ValorKg_TF2ActionPerformed
-
-    private void TempIdeal_TF2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TempIdeal_TF2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TempIdeal_TF2ActionPerformed
-
-    private void LimparQueijo_BT3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LimparQueijo_BT3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_LimparQueijo_BT3ActionPerformed
-
-    private void RemoverQueijo_BTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RemoverQueijo_BTActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_RemoverQueijo_BTActionPerformed
 
     private void JBt_Id_DecrescenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Id_DecrescenteActionPerformed
         // TODO add your handling code here:
@@ -8278,6 +8309,10 @@ public class Menu extends javax.swing.JFrame {
         JTf_BuscaNome2.setText("");
     }//GEN-LAST:event_JBt_LimpaNome2ActionPerformed
 
+    private void Jbt_LimpaIdQueijoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Jbt_LimpaIdQueijoActionPerformed
+        JTf_BuscaIdQueijo.setText("");
+    }//GEN-LAST:event_Jbt_LimpaIdQueijoActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -8379,7 +8414,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel ButtonsPan6;
     private javax.swing.JPanel ButtonsPan7;
     private javax.swing.JPanel ButtonsPan8;
-    private javax.swing.JPanel ButtonsPan9;
     private javax.swing.JPanel Cadastrar_Cliente;
     private javax.swing.JLayeredPane Centro;
     private javax.swing.JLayeredPane Centro1;
@@ -8398,7 +8432,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel CpfPan2;
     private javax.swing.JPanel CpfPan4;
     private javax.swing.JPanel CpfPan6;
-    private javax.swing.JPanel CpfPan7;
     private javax.swing.JPanel CpfPan9;
     private javax.swing.JTextField Cpf_TF;
     private javax.swing.JTextField Cpf_TF2;
@@ -8411,7 +8444,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel DadosPanCadastro1;
     private javax.swing.JPanel DadosPanCadastro11;
     private javax.swing.JPanel DadosPanCadastro2;
-    private javax.swing.JPanel DadosPanCadastro3;
     private javax.swing.JPanel DadosPanCadastro4;
     private javax.swing.JPanel DadosPanCadastro6;
     private javax.swing.JPanel DadosPanCadastro7;
@@ -8431,7 +8463,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JTextField IdPedido_TF4;
     private javax.swing.JTextField IdQueijo_TF;
     private javax.swing.JTextField IdQueijo_TF1;
-    private javax.swing.JTextField IdQueijo_TF2;
     private javax.swing.JTextField IdQueijo_TF5;
     private javax.swing.JTextField IdQueijo_TF6;
     private javax.swing.JPanel InformacoesPan8;
@@ -8634,7 +8665,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel LB_IdPedido4;
     private javax.swing.JLabel LB_IdQueijo;
     private javax.swing.JLabel LB_IdQueijo1;
-    private javax.swing.JLabel LB_IdQueijo2;
     private javax.swing.JLabel LB_IdQueijo5;
     private javax.swing.JLabel LB_IdQueijo6;
     private javax.swing.JLabel LB_Insta;
@@ -8647,7 +8677,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel LB_NumCasa2;
     private javax.swing.JLabel LB_Peso;
     private javax.swing.JLabel LB_Peso1;
-    private javax.swing.JLabel LB_Peso2;
     private javax.swing.JLabel LB_Peso5;
     private javax.swing.JLabel LB_Peso6;
     private javax.swing.JLabel LB_PrazoEntrega;
@@ -8662,17 +8691,14 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel LB_TelRes2;
     private javax.swing.JLabel LB_TempIdeal;
     private javax.swing.JLabel LB_TempIdeal1;
-    private javax.swing.JLabel LB_TempIdeal2;
     private javax.swing.JLabel LB_TempIdeal5;
     private javax.swing.JLabel LB_TempIdeal6;
     private javax.swing.JLabel LB_TipoQueijo;
     private javax.swing.JLabel LB_TipoQueijo1;
-    private javax.swing.JLabel LB_TipoQueijo2;
     private javax.swing.JLabel LB_TipoQueijo5;
     private javax.swing.JLabel LB_TipoQueijo6;
     private javax.swing.JLabel LB_ValorKg;
     private javax.swing.JLabel LB_ValorKg1;
-    private javax.swing.JLabel LB_ValorKg2;
     private javax.swing.JLabel LB_ValorKg5;
     private javax.swing.JLabel LB_ValorKg6;
     private javax.swing.JLayeredPane Lateral;
@@ -8684,7 +8710,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton LimparQueijoPedido_BT1;
     private javax.swing.JButton LimparQueijo_BT;
     private javax.swing.JButton LimparQueijo_BT2;
-    private javax.swing.JButton LimparQueijo_BT3;
     private javax.swing.JButton LimparQueijo_BT5;
     private javax.swing.JButton LimparQueijo_BT6;
     private javax.swing.JButton Limpar_BT2;
@@ -8718,7 +8743,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel NomePan2;
     private javax.swing.JPanel NomePan4;
     private javax.swing.JPanel NomePan6;
-    private javax.swing.JPanel NomePan7;
     private javax.swing.JPanel NomePan9;
     private javax.swing.JTextField Nome_TF;
     private javax.swing.JTextField Nome_TF2;
@@ -8740,7 +8764,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel Pedidos;
     private javax.swing.JTextField Peso_TF;
     private javax.swing.JTextField Peso_TF1;
-    private javax.swing.JTextField Peso_TF2;
     private javax.swing.JTextField Peso_TF5;
     private javax.swing.JTextField Peso_TF6;
     private javax.swing.JTextField PrazoEntrega_TF;
@@ -8749,12 +8772,10 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JTextField PrazoEntrega_TF4;
     private javax.swing.JLabel Queijim;
     private javax.swing.JLabel Queijim1;
-    private javax.swing.JLabel Queijim2;
     private javax.swing.JLabel Queijim5;
     private javax.swing.JLabel Queijim6;
     private javax.swing.JPanel Queijos;
     private javax.swing.JPanel Queijos_Pedidos;
-    private javax.swing.JButton RemoverQueijo_BT;
     private javax.swing.JButton RemoverQueijo_BT1;
     private javax.swing.JButton RemoverQueijo_BT2;
     private javax.swing.JPanel Remover_Cliente1;
@@ -8766,7 +8787,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel RuaPan10;
     private javax.swing.JPanel RuaPan2;
     private javax.swing.JPanel RuaPan6;
-    private javax.swing.JPanel RuaPan7;
     private javax.swing.JPanel RuaPan9;
     private javax.swing.JTextField Rua_TF;
     private javax.swing.JTextField Rua_TF2;
@@ -8785,7 +8805,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel TelCelPan2;
     private javax.swing.JPanel TelCelPan4;
     private javax.swing.JPanel TelCelPan6;
-    private javax.swing.JPanel TelCelPan7;
     private javax.swing.JPanel TelCelPan9;
     private javax.swing.JTextField TelCel_TF;
     private javax.swing.JTextField TelCel_TF2;
@@ -8798,23 +8817,19 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel TelResPan2;
     private javax.swing.JPanel TelResPan4;
     private javax.swing.JPanel TelResPan6;
-    private javax.swing.JPanel TelResPan7;
     private javax.swing.JPanel TelResPan9;
     private javax.swing.JTextField TelRes_TF;
     private javax.swing.JTextField TelRes_TF2;
     private javax.swing.JTextField TempIdeal_TF;
     private javax.swing.JTextField TempIdeal_TF1;
-    private javax.swing.JTextField TempIdeal_TF2;
     private javax.swing.JTextField TempIdeal_TF5;
     private javax.swing.JTextField TempIdeal_TF6;
     private javax.swing.JTextField TipoQueijo_TF;
     private javax.swing.JTextField TipoQueijo_TF1;
-    private javax.swing.JTextField TipoQueijo_TF2;
     private javax.swing.JTextField TipoQueijo_TF5;
     private javax.swing.JTextField TipoQueijo_TF6;
     private javax.swing.JTextField ValorKg_TF;
     private javax.swing.JTextField ValorKg_TF1;
-    private javax.swing.JTextField ValorKg_TF2;
     private javax.swing.JTextField ValorKg_TF5;
     private javax.swing.JTextField ValorKg_TF6;
     private javax.swing.JButton VoltarDashboard_BT;
