@@ -4422,8 +4422,8 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLb_Topo_menuMostrar1" alignment="0" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLayeredPane3" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="4" max="32767" attributes="0"/>
+                              <Component id="jLayeredPane3" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -4455,13 +4455,14 @@
                       <Layout>
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="OrdernarPan1" min="-2" pref="837" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="2" max="32767" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jScrollPane10" min="-2" pref="811" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="11" max="32767" attributes="0"/>
                               </Group>
-                              <Group type="102" attributes="0">
-                                  <Component id="jScrollPane10" max="32767" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                  <Component id="OrdernarPan1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -4530,37 +4531,33 @@
                           <Layout>
                             <DimensionLayout dim="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="JLb_OrdenarPor1" alignment="0" max="32767" attributes="0"/>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                              <Component id="JBt_Id_Decrescente" min="-2" pref="44" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="JLb_Nome1" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="JBt_Id_Crescente" min="-2" pref="44" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                                              <Component id="JBt_Peso_Decrescente" min="-2" pref="44" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="JLb_Cpf1" min="-2" pref="56" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="JBt_Peso_Crescente" min="-2" pref="44" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                                              <Component id="JBt_Valor_Decrescente" min="-2" pref="44" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="JLb_Nome2" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="JBt_Valor_Crescente" min="-2" pref="44" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                                              <Component id="JBt_temp_Decrescente" min="-2" pref="44" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="JLb_Cpf2" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="32767" attributes="0"/>
-                                              <Component id="JBt_Temp_Crescente" min="-2" pref="44" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="JLb_OrdenarPor1" alignment="0" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                                      <Component id="JBt_Id_Decrescente" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="JLb_Nome1" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="JBt_Id_Crescente" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Component id="JBt_Peso_Decrescente" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="JLb_Cpf1" min="-2" pref="56" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="JBt_Peso_Crescente" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                      <Component id="JBt_Valor_Decrescente" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="JLb_Nome2" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="JBt_Valor_Crescente" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="JBt_temp_Decrescente" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="JLb_Cpf2" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace pref="8" max="32767" attributes="0"/>
+                                      <Component id="JBt_Temp_Crescente" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -4576,18 +4573,18 @@
                                           <Group type="103" groupAlignment="1" attributes="0">
                                               <Group type="103" alignment="1" groupAlignment="0" attributes="0">
                                                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="JLb_Cpf1" alignment="1" min="-2" pref="38" max="-2" attributes="0"/>
+                                                      <Component id="JLb_Cpf1" alignment="0" min="-2" pref="38" max="-2" attributes="0"/>
                                                       <Component id="JBt_Peso_Decrescente" alignment="0" pref="0" max="32767" attributes="0"/>
                                                   </Group>
-                                                  <Component id="JBt_Peso_Crescente" alignment="1" min="-2" pref="38" max="-2" attributes="0"/>
+                                                  <Component id="JBt_Peso_Crescente" alignment="0" min="-2" pref="38" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="103" alignment="1" groupAlignment="0" attributes="0">
                                                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="JLb_Cpf2" alignment="1" min="-2" pref="38" max="-2" attributes="0"/>
+                                                      <Component id="JLb_Cpf2" alignment="0" min="-2" pref="38" max="-2" attributes="0"/>
                                                       <Component id="JBt_Valor_Crescente" alignment="0" pref="0" max="32767" attributes="0"/>
                                                       <Component id="JBt_temp_Decrescente" alignment="0" min="-2" pref="38" max="-2" attributes="0"/>
                                                   </Group>
-                                                  <Component id="JBt_Temp_Crescente" alignment="1" min="-2" pref="38" max="-2" attributes="0"/>
+                                                  <Component id="JBt_Temp_Crescente" alignment="0" min="-2" pref="38" max="-2" attributes="0"/>
                                                   <Component id="JLb_Nome2" alignment="0" min="-2" pref="38" max="-2" attributes="0"/>
                                                   <Component id="JBt_Valor_Decrescente" alignment="0" min="-2" pref="38" max="-2" attributes="0"/>
                                               </Group>
@@ -4749,7 +4746,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLb_Topo_menuInserir7" min="-2" pref="39" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                              <Component id="jLayeredPane15" max="32767" attributes="0"/>
+                              <Component id="jLayeredPane15" pref="677" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -4789,7 +4786,7 @@
                                       <Component id="BuscaPan7" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="jScrollPane11" min="-2" pref="445" max="-2" attributes="0"/>
-                                      <EmptySpace pref="17" max="32767" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -4997,7 +4994,7 @@
                             <DimensionLayout dim="1">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jScrollPane12" pref="577" max="32767" attributes="0"/>
+                                      <Component id="jScrollPane12" pref="573" max="32767" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="ButtonsPan7" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
