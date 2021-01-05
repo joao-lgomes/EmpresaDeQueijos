@@ -4340,13 +4340,16 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="LIMPAR"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Jbt_LimpaIdQueijo1ActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JButton" name="JBt_BuscaIdQueijo1">
                                   <Properties>
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Tahoma" size="24" style="0"/>
                                     </Property>
-                                    <Property name="text" type="java.lang.String" value="BUSCAR"/>
+                                    <Property name="text" type="java.lang.String" value="REMOVER"/>
                                   </Properties>
                                   <Events>
                                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_BuscaIdQueijo1ActionPerformed"/>
@@ -4639,6 +4642,9 @@
                                   <Image iconType="3" name="/Interfaces/up_new.jpg"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_Id_CrescenteActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="JBt_Peso_Decrescente">
                               <Properties>
@@ -4685,6 +4691,9 @@
                                   <Image iconType="3" name="/Interfaces/up_new.jpg"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_Valor_CrescenteActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JButton" name="JBt_temp_Decrescente">
                               <Properties>
@@ -4899,6 +4908,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="LIMPAR"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Jbt_LimpaIdActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JButton" name="JBt_BuscaId">
                                   <Properties>
@@ -4918,6 +4930,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="LIMPAR"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_LimpaTipoActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JButton" name="JBt_BuscaTipo">
                                   <Properties>
@@ -4926,6 +4941,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="BUSCAR"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_BuscaTipoActionPerformed"/>
+                                  </Events>
                                 </Component>
                               </SubComponents>
                             </Container>
@@ -5053,7 +5071,7 @@
                                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                       <Font name="Tahoma" size="28" style="0"/>
                                     </Property>
-                                    <Property name="text" type="java.lang.String" value="BUSCAR OUTRO CLIENTE"/>
+                                    <Property name="text" type="java.lang.String" value="BUSCAR OUTRO QUEIJO"/>
                                   </Properties>
                                   <Events>
                                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BuscarNovamente_BT1ActionPerformed"/>

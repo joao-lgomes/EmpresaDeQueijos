@@ -2494,7 +2494,7 @@ public class Menu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(JP_ClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(Lateral, javax.swing.GroupLayout.PREFERRED_SIZE, 729, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Centro, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
+                    .addComponent(Centro, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)))
         );
 
         JTP_PainelGuias.addTab("Clientes", JP_Clientes);
@@ -3304,9 +3304,14 @@ public class Menu extends javax.swing.JFrame {
 
         Jbt_LimpaIdQueijo1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         Jbt_LimpaIdQueijo1.setText("LIMPAR");
+        Jbt_LimpaIdQueijo1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Jbt_LimpaIdQueijo1ActionPerformed(evt);
+            }
+        });
 
         JBt_BuscaIdQueijo1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        JBt_BuscaIdQueijo1.setText("BUSCAR");
+        JBt_BuscaIdQueijo1.setText("REMOVER");
         JBt_BuscaIdQueijo1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 JBt_BuscaIdQueijo1ActionPerformed(evt);
@@ -3389,7 +3394,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(Remover_QueijoLayout.createSequentialGroup()
                 .addComponent(jLb_Topo_menuInserir8, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
-                .addComponent(jLayeredPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 690, Short.MAX_VALUE)
+                .addComponent(jLayeredPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -3434,6 +3439,11 @@ public class Menu extends javax.swing.JFrame {
         });
 
         JBt_Id_Crescente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
+        JBt_Id_Crescente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_Id_CrescenteActionPerformed(evt);
+            }
+        });
 
         JBt_Peso_Decrescente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/down_new.jpg"))); // NOI18N
         JBt_Peso_Decrescente.addActionListener(new java.awt.event.ActionListener() {
@@ -3461,6 +3471,11 @@ public class Menu extends javax.swing.JFrame {
         JLb_Nome2.setText("VALOR");
 
         JBt_Valor_Crescente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
+        JBt_Valor_Crescente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_Valor_CrescenteActionPerformed(evt);
+            }
+        });
 
         JBt_temp_Decrescente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/down_new.jpg"))); // NOI18N
         JBt_temp_Decrescente.addActionListener(new java.awt.event.ActionListener() {
@@ -3605,6 +3620,11 @@ public class Menu extends javax.swing.JFrame {
 
         Jbt_LimpaId.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         Jbt_LimpaId.setText("LIMPAR");
+        Jbt_LimpaId.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Jbt_LimpaIdActionPerformed(evt);
+            }
+        });
 
         JBt_BuscaId.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_BuscaId.setText("BUSCAR");
@@ -3616,9 +3636,19 @@ public class Menu extends javax.swing.JFrame {
 
         JBt_LimpaTipo.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_LimpaTipo.setText("LIMPAR");
+        JBt_LimpaTipo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_LimpaTipoActionPerformed(evt);
+            }
+        });
 
         JBt_BuscaTipo.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_BuscaTipo.setText("BUSCAR");
+        JBt_BuscaTipo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_BuscaTipoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout BuscaPan7Layout = new javax.swing.GroupLayout(BuscaPan7);
         BuscaPan7.setLayout(BuscaPan7Layout);
@@ -3728,7 +3758,7 @@ public class Menu extends javax.swing.JFrame {
         });
 
         BuscarNovamente_BT1.setFont(new java.awt.Font("Tahoma", 0, 28)); // NOI18N
-        BuscarNovamente_BT1.setText("BUSCAR OUTRO CLIENTE");
+        BuscarNovamente_BT1.setText("BUSCAR OUTRO QUEIJO");
         BuscarNovamente_BT1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BuscarNovamente_BT1ActionPerformed(evt);
@@ -5587,7 +5617,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(Remover_PedidoLayout.createSequentialGroup()
                 .addComponent(jLb_Topo_menuInserir10, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
-                .addComponent(jLayeredPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 690, Short.MAX_VALUE)
+                .addComponent(jLayeredPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -5922,7 +5952,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(Remover_QueijoPedidoLayout.createSequentialGroup()
                 .addComponent(jLb_Topo_menuInserir15, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
-                .addComponent(jLayeredPane18, javax.swing.GroupLayout.PREFERRED_SIZE, 690, Short.MAX_VALUE)
+                .addComponent(jLayeredPane18, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -7265,24 +7295,6 @@ public class Menu extends javax.swing.JFrame {
                 } catch (ClassNotFoundException ex) {
                     Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
                 }
-        
-                try{
-                ClienteDAO clienteDAO = new ClienteDAO();
-                ArrayList <Cliente> ListaClientes = clienteDAO.getAll();
-                DefaultListModel DLM = new DefaultListModel();
-
-                ListaClientes.forEach((Cliente cliente) -> {
-                        String cpf = cliente.getCpf();
-                        String nome = cliente.getNome();
-                        String escrita = "Cpf: "+cpf+"       ||       Nome: "+nome;
-                        DLM.addElement(escrita);
-                    });
-                ListaCpf_Nome1.setModel(DLM);
-                }catch (SQLException ex) {
-                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (ClassNotFoundException ex) {
-                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
-                }
                 
                 Remover_Cliente1.setVisible(true);
     }//GEN-LAST:event_JBt_BuscaCPF1ActionPerformed
@@ -7509,6 +7521,7 @@ public class Menu extends javax.swing.JFrame {
 
                     limpar();
                     Mostrar_Queijo.setVisible(true);
+                    OrdernarPan1.setVisible(true);
                 } catch (SQLException | ClassNotFoundException ex) {
                     Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -7618,6 +7631,7 @@ public class Menu extends javax.swing.JFrame {
 
                     limpar();
                     Mostrar_Queijo.setVisible(true);
+                    OrdernarPan1.setVisible(false);
                 } catch (SQLException | ClassNotFoundException ex) {
                     Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -7655,6 +7669,7 @@ public class Menu extends javax.swing.JFrame {
 
                     limpar();
                     Mostrar_Queijo.setVisible(true);
+                    OrdernarPan1.setVisible(false);
                 } catch (SQLException | ClassNotFoundException ex) {
                     Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -7727,7 +7742,7 @@ public class Menu extends javax.swing.JFrame {
     private void JBt_BuscaIdQueijoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaIdQueijoActionPerformed
         try{
             QueijoDAO queijoDAO = new QueijoDAO();
-            ArrayList <Queijo> lista = queijoDAO.getOne(Integer.parseInt(JTf_BuscaIdQueijo.getText()));
+            ArrayList <Queijo> lista = queijoDAO.getOneID(Integer.parseInt(JTf_BuscaIdQueijo.getText()));
             
             if(!(lista.isEmpty())){
                 
@@ -7752,23 +7767,128 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_JBt_BuscaIdQueijoActionPerformed
 
     private void JBt_Peso_DecrescenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Peso_DecrescenteActionPerformed
-        // TODO add your handling code here:
+        QueijoDAO queijoDAO;
+                try {
+                    queijoDAO = new QueijoDAO();
+
+                    ArrayList<Queijo> ListaQueijo = queijoDAO.OrdenarPeso(-1);
+
+                    DefaultTableModel model;
+                    model = new DefaultTableModel(new String[] {"id_queijo", "peso", "valorKG", "tipo", "tempIdeal"}, 0);
+        
+                    ListaQueijo.forEach((Queijo queijo) -> {
+                        int id_queijo = queijo.getId_queijo();
+                        float peso = queijo.getPeso();
+                        float valorKG = queijo.getValorKG();
+                        String tipo = queijo.getTipo();
+                        float tempIdeal = queijo.getTempIdeal();
+
+                        
+                        Vector row = new Vector();
+                        row.add(id_queijo);
+                        row.add(peso);
+                        row.add(valorKG);
+                        row.add(tipo);
+                        row.add(tempIdeal);
+
+                        model.addRow(row);
+                    });
+
+                    JTb_MostrarQueijos.setModel(model);
+
+                    limpar();
+                    Mostrar_Queijo.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
     }//GEN-LAST:event_JBt_Peso_DecrescenteActionPerformed
 
     private void JBt_Peso_CrescenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Peso_CrescenteActionPerformed
-        // TODO add your handling code here:
+        QueijoDAO queijoDAO;
+                try {
+                    queijoDAO = new QueijoDAO();
+
+                    ArrayList<Queijo> ListaQueijo = queijoDAO.OrdenarPeso(1);
+
+                    DefaultTableModel model;
+                    model = new DefaultTableModel(new String[] {"id_queijo", "peso", "valorKG", "tipo", "tempIdeal"}, 0);
+        
+                    ListaQueijo.forEach((Queijo queijo) -> {
+                        int id_queijo = queijo.getId_queijo();
+                        float peso = queijo.getPeso();
+                        float valorKG = queijo.getValorKG();
+                        String tipo = queijo.getTipo();
+                        float tempIdeal = queijo.getTempIdeal();
+
+                        
+                        Vector row = new Vector();
+                        row.add(id_queijo);
+                        row.add(peso);
+                        row.add(valorKG);
+                        row.add(tipo);
+                        row.add(tempIdeal);
+
+                        model.addRow(row);
+                    });
+
+                    JTb_MostrarQueijos.setModel(model);
+
+                    limpar();
+                    Mostrar_Queijo.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
     }//GEN-LAST:event_JBt_Peso_CrescenteActionPerformed
 
     private void JBt_BuscaIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaIdActionPerformed
-        // TODO add your handling code here:
+        try {
+                    QueijoDAO queijoDAO = new QueijoDAO();
+                    ArrayList <Queijo> queijos = queijoDAO.getOneID(Integer.parseInt(JTf_BuscaId.getText()));
+
+                    DefaultTableModel model;
+                    model = new DefaultTableModel(new String[] {"id_queijo", "peso", "valorKG", "tipo", "tempIdeal"}, 0);
+        
+                    queijos.forEach((Queijo queijo) -> {
+                        int id_queijo = queijo.getId_queijo();
+                        float peso = queijo.getPeso();
+                        float valorKG = queijo.getValorKG();
+                        String tipo = queijo.getTipo();
+                        float tempIdeal = queijo.getTempIdeal();
+
+                        
+                        Vector row = new Vector();
+                        row.add(id_queijo);
+                        row.add(peso);
+                        row.add(valorKG);
+                        row.add(tipo);
+                        row.add(tempIdeal);
+
+                        model.addRow(row);
+                    });
+
+                    jTable2.setModel(model);
+
+                    limpar();
+                    JTf_BuscaId.setText("");
+                    JTf_BuscaTipo.setText("");
+                    Buscar_Queijo.setVisible(true);
+                    BuscaPanBusca1.setVisible(false);
+                    DadosPanBusca1.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
     }//GEN-LAST:event_JBt_BuscaIdActionPerformed
 
     private void VoltarDashboard_BT1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VoltarDashboard_BT1ActionPerformed
-        // TODO add your handling code here:
+       limpar();
+       JP_Dashboard.setVisible(true);
     }//GEN-LAST:event_VoltarDashboard_BT1ActionPerformed
 
     private void BuscarNovamente_BT1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarNovamente_BT1ActionPerformed
-        // TODO add your handling code here:
+        limpar();
+        Buscar_Queijo.setVisible(true);
+        DadosPanBusca1.setVisible(false);
+        BuscaPanBusca1.setVisible(true);
     }//GEN-LAST:event_BuscarNovamente_BT1ActionPerformed
 
     private void ValorKg_TF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ValorKg_TF1ActionPerformed
@@ -7784,27 +7904,220 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_LimparQueijo_BT2ActionPerformed
 
     private void AlterarQueijo_BTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AlterarQueijo_BTActionPerformed
-        // TODO add your handling code here:
+        try{
+            QueijoDAO queijoDAO = new QueijoDAO();
+            Queijo queijo = new Queijo(Integer.parseInt(IdQueijo_TF1.getText()), Float.parseFloat(Peso_TF1.getText()),
+                                        Float.parseFloat(ValorKg_TF1.getText()), TipoQueijo_TF1.getText(), Float.parseFloat(TempIdeal_TF1.getText()));
+                                        
+            
+            queijoDAO.update(queijo);
+            
+            IdQueijo_TF1.setText("");
+            Peso_TF1.setText("");
+            ValorKg_TF1.setText("");
+            TipoQueijo_TF1.setText("");
+            TempIdeal_TF1.setText("");
+            
+                ArrayList <Queijo> ListaQueijos = queijoDAO.getAll();
+                DefaultListModel DLM = new DefaultListModel();
+
+                ListaQueijos.forEach((Queijo queijo2) -> {
+                        int id = queijo2.getId_queijo();
+                        String tipo = queijo2.getTipo();
+                        String escrita = "ID DO QUEIJO: "+id+"       ||       TIPO: "+tipo;
+                        DLM.addElement(escrita);
+                    });
+                ListaIdQueijos_tipo.setModel(DLM);
+            
+            JTf_BuscaIdQueijo.setText("");
+            
+            DadosPanCadastro2.setVisible(false);
+            BuscaPanAlterar1.setVisible(true);
+            
+            inicializa_barras_laterais();
+        }catch(SQLException | ClassNotFoundException e) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, e);
+        } 
     }//GEN-LAST:event_AlterarQueijo_BTActionPerformed
 
     private void JBt_BuscaIdQueijo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaIdQueijo1ActionPerformed
-        // TODO add your handling code here:
+        try{
+            QueijoDAO queijoDAO = new QueijoDAO();
+            
+            queijoDAO.delete(Integer.parseInt(JTf_BuscaIdQueijo1.getText()));
+            
+            JTf_BuscaIdQueijo1.setText("");
+            inicializa_barras_laterais();
+        }catch(SQLException | ClassNotFoundException e){
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, e);
+        }
+        try{
+                QueijoDAO queijoDAO = new QueijoDAO();
+                ArrayList <Queijo> ListaQueijos = queijoDAO.getAll();
+                DefaultListModel DLM = new DefaultListModel();
+
+                ListaQueijos.forEach((Queijo queijo) -> {
+                        int id = queijo.getId_queijo();
+                        String tipo = queijo.getTipo();
+                        String escrita = "ID DO QUEIJO: "+id+"       ||       TIPO: "+tipo;
+                        DLM.addElement(escrita);
+                    });
+                ListaIdQueijos_tipo1.setModel(DLM);
+                }catch (SQLException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                
+                Remover_Queijo.setVisible(true);
     }//GEN-LAST:event_JBt_BuscaIdQueijo1ActionPerformed
 
     private void JBt_Id_DecrescenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Id_DecrescenteActionPerformed
-        // TODO add your handling code here:
+        QueijoDAO queijoDAO;
+                try {
+                    queijoDAO = new QueijoDAO();
+
+                    ArrayList<Queijo> ListaQueijo = queijoDAO.OrdenarID(-1);
+
+                    DefaultTableModel model;
+                    model = new DefaultTableModel(new String[] {"id_queijo", "peso", "valorKG", "tipo", "tempIdeal"}, 0);
+        
+                    ListaQueijo.forEach((Queijo queijo) -> {
+                        int id_queijo = queijo.getId_queijo();
+                        float peso = queijo.getPeso();
+                        float valorKG = queijo.getValorKG();
+                        String tipo = queijo.getTipo();
+                        float tempIdeal = queijo.getTempIdeal();
+
+                        
+                        Vector row = new Vector();
+                        row.add(id_queijo);
+                        row.add(peso);
+                        row.add(valorKG);
+                        row.add(tipo);
+                        row.add(tempIdeal);
+
+                        model.addRow(row);
+                    });
+
+                    JTb_MostrarQueijos.setModel(model);
+
+                    limpar();
+                    Mostrar_Queijo.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
     }//GEN-LAST:event_JBt_Id_DecrescenteActionPerformed
 
     private void JBt_Valor_DecrescenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Valor_DecrescenteActionPerformed
-        // TODO add your handling code here:
+        QueijoDAO queijoDAO;
+                try {
+                    queijoDAO = new QueijoDAO();
+
+                    ArrayList<Queijo> ListaQueijo = queijoDAO.OrdenarValor(-1);
+
+                    DefaultTableModel model;
+                    model = new DefaultTableModel(new String[] {"id_queijo", "peso", "valorKG", "tipo", "tempIdeal"}, 0);
+        
+                    ListaQueijo.forEach((Queijo queijo) -> {
+                        int id_queijo = queijo.getId_queijo();
+                        float peso = queijo.getPeso();
+                        float valorKG = queijo.getValorKG();
+                        String tipo = queijo.getTipo();
+                        float tempIdeal = queijo.getTempIdeal();
+
+                        
+                        Vector row = new Vector();
+                        row.add(id_queijo);
+                        row.add(peso);
+                        row.add(valorKG);
+                        row.add(tipo);
+                        row.add(tempIdeal);
+
+                        model.addRow(row);
+                    });
+
+                    JTb_MostrarQueijos.setModel(model);
+
+                    limpar();
+                    Mostrar_Queijo.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
     }//GEN-LAST:event_JBt_Valor_DecrescenteActionPerformed
 
     private void JBt_temp_DecrescenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_temp_DecrescenteActionPerformed
-        // TODO add your handling code here:
+        QueijoDAO queijoDAO;
+                try {
+                    queijoDAO = new QueijoDAO();
+
+                    ArrayList<Queijo> ListaQueijo = queijoDAO.OrdenarTemperatura(-1);
+
+                    DefaultTableModel model;
+                    model = new DefaultTableModel(new String[] {"id_queijo", "peso", "valorKG", "tipo", "tempIdeal"}, 0);
+        
+                    ListaQueijo.forEach((Queijo queijo) -> {
+                        int id_queijo = queijo.getId_queijo();
+                        float peso = queijo.getPeso();
+                        float valorKG = queijo.getValorKG();
+                        String tipo = queijo.getTipo();
+                        float tempIdeal = queijo.getTempIdeal();
+
+                        
+                        Vector row = new Vector();
+                        row.add(id_queijo);
+                        row.add(peso);
+                        row.add(valorKG);
+                        row.add(tipo);
+                        row.add(tempIdeal);
+
+                        model.addRow(row);
+                    });
+
+                    JTb_MostrarQueijos.setModel(model);
+
+                    limpar();
+                    Mostrar_Queijo.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
     }//GEN-LAST:event_JBt_temp_DecrescenteActionPerformed
 
     private void JBt_Temp_CrescenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Temp_CrescenteActionPerformed
-        // TODO add your handling code here:
+        QueijoDAO queijoDAO;
+                try {
+                    queijoDAO = new QueijoDAO();
+
+                    ArrayList<Queijo> ListaQueijo = queijoDAO.OrdenarTemperatura(1);
+
+                    DefaultTableModel model;
+                    model = new DefaultTableModel(new String[] {"id_queijo", "peso", "valorKG", "tipo", "tempIdeal"}, 0);
+        
+                    ListaQueijo.forEach((Queijo queijo) -> {
+                        int id_queijo = queijo.getId_queijo();
+                        float peso = queijo.getPeso();
+                        float valorKG = queijo.getValorKG();
+                        String tipo = queijo.getTipo();
+                        float tempIdeal = queijo.getTempIdeal();
+
+                        
+                        Vector row = new Vector();
+                        row.add(id_queijo);
+                        row.add(peso);
+                        row.add(valorKG);
+                        row.add(tipo);
+                        row.add(tempIdeal);
+
+                        model.addRow(row);
+                    });
+
+                    JTb_MostrarQueijos.setModel(model);
+
+                    limpar();
+                    Mostrar_Queijo.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
     }//GEN-LAST:event_JBt_Temp_CrescenteActionPerformed
 
     private void jCB_EscolhasPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCB_EscolhasPedidoActionPerformed
@@ -8312,6 +8625,131 @@ public class Menu extends javax.swing.JFrame {
     private void Jbt_LimpaIdQueijoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Jbt_LimpaIdQueijoActionPerformed
         JTf_BuscaIdQueijo.setText("");
     }//GEN-LAST:event_Jbt_LimpaIdQueijoActionPerformed
+
+    private void Jbt_LimpaIdQueijo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Jbt_LimpaIdQueijo1ActionPerformed
+        JTf_BuscaIdQueijo1.setText("");
+    }//GEN-LAST:event_Jbt_LimpaIdQueijo1ActionPerformed
+
+    private void Jbt_LimpaIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Jbt_LimpaIdActionPerformed
+        JTf_BuscaId.setText("");
+    }//GEN-LAST:event_Jbt_LimpaIdActionPerformed
+
+    private void JBt_LimpaTipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_LimpaTipoActionPerformed
+        JTf_BuscaTipo.setText("");
+    }//GEN-LAST:event_JBt_LimpaTipoActionPerformed
+
+    private void JBt_BuscaTipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaTipoActionPerformed
+        try {
+                    QueijoDAO queijoDAO = new QueijoDAO();
+                    ArrayList <Queijo> queijos = queijoDAO.getOneTipo(JTf_BuscaTipo.getText());
+
+                    DefaultTableModel model;
+                    model = new DefaultTableModel(new String[] {"id_queijo", "peso", "valorKG", "tipo", "tempIdeal"}, 0);
+        
+                    queijos.forEach((Queijo queijo) -> {
+                        int id_queijo = queijo.getId_queijo();
+                        float peso = queijo.getPeso();
+                        float valorKG = queijo.getValorKG();
+                        String tipo = queijo.getTipo();
+                        float tempIdeal = queijo.getTempIdeal();
+
+                        
+                        Vector row = new Vector();
+                        row.add(id_queijo);
+                        row.add(peso);
+                        row.add(valorKG);
+                        row.add(tipo);
+                        row.add(tempIdeal);
+
+                        model.addRow(row);
+                    });
+
+                    jTable2.setModel(model);
+
+                    limpar();
+                    JTf_BuscaId.setText("");
+                    JTf_BuscaTipo.setText("");
+                    Buscar_Queijo.setVisible(true);
+                    BuscaPanBusca1.setVisible(false);
+                    DadosPanBusca1.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+    }//GEN-LAST:event_JBt_BuscaTipoActionPerformed
+
+    private void JBt_Id_CrescenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Id_CrescenteActionPerformed
+        QueijoDAO queijoDAO;
+                try {
+                    queijoDAO = new QueijoDAO();
+
+                    ArrayList<Queijo> ListaQueijo = queijoDAO.OrdenarID(1);
+
+                    DefaultTableModel model;
+                    model = new DefaultTableModel(new String[] {"id_queijo", "peso", "valorKG", "tipo", "tempIdeal"}, 0);
+        
+                    ListaQueijo.forEach((Queijo queijo) -> {
+                        int id_queijo = queijo.getId_queijo();
+                        float peso = queijo.getPeso();
+                        float valorKG = queijo.getValorKG();
+                        String tipo = queijo.getTipo();
+                        float tempIdeal = queijo.getTempIdeal();
+
+                        
+                        Vector row = new Vector();
+                        row.add(id_queijo);
+                        row.add(peso);
+                        row.add(valorKG);
+                        row.add(tipo);
+                        row.add(tempIdeal);
+
+                        model.addRow(row);
+                    });
+
+                    JTb_MostrarQueijos.setModel(model);
+
+                    limpar();
+                    Mostrar_Queijo.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+    }//GEN-LAST:event_JBt_Id_CrescenteActionPerformed
+
+    private void JBt_Valor_CrescenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Valor_CrescenteActionPerformed
+        QueijoDAO queijoDAO;
+                try {
+                    queijoDAO = new QueijoDAO();
+
+                    ArrayList<Queijo> ListaQueijo = queijoDAO.OrdenarValor(1);
+
+                    DefaultTableModel model;
+                    model = new DefaultTableModel(new String[] {"id_queijo", "peso", "valorKG", "tipo", "tempIdeal"}, 0);
+        
+                    ListaQueijo.forEach((Queijo queijo) -> {
+                        int id_queijo = queijo.getId_queijo();
+                        float peso = queijo.getPeso();
+                        float valorKG = queijo.getValorKG();
+                        String tipo = queijo.getTipo();
+                        float tempIdeal = queijo.getTempIdeal();
+
+                        
+                        Vector row = new Vector();
+                        row.add(id_queijo);
+                        row.add(peso);
+                        row.add(valorKG);
+                        row.add(tipo);
+                        row.add(tempIdeal);
+
+                        model.addRow(row);
+                    });
+
+                    JTb_MostrarQueijos.setModel(model);
+
+                    limpar();
+                    Mostrar_Queijo.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+    }//GEN-LAST:event_JBt_Valor_CrescenteActionPerformed
 
     /**
      * @param args the command line arguments

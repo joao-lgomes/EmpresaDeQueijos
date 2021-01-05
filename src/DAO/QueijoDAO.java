@@ -70,7 +70,7 @@ public class QueijoDAO {
             instrucao.setString(3, queijo.getTipo());
             instrucao.setFloat(4, queijo.getTempIdeal());
             
-            instrucao.setInt(4, queijo.getId_queijo());
+            instrucao.setInt(5, queijo.getId_queijo());
             
             //Executando a instrução
             instrucao.execute();
@@ -115,12 +115,43 @@ public class QueijoDAO {
         return ListaRetorno;
     }
     
-    public ArrayList<Queijo> getOne(int id_queijo) throws SQLException{
+    public ArrayList<Queijo> getOneID(int id_queijo) throws SQLException{
         PreparedStatement instrucao;
         ResultSet res;
         ArrayList <Queijo> ListaRetorno = new ArrayList();
         
-        String codigo = "select * from Queijo where id_queijo='"+id_queijo+"';";
+        String codigo = "select * from Queijo where id_queijo="+id_queijo+";";
+        
+        try{
+            instrucao = this.conexao.prepareStatement(codigo);
+            res = instrucao.executeQuery();
+            ListaRetorno = new ArrayList<>();
+            while(res.next()){
+                Queijo queijo = new Queijo();
+                queijo.setId_queijo(res.getInt("id_queijo"));
+                queijo.setPeso(res.getFloat("peso"));
+                queijo.setValorKG(res.getFloat("valorKG"));
+                queijo.setTipo(res.getString("tipo"));
+                queijo.setTempIdeal(res.getFloat("tempIdeal"));
+                
+                ListaRetorno.add(queijo);
+            }
+            
+            res.close();
+            instrucao.close();
+        }catch(SQLException e){
+            System.out.println("Erro ao tentar recuperar a lista "+e.toString());
+        }
+        System.out.println("Queijo buscado com sucesso");
+        return ListaRetorno;
+    }
+    
+    public ArrayList<Queijo> getOneTipo(String tipo) throws SQLException{
+        PreparedStatement instrucao;
+        ResultSet res;
+        ArrayList <Queijo> ListaRetorno = new ArrayList();
+        
+        String codigo = "select * from Queijo where tipo='"+tipo+"';";
         
         try{
             instrucao = this.conexao.prepareStatement(codigo);
@@ -263,6 +294,142 @@ public class QueijoDAO {
         }
        
         return maxID;
+    }
+    
+    public ArrayList<Queijo> OrdenarID(int ord){
+        PreparedStatement instrucao;
+        ResultSet res;
+        ArrayList <Queijo> ListaRetorno = new ArrayList();
+        
+        String codigo = "select * from Queijo";
+
+        if(ord==1)
+            codigo = codigo+" order by id_queijo asc";
+        if(ord==-1)
+            codigo = codigo+" order by id_queijo desc";
+        
+        try{
+            instrucao = this.conexao.prepareStatement(codigo);
+            res = instrucao.executeQuery();
+            while(res.next()){
+                Queijo queijo = new Queijo();
+                queijo.setId_queijo(res.getInt("id_queijo"));
+                queijo.setPeso(res.getFloat("peso"));
+                queijo.setValorKG(res.getFloat("valorKG"));
+                queijo.setTipo(res.getString("tipo"));
+                queijo.setTempIdeal(res.getFloat("tempIdeal"));
+                
+                ListaRetorno.add(queijo);
+            }
+            
+            res.close();
+            instrucao.close();
+        }catch(SQLException e){
+            System.out.println("Erro ao tentar recuperar a lista "+e.toString());
+        }
+        return ListaRetorno;
+    }
+    
+    public ArrayList<Queijo> OrdenarPeso(int ord){
+        PreparedStatement instrucao;
+        ResultSet res;
+        ArrayList <Queijo> ListaRetorno = new ArrayList();
+        
+        String codigo = "select * from Queijo";
+
+        if(ord==1)
+            codigo = codigo+" order by peso asc";
+        if(ord==-1)
+            codigo = codigo+" order by peso desc";
+        
+        try{
+            instrucao = this.conexao.prepareStatement(codigo);
+            res = instrucao.executeQuery();
+            while(res.next()){
+                Queijo queijo = new Queijo();
+                queijo.setId_queijo(res.getInt("id_queijo"));
+                queijo.setPeso(res.getFloat("peso"));
+                queijo.setValorKG(res.getFloat("valorKG"));
+                queijo.setTipo(res.getString("tipo"));
+                queijo.setTempIdeal(res.getFloat("tempIdeal"));
+                
+                ListaRetorno.add(queijo);
+            }
+            
+            res.close();
+            instrucao.close();
+        }catch(SQLException e){
+            System.out.println("Erro ao tentar recuperar a lista "+e.toString());
+        }
+        return ListaRetorno;
+    }
+    
+    public ArrayList<Queijo> OrdenarValor(int ord){
+        PreparedStatement instrucao;
+        ResultSet res;
+        ArrayList <Queijo> ListaRetorno = new ArrayList();
+        
+        String codigo = "select * from Queijo";
+
+        if(ord==1)
+            codigo = codigo+" order by valorKG asc";
+        if(ord==-1)
+            codigo = codigo+" order by valorKG desc";
+        
+        try{
+            instrucao = this.conexao.prepareStatement(codigo);
+            res = instrucao.executeQuery();
+            while(res.next()){
+                Queijo queijo = new Queijo();
+                queijo.setId_queijo(res.getInt("id_queijo"));
+                queijo.setPeso(res.getFloat("peso"));
+                queijo.setValorKG(res.getFloat("valorKG"));
+                queijo.setTipo(res.getString("tipo"));
+                queijo.setTempIdeal(res.getFloat("tempIdeal"));
+                
+                ListaRetorno.add(queijo);
+            }
+            
+            res.close();
+            instrucao.close();
+        }catch(SQLException e){
+            System.out.println("Erro ao tentar recuperar a lista "+e.toString());
+        }
+        return ListaRetorno;
+    }
+    
+    public ArrayList<Queijo> OrdenarTemperatura(int ord){
+        PreparedStatement instrucao;
+        ResultSet res;
+        ArrayList <Queijo> ListaRetorno = new ArrayList();
+        
+        String codigo = "select * from Queijo";
+
+        if(ord==1)
+            codigo = codigo+" order by tempIdeal asc";
+        if(ord==-1)
+            codigo = codigo+" order by tempIdeal desc";
+        
+        try{
+            instrucao = this.conexao.prepareStatement(codigo);
+            res = instrucao.executeQuery();
+            while(res.next()){
+                Queijo queijo = new Queijo();
+                queijo.setId_queijo(res.getInt("id_queijo"));
+                queijo.setPeso(res.getFloat("peso"));
+                queijo.setValorKG(res.getFloat("valorKG"));
+                queijo.setTipo(res.getString("tipo"));
+                queijo.setTempIdeal(res.getFloat("tempIdeal"));
+                
+                ListaRetorno.add(queijo);
+            }
+            
+            res.close();
+            instrucao.close();
+        }catch(SQLException e){
+            System.out.println("Erro ao tentar recuperar a lista "+e.toString());
+        }
+        return ListaRetorno;
     }
     
 }
