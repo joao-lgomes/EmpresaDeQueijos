@@ -5584,10 +5584,7 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jTabbedPane3" min="-2" pref="845" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          </Group>
+                          <Component id="jTabbedPane3" alignment="0" pref="843" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
@@ -5621,8 +5618,11 @@
                                   <Group type="102" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLb_Topo_menuMostrar2" pref="816" max="32767" attributes="0"/>
-                                          <Component id="jLayeredPane11" max="32767" attributes="0"/>
+                                          <Component id="jLb_Topo_menuMostrar2" max="32767" attributes="0"/>
+                                          <Group type="102" attributes="0">
+                                              <Component id="jLayeredPane11" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          </Group>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                   </Group>
@@ -5656,8 +5656,13 @@
                               <Layout>
                                 <DimensionLayout dim="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="OrdernarPan2" max="32767" attributes="0"/>
-                                      <Component id="jScrollPane30" alignment="0" max="32767" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="OrdernarPan2" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jScrollPane30" alignment="0" min="-2" pref="798" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="0" pref="20" max="32767" attributes="0"/>
+                                      </Group>
                                   </Group>
                                 </DimensionLayout>
                                 <DimensionLayout dim="1">
@@ -5686,25 +5691,25 @@
                                                       <Component id="JLb_Nome3" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
                                                       <Component id="JBt_Id_Crescente1" min="-2" pref="44" max="-2" attributes="0"/>
-                                                      <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                                                      <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                                                       <Component id="JBt_Peso_Decrescente1" min="-2" pref="44" max="-2" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
                                                       <Component id="JLb_Cpf3" min="-2" pref="56" max="-2" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
                                                       <Component id="JBt_Peso_Crescente1" min="-2" pref="44" max="-2" attributes="0"/>
-                                                      <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                                                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                                                       <Component id="JBt_Valor_Decrescente1" min="-2" pref="44" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                       <Component id="JLb_Nome4" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                       <Component id="JBt_Valor_Crescente1" min="-2" pref="44" max="-2" attributes="0"/>
-                                                      <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                                                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                                                       <Component id="JBt_temp_Decrescente1" min="-2" pref="44" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                       <Component id="JLb_Cpf4" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
                                                       <Component id="JBt_Temp_Crescente1" min="-2" pref="44" max="-2" attributes="0"/>
-                                                      <EmptySpace min="0" pref="7" max="32767" attributes="0"/>
+                                                      <EmptySpace min="0" pref="16" max="32767" attributes="0"/>
                                                   </Group>
                                               </Group>
                                               <EmptySpace max="-2" attributes="0"/>
@@ -5872,6 +5877,9 @@
                                   <SubComponents>
                                     <Component class="javax.swing.JTable" name="jTb_Pedidos">
                                       <Properties>
+                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                          <Font name="Tahoma" size="11" style="0"/>
+                                        </Property>
                                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                                           <Table columnCount="4" rowCount="4">
                                             <Column editable="true" title="Title 1" type="java.lang.Object"/>
@@ -5880,6 +5888,7 @@
                                             <Column editable="true" title="Title 4" type="java.lang.Object"/>
                                           </Table>
                                         </Property>
+                                        <Property name="autoResizeMode" type="int" value="1"/>
                                       </Properties>
                                     </Component>
                                   </SubComponents>
@@ -5903,7 +5912,7 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLb_Topo_menuMostrar3" alignment="0" pref="816" max="32767" attributes="0"/>
+                                          <Component id="jLb_Topo_menuMostrar3" alignment="0" max="32767" attributes="0"/>
                                           <Component id="jLayeredPane19" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -5938,11 +5947,11 @@
                               <Layout>
                                 <DimensionLayout dim="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="OrdernarPan3" alignment="0" max="32767" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jScrollPane31" max="32767" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="jScrollPane31" min="-2" pref="788" max="-2" attributes="0"/>
+                                          <EmptySpace min="0" pref="26" max="32767" attributes="0"/>
                                       </Group>
+                                      <Component id="OrdernarPan3" alignment="1" max="32767" attributes="0"/>
                                   </Group>
                                 </DimensionLayout>
                                 <DimensionLayout dim="1">
@@ -5971,19 +5980,19 @@
                                                       <Component id="JLb_Nome5" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
                                                       <Component id="JBt_Id_Crescente2" min="-2" pref="44" max="-2" attributes="0"/>
-                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
                                                       <Component id="JBt_Peso_Decrescente2" min="-2" pref="44" max="-2" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
                                                       <Component id="JLb_Cpf5" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                                                       <Component id="JBt_Peso_Crescente2" min="-2" pref="44" max="-2" attributes="0"/>
-                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                       <Component id="JBt_Valor_Decrescente2" min="-2" pref="44" max="-2" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
                                                       <Component id="JLb_Nome6" min="-2" pref="117" max="-2" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
                                                       <Component id="JBt_Valor_Crescente2" min="-2" pref="44" max="-2" attributes="0"/>
-                                                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                                      <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                                                       <Component id="JBt_temp_Decrescente2" min="-2" pref="44" max="-2" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
                                                       <Component id="JLb_Cpf6" min="-2" max="-2" attributes="0"/>
@@ -6183,9 +6192,14 @@
                           <Layout>
                             <DimensionLayout dim="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jScrollPane32" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jScrollPane33" alignment="0" pref="0" max="32767" attributes="0"/>
-                                  <Component id="jLabel12" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="jLabel12" alignment="1" pref="838" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="jScrollPane33" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jScrollPane32" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                             </DimensionLayout>
                             <DimensionLayout dim="1">
@@ -6196,7 +6210,8 @@
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jScrollPane32" pref="254" max="32767" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jScrollPane33" min="-2" pref="387" max="-2" attributes="0"/>
+                                      <Component id="jScrollPane33" min="-2" pref="374" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
