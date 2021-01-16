@@ -502,6 +502,52 @@ public class Menu extends javax.swing.JFrame {
         Tabela_QueijosPedidos = new javax.swing.JTable();
         jLabel11 = new javax.swing.JLabel();
         Centro2 = new javax.swing.JLayeredPane();
+        Mostrar_Pedidos = new javax.swing.JPanel();
+        jTabbedPane3 = new javax.swing.JTabbedPane();
+        Painel_Pedidos = new javax.swing.JPanel();
+        jLb_Topo_menuMostrar2 = new javax.swing.JLabel();
+        jLayeredPane11 = new javax.swing.JLayeredPane();
+        OrdernarPan2 = new javax.swing.JPanel();
+        JLb_OrdenarPor2 = new javax.swing.JLabel();
+        JBt_Id_Decrescente1 = new javax.swing.JButton();
+        JLb_Nome3 = new javax.swing.JLabel();
+        JBt_Id_Crescente1 = new javax.swing.JButton();
+        JLb_Cpf3 = new javax.swing.JLabel();
+        JBt_Peso_Decrescente1 = new javax.swing.JButton();
+        JBt_Peso_Crescente1 = new javax.swing.JButton();
+        JBt_Valor_Decrescente1 = new javax.swing.JButton();
+        JLb_Nome4 = new javax.swing.JLabel();
+        JBt_Valor_Crescente1 = new javax.swing.JButton();
+        JBt_temp_Decrescente1 = new javax.swing.JButton();
+        JLb_Cpf4 = new javax.swing.JLabel();
+        JBt_Temp_Crescente1 = new javax.swing.JButton();
+        jScrollPane30 = new javax.swing.JScrollPane();
+        jTb_Pedidos = new javax.swing.JTable();
+        Painel_QueijosPedidos = new javax.swing.JPanel();
+        jLb_Topo_menuMostrar3 = new javax.swing.JLabel();
+        jLayeredPane19 = new javax.swing.JLayeredPane();
+        OrdernarPan3 = new javax.swing.JPanel();
+        JLb_OrdenarPor3 = new javax.swing.JLabel();
+        JBt_Id_Decrescente2 = new javax.swing.JButton();
+        JLb_Nome5 = new javax.swing.JLabel();
+        JBt_Id_Crescente2 = new javax.swing.JButton();
+        JLb_Cpf5 = new javax.swing.JLabel();
+        JBt_Peso_Decrescente2 = new javax.swing.JButton();
+        JBt_Peso_Crescente2 = new javax.swing.JButton();
+        JBt_Valor_Decrescente2 = new javax.swing.JButton();
+        JLb_Nome6 = new javax.swing.JLabel();
+        JBt_Valor_Crescente2 = new javax.swing.JButton();
+        JBt_temp_Decrescente2 = new javax.swing.JButton();
+        JLb_Cpf6 = new javax.swing.JLabel();
+        JBt_Temp_Crescente2 = new javax.swing.JButton();
+        jScrollPane31 = new javax.swing.JScrollPane();
+        jTb_QueijosPedidos = new javax.swing.JTable();
+        Queijos_Pedidos1 = new javax.swing.JPanel();
+        jScrollPane32 = new javax.swing.JScrollPane();
+        Lista_Pedidos1 = new javax.swing.JList<>();
+        jScrollPane33 = new javax.swing.JScrollPane();
+        Tabela_QueijosPedidos1 = new javax.swing.JTable();
+        jLabel12 = new javax.swing.JLabel();
         Inserir_QueijoPedido = new javax.swing.JPanel();
         Inserir_Pedido1 = new javax.swing.JPanel();
         jLb_Topo_menuInserir13 = new javax.swing.JLabel();
@@ -675,46 +721,6 @@ public class Menu extends javax.swing.JFrame {
         LimparQueijo_BT6 = new javax.swing.JButton();
         RemoverQueijo_BT2 = new javax.swing.JButton();
         Queijim6 = new javax.swing.JLabel();
-        Mostrar_Pedidos = new javax.swing.JPanel();
-        jTabbedPane3 = new javax.swing.JTabbedPane();
-        Painel_Pedidos = new javax.swing.JPanel();
-        jLb_Topo_menuMostrar2 = new javax.swing.JLabel();
-        jLayeredPane11 = new javax.swing.JLayeredPane();
-        OrdernarPan2 = new javax.swing.JPanel();
-        JLb_OrdenarPor2 = new javax.swing.JLabel();
-        JBt_Id_Decrescente1 = new javax.swing.JButton();
-        JLb_Nome3 = new javax.swing.JLabel();
-        JBt_Id_Crescente1 = new javax.swing.JButton();
-        JLb_Cpf3 = new javax.swing.JLabel();
-        JBt_Peso_Decrescente1 = new javax.swing.JButton();
-        JBt_Peso_Crescente1 = new javax.swing.JButton();
-        JBt_Valor_Decrescente1 = new javax.swing.JButton();
-        JLb_Nome4 = new javax.swing.JLabel();
-        JBt_Valor_Crescente1 = new javax.swing.JButton();
-        JBt_temp_Decrescente1 = new javax.swing.JButton();
-        JLb_Cpf4 = new javax.swing.JLabel();
-        JBt_Temp_Crescente1 = new javax.swing.JButton();
-        jScrollPane30 = new javax.swing.JScrollPane();
-        jTb_Pedidos = new javax.swing.JTable();
-        Painel_QueijosPedidos = new javax.swing.JPanel();
-        jLb_Topo_menuMostrar3 = new javax.swing.JLabel();
-        jLayeredPane19 = new javax.swing.JLayeredPane();
-        OrdernarPan3 = new javax.swing.JPanel();
-        JLb_OrdenarPor3 = new javax.swing.JLabel();
-        JBt_Id_Decrescente2 = new javax.swing.JButton();
-        JLb_Nome5 = new javax.swing.JLabel();
-        JBt_Id_Crescente2 = new javax.swing.JButton();
-        JLb_Cpf5 = new javax.swing.JLabel();
-        JBt_Peso_Decrescente2 = new javax.swing.JButton();
-        JBt_Peso_Crescente2 = new javax.swing.JButton();
-        JBt_Valor_Decrescente2 = new javax.swing.JButton();
-        JLb_Nome6 = new javax.swing.JLabel();
-        JBt_Valor_Crescente2 = new javax.swing.JButton();
-        JBt_temp_Decrescente2 = new javax.swing.JButton();
-        JLb_Cpf6 = new javax.swing.JLabel();
-        JBt_Temp_Crescente2 = new javax.swing.JButton();
-        jScrollPane31 = new javax.swing.JScrollPane();
-        jTb_QueijosPedidos = new javax.swing.JTable();
         Buscar_Pedidos = new javax.swing.JPanel();
         jLb_Topo_menuInserir11 = new javax.swing.JLabel();
         jLayeredPane17 = new javax.swing.JLayeredPane();
@@ -4098,6 +4104,448 @@ public class Menu extends javax.swing.JFrame {
 
         Centro2.setLayout(new javax.swing.OverlayLayout(Centro2));
 
+        jTabbedPane3.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+
+        jLb_Topo_menuMostrar2.setFont(new java.awt.Font("Tahoma", 1, 29)); // NOI18N
+        jLb_Topo_menuMostrar2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLb_Topo_menuMostrar2.setText("MOSTRAR PEDIDOS");
+        jLb_Topo_menuMostrar2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+
+        JLb_OrdenarPor2.setFont(new java.awt.Font("Tahoma", 0, 28)); // NOI18N
+        JLb_OrdenarPor2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLb_OrdenarPor2.setText("ORDENAR POR:");
+
+        JBt_Id_Decrescente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/down_new.jpg"))); // NOI18N
+        JBt_Id_Decrescente1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_Id_Decrescente1ActionPerformed(evt);
+            }
+        });
+
+        JLb_Nome3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JLb_Nome3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLb_Nome3.setText("ID");
+
+        JBt_Id_Crescente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
+
+        JLb_Cpf3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JLb_Cpf3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLb_Cpf3.setText("CPF");
+
+        JBt_Peso_Decrescente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/down_new.jpg"))); // NOI18N
+        JBt_Peso_Decrescente1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_Peso_Decrescente1ActionPerformed(evt);
+            }
+        });
+
+        JBt_Peso_Crescente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
+        JBt_Peso_Crescente1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_Peso_Crescente1ActionPerformed(evt);
+            }
+        });
+
+        JBt_Valor_Decrescente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/down_new.jpg"))); // NOI18N
+        JBt_Valor_Decrescente1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_Valor_Decrescente1ActionPerformed(evt);
+            }
+        });
+
+        JLb_Nome4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JLb_Nome4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLb_Nome4.setText("DATA");
+
+        JBt_Valor_Crescente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
+
+        JBt_temp_Decrescente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/down_new.jpg"))); // NOI18N
+        JBt_temp_Decrescente1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_temp_Decrescente1ActionPerformed(evt);
+            }
+        });
+
+        JLb_Cpf4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JLb_Cpf4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLb_Cpf4.setText("PRAZO");
+
+        JBt_Temp_Crescente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
+        JBt_Temp_Crescente1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_Temp_Crescente1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout OrdernarPan2Layout = new javax.swing.GroupLayout(OrdernarPan2);
+        OrdernarPan2.setLayout(OrdernarPan2Layout);
+        OrdernarPan2Layout.setHorizontalGroup(
+            OrdernarPan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OrdernarPan2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(OrdernarPan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(JLb_OrdenarPor2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(OrdernarPan2Layout.createSequentialGroup()
+                        .addComponent(JBt_Id_Decrescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(JLb_Nome3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(JBt_Id_Crescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(54, 54, 54)
+                        .addComponent(JBt_Peso_Decrescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(JLb_Cpf3, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(JBt_Peso_Crescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(55, 55, 55)
+                        .addComponent(JBt_Valor_Decrescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(JLb_Nome4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(JBt_Valor_Crescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(52, 52, 52)
+                        .addComponent(JBt_temp_Decrescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(JLb_Cpf4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(JBt_Temp_Crescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 7, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        OrdernarPan2Layout.setVerticalGroup(
+            OrdernarPan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OrdernarPan2Layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(JLb_OrdenarPor2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(OrdernarPan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(OrdernarPan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(JBt_Id_Crescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(JLb_Nome3, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(JBt_Id_Decrescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(OrdernarPan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(OrdernarPan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(OrdernarPan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(JLb_Cpf3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(JBt_Peso_Decrescente1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(JBt_Peso_Crescente1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(JBt_Valor_Decrescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(JLb_Cpf4, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JBt_temp_Decrescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JBt_Temp_Crescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JBt_Valor_Crescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JLb_Nome4, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(25, Short.MAX_VALUE))
+        );
+
+        jTb_Pedidos.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane30.setViewportView(jTb_Pedidos);
+
+        jLayeredPane11.setLayer(OrdernarPan2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane11.setLayer(jScrollPane30, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        javax.swing.GroupLayout jLayeredPane11Layout = new javax.swing.GroupLayout(jLayeredPane11);
+        jLayeredPane11.setLayout(jLayeredPane11Layout);
+        jLayeredPane11Layout.setHorizontalGroup(
+            jLayeredPane11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(OrdernarPan2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jScrollPane30)
+        );
+        jLayeredPane11Layout.setVerticalGroup(
+            jLayeredPane11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jLayeredPane11Layout.createSequentialGroup()
+                .addComponent(jScrollPane30, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(OrdernarPan2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        javax.swing.GroupLayout Painel_PedidosLayout = new javax.swing.GroupLayout(Painel_Pedidos);
+        Painel_Pedidos.setLayout(Painel_PedidosLayout);
+        Painel_PedidosLayout.setHorizontalGroup(
+            Painel_PedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Painel_PedidosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Painel_PedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLb_Topo_menuMostrar2, javax.swing.GroupLayout.DEFAULT_SIZE, 816, Short.MAX_VALUE)
+                    .addComponent(jLayeredPane11))
+                .addContainerGap())
+        );
+        Painel_PedidosLayout.setVerticalGroup(
+            Painel_PedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Painel_PedidosLayout.createSequentialGroup()
+                .addComponent(jLb_Topo_menuMostrar2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLayeredPane11))
+        );
+
+        jTabbedPane3.addTab("PEDIDOS", Painel_Pedidos);
+
+        jLb_Topo_menuMostrar3.setFont(new java.awt.Font("Tahoma", 1, 29)); // NOI18N
+        jLb_Topo_menuMostrar3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLb_Topo_menuMostrar3.setText("MOSTRAR QUEIJOS PEDIDOS");
+        jLb_Topo_menuMostrar3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+
+        JLb_OrdenarPor3.setFont(new java.awt.Font("Tahoma", 0, 28)); // NOI18N
+        JLb_OrdenarPor3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLb_OrdenarPor3.setText("ORDENAR POR:");
+
+        JBt_Id_Decrescente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/down_new.jpg"))); // NOI18N
+        JBt_Id_Decrescente2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_Id_Decrescente2ActionPerformed(evt);
+            }
+        });
+
+        JLb_Nome5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JLb_Nome5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLb_Nome5.setText("ID");
+
+        JBt_Id_Crescente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
+
+        JLb_Cpf5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JLb_Cpf5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLb_Cpf5.setText("ID PEDIDO");
+
+        JBt_Peso_Decrescente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/down_new.jpg"))); // NOI18N
+        JBt_Peso_Decrescente2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_Peso_Decrescente2ActionPerformed(evt);
+            }
+        });
+
+        JBt_Peso_Crescente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
+        JBt_Peso_Crescente2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_Peso_Crescente2ActionPerformed(evt);
+            }
+        });
+
+        JBt_Valor_Decrescente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/down_new.jpg"))); // NOI18N
+        JBt_Valor_Decrescente2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_Valor_Decrescente2ActionPerformed(evt);
+            }
+        });
+
+        JLb_Nome6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JLb_Nome6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLb_Nome6.setText("ID QUEIJO");
+
+        JBt_Valor_Crescente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
+
+        JBt_temp_Decrescente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/down_new.jpg"))); // NOI18N
+        JBt_temp_Decrescente2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_temp_Decrescente2ActionPerformed(evt);
+            }
+        });
+
+        JLb_Cpf6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JLb_Cpf6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JLb_Cpf6.setText("QUANT");
+
+        JBt_Temp_Crescente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
+        JBt_Temp_Crescente2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_Temp_Crescente2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout OrdernarPan3Layout = new javax.swing.GroupLayout(OrdernarPan3);
+        OrdernarPan3.setLayout(OrdernarPan3Layout);
+        OrdernarPan3Layout.setHorizontalGroup(
+            OrdernarPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OrdernarPan3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(OrdernarPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(JLb_OrdenarPor3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(OrdernarPan3Layout.createSequentialGroup()
+                        .addComponent(JBt_Id_Decrescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(JLb_Nome5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(JBt_Id_Crescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(JBt_Peso_Decrescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(JLb_Cpf5)
+                        .addGap(6, 6, 6)
+                        .addComponent(JBt_Peso_Crescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(JBt_Valor_Decrescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(JLb_Nome6, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(JBt_Valor_Crescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20)
+                        .addComponent(JBt_temp_Decrescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(JLb_Cpf6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(JBt_Temp_Crescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        OrdernarPan3Layout.setVerticalGroup(
+            OrdernarPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OrdernarPan3Layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(JLb_OrdenarPor3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(OrdernarPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(OrdernarPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(OrdernarPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(JBt_Id_Crescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(JLb_Nome5, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(JBt_Id_Decrescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(OrdernarPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(JBt_Peso_Crescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(JBt_Valor_Decrescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(JLb_Cpf6, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(JBt_temp_Decrescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(JBt_Temp_Crescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(JBt_Valor_Crescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(JLb_Nome6, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(JBt_Peso_Decrescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JLb_Cpf5, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(25, Short.MAX_VALUE))
+        );
+
+        jTb_QueijosPedidos.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane31.setViewportView(jTb_QueijosPedidos);
+
+        jLayeredPane19.setLayer(OrdernarPan3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane19.setLayer(jScrollPane31, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        javax.swing.GroupLayout jLayeredPane19Layout = new javax.swing.GroupLayout(jLayeredPane19);
+        jLayeredPane19.setLayout(jLayeredPane19Layout);
+        jLayeredPane19Layout.setHorizontalGroup(
+            jLayeredPane19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(OrdernarPan3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jLayeredPane19Layout.createSequentialGroup()
+                .addComponent(jScrollPane31)
+                .addContainerGap())
+        );
+        jLayeredPane19Layout.setVerticalGroup(
+            jLayeredPane19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jLayeredPane19Layout.createSequentialGroup()
+                .addComponent(jScrollPane31, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(OrdernarPan3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        javax.swing.GroupLayout Painel_QueijosPedidosLayout = new javax.swing.GroupLayout(Painel_QueijosPedidos);
+        Painel_QueijosPedidos.setLayout(Painel_QueijosPedidosLayout);
+        Painel_QueijosPedidosLayout.setHorizontalGroup(
+            Painel_QueijosPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Painel_QueijosPedidosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Painel_QueijosPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLb_Topo_menuMostrar3, javax.swing.GroupLayout.DEFAULT_SIZE, 816, Short.MAX_VALUE)
+                    .addComponent(jLayeredPane19))
+                .addContainerGap())
+        );
+        Painel_QueijosPedidosLayout.setVerticalGroup(
+            Painel_QueijosPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Painel_QueijosPedidosLayout.createSequentialGroup()
+                .addComponent(jLb_Topo_menuMostrar3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLayeredPane19))
+        );
+
+        jTabbedPane3.addTab("QUEIJOS PEDIDOS", Painel_QueijosPedidos);
+
+        Lista_Pedidos1.setFont(new java.awt.Font("Tahoma", 0, 15)); // NOI18N
+        Lista_Pedidos1.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        Lista_Pedidos1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Lista_Pedidos1MouseClicked(evt);
+            }
+        });
+        jScrollPane32.setViewportView(Lista_Pedidos1);
+
+        Tabela_QueijosPedidos1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        Tabela_QueijosPedidos1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Tabela_QueijosPedidos1MouseClicked(evt);
+            }
+        });
+        jScrollPane33.setViewportView(Tabela_QueijosPedidos1);
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 26)); // NOI18N
+        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel12.setText("CLIQUE NO PEDIDO QUE QUER ACESSAR");
+
+        javax.swing.GroupLayout Queijos_Pedidos1Layout = new javax.swing.GroupLayout(Queijos_Pedidos1);
+        Queijos_Pedidos1.setLayout(Queijos_Pedidos1Layout);
+        Queijos_Pedidos1Layout.setHorizontalGroup(
+            Queijos_Pedidos1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane32)
+            .addComponent(jScrollPane33, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        Queijos_Pedidos1Layout.setVerticalGroup(
+            Queijos_Pedidos1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Queijos_Pedidos1Layout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane32, javax.swing.GroupLayout.DEFAULT_SIZE, 254, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane33, javax.swing.GroupLayout.PREFERRED_SIZE, 387, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jTabbedPane3.addTab("Queijos Pedidos Por pedido", Queijos_Pedidos1);
+
+        javax.swing.GroupLayout Mostrar_PedidosLayout = new javax.swing.GroupLayout(Mostrar_Pedidos);
+        Mostrar_Pedidos.setLayout(Mostrar_PedidosLayout);
+        Mostrar_PedidosLayout.setHorizontalGroup(
+            Mostrar_PedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Mostrar_PedidosLayout.createSequentialGroup()
+                .addComponent(jTabbedPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 845, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        Mostrar_PedidosLayout.setVerticalGroup(
+            Mostrar_PedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jTabbedPane3)
+        );
+
+        Centro2.add(Mostrar_Pedidos);
+
         jLb_Topo_menuInserir13.setFont(new java.awt.Font("Tahoma", 1, 29)); // NOI18N
         jLb_Topo_menuInserir13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLb_Topo_menuInserir13.setText("INSERIR QUEIJO AO PEDIDO");
@@ -5622,7 +6070,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(Remover_PedidoLayout.createSequentialGroup()
                 .addComponent(jLb_Topo_menuInserir10, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
-                .addComponent(jLayeredPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
+                .addComponent(jLayeredPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 690, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -5957,399 +6405,11 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(Remover_QueijoPedidoLayout.createSequentialGroup()
                 .addComponent(jLb_Topo_menuInserir15, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
-                .addComponent(jLayeredPane18, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
+                .addComponent(jLayeredPane18, javax.swing.GroupLayout.PREFERRED_SIZE, 690, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
         Centro2.add(Remover_QueijoPedido);
-
-        jTabbedPane3.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
-
-        jLb_Topo_menuMostrar2.setFont(new java.awt.Font("Tahoma", 1, 29)); // NOI18N
-        jLb_Topo_menuMostrar2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLb_Topo_menuMostrar2.setText("MOSTRAR PEDIDOS");
-        jLb_Topo_menuMostrar2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-
-        JLb_OrdenarPor2.setFont(new java.awt.Font("Tahoma", 0, 28)); // NOI18N
-        JLb_OrdenarPor2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        JLb_OrdenarPor2.setText("ORDENAR POR:");
-
-        JBt_Id_Decrescente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/down_new.jpg"))); // NOI18N
-        JBt_Id_Decrescente1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JBt_Id_Decrescente1ActionPerformed(evt);
-            }
-        });
-
-        JLb_Nome3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        JLb_Nome3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        JLb_Nome3.setText("ID");
-
-        JBt_Id_Crescente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
-
-        JLb_Cpf3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        JLb_Cpf3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        JLb_Cpf3.setText("CPF");
-
-        JBt_Peso_Decrescente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/down_new.jpg"))); // NOI18N
-        JBt_Peso_Decrescente1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JBt_Peso_Decrescente1ActionPerformed(evt);
-            }
-        });
-
-        JBt_Peso_Crescente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
-        JBt_Peso_Crescente1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JBt_Peso_Crescente1ActionPerformed(evt);
-            }
-        });
-
-        JBt_Valor_Decrescente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/down_new.jpg"))); // NOI18N
-        JBt_Valor_Decrescente1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JBt_Valor_Decrescente1ActionPerformed(evt);
-            }
-        });
-
-        JLb_Nome4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        JLb_Nome4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        JLb_Nome4.setText("DATA");
-
-        JBt_Valor_Crescente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
-
-        JBt_temp_Decrescente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/down_new.jpg"))); // NOI18N
-        JBt_temp_Decrescente1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JBt_temp_Decrescente1ActionPerformed(evt);
-            }
-        });
-
-        JLb_Cpf4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        JLb_Cpf4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        JLb_Cpf4.setText("PRAZO");
-
-        JBt_Temp_Crescente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
-        JBt_Temp_Crescente1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JBt_Temp_Crescente1ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout OrdernarPan2Layout = new javax.swing.GroupLayout(OrdernarPan2);
-        OrdernarPan2.setLayout(OrdernarPan2Layout);
-        OrdernarPan2Layout.setHorizontalGroup(
-            OrdernarPan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(OrdernarPan2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(OrdernarPan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(JLb_OrdenarPor2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(OrdernarPan2Layout.createSequentialGroup()
-                        .addComponent(JBt_Id_Decrescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(JLb_Nome3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(JBt_Id_Crescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(54, 54, 54)
-                        .addComponent(JBt_Peso_Decrescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(JLb_Cpf3, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(JBt_Peso_Crescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(55, 55, 55)
-                        .addComponent(JBt_Valor_Decrescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(JLb_Nome4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(JBt_Valor_Crescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(52, 52, 52)
-                        .addComponent(JBt_temp_Decrescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(JLb_Cpf4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(JBt_Temp_Crescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-        OrdernarPan2Layout.setVerticalGroup(
-            OrdernarPan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(OrdernarPan2Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(JLb_OrdenarPor2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(OrdernarPan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(OrdernarPan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(JBt_Id_Crescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(JLb_Nome3, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(JBt_Id_Decrescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(OrdernarPan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(OrdernarPan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(OrdernarPan2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(JLb_Cpf3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(JBt_Peso_Decrescente1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(JBt_Peso_Crescente1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(JBt_Valor_Decrescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(JLb_Cpf4, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JBt_temp_Decrescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JBt_Temp_Crescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JBt_Valor_Crescente1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JLb_Nome4, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(25, Short.MAX_VALUE))
-        );
-
-        jTb_Pedidos.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane30.setViewportView(jTb_Pedidos);
-
-        jLayeredPane11.setLayer(OrdernarPan2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane11.setLayer(jScrollPane30, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        javax.swing.GroupLayout jLayeredPane11Layout = new javax.swing.GroupLayout(jLayeredPane11);
-        jLayeredPane11.setLayout(jLayeredPane11Layout);
-        jLayeredPane11Layout.setHorizontalGroup(
-            jLayeredPane11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(OrdernarPan2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jLayeredPane11Layout.createSequentialGroup()
-                .addComponent(jScrollPane30)
-                .addContainerGap())
-        );
-        jLayeredPane11Layout.setVerticalGroup(
-            jLayeredPane11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jLayeredPane11Layout.createSequentialGroup()
-                .addComponent(jScrollPane30, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(OrdernarPan2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        javax.swing.GroupLayout Painel_PedidosLayout = new javax.swing.GroupLayout(Painel_Pedidos);
-        Painel_Pedidos.setLayout(Painel_PedidosLayout);
-        Painel_PedidosLayout.setHorizontalGroup(
-            Painel_PedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Painel_PedidosLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(Painel_PedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLb_Topo_menuMostrar2, javax.swing.GroupLayout.DEFAULT_SIZE, 816, Short.MAX_VALUE)
-                    .addComponent(jLayeredPane11))
-                .addContainerGap())
-        );
-        Painel_PedidosLayout.setVerticalGroup(
-            Painel_PedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Painel_PedidosLayout.createSequentialGroup()
-                .addComponent(jLb_Topo_menuMostrar2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLayeredPane11))
-        );
-
-        jTabbedPane3.addTab("PEDIDOS", Painel_Pedidos);
-
-        jLb_Topo_menuMostrar3.setFont(new java.awt.Font("Tahoma", 1, 29)); // NOI18N
-        jLb_Topo_menuMostrar3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLb_Topo_menuMostrar3.setText("MOSTRAR QUEIJOS PEDIDOS");
-        jLb_Topo_menuMostrar3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-
-        JLb_OrdenarPor3.setFont(new java.awt.Font("Tahoma", 0, 28)); // NOI18N
-        JLb_OrdenarPor3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        JLb_OrdenarPor3.setText("ORDENAR POR:");
-
-        JBt_Id_Decrescente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/down_new.jpg"))); // NOI18N
-        JBt_Id_Decrescente2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JBt_Id_Decrescente2ActionPerformed(evt);
-            }
-        });
-
-        JLb_Nome5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        JLb_Nome5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        JLb_Nome5.setText("ID");
-
-        JBt_Id_Crescente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
-
-        JLb_Cpf5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        JLb_Cpf5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        JLb_Cpf5.setText("ID PEDIDO");
-
-        JBt_Peso_Decrescente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/down_new.jpg"))); // NOI18N
-        JBt_Peso_Decrescente2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JBt_Peso_Decrescente2ActionPerformed(evt);
-            }
-        });
-
-        JBt_Peso_Crescente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
-        JBt_Peso_Crescente2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JBt_Peso_Crescente2ActionPerformed(evt);
-            }
-        });
-
-        JBt_Valor_Decrescente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/down_new.jpg"))); // NOI18N
-        JBt_Valor_Decrescente2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JBt_Valor_Decrescente2ActionPerformed(evt);
-            }
-        });
-
-        JLb_Nome6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        JLb_Nome6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        JLb_Nome6.setText("ID QUEIJO");
-
-        JBt_Valor_Crescente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
-
-        JBt_temp_Decrescente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/down_new.jpg"))); // NOI18N
-        JBt_temp_Decrescente2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JBt_temp_Decrescente2ActionPerformed(evt);
-            }
-        });
-
-        JLb_Cpf6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        JLb_Cpf6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        JLb_Cpf6.setText("QUANT");
-
-        JBt_Temp_Crescente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
-        JBt_Temp_Crescente2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JBt_Temp_Crescente2ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout OrdernarPan3Layout = new javax.swing.GroupLayout(OrdernarPan3);
-        OrdernarPan3.setLayout(OrdernarPan3Layout);
-        OrdernarPan3Layout.setHorizontalGroup(
-            OrdernarPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(OrdernarPan3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(OrdernarPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(JLb_OrdenarPor3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(OrdernarPan3Layout.createSequentialGroup()
-                        .addComponent(JBt_Id_Decrescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(JLb_Nome5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(JBt_Id_Crescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(JBt_Peso_Decrescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(JLb_Cpf5)
-                        .addGap(6, 6, 6)
-                        .addComponent(JBt_Peso_Crescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(JBt_Valor_Decrescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(JLb_Nome6, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(JBt_Valor_Crescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(20, 20, 20)
-                        .addComponent(JBt_temp_Decrescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(JLb_Cpf6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(JBt_Temp_Crescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-        OrdernarPan3Layout.setVerticalGroup(
-            OrdernarPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(OrdernarPan3Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(JLb_OrdenarPor3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(OrdernarPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(OrdernarPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(OrdernarPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(JBt_Id_Crescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(JLb_Nome5, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(JBt_Id_Decrescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(OrdernarPan3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(JBt_Peso_Crescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(JBt_Valor_Decrescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addComponent(JLb_Cpf6, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(JBt_temp_Decrescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(JBt_Temp_Crescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(JBt_Valor_Crescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(JLb_Nome6, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(JBt_Peso_Decrescente2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JLb_Cpf5, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(25, Short.MAX_VALUE))
-        );
-
-        jTb_QueijosPedidos.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane31.setViewportView(jTb_QueijosPedidos);
-
-        jLayeredPane19.setLayer(OrdernarPan3, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane19.setLayer(jScrollPane31, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        javax.swing.GroupLayout jLayeredPane19Layout = new javax.swing.GroupLayout(jLayeredPane19);
-        jLayeredPane19.setLayout(jLayeredPane19Layout);
-        jLayeredPane19Layout.setHorizontalGroup(
-            jLayeredPane19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(OrdernarPan3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jLayeredPane19Layout.createSequentialGroup()
-                .addComponent(jScrollPane31)
-                .addContainerGap())
-        );
-        jLayeredPane19Layout.setVerticalGroup(
-            jLayeredPane19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jLayeredPane19Layout.createSequentialGroup()
-                .addComponent(jScrollPane31, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(OrdernarPan3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        javax.swing.GroupLayout Painel_QueijosPedidosLayout = new javax.swing.GroupLayout(Painel_QueijosPedidos);
-        Painel_QueijosPedidos.setLayout(Painel_QueijosPedidosLayout);
-        Painel_QueijosPedidosLayout.setHorizontalGroup(
-            Painel_QueijosPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Painel_QueijosPedidosLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(Painel_QueijosPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLb_Topo_menuMostrar3, javax.swing.GroupLayout.DEFAULT_SIZE, 816, Short.MAX_VALUE)
-                    .addComponent(jLayeredPane19))
-                .addContainerGap())
-        );
-        Painel_QueijosPedidosLayout.setVerticalGroup(
-            Painel_QueijosPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Painel_QueijosPedidosLayout.createSequentialGroup()
-                .addComponent(jLb_Topo_menuMostrar3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLayeredPane19))
-        );
-
-        jTabbedPane3.addTab("QUEIJOS PEDIDOS", Painel_QueijosPedidos);
-
-        javax.swing.GroupLayout Mostrar_PedidosLayout = new javax.swing.GroupLayout(Mostrar_Pedidos);
-        Mostrar_Pedidos.setLayout(Mostrar_PedidosLayout);
-        Mostrar_PedidosLayout.setHorizontalGroup(
-            Mostrar_PedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Mostrar_PedidosLayout.createSequentialGroup()
-                .addComponent(jTabbedPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 845, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        Mostrar_PedidosLayout.setVerticalGroup(
-            Mostrar_PedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane3)
-        );
-
-        Centro2.add(Mostrar_Pedidos);
 
         jLb_Topo_menuInserir11.setFont(new java.awt.Font("Tahoma", 1, 29)); // NOI18N
         jLb_Topo_menuInserir11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -8209,38 +8269,69 @@ public class Menu extends javax.swing.JFrame {
             }
 
             if(opc.equals("3- Mostrar Pedidos")){
-                QueijoDAO queijoDAO;
                 try {
-                    queijoDAO = new QueijoDAO();
-
-                    ArrayList<Queijo> ListaQueijo = queijoDAO.getAll();
-
-                    DefaultTableModel model;
-                    model = new DefaultTableModel(new String[] {"id_queijo", "peso", "valorKG", "tipo", "tempIdeal"}, 0);
+                    PedidoDAO pedidoDAO = new PedidoDAO();
+                    ArrayList <Pedido> ListaPedidos = pedidoDAO.getAll();
         
-                    ListaQueijo.forEach((Queijo queijo) -> {
-                        int id_queijo = queijo.getId_queijo();
-                        float peso = queijo.getPeso();
-                        float valorKG = queijo.getValorKG();
-                        String tipo = queijo.getTipo();
-                        float tempIdeal = queijo.getTempIdeal();
+                    DefaultTableModel model3;
+                    model3 = new DefaultTableModel(new String[] {"id_pedido", "fk_cpf", "data_pedido", "prazoEntrega"}, 0);
 
-                        
-                        Vector row = new Vector();
-                        row.add(id_queijo);
-                        row.add(peso);
-                        row.add(valorKG);
-                        row.add(tipo);
-                        row.add(tempIdeal);
+                    ListaPedidos.forEach((Pedido pedido) -> {
+                                    int id_pedido = pedido.getId_pedido();
+                                    String fk_cpf = pedido.getFk_cpf();
+                                    LocalDateTime data_pedido = pedido.getdata_pedido();
+                                    int prazoEntrega = pedido.getPrazoEntrega();
+                                    Vector row3 = new Vector();
+                                    row3.add(id_pedido);
+                                    row3.add(fk_cpf);
+                                    row3.add(data_pedido);
+                                    row3.add(prazoEntrega);
+                                    model3.addRow(row3);
+                                });
+                    jTb_Pedidos.setModel(model3);
+                    
+                    Queijo_PedidoDAO qj = new Queijo_PedidoDAO();
+                    ArrayList <Queijo_Pedido> ListaQJ = qj.getAll();
 
-                        model.addRow(row);
-                    });
+                    DefaultTableModel model4;
+                    model4 = new DefaultTableModel(new String[] {"id_queijo_pedido", "Id Pedido", "Id queijo", "Quant"}, 0);
 
-                    JTb_MostrarQueijos.setModel(model);
+                    ListaQJ.forEach((Queijo_Pedido qp) -> {
+                                    int id_queijo_pedido = qp.getId_queijo_pedido();
+                                    int fk_id_pedido = qp.getFk_id_pedido();
+                                    int fk_id_queijo = qp.getFk_id_queijo();
+                                    int quantidade = qp.getQuantidade();
+                                    Vector row4 = new Vector();
+                                    row4.add(id_queijo_pedido);
+                                    row4.add(fk_id_pedido);
+                                    row4.add(fk_id_queijo);
+                                    row4.add(quantidade);
+                                    model4.addRow(row4);
+                                });
+                    jTb_QueijosPedidos.setModel(model4);
+                    
+                    
+                    ArrayList <Pedido> ListaPedidos2 = pedidoDAO.getAll();
+                    DefaultListModel DLM = new DefaultListModel();
 
+                    ListaPedidos2.forEach((Pedido pedido) -> {
+                                    int id_pedido = pedido.getId_pedido();
+                                    String fk_cpf = pedido.getFk_cpf();
+                                    int prazoEntrega = pedido.getPrazoEntrega();
+                                    String escrita = "Pedido número: "+id_pedido+"    ||    do cliente de cpf: "+fk_cpf;
+                                    /*Vector row4 = new Vector();
+                                    row4.add(id_pedido);
+                                    row4.add(fk_cpf);
+                                    row4.add(prazoEntrega); */
+                                    DLM.addElement(escrita);
+                                });
+                    Lista_Pedidos1.setModel(DLM);
+                    
+                    
+                    
                     limpar();
-                    Mostrar_Queijo.setVisible(true);
-                    OrdernarPan1.setVisible(true);
+                    Mostrar_Pedidos.setVisible(true);
+                    //OrdernarPan1.setVisible(true);
                 } catch (SQLException | ClassNotFoundException ex) {
                     Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -9136,6 +9227,41 @@ public class Menu extends javax.swing.JFrame {
          DataPedido_TF1.setText(valor);
     }//GEN-LAST:event_JList_QueijosMouseClicked
 
+    private void Lista_Pedidos1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Lista_Pedidos1MouseClicked
+        try{
+        String selecionado = Lista_Pedidos1.getSelectedValue();
+        String valor = selecionado.substring(15, (16+(selecionado.length()-56)));
+        
+        Queijo_PedidoDAO qj = new Queijo_PedidoDAO();
+        ArrayList <Queijo_Pedido> ListaQJ = qj.QueijosPedidosDeUmPedido(Integer.parseInt(valor));
+        
+        DefaultTableModel model4;
+        model4 = new DefaultTableModel(new String[] {"id_queijo_pedido", "Id Pedido", "Id queijo", "Quant"}, 0);
+        
+        ListaQJ.forEach((Queijo_Pedido qp) -> {
+                        int id_queijo_pedido = qp.getId_queijo_pedido();
+                        int fk_id_pedido = qp.getFk_id_pedido();
+                        int fk_id_queijo = qp.getFk_id_queijo();
+                        int quantidade = qp.getQuantidade();
+                        Vector row4 = new Vector();
+                        row4.add(id_queijo_pedido);
+                        row4.add(fk_id_pedido);
+                        row4.add(fk_id_queijo);
+                        row4.add(quantidade);
+                        model4.addRow(row4);
+                    });
+        Tabela_QueijosPedidos1.setModel(model4);
+        }catch(SQLException e){
+            System.out.println("Erro: "+e);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_Lista_Pedidos1MouseClicked
+
+    private void Tabela_QueijosPedidos1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Tabela_QueijosPedidos1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Tabela_QueijosPedidos1MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -9548,6 +9674,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JList<String> ListaIdQueijos_tipo1;
     private javax.swing.JList<String> ListaId_Tipo;
     private javax.swing.JList<String> Lista_Pedidos;
+    private javax.swing.JList<String> Lista_Pedidos1;
     private javax.swing.JPanel Menu_Principal;
     private javax.swing.JPanel Menu_Principal1;
     private javax.swing.JPanel Menu_Principal2;
@@ -9599,6 +9726,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel Queijim6;
     private javax.swing.JPanel Queijos;
     private javax.swing.JPanel Queijos_Pedidos;
+    private javax.swing.JPanel Queijos_Pedidos1;
     private javax.swing.JButton RemoverQueijo_BT1;
     private javax.swing.JButton RemoverQueijo_BT2;
     private javax.swing.JPanel Remover_Cliente1;
@@ -9619,6 +9747,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JTable Tabela_Pedidos;
     private javax.swing.JTable Tabela_Queijos;
     private javax.swing.JTable Tabela_QueijosPedidos;
+    private javax.swing.JTable Tabela_QueijosPedidos1;
     private javax.swing.JPanel TelCelPan;
     private javax.swing.JPanel TelCelPan1;
     private javax.swing.JPanel TelCelPan10;
@@ -9668,6 +9797,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -9751,6 +9881,8 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane30;
     private javax.swing.JScrollPane jScrollPane31;
+    private javax.swing.JScrollPane jScrollPane32;
+    private javax.swing.JScrollPane jScrollPane33;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
