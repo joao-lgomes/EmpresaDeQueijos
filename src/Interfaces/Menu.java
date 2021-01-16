@@ -5,7 +5,10 @@ import DAO.*;
 
 import java.sql.SQLException;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Locale;
 import java.util.Scanner;
 import java.util.Vector;
 import java.util.logging.Level;
@@ -41,11 +44,11 @@ public class Menu extends javax.swing.JFrame {
         jCB_EscolhasPedido.addItem("----------------------------------------------------------------------");
         jCB_EscolhasPedido.addItem("1- Inserir Novo Pedido");
         jCB_EscolhasPedido.addItem("2- Inserir um Pedido de Queijo a um Pedido");
-        jCB_EscolhasPedido.addItem("3- Alterar Um Pedido Realizado");
-        jCB_EscolhasPedido.addItem("4- Alterar Um Pedido de Queijo Realizado");
-        jCB_EscolhasPedido.addItem("5- Remover Um Pedido Realizado");
-        jCB_EscolhasPedido.addItem("6- Remover Um Pedido de Queijo Realizado");
-        jCB_EscolhasPedido.addItem("7- Mostrar Pedidos");
+        jCB_EscolhasPedido.addItem("3- Mostrar Pedidos");
+        jCB_EscolhasPedido.addItem("4- Alterar Um Pedido Realizado");
+        jCB_EscolhasPedido.addItem("5- Alterar Um Pedido de Queijo Realizado");
+        jCB_EscolhasPedido.addItem("6- Remover Um Pedido Realizado");
+        jCB_EscolhasPedido.addItem("7- Remover Um Pedido de Queijo Realizado");
         jCB_EscolhasPedido.addItem("8- Buscar um Certo Pedido");
         jCB_EscolhasPedido.addItem("9- Buscar o Pedido Mais Antigo De Dado Cliente");
         
@@ -521,7 +524,6 @@ public class Menu extends javax.swing.JFrame {
         TabelaEscolhaClientes = new javax.swing.JList<>();
         JLb_Cliente = new javax.swing.JLabel();
         Inserir_QueijoPedido = new javax.swing.JPanel();
-        jLb_Topo_menuInserir12 = new javax.swing.JLabel();
         Inserir_Pedido1 = new javax.swing.JPanel();
         jLb_Topo_menuInserir13 = new javax.swing.JLabel();
         DadosPanCadastro8 = new javax.swing.JPanel();
@@ -2494,7 +2496,7 @@ public class Menu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(JP_ClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(Lateral, javax.swing.GroupLayout.PREFERRED_SIZE, 729, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Centro, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)))
+                    .addComponent(Centro, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
         );
 
         JTP_PainelGuias.addTab("Clientes", JP_Clientes);
@@ -3394,7 +3396,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(Remover_QueijoLayout.createSequentialGroup()
                 .addComponent(jLb_Topo_menuInserir8, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
-                .addComponent(jLayeredPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
+                .addComponent(jLayeredPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 690, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -4263,6 +4265,11 @@ public class Menu extends javax.swing.JFrame {
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
+        TabelaEscolhaClientes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TabelaEscolhaClientesMouseClicked(evt);
+            }
+        });
         jScrollPane19.setViewportView(TabelaEscolhaClientes);
 
         JLb_Cliente.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -4327,11 +4334,6 @@ public class Menu extends javax.swing.JFrame {
         );
 
         Centro2.add(Inserir_Pedido);
-
-        jLb_Topo_menuInserir12.setFont(new java.awt.Font("Tahoma", 1, 29)); // NOI18N
-        jLb_Topo_menuInserir12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLb_Topo_menuInserir12.setText("INSERIR PEDIDO");
-        jLb_Topo_menuInserir12.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jLb_Topo_menuInserir13.setFont(new java.awt.Font("Tahoma", 1, 29)); // NOI18N
         jLb_Topo_menuInserir13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -4602,23 +4604,17 @@ public class Menu extends javax.swing.JFrame {
         Inserir_QueijoPedido.setLayout(Inserir_QueijoPedidoLayout);
         Inserir_QueijoPedidoLayout.setHorizontalGroup(
             Inserir_QueijoPedidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLb_Topo_menuInserir12, javax.swing.GroupLayout.DEFAULT_SIZE, 843, Short.MAX_VALUE)
-            .addGroup(Inserir_QueijoPedidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(Inserir_QueijoPedidoLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(Inserir_Pedido1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(Inserir_QueijoPedidoLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(Inserir_Pedido1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         Inserir_QueijoPedidoLayout.setVerticalGroup(
             Inserir_QueijoPedidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Inserir_QueijoPedidoLayout.createSequentialGroup()
-                .addComponent(jLb_Topo_menuInserir12, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(690, Short.MAX_VALUE))
-            .addGroup(Inserir_QueijoPedidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(Inserir_QueijoPedidoLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(Inserir_Pedido1, javax.swing.GroupLayout.PREFERRED_SIZE, 729, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(Inserir_Pedido1, javax.swing.GroupLayout.PREFERRED_SIZE, 729, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         Centro2.add(Inserir_QueijoPedido);
@@ -5616,7 +5612,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(Remover_PedidoLayout.createSequentialGroup()
                 .addComponent(jLb_Topo_menuInserir10, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
-                .addComponent(jLayeredPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
+                .addComponent(jLayeredPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 690, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -5951,7 +5947,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(Remover_QueijoPedidoLayout.createSequentialGroup()
                 .addComponent(jLb_Topo_menuInserir15, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
-                .addComponent(jLayeredPane18, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
+                .addComponent(jLayeredPane18, javax.swing.GroupLayout.PREFERRED_SIZE, 690, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -8124,7 +8120,276 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jCB_EscolhasPedidoActionPerformed
 
     private void JB_acaoPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JB_acaoPedidoActionPerformed
-        // TODO add your handling code here:
+
+        if(!(jCB_EscolhasPedido.getSelectedItem().toString().equals("----------------------------------------------------------------------"))){
+            String opc = jCB_EscolhasPedido.getSelectedItem().toString();
+
+            if(opc.equals("1- Inserir Novo Pedido")){
+                try {
+                    PedidoDAO pedidoDAO = new PedidoDAO();
+                    limpar();
+                    IdPedido_TF.setText(String.valueOf(pedidoDAO.MaiorID()+1));
+                    String data = String.valueOf(LocalDateTime.now());
+                    DataPedido_TF.setText(data.substring(8, 10)+"/"+data.substring(5, 7)+"/"+data.substring(0, 4));
+                    
+                    ClienteDAO clienteDAO = new ClienteDAO();
+                ArrayList <Cliente> ListaClientes = clienteDAO.getAll();
+                DefaultListModel DLM = new DefaultListModel();
+
+                ListaClientes.forEach((Cliente cliente) -> {
+                        String cpf = cliente.getCpf();
+                        String nome = cliente.getNome();
+                        String escrita = "Cpf: "+cpf+"       ||       Nome: "+nome;
+                        DLM.addElement(escrita);
+                    });
+                TabelaEscolhaClientes.setModel(DLM);
+                
+                Inserir_Pedido.setVisible(true);
+                } catch (SQLException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                
+            }
+            
+            if(opc.equals("2- Inserir um Pedido de Queijo a um Pedido")){
+                try {
+                    QueijoDAO queijoDAO = new QueijoDAO();
+                    limpar();
+                    IdQueijo_TF.setText(String.valueOf(queijoDAO.MaiorID()+1));
+                    Inserir_Queijo.setVisible(true);
+                    
+                } catch (SQLException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                
+            }
+
+            if(opc.equals("3- Mostrar Pedidos")){
+                QueijoDAO queijoDAO;
+                try {
+                    queijoDAO = new QueijoDAO();
+
+                    ArrayList<Queijo> ListaQueijo = queijoDAO.getAll();
+
+                    DefaultTableModel model;
+                    model = new DefaultTableModel(new String[] {"id_queijo", "peso", "valorKG", "tipo", "tempIdeal"}, 0);
+        
+                    ListaQueijo.forEach((Queijo queijo) -> {
+                        int id_queijo = queijo.getId_queijo();
+                        float peso = queijo.getPeso();
+                        float valorKG = queijo.getValorKG();
+                        String tipo = queijo.getTipo();
+                        float tempIdeal = queijo.getTempIdeal();
+
+                        
+                        Vector row = new Vector();
+                        row.add(id_queijo);
+                        row.add(peso);
+                        row.add(valorKG);
+                        row.add(tipo);
+                        row.add(tempIdeal);
+
+                        model.addRow(row);
+                    });
+
+                    JTb_MostrarQueijos.setModel(model);
+
+                    limpar();
+                    Mostrar_Queijo.setVisible(true);
+                    OrdernarPan1.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+
+            if(opc.equals("4- Alterar Um Pedido Realizado")){
+                limpar();
+                try{
+                QueijoDAO queijoDAO = new QueijoDAO();
+                ArrayList <Queijo> ListaQueijos = queijoDAO.getAll();
+                DefaultListModel DLM = new DefaultListModel();
+
+                ListaQueijos.forEach((Queijo queijo) -> {
+                        int id = queijo.getId_queijo();
+                        String tipo = queijo.getTipo();
+                        String escrita = "ID DO QUEIJO: "+id+"       ||       TIPO: "+tipo;
+                        DLM.addElement(escrita);
+                    });
+                ListaIdQueijos_tipo.setModel(DLM);
+                }catch (SQLException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                Alterar_Queijo.setVisible(true);
+                DadosPanCadastro2.setVisible(false);
+                BuscaPanAlterar1.setVisible(true);
+                
+            }
+            
+            if(opc.equals("5- Alterar Um Pedido de Queijo Realizado")){
+                limpar();
+                try{
+                QueijoDAO queijoDAO = new QueijoDAO();
+                ArrayList <Queijo> ListaQueijos = queijoDAO.getAll();
+                DefaultListModel DLM = new DefaultListModel();
+
+                ListaQueijos.forEach((Queijo queijo) -> {
+                        int id = queijo.getId_queijo();
+                        String tipo = queijo.getTipo();
+                        String escrita = "ID DO QUEIJO: "+id+"       ||       TIPO: "+tipo;
+                        DLM.addElement(escrita);
+                    });
+                ListaIdQueijos_tipo.setModel(DLM);
+                }catch (SQLException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                Alterar_Queijo.setVisible(true);
+                DadosPanCadastro2.setVisible(false);
+                BuscaPanAlterar1.setVisible(true);
+                
+            }
+
+            if(opc.equals("6- Remover Um Pedido Realizado")){
+                limpar();
+                try{
+                QueijoDAO queijoDAO = new QueijoDAO();
+                ArrayList <Queijo> ListaQueijos = queijoDAO.getAll();
+                DefaultListModel DLM = new DefaultListModel();
+
+                ListaQueijos.forEach((Queijo queijo) -> {
+                        int id = queijo.getId_queijo();
+                        String tipo = queijo.getTipo();
+                        String escrita = "ID DO QUEIJO: "+id+"       ||       TIPO: "+tipo;
+                        DLM.addElement(escrita);
+                    });
+                ListaIdQueijos_tipo1.setModel(DLM);
+                }catch (SQLException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                Remover_Queijo.setVisible(true);
+            }
+            
+            if(opc.equals("7- Remover Um Pedido de Queijo Realizado")){
+                limpar();
+                try{
+                QueijoDAO queijoDAO = new QueijoDAO();
+                ArrayList <Queijo> ListaQueijos = queijoDAO.getAll();
+                DefaultListModel DLM = new DefaultListModel();
+
+                ListaQueijos.forEach((Queijo queijo) -> {
+                        int id = queijo.getId_queijo();
+                        String tipo = queijo.getTipo();
+                        String escrita = "ID DO QUEIJO: "+id+"       ||       TIPO: "+tipo;
+                        DLM.addElement(escrita);
+                    });
+                ListaIdQueijos_tipo1.setModel(DLM);
+                }catch (SQLException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                Remover_Queijo.setVisible(true);
+            }
+
+            if(opc.equals("8- Buscar um Certo Pedido")){
+                limpar();
+                try{
+                QueijoDAO queijoDAO = new QueijoDAO();
+                ArrayList <Queijo> ListaQueijos = queijoDAO.getAll();
+                DefaultListModel DLM = new DefaultListModel();
+
+                ListaQueijos.forEach((Queijo queijo) -> {
+                        int id = queijo.getId_queijo();
+                        String tipo = queijo.getTipo();
+                        String escrita = "ID DO QUEIJO: "+id+"       ||       TIPO: "+tipo;
+                        DLM.addElement(escrita);
+                    });
+                ListaId_Tipo.setModel(DLM);
+                }catch (SQLException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                Buscar_Queijo.setVisible(true);
+                DadosPanBusca1.setVisible(false);
+                BuscaPanBusca1.setVisible(true);
+                
+            }
+            
+            if(opc.equals("9- Buscar o Pedido Mais Antigo De Dado Cliente")){
+                limpar();
+                try{
+                QueijoDAO queijoDAO = new QueijoDAO();
+                ArrayList <Queijo> ListaQueijos = queijoDAO.getAll();
+                DefaultListModel DLM = new DefaultListModel();
+
+                ListaQueijos.forEach((Queijo queijo) -> {
+                        int id = queijo.getId_queijo();
+                        String tipo = queijo.getTipo();
+                        String escrita = "ID DO QUEIJO: "+id+"       ||       TIPO: "+tipo;
+                        DLM.addElement(escrita);
+                    });
+                ListaId_Tipo.setModel(DLM);
+                }catch (SQLException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                Buscar_Queijo.setVisible(true);
+                DadosPanBusca1.setVisible(false);
+                BuscaPanBusca1.setVisible(true);
+                
+            }
+
+            if(opc.equals("10- Mostrar o pedido mais antigo de um cliente")){
+                QueijoDAO queijoDAO;
+                try {
+                    queijoDAO = new QueijoDAO();
+
+                    ArrayList<Queijo> ListaQueijo = queijoDAO.menorTemp();
+
+                    DefaultTableModel model;
+                    model = new DefaultTableModel(new String[] {"id_queijo", "peso", "valorKG", "tipo", "tempIdeal"}, 0);
+        
+                    ListaQueijo.forEach((Queijo queijo) -> {
+                        int id_queijo = queijo.getId_queijo();
+                        float peso = queijo.getPeso();
+                        float valorKG = queijo.getValorKG();
+                        String tipo = queijo.getTipo();
+                        float tempIdeal = queijo.getTempIdeal();
+
+                        
+                        Vector row = new Vector();
+                        row.add(id_queijo);
+                        row.add(peso);
+                        row.add(valorKG);
+                        row.add(tipo);
+                        row.add(tempIdeal);
+
+                        model.addRow(row);
+                    });
+
+                    JTb_MostrarQueijos.setModel(model);
+
+                    limpar();
+                    Mostrar_Queijo.setVisible(true);
+                    OrdernarPan1.setVisible(false);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+            
+
+        }
     }//GEN-LAST:event_JB_acaoPedidoActionPerformed
 
     private void DataPedido_TFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DataPedido_TFActionPerformed
@@ -8136,11 +8401,42 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_PrazoEntrega_TFActionPerformed
 
     private void LimparPedido_BTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LimparPedido_BTActionPerformed
-        // TODO add your handling code here:
+       try {
+            PedidoDAO pedidoDAO = new PedidoDAO();
+            IdPedido_TF.setText(String.valueOf(pedidoDAO.MaiorID()+1));
+            CpfCliente_TF.setText("");
+            String data = String.valueOf(LocalDateTime.now());
+            DataPedido_TF.setText(data.substring(8, 10)+"/"+data.substring(5, 7)+"/"+data.substring(0, 4));
+            PrazoEntrega_TF.setText("");
+        } catch (SQLException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+            
     }//GEN-LAST:event_LimparPedido_BTActionPerformed
 
     private void InserirPedido_BTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InserirPedido_BTActionPerformed
-        // TODO add your handling code here:
+        try{
+            PedidoDAO pedidoDAO = new PedidoDAO();
+            Pedido pedido = new Pedido(Integer.parseInt(IdPedido_TF.getText()), CpfCliente_TF.getText(), LocalDateTime.now(), Integer.parseInt(PrazoEntrega_TF.getText()));
+                                        
+                                        
+            
+            pedidoDAO.inserir(pedido);
+            
+            IdPedido_TF.setText(String.valueOf(pedidoDAO.MaiorID()+1));
+            CpfCliente_TF.setText("");
+            String data = String.valueOf(LocalDateTime.now());
+            DataPedido_TF.setText(data.substring(8, 10)+"/"+data.substring(5, 7)+"/"+data.substring(0, 4));
+            PrazoEntrega_TF.setText("");
+
+            
+            inicializa_barras_laterais();
+        }catch(SQLException | ClassNotFoundException e) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, e);
+        }    
     }//GEN-LAST:event_InserirPedido_BTActionPerformed
 
     private void JBt_BuscaIdPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaIdPedidoActionPerformed
@@ -8750,6 +9046,14 @@ public class Menu extends javax.swing.JFrame {
                 }
     }//GEN-LAST:event_JBt_Valor_CrescenteActionPerformed
 
+    private void TabelaEscolhaClientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TabelaEscolhaClientesMouseClicked
+        String selecionado = TabelaEscolhaClientes.getSelectedValue();
+         String[] result = selecionado.split("\\s");
+         String valor = result[1];
+         
+         CpfCliente_TF.setText(valor);
+    }//GEN-LAST:event_TabelaEscolhaClientesMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -9319,7 +9623,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLb_Topo_menuInserir1;
     private javax.swing.JLabel jLb_Topo_menuInserir10;
     private javax.swing.JLabel jLb_Topo_menuInserir11;
-    private javax.swing.JLabel jLb_Topo_menuInserir12;
     private javax.swing.JLabel jLb_Topo_menuInserir13;
     private javax.swing.JLabel jLb_Topo_menuInserir14;
     private javax.swing.JLabel jLb_Topo_menuInserir15;

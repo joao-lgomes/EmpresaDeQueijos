@@ -233,4 +233,24 @@ public class Queijo_PedidoDAO {
         System.out.println("Queijo pedido buscado com sucesso");
         return ListaRetorno;
     }
+    
+    public int MaiorID(){
+        PreparedStatement instrucao;
+        ResultSet res;
+        String codigo = "select MAX(id_queijo_pedido) from queijo_pedido";
+        
+        int maxID = 0;
+        try{
+            instrucao = this.conexao.prepareStatement(codigo);
+            res = instrucao.executeQuery();
+            
+            while(res.next()){
+                maxID = res.getInt("max");
+            }
+        }catch(SQLException e){
+            System.out.println("erro: "+e.toString());
+        }
+       
+        return maxID;
+    }
 }
