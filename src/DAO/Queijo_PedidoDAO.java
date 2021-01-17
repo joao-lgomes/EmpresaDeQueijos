@@ -59,7 +59,7 @@ public class Queijo_PedidoDAO {
         PreparedStatement instrucao;
         
         //Criando um pré condigo possuindo alguns valores como variáveis
-        String codigo = "update Pedido set fk_id_pedido=?, fk_id_queijo=?, quantidade=? where id_queijo_pedido=?;";
+        String codigo = "update queijo_pedido set fk_id_pedido=?, fk_id_queijo=?, quantidade=? where id_queijo_pedido=?;";
         
         try{
             //informando que nossa instrução preparada será feita por meio da conexão pelo pré código escrito
