@@ -503,17 +503,6 @@ public class Menu extends javax.swing.JFrame {
         Tabela_QueijosPedidos = new javax.swing.JTable();
         jLabel11 = new javax.swing.JLabel();
         Centro2 = new javax.swing.JLayeredPane();
-        Remover_QueijoPedido = new javax.swing.JPanel();
-        jLb_Topo_menuInserir15 = new javax.swing.JLabel();
-        jLayeredPane18 = new javax.swing.JLayeredPane();
-        BuscaPanAlterar6 = new javax.swing.JPanel();
-        BuscaPan12 = new javax.swing.JPanel();
-        Jlb_BuscaIdQueijo5 = new javax.swing.JLabel();
-        JTf_BuscaIIdQueijoPedido2 = new javax.swing.JTextField();
-        Jbt_LimpaIdQueijoPedido2 = new javax.swing.JButton();
-        JBt_RemoveQueijoPedido = new javax.swing.JButton();
-        jScrollPane27 = new javax.swing.JScrollPane();
-        ListaIdQueijoPedidos2 = new javax.swing.JList<>();
         Inserir_Pedido = new javax.swing.JPanel();
         jLb_Topo_menuInserir6 = new javax.swing.JLabel();
         DadosPanCadastro4 = new javax.swing.JPanel();
@@ -682,6 +671,17 @@ public class Menu extends javax.swing.JFrame {
         JBt_RemoveIdPedido = new javax.swing.JButton();
         jScrollPane15 = new javax.swing.JScrollPane();
         ListaIdPedidos2 = new javax.swing.JList<>();
+        Remover_QueijoPedido = new javax.swing.JPanel();
+        jLb_Topo_menuInserir15 = new javax.swing.JLabel();
+        jLayeredPane18 = new javax.swing.JLayeredPane();
+        BuscaPanAlterar6 = new javax.swing.JPanel();
+        BuscaPan12 = new javax.swing.JPanel();
+        Jlb_BuscaIdQueijo5 = new javax.swing.JLabel();
+        JTf_BuscaIIdQueijoPedido2 = new javax.swing.JTextField();
+        Jbt_LimpaIdQueijoPedido2 = new javax.swing.JButton();
+        JBt_RemoveQueijoPedido = new javax.swing.JButton();
+        jScrollPane27 = new javax.swing.JScrollPane();
+        ListaIdQueijoPedidos2 = new javax.swing.JList<>();
         Buscar_Pedidos = new javax.swing.JPanel();
         jLb_Topo_menuInserir11 = new javax.swing.JLabel();
         jLayeredPane17 = new javax.swing.JLayeredPane();
@@ -766,6 +766,11 @@ public class Menu extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 45)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/usuario_nova.png"))); // NOI18N
         jButton1.setText("CLIENTES");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 45)); // NOI18N
@@ -3790,7 +3795,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(Buscar_QueijoLayout.createSequentialGroup()
                 .addComponent(jLb_Topo_menuInserir7, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
-                .addComponent(jLayeredPane15, javax.swing.GroupLayout.DEFAULT_SIZE, 677, Short.MAX_VALUE))
+                .addComponent(jLayeredPane15))
         );
 
         Centro1.add(Buscar_Queijo);
@@ -4065,122 +4070,6 @@ public class Menu extends javax.swing.JFrame {
 
         Centro2.setLayout(new javax.swing.OverlayLayout(Centro2));
 
-        jLb_Topo_menuInserir15.setFont(new java.awt.Font("Tahoma", 1, 29)); // NOI18N
-        jLb_Topo_menuInserir15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLb_Topo_menuInserir15.setText("REMOVER QUEIJO QUE FOI PEDIDO");
-        jLb_Topo_menuInserir15.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-
-        jLayeredPane18.setLayout(new javax.swing.OverlayLayout(jLayeredPane18));
-
-        Jlb_BuscaIdQueijo5.setFont(new java.awt.Font("Tahoma", 0, 27)); // NOI18N
-        Jlb_BuscaIdQueijo5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Jlb_BuscaIdQueijo5.setText("Buscar pelo ID do queijo pedido");
-
-        JTf_BuscaIIdQueijoPedido2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-
-        Jbt_LimpaIdQueijoPedido2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        Jbt_LimpaIdQueijoPedido2.setText("LIMPAR");
-        Jbt_LimpaIdQueijoPedido2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Jbt_LimpaIdQueijoPedido2ActionPerformed(evt);
-            }
-        });
-
-        JBt_RemoveQueijoPedido.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        JBt_RemoveQueijoPedido.setText("REMOVER");
-        JBt_RemoveQueijoPedido.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JBt_RemoveQueijoPedidoActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout BuscaPan12Layout = new javax.swing.GroupLayout(BuscaPan12);
-        BuscaPan12.setLayout(BuscaPan12Layout);
-        BuscaPan12Layout.setHorizontalGroup(
-            BuscaPan12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BuscaPan12Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(BuscaPan12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(JTf_BuscaIIdQueijoPedido2)
-                    .addComponent(Jlb_BuscaIdQueijo5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(BuscaPan12Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 101, Short.MAX_VALUE)
-                        .addComponent(Jbt_LimpaIdQueijoPedido2, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(JBt_RemoveQueijoPedido, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(96, 96, 96)))
-                .addContainerGap())
-        );
-        BuscaPan12Layout.setVerticalGroup(
-            BuscaPan12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BuscaPan12Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Jlb_BuscaIdQueijo5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(JTf_BuscaIIdQueijoPedido2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(BuscaPan12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Jbt_LimpaIdQueijoPedido2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JBt_RemoveQueijoPedido, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 65, Short.MAX_VALUE))
-        );
-
-        ListaIdQueijoPedidos2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        ListaIdQueijoPedidos2.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        ListaIdQueijoPedidos2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ListaIdQueijoPedidos2MouseClicked(evt);
-            }
-        });
-        jScrollPane27.setViewportView(ListaIdQueijoPedidos2);
-
-        javax.swing.GroupLayout BuscaPanAlterar6Layout = new javax.swing.GroupLayout(BuscaPanAlterar6);
-        BuscaPanAlterar6.setLayout(BuscaPanAlterar6Layout);
-        BuscaPanAlterar6Layout.setHorizontalGroup(
-            BuscaPanAlterar6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BuscaPanAlterar6Layout.createSequentialGroup()
-                .addComponent(BuscaPan12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 4, Short.MAX_VALUE))
-            .addGroup(BuscaPanAlterar6Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jScrollPane27, javax.swing.GroupLayout.PREFERRED_SIZE, 794, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        BuscaPanAlterar6Layout.setVerticalGroup(
-            BuscaPanAlterar6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BuscaPanAlterar6Layout.createSequentialGroup()
-                .addComponent(BuscaPan12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane27, javax.swing.GroupLayout.PREFERRED_SIZE, 453, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        jLayeredPane18.add(BuscaPanAlterar6);
-
-        javax.swing.GroupLayout Remover_QueijoPedidoLayout = new javax.swing.GroupLayout(Remover_QueijoPedido);
-        Remover_QueijoPedido.setLayout(Remover_QueijoPedidoLayout);
-        Remover_QueijoPedidoLayout.setHorizontalGroup(
-            Remover_QueijoPedidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLb_Topo_menuInserir15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(Remover_QueijoPedidoLayout.createSequentialGroup()
-                .addComponent(jLayeredPane18, javax.swing.GroupLayout.PREFERRED_SIZE, 843, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        Remover_QueijoPedidoLayout.setVerticalGroup(
-            Remover_QueijoPedidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Remover_QueijoPedidoLayout.createSequentialGroup()
-                .addComponent(jLb_Topo_menuInserir15, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(9, 9, 9)
-                .addComponent(jLayeredPane18, javax.swing.GroupLayout.PREFERRED_SIZE, 690, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        Centro2.add(Remover_QueijoPedido);
-
         jLb_Topo_menuInserir6.setFont(new java.awt.Font("Tahoma", 1, 29)); // NOI18N
         jLb_Topo_menuInserir6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLb_Topo_menuInserir6.setText("INSERIR PEDIDO");
@@ -4328,7 +4217,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(ButtonsPan5Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(LimparPedido_BT, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 129, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
                 .addComponent(InserirPedido_BT, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -4735,6 +4624,11 @@ public class Menu extends javax.swing.JFrame {
         JLb_Nome3.setText("ID");
 
         JBt_Id_Crescente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
+        JBt_Id_Crescente1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_Id_Crescente1ActionPerformed(evt);
+            }
+        });
 
         JLb_Cpf3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JLb_Cpf3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -4766,6 +4660,11 @@ public class Menu extends javax.swing.JFrame {
         JLb_Nome4.setText("DATA");
 
         JBt_Valor_Crescente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
+        JBt_Valor_Crescente1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_Valor_Crescente1ActionPerformed(evt);
+            }
+        });
 
         JBt_temp_Decrescente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/down_new.jpg"))); // NOI18N
         JBt_temp_Decrescente1.addActionListener(new java.awt.event.ActionListener() {
@@ -4877,7 +4776,7 @@ public class Menu extends javax.swing.JFrame {
         jLayeredPane11Layout.setVerticalGroup(
             jLayeredPane11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jLayeredPane11Layout.createSequentialGroup()
-                .addComponent(jScrollPane30, javax.swing.GroupLayout.DEFAULT_SIZE, 522, Short.MAX_VALUE)
+                .addComponent(jScrollPane30, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(OrdernarPan2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -4926,6 +4825,11 @@ public class Menu extends javax.swing.JFrame {
         JLb_Nome5.setText("ID");
 
         JBt_Id_Crescente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
+        JBt_Id_Crescente2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_Id_Crescente2ActionPerformed(evt);
+            }
+        });
 
         JLb_Cpf5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JLb_Cpf5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -4957,6 +4861,11 @@ public class Menu extends javax.swing.JFrame {
         JLb_Nome6.setText("ID QUEIJO");
 
         JBt_Valor_Crescente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/up_new.jpg"))); // NOI18N
+        JBt_Valor_Crescente2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_Valor_Crescente2ActionPerformed(evt);
+            }
+        });
 
         JBt_temp_Decrescente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/down_new.jpg"))); // NOI18N
         JBt_temp_Decrescente2.addActionListener(new java.awt.event.ActionListener() {
@@ -5058,13 +4967,13 @@ public class Menu extends javax.swing.JFrame {
             jLayeredPane19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jLayeredPane19Layout.createSequentialGroup()
                 .addComponent(jScrollPane31, javax.swing.GroupLayout.PREFERRED_SIZE, 788, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 103, Short.MAX_VALUE))
+                .addGap(0, 30, Short.MAX_VALUE))
             .addComponent(OrdernarPan3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jLayeredPane19Layout.setVerticalGroup(
             jLayeredPane19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jLayeredPane19Layout.createSequentialGroup()
-                .addComponent(jScrollPane31, javax.swing.GroupLayout.DEFAULT_SIZE, 522, Short.MAX_VALUE)
+                .addComponent(jScrollPane31, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(OrdernarPan3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -5129,7 +5038,7 @@ public class Menu extends javax.swing.JFrame {
         Queijos_Pedidos1.setLayout(Queijos_Pedidos1Layout);
         Queijos_Pedidos1Layout.setHorizontalGroup(
             Queijos_Pedidos1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 915, Short.MAX_VALUE)
+            .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 842, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Queijos_Pedidos1Layout.createSequentialGroup()
                 .addGroup(Queijos_Pedidos1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane33, javax.swing.GroupLayout.Alignment.LEADING)
@@ -5142,19 +5051,19 @@ public class Menu extends javax.swing.JFrame {
                 .addGap(6, 6, 6)
                 .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane32, javax.swing.GroupLayout.DEFAULT_SIZE, 276, Short.MAX_VALUE)
+                .addComponent(jScrollPane32, javax.swing.GroupLayout.DEFAULT_SIZE, 254, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane33, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
-        jTabbedPane3.addTab("Queijos Pedidos Por pedido", Queijos_Pedidos1);
+        jTabbedPane3.addTab("QUEIJOS PEDIDOS POR PEDIDO", Queijos_Pedidos1);
 
         javax.swing.GroupLayout Mostrar_PedidosLayout = new javax.swing.GroupLayout(Mostrar_Pedidos);
         Mostrar_Pedidos.setLayout(Mostrar_PedidosLayout);
         Mostrar_PedidosLayout.setHorizontalGroup(
             Mostrar_PedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 920, Short.MAX_VALUE)
+            .addComponent(jTabbedPane3)
         );
         Mostrar_PedidosLayout.setVerticalGroup(
             Mostrar_PedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -5254,7 +5163,7 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(BuscaPan6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane14, javax.swing.GroupLayout.DEFAULT_SIZE, 471, Short.MAX_VALUE)
+                .addComponent(jScrollPane14, javax.swing.GroupLayout.DEFAULT_SIZE, 461, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -5401,7 +5310,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(ButtonsPan14Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(LimparPedido_BT1, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 129, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
                 .addComponent(AlterarPedido_BT, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -5583,7 +5492,7 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(BuscaPan11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane26, javax.swing.GroupLayout.DEFAULT_SIZE, 471, Short.MAX_VALUE)
+                .addComponent(jScrollPane26, javax.swing.GroupLayout.DEFAULT_SIZE, 449, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -5731,7 +5640,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(ButtonsPan16Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(LimparQueijoPedido_BT1, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 129, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
                 .addComponent(AlterarQueijoPedido_BT, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -5801,8 +5710,8 @@ public class Menu extends javax.swing.JFrame {
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane28, javax.swing.GroupLayout.DEFAULT_SIZE, 319, Short.MAX_VALUE)
-                    .addComponent(jScrollPane29, javax.swing.GroupLayout.DEFAULT_SIZE, 319, Short.MAX_VALUE)))
+                    .addComponent(jScrollPane28, javax.swing.GroupLayout.DEFAULT_SIZE, 297, Short.MAX_VALUE)
+                    .addComponent(jScrollPane29, javax.swing.GroupLayout.DEFAULT_SIZE, 297, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout DadosPanCadastro11Layout = new javax.swing.GroupLayout(DadosPanCadastro11);
@@ -5978,6 +5887,122 @@ public class Menu extends javax.swing.JFrame {
 
         Centro2.add(Remover_Pedido);
 
+        jLb_Topo_menuInserir15.setFont(new java.awt.Font("Tahoma", 1, 29)); // NOI18N
+        jLb_Topo_menuInserir15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLb_Topo_menuInserir15.setText("REMOVER QUEIJO QUE FOI PEDIDO");
+        jLb_Topo_menuInserir15.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+
+        jLayeredPane18.setLayout(new javax.swing.OverlayLayout(jLayeredPane18));
+
+        Jlb_BuscaIdQueijo5.setFont(new java.awt.Font("Tahoma", 0, 27)); // NOI18N
+        Jlb_BuscaIdQueijo5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Jlb_BuscaIdQueijo5.setText("Buscar pelo ID do queijo pedido");
+
+        JTf_BuscaIIdQueijoPedido2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+
+        Jbt_LimpaIdQueijoPedido2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        Jbt_LimpaIdQueijoPedido2.setText("LIMPAR");
+        Jbt_LimpaIdQueijoPedido2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Jbt_LimpaIdQueijoPedido2ActionPerformed(evt);
+            }
+        });
+
+        JBt_RemoveQueijoPedido.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        JBt_RemoveQueijoPedido.setText("REMOVER");
+        JBt_RemoveQueijoPedido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_RemoveQueijoPedidoActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout BuscaPan12Layout = new javax.swing.GroupLayout(BuscaPan12);
+        BuscaPan12.setLayout(BuscaPan12Layout);
+        BuscaPan12Layout.setHorizontalGroup(
+            BuscaPan12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BuscaPan12Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(BuscaPan12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(JTf_BuscaIIdQueijoPedido2)
+                    .addComponent(Jlb_BuscaIdQueijo5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(BuscaPan12Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 101, Short.MAX_VALUE)
+                        .addComponent(Jbt_LimpaIdQueijoPedido2, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(JBt_RemoveQueijoPedido, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(96, 96, 96)))
+                .addContainerGap())
+        );
+        BuscaPan12Layout.setVerticalGroup(
+            BuscaPan12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BuscaPan12Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Jlb_BuscaIdQueijo5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(JTf_BuscaIIdQueijoPedido2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(BuscaPan12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Jbt_LimpaIdQueijoPedido2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JBt_RemoveQueijoPedido, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 65, Short.MAX_VALUE))
+        );
+
+        ListaIdQueijoPedidos2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        ListaIdQueijoPedidos2.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        ListaIdQueijoPedidos2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ListaIdQueijoPedidos2MouseClicked(evt);
+            }
+        });
+        jScrollPane27.setViewportView(ListaIdQueijoPedidos2);
+
+        javax.swing.GroupLayout BuscaPanAlterar6Layout = new javax.swing.GroupLayout(BuscaPanAlterar6);
+        BuscaPanAlterar6.setLayout(BuscaPanAlterar6Layout);
+        BuscaPanAlterar6Layout.setHorizontalGroup(
+            BuscaPanAlterar6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BuscaPanAlterar6Layout.createSequentialGroup()
+                .addComponent(BuscaPan12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 4, Short.MAX_VALUE))
+            .addGroup(BuscaPanAlterar6Layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(jScrollPane27, javax.swing.GroupLayout.PREFERRED_SIZE, 794, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        BuscaPanAlterar6Layout.setVerticalGroup(
+            BuscaPanAlterar6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BuscaPanAlterar6Layout.createSequentialGroup()
+                .addComponent(BuscaPan12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane27, javax.swing.GroupLayout.PREFERRED_SIZE, 453, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jLayeredPane18.add(BuscaPanAlterar6);
+
+        javax.swing.GroupLayout Remover_QueijoPedidoLayout = new javax.swing.GroupLayout(Remover_QueijoPedido);
+        Remover_QueijoPedido.setLayout(Remover_QueijoPedidoLayout);
+        Remover_QueijoPedidoLayout.setHorizontalGroup(
+            Remover_QueijoPedidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLb_Topo_menuInserir15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(Remover_QueijoPedidoLayout.createSequentialGroup()
+                .addComponent(jLayeredPane18, javax.swing.GroupLayout.PREFERRED_SIZE, 843, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        Remover_QueijoPedidoLayout.setVerticalGroup(
+            Remover_QueijoPedidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Remover_QueijoPedidoLayout.createSequentialGroup()
+                .addComponent(jLb_Topo_menuInserir15, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(9, 9, 9)
+                .addComponent(jLayeredPane18, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        Centro2.add(Remover_QueijoPedido);
+
         jLb_Topo_menuInserir11.setFont(new java.awt.Font("Tahoma", 1, 29)); // NOI18N
         jLb_Topo_menuInserir11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLb_Topo_menuInserir11.setText("PROCURAR PEDIDOS");
@@ -5999,6 +6024,11 @@ public class Menu extends javax.swing.JFrame {
 
         Jbt_LimpaPrazo.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         Jbt_LimpaPrazo.setText("LIMPAR");
+        Jbt_LimpaPrazo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Jbt_LimpaPrazoActionPerformed(evt);
+            }
+        });
 
         JBt_BuscaPrazo.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_BuscaPrazo.setText("BUSCAR");
@@ -6010,9 +6040,19 @@ public class Menu extends javax.swing.JFrame {
 
         JBt_LimpaIDQueijo.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_LimpaIDQueijo.setText("LIMPAR");
+        JBt_LimpaIDQueijo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_LimpaIDQueijoActionPerformed(evt);
+            }
+        });
 
         JBt_BuscaIDQueijo.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_BuscaIDQueijo.setText("BUSCAR");
+        JBt_BuscaIDQueijo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_BuscaIDQueijoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout BuscaPan10Layout = new javax.swing.GroupLayout(BuscaPan10);
         BuscaPan10.setLayout(BuscaPan10Layout);
@@ -6082,6 +6122,11 @@ public class Menu extends javax.swing.JFrame {
 
         Jbt_LimpaIdP.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         Jbt_LimpaIdP.setText("LIMPAR");
+        Jbt_LimpaIdP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Jbt_LimpaIdPActionPerformed(evt);
+            }
+        });
 
         JBt_BuscaIdP.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_BuscaIdP.setText("BUSCAR");
@@ -6093,9 +6138,19 @@ public class Menu extends javax.swing.JFrame {
 
         JBt_LimpaIDQP.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_LimpaIDQP.setText("LIMPAR");
+        JBt_LimpaIDQP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_LimpaIDQPActionPerformed(evt);
+            }
+        });
 
         JBt_BuscaIDQP.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_BuscaIDQP.setText("BUSCAR");
+        JBt_BuscaIDQP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_BuscaIDQPActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout BuscaPan13Layout = new javax.swing.GroupLayout(BuscaPan13);
         BuscaPan13.setLayout(BuscaPan13Layout);
@@ -6126,7 +6181,7 @@ public class Menu extends javax.swing.JFrame {
                         .addGroup(BuscaPan13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(JLb_BuscaNome7, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(JTf_BuscaIdQueijoPedido2, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(46, Short.MAX_VALUE))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         BuscaPan13Layout.setVerticalGroup(
             BuscaPan13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -6163,6 +6218,11 @@ public class Menu extends javax.swing.JFrame {
 
         Jbt_LimpaCpfP.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         Jbt_LimpaCpfP.setText("LIMPAR");
+        Jbt_LimpaCpfP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Jbt_LimpaCpfPActionPerformed(evt);
+            }
+        });
 
         JBt_BuscaCPFP.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_BuscaCPFP.setText("BUSCAR");
@@ -6174,9 +6234,19 @@ public class Menu extends javax.swing.JFrame {
 
         JBt_LimpaIDPedido.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_LimpaIDPedido.setText("LIMPAR");
+        JBt_LimpaIDPedido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_LimpaIDPedidoActionPerformed(evt);
+            }
+        });
 
         JBt_BuscaIDPedido.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_BuscaIDPedido.setText("BUSCAR");
+        JBt_BuscaIDPedido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_BuscaIDPedidoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout BuscaPan14Layout = new javax.swing.GroupLayout(BuscaPan14);
         BuscaPan14.setLayout(BuscaPan14Layout);
@@ -6313,7 +6383,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(ButtonsPan12Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(VoltarDashboard_BT2, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 115, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
                 .addComponent(BuscarNovamente_BT2, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -6340,7 +6410,7 @@ public class Menu extends javax.swing.JFrame {
         DadosPanBusca2Layout.setVerticalGroup(
             DadosPanBusca2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DadosPanBusca2Layout.createSequentialGroup()
-                .addComponent(jScrollPane18, javax.swing.GroupLayout.DEFAULT_SIZE, 599, Short.MAX_VALUE)
+                .addComponent(jScrollPane18, javax.swing.GroupLayout.DEFAULT_SIZE, 585, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ButtonsPan12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
@@ -6353,9 +6423,9 @@ public class Menu extends javax.swing.JFrame {
         Buscar_PedidosLayout.setHorizontalGroup(
             Buscar_PedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Buscar_PedidosLayout.createSequentialGroup()
-                .addGroup(Buscar_PedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLb_Topo_menuInserir11, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLayeredPane17, javax.swing.GroupLayout.Alignment.LEADING))
+                .addGroup(Buscar_PedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLb_Topo_menuInserir11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLayeredPane17, javax.swing.GroupLayout.DEFAULT_SIZE, 839, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         Buscar_PedidosLayout.setVerticalGroup(
@@ -6389,6 +6459,11 @@ public class Menu extends javax.swing.JFrame {
 
         Jbt_LimpaCpf3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         Jbt_LimpaCpf3.setText("LIMPAR");
+        Jbt_LimpaCpf3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Jbt_LimpaCpf3ActionPerformed(evt);
+            }
+        });
 
         JBt_BuscaCPF3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_BuscaCPF3.setText("BUSCAR");
@@ -6400,9 +6475,19 @@ public class Menu extends javax.swing.JFrame {
 
         JBt_LimpaNome3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_LimpaNome3.setText("LIMPAR");
+        JBt_LimpaNome3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_LimpaNome3ActionPerformed(evt);
+            }
+        });
 
         JBt_BuscaNome3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         JBt_BuscaNome3.setText("BUSCAR");
+        JBt_BuscaNome3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBt_BuscaNome3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout BuscaPan18Layout = new javax.swing.GroupLayout(BuscaPan18);
         BuscaPan18.setLayout(BuscaPan18Layout);
@@ -6423,7 +6508,7 @@ public class Menu extends javax.swing.JFrame {
                                 .addGap(35, 35, 35)))))
                 .addGroup(BuscaPan18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(BuscaPan18Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
                         .addGroup(BuscaPan18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(JLb_BuscaNome3, javax.swing.GroupLayout.PREFERRED_SIZE, 410, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(BuscaPan18Layout.createSequentialGroup()
@@ -6462,14 +6547,22 @@ public class Menu extends javax.swing.JFrame {
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
+        ListaCpf_Nome3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ListaCpf_Nome3MouseClicked(evt);
+            }
+        });
         jScrollPane16.setViewportView(ListaCpf_Nome3);
 
         javax.swing.GroupLayout BuscaPanBusca4Layout = new javax.swing.GroupLayout(BuscaPanBusca4);
         BuscaPanBusca4.setLayout(BuscaPanBusca4Layout);
         BuscaPanBusca4Layout.setHorizontalGroup(
             BuscaPanBusca4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(BuscaPan18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jScrollPane16)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BuscaPanBusca4Layout.createSequentialGroup()
+                .addGroup(BuscaPanBusca4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(BuscaPan18, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jScrollPane16))
+                .addContainerGap())
         );
         BuscaPanBusca4Layout.setVerticalGroup(
             BuscaPanBusca4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -6547,7 +6640,7 @@ public class Menu extends javax.swing.JFrame {
         DadosPanBusca4Layout.setVerticalGroup(
             DadosPanBusca4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DadosPanBusca4Layout.createSequentialGroup()
-                .addComponent(jScrollPane17, javax.swing.GroupLayout.DEFAULT_SIZE, 599, Short.MAX_VALUE)
+                .addComponent(jScrollPane17, javax.swing.GroupLayout.DEFAULT_SIZE, 581, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ButtonsPan6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
@@ -6643,11 +6736,13 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        limpar();
+        JTP_PainelGuias.setSelectedIndex(2);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        limpar();
+        JTP_PainelGuias.setSelectedIndex(3);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jCB_EscolhasClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCB_EscolhasClienteActionPerformed
@@ -7092,7 +7187,7 @@ public class Menu extends javax.swing.JFrame {
 
     private void VoltarDashboard_BTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VoltarDashboard_BTActionPerformed
         limpar();
-        JP_Dashboard.setVisible(true);
+        JTP_PainelGuias.setSelectedIndex(0);
     }//GEN-LAST:event_VoltarDashboard_BTActionPerformed
 
     private void jCB_EscolhasQueijoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCB_EscolhasQueijoActionPerformed
@@ -7513,7 +7608,7 @@ public class Menu extends javax.swing.JFrame {
 
     private void VoltarDashboard_BT1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VoltarDashboard_BT1ActionPerformed
        limpar();
-       JP_Dashboard.setVisible(true);
+        JTP_PainelGuias.setSelectedIndex(0);
     }//GEN-LAST:event_VoltarDashboard_BT1ActionPerformed
 
     private void BuscarNovamente_BT1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarNovamente_BT1ActionPerformed
@@ -8022,93 +8117,36 @@ public class Menu extends javax.swing.JFrame {
 
             if(opc.equals("8- Buscar um Certo Pedido")){
                 limpar();
-                try{
-                QueijoDAO queijoDAO = new QueijoDAO();
-                ArrayList <Queijo> ListaQueijos = queijoDAO.getAll();
-                DefaultListModel DLM = new DefaultListModel();
-
-                ListaQueijos.forEach((Queijo queijo) -> {
-                        int id = queijo.getId_queijo();
-                        String tipo = queijo.getTipo();
-                        String escrita = "ID DO QUEIJO: "+id+"       ||       TIPO: "+tipo;
-                        DLM.addElement(escrita);
-                    });
-                ListaId_Tipo.setModel(DLM);
-                }catch (SQLException ex) {
-                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (ClassNotFoundException ex) {
-                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
-                }
-                Buscar_Queijo.setVisible(true);
-                DadosPanBusca1.setVisible(false);
-                BuscaPanBusca1.setVisible(true);
+                Buscar_Pedidos.setVisible(true);
+                DadosPanBusca2.setVisible(false);
+                BuscaPanBusca2.setVisible(true);
+                
                 
             }
-            
             if(opc.equals("9- Buscar o Pedido Mais Antigo De Dado Cliente")){
                 limpar();
                 try{
-                QueijoDAO queijoDAO = new QueijoDAO();
-                ArrayList <Queijo> ListaQueijos = queijoDAO.getAll();
+                ClienteDAO clienteDAO = new ClienteDAO();
+                ArrayList <Cliente> ListaClientes = clienteDAO.getAll();
                 DefaultListModel DLM = new DefaultListModel();
 
-                ListaQueijos.forEach((Queijo queijo) -> {
-                        int id = queijo.getId_queijo();
-                        String tipo = queijo.getTipo();
-                        String escrita = "ID DO QUEIJO: "+id+"       ||       TIPO: "+tipo;
+                ListaClientes.forEach((Cliente cliente) -> {
+                        String cpf = cliente.getCpf();
+                        String nome = cliente.getNome();
+                        String escrita = "Cpf: "+cpf+"       ||       Nome: "+nome;
                         DLM.addElement(escrita);
                     });
-                ListaId_Tipo.setModel(DLM);
+                ListaCpf_Nome3.setModel(DLM);
                 }catch (SQLException ex) {
                     Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
                 } catch (ClassNotFoundException ex) {
                     Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
                 }
-                Buscar_Queijo.setVisible(true);
-                DadosPanBusca1.setVisible(false);
-                BuscaPanBusca1.setVisible(true);
+                Pedido_MaisAntigo.setVisible(true);
+                DadosPanBusca4.setVisible(false);
+                BuscaPanBusca4.setVisible(true);
                 
             }
-
-            if(opc.equals("10- Mostrar o pedido mais antigo de um cliente")){
-                QueijoDAO queijoDAO;
-                try {
-                    queijoDAO = new QueijoDAO();
-
-                    ArrayList<Queijo> ListaQueijo = queijoDAO.menorTemp();
-
-                    DefaultTableModel model;
-                    model = new DefaultTableModel(new String[] {"id_queijo", "peso", "valorKG", "tipo", "tempIdeal"}, 0);
-        
-                    ListaQueijo.forEach((Queijo queijo) -> {
-                        int id_queijo = queijo.getId_queijo();
-                        float peso = queijo.getPeso();
-                        float valorKG = queijo.getValorKG();
-                        String tipo = queijo.getTipo();
-                        float tempIdeal = queijo.getTempIdeal();
-
-                        
-                        Vector row = new Vector();
-                        row.add(id_queijo);
-                        row.add(peso);
-                        row.add(valorKG);
-                        row.add(tipo);
-                        row.add(tempIdeal);
-
-                        model.addRow(row);
-                    });
-
-                    JTb_MostrarQueijos.setModel(model);
-
-                    limpar();
-                    Mostrar_Queijo.setVisible(true);
-                    OrdernarPan1.setVisible(false);
-                } catch (SQLException | ClassNotFoundException ex) {
-                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
-                }
-            }
-            
-
         }
     }//GEN-LAST:event_JB_acaoPedidoActionPerformed
 
@@ -8236,39 +8274,221 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_JBt_RemoveIdPedidoActionPerformed
 
     private void JBt_Id_Decrescente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Id_Decrescente1ActionPerformed
-        // TODO add your handling code here:
+        try {
+            PedidoDAO pedidoDAO = new PedidoDAO();
+            ArrayList <Pedido> ListaPedidos = pedidoDAO.getAllId(-1);
+        
+                    DefaultTableModel model3;
+                    model3 = new DefaultTableModel(new String[] {"id_pedido", "fk_cpf", "data_pedido", "prazoEntrega"}, 0);
+
+                    ListaPedidos.forEach((Pedido pedido) -> {
+                                    int id_pedido = pedido.getId_pedido();
+                                    String fk_cpf = pedido.getFk_cpf();
+                                    LocalDateTime data_pedido = pedido.getdata_pedido();
+                                    int prazoEntrega = pedido.getPrazoEntrega();
+                                    Vector row3 = new Vector();
+                                    row3.add(id_pedido);
+                                    row3.add(fk_cpf);
+                                    row3.add(data_pedido);
+                                    row3.add(prazoEntrega);
+                                    model3.addRow(row3);
+                                });
+                    jTb_Pedidos.setModel(model3);
+        } catch (SQLException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JBt_Id_Decrescente1ActionPerformed
 
     private void JBt_Peso_Decrescente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Peso_Decrescente1ActionPerformed
-        // TODO add your handling code here:
+        try {
+            PedidoDAO pedidoDAO = new PedidoDAO();
+            ArrayList <Pedido> ListaPedidos = pedidoDAO.getAllCpf(-1);
+        
+                    DefaultTableModel model3;
+                    model3 = new DefaultTableModel(new String[] {"id_pedido", "fk_cpf", "data_pedido", "prazoEntrega"}, 0);
+
+                    ListaPedidos.forEach((Pedido pedido) -> {
+                                    int id_pedido = pedido.getId_pedido();
+                                    String fk_cpf = pedido.getFk_cpf();
+                                    LocalDateTime data_pedido = pedido.getdata_pedido();
+                                    int prazoEntrega = pedido.getPrazoEntrega();
+                                    Vector row3 = new Vector();
+                                    row3.add(id_pedido);
+                                    row3.add(fk_cpf);
+                                    row3.add(data_pedido);
+                                    row3.add(prazoEntrega);
+                                    model3.addRow(row3);
+                                });
+                    jTb_Pedidos.setModel(model3);
+        } catch (SQLException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JBt_Peso_Decrescente1ActionPerformed
 
     private void JBt_Peso_Crescente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Peso_Crescente1ActionPerformed
-        // TODO add your handling code here:
+        try {
+            PedidoDAO pedidoDAO = new PedidoDAO();
+            ArrayList <Pedido> ListaPedidos = pedidoDAO.getAllCpf(1);
+        
+                    DefaultTableModel model3;
+                    model3 = new DefaultTableModel(new String[] {"id_pedido", "fk_cpf", "data_pedido", "prazoEntrega"}, 0);
+
+                    ListaPedidos.forEach((Pedido pedido) -> {
+                                    int id_pedido = pedido.getId_pedido();
+                                    String fk_cpf = pedido.getFk_cpf();
+                                    LocalDateTime data_pedido = pedido.getdata_pedido();
+                                    int prazoEntrega = pedido.getPrazoEntrega();
+                                    Vector row3 = new Vector();
+                                    row3.add(id_pedido);
+                                    row3.add(fk_cpf);
+                                    row3.add(data_pedido);
+                                    row3.add(prazoEntrega);
+                                    model3.addRow(row3);
+                                });
+                    jTb_Pedidos.setModel(model3);
+        } catch (SQLException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JBt_Peso_Crescente1ActionPerformed
 
     private void JBt_Valor_Decrescente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Valor_Decrescente1ActionPerformed
-        // TODO add your handling code here:
+        try {
+            PedidoDAO pedidoDAO = new PedidoDAO();
+            ArrayList <Pedido> ListaPedidos = pedidoDAO.getAllData(-1);
+        
+                    DefaultTableModel model3;
+                    model3 = new DefaultTableModel(new String[] {"id_pedido", "fk_cpf", "data_pedido", "prazoEntrega"}, 0);
+
+                    ListaPedidos.forEach((Pedido pedido) -> {
+                                    int id_pedido = pedido.getId_pedido();
+                                    String fk_cpf = pedido.getFk_cpf();
+                                    LocalDateTime data_pedido = pedido.getdata_pedido();
+                                    int prazoEntrega = pedido.getPrazoEntrega();
+                                    Vector row3 = new Vector();
+                                    row3.add(id_pedido);
+                                    row3.add(fk_cpf);
+                                    row3.add(data_pedido);
+                                    row3.add(prazoEntrega);
+                                    model3.addRow(row3);
+                                });
+                    jTb_Pedidos.setModel(model3);
+        } catch (SQLException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JBt_Valor_Decrescente1ActionPerformed
 
     private void JBt_temp_Decrescente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_temp_Decrescente1ActionPerformed
-        // TODO add your handling code here:
+        try {
+            PedidoDAO pedidoDAO = new PedidoDAO();
+            ArrayList <Pedido> ListaPedidos = pedidoDAO.getAllPrazo(-1);
+        
+                    DefaultTableModel model3;
+                    model3 = new DefaultTableModel(new String[] {"id_pedido", "fk_cpf", "data_pedido", "prazoEntrega"}, 0);
+
+                    ListaPedidos.forEach((Pedido pedido) -> {
+                                    int id_pedido = pedido.getId_pedido();
+                                    String fk_cpf = pedido.getFk_cpf();
+                                    LocalDateTime data_pedido = pedido.getdata_pedido();
+                                    int prazoEntrega = pedido.getPrazoEntrega();
+                                    Vector row3 = new Vector();
+                                    row3.add(id_pedido);
+                                    row3.add(fk_cpf);
+                                    row3.add(data_pedido);
+                                    row3.add(prazoEntrega);
+                                    model3.addRow(row3);
+                                });
+                    jTb_Pedidos.setModel(model3);
+        } catch (SQLException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JBt_temp_Decrescente1ActionPerformed
 
     private void JBt_Temp_Crescente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Temp_Crescente1ActionPerformed
-        // TODO add your handling code here:
+        try {
+            PedidoDAO pedidoDAO = new PedidoDAO();
+            ArrayList <Pedido> ListaPedidos = pedidoDAO.getAllPrazo(1);
+        
+                    DefaultTableModel model3;
+                    model3 = new DefaultTableModel(new String[] {"id_pedido", "fk_cpf", "data_pedido", "prazoEntrega"}, 0);
+
+                    ListaPedidos.forEach((Pedido pedido) -> {
+                                    int id_pedido = pedido.getId_pedido();
+                                    String fk_cpf = pedido.getFk_cpf();
+                                    LocalDateTime data_pedido = pedido.getdata_pedido();
+                                    int prazoEntrega = pedido.getPrazoEntrega();
+                                    Vector row3 = new Vector();
+                                    row3.add(id_pedido);
+                                    row3.add(fk_cpf);
+                                    row3.add(data_pedido);
+                                    row3.add(prazoEntrega);
+                                    model3.addRow(row3);
+                                });
+                    jTb_Pedidos.setModel(model3);
+        } catch (SQLException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JBt_Temp_Crescente1ActionPerformed
 
     private void JBt_BuscaPrazoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaPrazoActionPerformed
-        // TODO add your handling code here:
+        try {
+                    PedidoDAO pedidoDAO = new PedidoDAO();
+                    ArrayList <Pedido> pedidos = pedidoDAO.getOnePrazo(Integer.parseInt(JTf_BuscaPrazoEntrega.getText()));
+
+        
+                    DefaultTableModel model3;
+                    model3 = new DefaultTableModel(new String[] {"id_pedido", "fk_cpf", "data_pedido", "prazoEntrega"}, 0);
+
+                    pedidos.forEach((Pedido pedido) -> {
+                                    int id_pedido = pedido.getId_pedido();
+                                    String fk_cpf = pedido.getFk_cpf();
+                                    LocalDateTime data_pedido = pedido.getdata_pedido();
+                                    int prazoEntrega = pedido.getPrazoEntrega();
+                                    Vector row3 = new Vector();
+                                    row3.add(id_pedido);
+                                    row3.add(fk_cpf);
+                                    row3.add(data_pedido);
+                                    row3.add(prazoEntrega);
+                                    model3.addRow(row3);
+                                });
+                    jTable3.setModel(model3);
+
+                    limpar();
+                    JTf_BuscaIdPedido2.setText("");
+                    JTf_BuscaCpfCliente.setText("");
+                    JTf_BuscaPrazoEntrega.setText("");
+                    JTf_BuscaIdQueijoPedido2.setText("");
+                    JTf_BuscaIDPedido.setText("");
+                    JTf_BuscaIDQueijo.setText("");
+                    Buscar_Pedidos.setVisible(true);
+                    BuscaPanBusca2.setVisible(false);
+                    DadosPanBusca2.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
     }//GEN-LAST:event_JBt_BuscaPrazoActionPerformed
 
     private void VoltarDashboard_BT2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VoltarDashboard_BT2ActionPerformed
-        // TODO add your handling code here:
+        limpar();
+        JTP_PainelGuias.setSelectedIndex(0);
     }//GEN-LAST:event_VoltarDashboard_BT2ActionPerformed
 
     private void BuscarNovamente_BT2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarNovamente_BT2ActionPerformed
-        // TODO add your handling code here:
+        limpar();
+        Buscar_Pedidos.setVisible(true);
+        DadosPanBusca2.setVisible(false);
+        BuscaPanBusca2.setVisible(true);
     }//GEN-LAST:event_BuscarNovamente_BT2ActionPerformed
 
     private void DataPedido_TF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DataPedido_TF1ActionPerformed
@@ -8512,47 +8732,296 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_JBt_RemoveQueijoPedidoActionPerformed
 
     private void JBt_Id_Decrescente2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Id_Decrescente2ActionPerformed
-        // TODO add your handling code here:
+        try {
+            Queijo_PedidoDAO qj = new Queijo_PedidoDAO();
+            ArrayList <Queijo_Pedido> ListaQJ = qj.getAllId(-1);
+
+                    DefaultTableModel model4;
+                    model4 = new DefaultTableModel(new String[] {"id_queijo_pedido", "Id Pedido", "Id queijo", "Quant"}, 0);
+
+                    ListaQJ.forEach((Queijo_Pedido qp) -> {
+                                    int id_queijo_pedido = qp.getId_queijo_pedido();
+                                    int fk_id_pedido = qp.getFk_id_pedido();
+                                    int fk_id_queijo = qp.getFk_id_queijo();
+                                    int quantidade = qp.getQuantidade();
+                                    Vector row4 = new Vector();
+                                    row4.add(id_queijo_pedido);
+                                    row4.add(fk_id_pedido);
+                                    row4.add(fk_id_queijo);
+                                    row4.add(quantidade);
+                                    model4.addRow(row4);
+                                });
+                    jTb_QueijosPedidos.setModel(model4);
+        } catch (SQLException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+                    
     }//GEN-LAST:event_JBt_Id_Decrescente2ActionPerformed
 
     private void JBt_Peso_Decrescente2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Peso_Decrescente2ActionPerformed
-        // TODO add your handling code here:
+        try {
+            Queijo_PedidoDAO qj = new Queijo_PedidoDAO();
+            ArrayList <Queijo_Pedido> ListaQJ = qj.getAllIdPed(-1);
+
+                    DefaultTableModel model4;
+                    model4 = new DefaultTableModel(new String[] {"id_queijo_pedido", "Id Pedido", "Id queijo", "Quant"}, 0);
+
+                    ListaQJ.forEach((Queijo_Pedido qp) -> {
+                                    int id_queijo_pedido = qp.getId_queijo_pedido();
+                                    int fk_id_pedido = qp.getFk_id_pedido();
+                                    int fk_id_queijo = qp.getFk_id_queijo();
+                                    int quantidade = qp.getQuantidade();
+                                    Vector row4 = new Vector();
+                                    row4.add(id_queijo_pedido);
+                                    row4.add(fk_id_pedido);
+                                    row4.add(fk_id_queijo);
+                                    row4.add(quantidade);
+                                    model4.addRow(row4);
+                                });
+                    jTb_QueijosPedidos.setModel(model4);
+        } catch (SQLException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JBt_Peso_Decrescente2ActionPerformed
 
     private void JBt_Peso_Crescente2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Peso_Crescente2ActionPerformed
-        // TODO add your handling code here:
+        try {
+            Queijo_PedidoDAO qj = new Queijo_PedidoDAO();
+            ArrayList <Queijo_Pedido> ListaQJ = qj.getAllIdPed(1);
+
+                    DefaultTableModel model4;
+                    model4 = new DefaultTableModel(new String[] {"id_queijo_pedido", "Id Pedido", "Id queijo", "Quant"}, 0);
+
+                    ListaQJ.forEach((Queijo_Pedido qp) -> {
+                                    int id_queijo_pedido = qp.getId_queijo_pedido();
+                                    int fk_id_pedido = qp.getFk_id_pedido();
+                                    int fk_id_queijo = qp.getFk_id_queijo();
+                                    int quantidade = qp.getQuantidade();
+                                    Vector row4 = new Vector();
+                                    row4.add(id_queijo_pedido);
+                                    row4.add(fk_id_pedido);
+                                    row4.add(fk_id_queijo);
+                                    row4.add(quantidade);
+                                    model4.addRow(row4);
+                                });
+                    jTb_QueijosPedidos.setModel(model4);
+        } catch (SQLException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JBt_Peso_Crescente2ActionPerformed
 
     private void JBt_Valor_Decrescente2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Valor_Decrescente2ActionPerformed
-        // TODO add your handling code here:
+        try {
+            Queijo_PedidoDAO qj = new Queijo_PedidoDAO();
+            ArrayList <Queijo_Pedido> ListaQJ = qj.getAllIdQueijo(-1);
+
+                    DefaultTableModel model4;
+                    model4 = new DefaultTableModel(new String[] {"id_queijo_pedido", "Id Pedido", "Id queijo", "Quant"}, 0);
+
+                    ListaQJ.forEach((Queijo_Pedido qp) -> {
+                                    int id_queijo_pedido = qp.getId_queijo_pedido();
+                                    int fk_id_pedido = qp.getFk_id_pedido();
+                                    int fk_id_queijo = qp.getFk_id_queijo();
+                                    int quantidade = qp.getQuantidade();
+                                    Vector row4 = new Vector();
+                                    row4.add(id_queijo_pedido);
+                                    row4.add(fk_id_pedido);
+                                    row4.add(fk_id_queijo);
+                                    row4.add(quantidade);
+                                    model4.addRow(row4);
+                                });
+                    jTb_QueijosPedidos.setModel(model4);
+        } catch (SQLException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JBt_Valor_Decrescente2ActionPerformed
 
     private void JBt_temp_Decrescente2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_temp_Decrescente2ActionPerformed
-        // TODO add your handling code here:
+        try {
+            Queijo_PedidoDAO qj = new Queijo_PedidoDAO();
+            ArrayList <Queijo_Pedido> ListaQJ = qj.getAllQuant(-1);
+
+                    DefaultTableModel model4;
+                    model4 = new DefaultTableModel(new String[] {"id_queijo_pedido", "Id Pedido", "Id queijo", "Quant"}, 0);
+
+                    ListaQJ.forEach((Queijo_Pedido qp) -> {
+                                    int id_queijo_pedido = qp.getId_queijo_pedido();
+                                    int fk_id_pedido = qp.getFk_id_pedido();
+                                    int fk_id_queijo = qp.getFk_id_queijo();
+                                    int quantidade = qp.getQuantidade();
+                                    Vector row4 = new Vector();
+                                    row4.add(id_queijo_pedido);
+                                    row4.add(fk_id_pedido);
+                                    row4.add(fk_id_queijo);
+                                    row4.add(quantidade);
+                                    model4.addRow(row4);
+                                });
+                    jTb_QueijosPedidos.setModel(model4);
+        } catch (SQLException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JBt_temp_Decrescente2ActionPerformed
 
     private void JBt_Temp_Crescente2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Temp_Crescente2ActionPerformed
-        // TODO add your handling code here:
+        try {
+            Queijo_PedidoDAO qj = new Queijo_PedidoDAO();
+            ArrayList <Queijo_Pedido> ListaQJ = qj.getAllQuant(1);
+
+                    DefaultTableModel model4;
+                    model4 = new DefaultTableModel(new String[] {"id_queijo_pedido", "Id Pedido", "Id queijo", "Quant"}, 0);
+
+                    ListaQJ.forEach((Queijo_Pedido qp) -> {
+                                    int id_queijo_pedido = qp.getId_queijo_pedido();
+                                    int fk_id_pedido = qp.getFk_id_pedido();
+                                    int fk_id_queijo = qp.getFk_id_queijo();
+                                    int quantidade = qp.getQuantidade();
+                                    Vector row4 = new Vector();
+                                    row4.add(id_queijo_pedido);
+                                    row4.add(fk_id_pedido);
+                                    row4.add(fk_id_queijo);
+                                    row4.add(quantidade);
+                                    model4.addRow(row4);
+                                });
+                    jTb_QueijosPedidos.setModel(model4);
+        } catch (SQLException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_JBt_Temp_Crescente2ActionPerformed
 
     private void JBt_BuscaIdPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaIdPActionPerformed
-        // TODO add your handling code here:
+        try {
+                    PedidoDAO pedidoDAO = new PedidoDAO();
+                    ArrayList <Pedido> pedidos = pedidoDAO.getOne(Integer.parseInt(JTf_BuscaIdPedido2.getText()));
+
+        
+                    DefaultTableModel model3;
+                    model3 = new DefaultTableModel(new String[] {"id_pedido", "fk_cpf", "data_pedido", "prazoEntrega"}, 0);
+
+                    pedidos.forEach((Pedido pedido) -> {
+                                    int id_pedido = pedido.getId_pedido();
+                                    String fk_cpf = pedido.getFk_cpf();
+                                    LocalDateTime data_pedido = pedido.getdata_pedido();
+                                    int prazoEntrega = pedido.getPrazoEntrega();
+                                    Vector row3 = new Vector();
+                                    row3.add(id_pedido);
+                                    row3.add(fk_cpf);
+                                    row3.add(data_pedido);
+                                    row3.add(prazoEntrega);
+                                    model3.addRow(row3);
+                                });
+                    jTable3.setModel(model3);
+
+                    limpar();
+                    JTf_BuscaIdPedido2.setText("");
+                    JTf_BuscaCpfCliente.setText("");
+                    JTf_BuscaPrazoEntrega.setText("");
+                    JTf_BuscaIdQueijoPedido2.setText("");
+                    JTf_BuscaIDPedido.setText("");
+                    JTf_BuscaIDQueijo.setText("");
+                    Buscar_Pedidos.setVisible(true);
+                    BuscaPanBusca2.setVisible(false);
+                    DadosPanBusca2.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
     }//GEN-LAST:event_JBt_BuscaIdPActionPerformed
 
     private void JBt_BuscaCPFPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaCPFPActionPerformed
-        // TODO add your handling code here:
+        try {
+                    PedidoDAO pedidoDAO = new PedidoDAO();
+                    ArrayList <Pedido> pedidos = pedidoDAO.getOneCpf(JTf_BuscaCpfCliente.getText());
+
+        
+                    DefaultTableModel model3;
+                    model3 = new DefaultTableModel(new String[] {"id_pedido", "fk_cpf", "data_pedido", "prazoEntrega"}, 0);
+
+                    pedidos.forEach((Pedido pedido) -> {
+                                    int id_pedido = pedido.getId_pedido();
+                                    String fk_cpf = pedido.getFk_cpf();
+                                    LocalDateTime data_pedido = pedido.getdata_pedido();
+                                    int prazoEntrega = pedido.getPrazoEntrega();
+                                    Vector row3 = new Vector();
+                                    row3.add(id_pedido);
+                                    row3.add(fk_cpf);
+                                    row3.add(data_pedido);
+                                    row3.add(prazoEntrega);
+                                    model3.addRow(row3);
+                                });
+                    jTable3.setModel(model3);
+
+                    limpar();
+                    JTf_BuscaIdPedido2.setText("");
+                    JTf_BuscaCpfCliente.setText("");
+                    JTf_BuscaPrazoEntrega.setText("");
+                    JTf_BuscaIdQueijoPedido2.setText("");
+                    JTf_BuscaIDPedido.setText("");
+                    JTf_BuscaIDQueijo.setText("");
+                    Buscar_Pedidos.setVisible(true);
+                    BuscaPanBusca2.setVisible(false);
+                    DadosPanBusca2.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
     }//GEN-LAST:event_JBt_BuscaCPFPActionPerformed
 
     private void JBt_BuscaCPF3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaCPF3ActionPerformed
-        // TODO add your handling code here:
+        try {
+                    PedidoDAO pedidoDAO = new PedidoDAO();
+                    ArrayList <Pedido> pedidos = pedidoDAO.PedidoMaisAntigo(JTf_BuscaCPFCliente.getText());
+
+        
+                    DefaultTableModel model3;
+                    model3 = new DefaultTableModel(new String[] {"id_pedido", "fk_cpf", "data_pedido", "prazoEntrega"}, 0);
+
+                    pedidos.forEach((Pedido pedido) -> {
+                                    int id_pedido = pedido.getId_pedido();
+                                    String fk_cpf = pedido.getFk_cpf();
+                                    LocalDateTime data_pedido = pedido.getdata_pedido();
+                                    int prazoEntrega = pedido.getPrazoEntrega();
+                                    Vector row3 = new Vector();
+                                    row3.add(id_pedido);
+                                    row3.add(fk_cpf);
+                                    row3.add(data_pedido);
+                                    row3.add(prazoEntrega);
+                                    model3.addRow(row3);
+                                });
+                    jTable6.setModel(model3);
+
+                    limpar();
+                    JTf_BuscaCPFCliente.setText("");
+                    JTf_BuscaNomeCliente.setText("");
+
+                    Pedido_MaisAntigo.setVisible(true);
+                    BuscaPanBusca4.setVisible(false);
+                    DadosPanBusca4.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
     }//GEN-LAST:event_JBt_BuscaCPF3ActionPerformed
 
     private void VoltarDashboard_BT4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VoltarDashboard_BT4ActionPerformed
-        // TODO add your handling code here:
+        limpar();
+        JP_Dashboard.setVisible(true);
     }//GEN-LAST:event_VoltarDashboard_BT4ActionPerformed
 
     private void BuscarNovamente_BT4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarNovamente_BT4ActionPerformed
-        // TODO add your handling code here:
+        limpar();
+        Pedido_MaisAntigo.setVisible(true);
+        DadosPanBusca4.setVisible(false);
+        BuscaPanBusca4.setVisible(true);    
+                
     }//GEN-LAST:event_BuscarNovamente_BT4ActionPerformed
 
     private void Lista_PedidosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Lista_PedidosMouseClicked
@@ -9049,7 +9518,6 @@ public class Menu extends javax.swing.JFrame {
         String selecionado = ListaIdPedido.getSelectedValue();
          String[] result = selecionado.split("\\s");
          String valor = result[2];
-         
          JTf_BuscaIdPedido.setText(valor);
     }//GEN-LAST:event_ListaIdPedidoMouseClicked
 
@@ -9116,6 +9584,310 @@ public class Menu extends javax.swing.JFrame {
     private void Jbt_LimpaIdQueijoPedido2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Jbt_LimpaIdQueijoPedido2ActionPerformed
         JTf_BuscaIIdQueijoPedido2.setText("");
     }//GEN-LAST:event_Jbt_LimpaIdQueijoPedido2ActionPerformed
+
+    private void JBt_BuscaIDQPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaIDQPActionPerformed
+        try {
+                    Queijo_PedidoDAO qp = new Queijo_PedidoDAO();
+                    ArrayList <Queijo_Pedido> qpedidos = qp.getOne(Integer.parseInt(JTf_BuscaIdQueijoPedido2.getText()));
+
+                    DefaultTableModel model4;
+                    model4 = new DefaultTableModel(new String[] {"id_queijo_pedido", "Id Pedido", "Id queijo", "Quant"}, 0);
+
+                    qpedidos.forEach((Queijo_Pedido qpe) -> {
+                                    int id_queijo_pedido = qpe.getId_queijo_pedido();
+                                    int fk_id_pedido = qpe.getFk_id_pedido();
+                                    int fk_id_queijo = qpe.getFk_id_queijo();
+                                    int quantidade = qpe.getQuantidade();
+                                    Vector row4 = new Vector();
+                                    row4.add(id_queijo_pedido);
+                                    row4.add(fk_id_pedido);
+                                    row4.add(fk_id_queijo);
+                                    row4.add(quantidade);
+                                    model4.addRow(row4);
+                                });
+                    jTable3.setModel(model4);
+
+                    limpar();
+                    JTf_BuscaIdPedido2.setText("");
+                    JTf_BuscaCpfCliente.setText("");
+                    JTf_BuscaPrazoEntrega.setText("");
+                    JTf_BuscaIdQueijoPedido2.setText("");
+                    JTf_BuscaIDPedido.setText("");
+                    JTf_BuscaIDQueijo.setText("");
+                    Buscar_Pedidos.setVisible(true);
+                    BuscaPanBusca2.setVisible(false);
+                    DadosPanBusca2.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+    }//GEN-LAST:event_JBt_BuscaIDQPActionPerformed
+
+    private void JBt_BuscaIDPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaIDPedidoActionPerformed
+        try {
+                    Queijo_PedidoDAO qp = new Queijo_PedidoDAO();
+                    ArrayList <Queijo_Pedido> qpedidos = qp.QueijosPedidosDeUmPedido(Integer.parseInt(JTf_BuscaIDPedido.getText()));
+
+                    DefaultTableModel model4;
+                    model4 = new DefaultTableModel(new String[] {"id_queijo_pedido", "Id Pedido", "Id queijo", "Quant"}, 0);
+
+                    qpedidos.forEach((Queijo_Pedido qpe) -> {
+                                    int id_queijo_pedido = qpe.getId_queijo_pedido();
+                                    int fk_id_pedido = qpe.getFk_id_pedido();
+                                    int fk_id_queijo = qpe.getFk_id_queijo();
+                                    int quantidade = qpe.getQuantidade();
+                                    Vector row4 = new Vector();
+                                    row4.add(id_queijo_pedido);
+                                    row4.add(fk_id_pedido);
+                                    row4.add(fk_id_queijo);
+                                    row4.add(quantidade);
+                                    model4.addRow(row4);
+                                });
+                    jTable3.setModel(model4);
+
+                    limpar();
+                    JTf_BuscaIdPedido2.setText("");
+                    JTf_BuscaCpfCliente.setText("");
+                    JTf_BuscaPrazoEntrega.setText("");
+                    JTf_BuscaIdQueijoPedido2.setText("");
+                    JTf_BuscaIDPedido.setText("");
+                    JTf_BuscaIDQueijo.setText("");
+                    Buscar_Pedidos.setVisible(true);
+                    BuscaPanBusca2.setVisible(false);
+                    DadosPanBusca2.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+    }//GEN-LAST:event_JBt_BuscaIDPedidoActionPerformed
+
+    private void JBt_BuscaIDQueijoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaIDQueijoActionPerformed
+        try {
+                    Queijo_PedidoDAO qp = new Queijo_PedidoDAO();
+                    ArrayList <Queijo_Pedido> qpedidos = qp.getOneIDQueijo(Integer.parseInt(JTf_BuscaIDQueijo.getText()));
+
+                    DefaultTableModel model4;
+                    model4 = new DefaultTableModel(new String[] {"id_queijo_pedido", "Id Pedido", "Id queijo", "Quant"}, 0);
+
+                    qpedidos.forEach((Queijo_Pedido qpe) -> {
+                                    int id_queijo_pedido = qpe.getId_queijo_pedido();
+                                    int fk_id_pedido = qpe.getFk_id_pedido();
+                                    int fk_id_queijo = qpe.getFk_id_queijo();
+                                    int quantidade = qpe.getQuantidade();
+                                    Vector row4 = new Vector();
+                                    row4.add(id_queijo_pedido);
+                                    row4.add(fk_id_pedido);
+                                    row4.add(fk_id_queijo);
+                                    row4.add(quantidade);
+                                    model4.addRow(row4);
+                                });
+                    jTable3.setModel(model4);
+
+                    limpar();
+                    JTf_BuscaIdPedido2.setText("");
+                    JTf_BuscaCpfCliente.setText("");
+                    JTf_BuscaPrazoEntrega.setText("");
+                    JTf_BuscaIdQueijoPedido2.setText("");
+                    JTf_BuscaIDPedido.setText("");
+                    JTf_BuscaIDQueijo.setText("");
+                    Buscar_Pedidos.setVisible(true);
+                    BuscaPanBusca2.setVisible(false);
+                    DadosPanBusca2.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+    }//GEN-LAST:event_JBt_BuscaIDQueijoActionPerformed
+
+    private void Jbt_LimpaIdPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Jbt_LimpaIdPActionPerformed
+        JTf_BuscaIdPedido2.setText("");
+    }//GEN-LAST:event_Jbt_LimpaIdPActionPerformed
+
+    private void Jbt_LimpaCpfPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Jbt_LimpaCpfPActionPerformed
+        JTf_BuscaCpfCliente.setText("");
+    }//GEN-LAST:event_Jbt_LimpaCpfPActionPerformed
+
+    private void Jbt_LimpaPrazoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Jbt_LimpaPrazoActionPerformed
+                    JTf_BuscaPrazoEntrega.setText("");
+    }//GEN-LAST:event_Jbt_LimpaPrazoActionPerformed
+
+    private void JBt_LimpaIDQPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_LimpaIDQPActionPerformed
+                    JTf_BuscaIdQueijoPedido2.setText("");
+    }//GEN-LAST:event_JBt_LimpaIDQPActionPerformed
+
+    private void JBt_LimpaIDPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_LimpaIDPedidoActionPerformed
+                   JTf_BuscaIDPedido.setText("");
+    }//GEN-LAST:event_JBt_LimpaIDPedidoActionPerformed
+
+    private void JBt_LimpaIDQueijoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_LimpaIDQueijoActionPerformed
+                   JTf_BuscaIDQueijo.setText("");
+    }//GEN-LAST:event_JBt_LimpaIDQueijoActionPerformed
+
+    private void ListaCpf_Nome3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ListaCpf_Nome3MouseClicked
+        String selecionado = ListaCpf_Nome3.getSelectedValue();
+         String[] result = selecionado.split("\\s");
+         String valor = result[1];
+         
+         JTf_BuscaCPFCliente.setText(valor);
+         JTf_BuscaNomeCliente.setText(result[16]+" "+result[17]);
+    }//GEN-LAST:event_ListaCpf_Nome3MouseClicked
+
+    private void Jbt_LimpaCpf3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Jbt_LimpaCpf3ActionPerformed
+        JTf_BuscaCPFCliente.setText("");
+    }//GEN-LAST:event_Jbt_LimpaCpf3ActionPerformed
+
+    private void JBt_LimpaNome3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_LimpaNome3ActionPerformed
+        JTf_BuscaNomeCliente.setText("");
+    }//GEN-LAST:event_JBt_LimpaNome3ActionPerformed
+
+    private void JBt_BuscaNome3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_BuscaNome3ActionPerformed
+        try {
+                    PedidoDAO pedidoDAO = new PedidoDAO();
+                    ArrayList <Pedido> pedidos = pedidoDAO.PedidoMaisAntigoNome(JTf_BuscaNomeCliente.getText());
+
+        
+                    DefaultTableModel model3;
+                    model3 = new DefaultTableModel(new String[] {"id_pedido", "fk_cpf", "data_pedido", "prazoEntrega"}, 0);
+
+                    pedidos.forEach((Pedido pedido) -> {
+                                    int id_pedido = pedido.getId_pedido();
+                                    String fk_cpf = pedido.getFk_cpf();
+                                    LocalDateTime data_pedido = pedido.getdata_pedido();
+                                    int prazoEntrega = pedido.getPrazoEntrega();
+                                    Vector row3 = new Vector();
+                                    row3.add(id_pedido);
+                                    row3.add(fk_cpf);
+                                    row3.add(data_pedido);
+                                    row3.add(prazoEntrega);
+                                    model3.addRow(row3);
+                                });
+                    jTable6.setModel(model3);
+
+                    limpar();
+                    JTf_BuscaCPFCliente.setText("");
+                    JTf_BuscaNomeCliente.setText("");
+
+                    Pedido_MaisAntigo.setVisible(true);
+                    BuscaPanBusca4.setVisible(false);
+                    DadosPanBusca4.setVisible(true);
+                } catch (SQLException | ClassNotFoundException ex) {
+                    Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
+    }//GEN-LAST:event_JBt_BuscaNome3ActionPerformed
+
+    private void JBt_Id_Crescente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Id_Crescente1ActionPerformed
+        try {
+            PedidoDAO pedidoDAO = new PedidoDAO();
+            ArrayList <Pedido> ListaPedidos = pedidoDAO.getAllId(1);
+        
+                    DefaultTableModel model3;
+                    model3 = new DefaultTableModel(new String[] {"id_pedido", "fk_cpf", "data_pedido", "prazoEntrega"}, 0);
+
+                    ListaPedidos.forEach((Pedido pedido) -> {
+                                    int id_pedido = pedido.getId_pedido();
+                                    String fk_cpf = pedido.getFk_cpf();
+                                    LocalDateTime data_pedido = pedido.getdata_pedido();
+                                    int prazoEntrega = pedido.getPrazoEntrega();
+                                    Vector row3 = new Vector();
+                                    row3.add(id_pedido);
+                                    row3.add(fk_cpf);
+                                    row3.add(data_pedido);
+                                    row3.add(prazoEntrega);
+                                    model3.addRow(row3);
+                                });
+                    jTb_Pedidos.setModel(model3);
+        } catch (SQLException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_JBt_Id_Crescente1ActionPerformed
+
+    private void JBt_Valor_Crescente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Valor_Crescente1ActionPerformed
+       try {
+            PedidoDAO pedidoDAO = new PedidoDAO();
+            ArrayList <Pedido> ListaPedidos = pedidoDAO.getAllData(1);
+        
+                    DefaultTableModel model3;
+                    model3 = new DefaultTableModel(new String[] {"id_pedido", "fk_cpf", "data_pedido", "prazoEntrega"}, 0);
+
+                    ListaPedidos.forEach((Pedido pedido) -> {
+                                    int id_pedido = pedido.getId_pedido();
+                                    String fk_cpf = pedido.getFk_cpf();
+                                    LocalDateTime data_pedido = pedido.getdata_pedido();
+                                    int prazoEntrega = pedido.getPrazoEntrega();
+                                    Vector row3 = new Vector();
+                                    row3.add(id_pedido);
+                                    row3.add(fk_cpf);
+                                    row3.add(data_pedido);
+                                    row3.add(prazoEntrega);
+                                    model3.addRow(row3);
+                                });
+                    jTb_Pedidos.setModel(model3);
+        } catch (SQLException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_JBt_Valor_Crescente1ActionPerformed
+
+    private void JBt_Id_Crescente2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Id_Crescente2ActionPerformed
+        try {
+            Queijo_PedidoDAO qj = new Queijo_PedidoDAO();
+            ArrayList <Queijo_Pedido> ListaQJ = qj.getAllId(1);
+
+                    DefaultTableModel model4;
+                    model4 = new DefaultTableModel(new String[] {"id_queijo_pedido", "Id Pedido", "Id queijo", "Quant"}, 0);
+
+                    ListaQJ.forEach((Queijo_Pedido qp) -> {
+                                    int id_queijo_pedido = qp.getId_queijo_pedido();
+                                    int fk_id_pedido = qp.getFk_id_pedido();
+                                    int fk_id_queijo = qp.getFk_id_queijo();
+                                    int quantidade = qp.getQuantidade();
+                                    Vector row4 = new Vector();
+                                    row4.add(id_queijo_pedido);
+                                    row4.add(fk_id_pedido);
+                                    row4.add(fk_id_queijo);
+                                    row4.add(quantidade);
+                                    model4.addRow(row4);
+                                });
+                    jTb_QueijosPedidos.setModel(model4);
+        } catch (SQLException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_JBt_Id_Crescente2ActionPerformed
+
+    private void JBt_Valor_Crescente2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBt_Valor_Crescente2ActionPerformed
+        try {
+            Queijo_PedidoDAO qj = new Queijo_PedidoDAO();
+            ArrayList <Queijo_Pedido> ListaQJ = qj.getAllIdQueijo(1);
+
+                    DefaultTableModel model4;
+                    model4 = new DefaultTableModel(new String[] {"id_queijo_pedido", "Id Pedido", "Id queijo", "Quant"}, 0);
+
+                    ListaQJ.forEach((Queijo_Pedido qp) -> {
+                                    int id_queijo_pedido = qp.getId_queijo_pedido();
+                                    int fk_id_pedido = qp.getFk_id_pedido();
+                                    int fk_id_queijo = qp.getFk_id_queijo();
+                                    int quantidade = qp.getQuantidade();
+                                    Vector row4 = new Vector();
+                                    row4.add(id_queijo_pedido);
+                                    row4.add(fk_id_pedido);
+                                    row4.add(fk_id_queijo);
+                                    row4.add(quantidade);
+                                    model4.addRow(row4);
+                                });
+                    jTb_QueijosPedidos.setModel(model4);
+        } catch (SQLException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_JBt_Valor_Crescente2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        limpar();
+        JTP_PainelGuias.setSelectedIndex(1);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

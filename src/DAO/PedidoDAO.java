@@ -157,6 +157,74 @@ public class PedidoDAO {
         return ListaRetorno;
     }
     
+    public ArrayList<Pedido> getOneCpf(String fk_cpf) throws SQLException{
+        PreparedStatement instrucao;
+        ResultSet res;
+        ArrayList <Pedido> ListaRetorno = new ArrayList();
+        
+        String codigo = "select * from Pedido where fk_cpf='"+fk_cpf+"';";
+        
+        try{
+            instrucao = this.conexao.prepareStatement(codigo);
+            res = instrucao.executeQuery();
+            ListaRetorno = new ArrayList<>();
+            while(res.next()){
+                Pedido pedido = new Pedido();
+                pedido.setId_pedido(res.getInt("id_pedido"));
+                pedido.setFk_cpf(res.getString("fk_cpf"));
+                
+                Timestamp tempo = res.getTimestamp("data_pedido");
+                pedido.setdata_pedido(tempo.toLocalDateTime());
+                
+                pedido.setPrazoEntrega(res.getInt("prazoEntrega"));
+
+                
+                ListaRetorno.add(pedido);
+            }
+            
+            res.close();
+            instrucao.close();
+        }catch(SQLException e){
+            System.out.println("Erro ao tentar recuperar a lista "+e.toString());
+        }
+        System.out.println("Pedido buscado com sucesso");
+        return ListaRetorno;
+    }
+    
+    public ArrayList<Pedido> getOnePrazo(int prazoEntrega) throws SQLException{
+        PreparedStatement instrucao;
+        ResultSet res;
+        ArrayList <Pedido> ListaRetorno = new ArrayList();
+        
+        String codigo = "select * from Pedido where prazoEntrega='"+prazoEntrega+"';";
+        
+        try{
+            instrucao = this.conexao.prepareStatement(codigo);
+            res = instrucao.executeQuery();
+            ListaRetorno = new ArrayList<>();
+            while(res.next()){
+                Pedido pedido = new Pedido();
+                pedido.setId_pedido(res.getInt("id_pedido"));
+                pedido.setFk_cpf(res.getString("fk_cpf"));
+                
+                Timestamp tempo = res.getTimestamp("data_pedido");
+                pedido.setdata_pedido(tempo.toLocalDateTime());
+                
+                pedido.setPrazoEntrega(res.getInt("prazoEntrega"));
+
+                
+                ListaRetorno.add(pedido);
+            }
+            
+            res.close();
+            instrucao.close();
+        }catch(SQLException e){
+            System.out.println("Erro ao tentar recuperar a lista "+e.toString());
+        }
+        System.out.println("Pedido buscado com sucesso");
+        return ListaRetorno;
+    }
+    
     public void delete(int id_pedido) throws SQLException{
         PreparedStatement instrucao;
         
@@ -182,7 +250,42 @@ public class PedidoDAO {
         ResultSet res;
         ArrayList <Pedido> ListaRetorno = new ArrayList();
         
-        String codigo = "select * from pedido where data_pedido IN (select min(data_pedido) from pedido where fk_cpf='"+fk_cpf+"');";
+        String codigo = "select * from pedido where data_pedido IN (select min(data_pedido) from pedido where fk_cpf='"+fk_cpf+"') and fk_cpf='"+fk_cpf+"';";
+        
+        try{
+            instrucao = this.conexao.prepareStatement(codigo);
+            res = instrucao.executeQuery();
+            ListaRetorno = new ArrayList<>();
+            while(res.next()){
+                Pedido pedido = new Pedido();
+                pedido.setId_pedido(res.getInt("id_pedido"));
+                pedido.setFk_cpf(res.getString("fk_cpf"));
+                
+                Timestamp tempo = res.getTimestamp("data_pedido");
+                pedido.setdata_pedido(tempo.toLocalDateTime());
+                
+                pedido.setPrazoEntrega(res.getInt("prazoEntrega"));
+
+                
+                ListaRetorno.add(pedido);
+            }
+            
+            res.close();
+            instrucao.close();
+        }catch(SQLException e){
+            System.out.println("Erro ao tentar recuperar a lista "+e.toString());
+        }
+        System.out.println("Pedido buscado com sucesso");
+        return ListaRetorno;
+    }
+    
+    
+    public ArrayList<Pedido> PedidoMaisAntigoNome(String nome) throws SQLException{
+        PreparedStatement instrucao;
+        ResultSet res;
+        ArrayList <Pedido> ListaRetorno = new ArrayList();
+        
+        String codigo = "select * from pedido where data_pedido IN (select min(data_pedido) from pedido where fk_cpf IN (select cpf from cliente where nome='"+nome+"')) and fk_cpf IN (select cpf from cliente where nome='"+nome+"');";
         
         try{
             instrucao = this.conexao.prepareStatement(codigo);
@@ -261,5 +364,153 @@ public class PedidoDAO {
         }
        
         return maxID;
+    }
+    
+    public ArrayList<Pedido> getAllId(int ordenar){
+        PreparedStatement instrucao;
+        ResultSet res;
+        ArrayList <Pedido> ListaRetorno = new ArrayList();
+        
+        String codigo = "select * from Pedido";
+
+        if(ordenar==1)
+            codigo=codigo+" order by id_pedido asc";
+        if(ordenar==-1)
+            codigo=codigo+" order by id_pedido desc";
+        
+        try{
+            instrucao = this.conexao.prepareStatement(codigo);
+            res = instrucao.executeQuery();
+            while(res.next()){
+                Pedido pedido = new Pedido();
+                pedido.setId_pedido(res.getInt("id_pedido"));
+                pedido.setFk_cpf(res.getString("fk_cpf"));
+                
+                Timestamp tempo = res.getTimestamp("data_pedido");
+                pedido.setdata_pedido(tempo.toLocalDateTime());
+                
+                pedido.setPrazoEntrega(res.getInt("prazoEntrega"));
+
+                
+                ListaRetorno.add(pedido);
+            }
+            
+            res.close();
+            instrucao.close();
+        }catch(SQLException e){
+            System.out.println("Erro ao tentar recuperar a lista "+e.toString());
+        }
+        return ListaRetorno;
+    }
+    
+    public ArrayList<Pedido> getAllCpf(int ordenar){
+        PreparedStatement instrucao;
+        ResultSet res;
+        ArrayList <Pedido> ListaRetorno = new ArrayList();
+        
+        String codigo = "select * from Pedido";
+
+        if(ordenar==1)
+            codigo=codigo+" order by fk_cpf asc";
+        if(ordenar==-1)
+            codigo=codigo+" order by fk_cpf desc";
+        
+        try{
+            instrucao = this.conexao.prepareStatement(codigo);
+            res = instrucao.executeQuery();
+            while(res.next()){
+                Pedido pedido = new Pedido();
+                pedido.setId_pedido(res.getInt("id_pedido"));
+                pedido.setFk_cpf(res.getString("fk_cpf"));
+                
+                Timestamp tempo = res.getTimestamp("data_pedido");
+                pedido.setdata_pedido(tempo.toLocalDateTime());
+                
+                pedido.setPrazoEntrega(res.getInt("prazoEntrega"));
+
+                
+                ListaRetorno.add(pedido);
+            }
+            
+            res.close();
+            instrucao.close();
+        }catch(SQLException e){
+            System.out.println("Erro ao tentar recuperar a lista "+e.toString());
+        }
+        return ListaRetorno;
+    }
+    
+    public ArrayList<Pedido> getAllData(int ordenar){
+        PreparedStatement instrucao;
+        ResultSet res;
+        ArrayList <Pedido> ListaRetorno = new ArrayList();
+        
+        String codigo = "select * from Pedido";
+
+        if(ordenar==1)
+            codigo=codigo+" order by data_pedido asc";
+        if(ordenar==-1)
+            codigo=codigo+" order by data_pedido desc";
+        
+        try{
+            instrucao = this.conexao.prepareStatement(codigo);
+            res = instrucao.executeQuery();
+            while(res.next()){
+                Pedido pedido = new Pedido();
+                pedido.setId_pedido(res.getInt("id_pedido"));
+                pedido.setFk_cpf(res.getString("fk_cpf"));
+                
+                Timestamp tempo = res.getTimestamp("data_pedido");
+                pedido.setdata_pedido(tempo.toLocalDateTime());
+                
+                pedido.setPrazoEntrega(res.getInt("prazoEntrega"));
+
+                
+                ListaRetorno.add(pedido);
+            }
+            
+            res.close();
+            instrucao.close();
+        }catch(SQLException e){
+            System.out.println("Erro ao tentar recuperar a lista "+e.toString());
+        }
+        return ListaRetorno;
+    }
+    
+    public ArrayList<Pedido> getAllPrazo(int ordenar){
+        PreparedStatement instrucao;
+        ResultSet res;
+        ArrayList <Pedido> ListaRetorno = new ArrayList();
+        
+        String codigo = "select * from Pedido";
+
+        if(ordenar==1)
+            codigo=codigo+" order by prazoEntrega asc";
+        if(ordenar==-1)
+            codigo=codigo+" order by prazoEntrega desc";
+        
+        try{
+            instrucao = this.conexao.prepareStatement(codigo);
+            res = instrucao.executeQuery();
+            while(res.next()){
+                Pedido pedido = new Pedido();
+                pedido.setId_pedido(res.getInt("id_pedido"));
+                pedido.setFk_cpf(res.getString("fk_cpf"));
+                
+                Timestamp tempo = res.getTimestamp("data_pedido");
+                pedido.setdata_pedido(tempo.toLocalDateTime());
+                
+                pedido.setPrazoEntrega(res.getInt("prazoEntrega"));
+
+                
+                ListaRetorno.add(pedido);
+            }
+            
+            res.close();
+            instrucao.close();
+        }catch(SQLException e){
+            System.out.println("Erro ao tentar recuperar a lista "+e.toString());
+        }
+        return ListaRetorno;
     }
 }

@@ -163,6 +163,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="CLIENTES"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="jButton2">
               <Properties>
@@ -4746,7 +4749,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLb_Topo_menuInserir7" min="-2" pref="39" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                              <Component id="jLayeredPane15" pref="677" max="32767" attributes="0"/>
+                              <Component id="jLayeredPane15" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -5579,213 +5582,6 @@
             </Container>
             <Container class="javax.swing.JLayeredPane" name="Centro2">
               <SubComponents>
-                <Container class="javax.swing.JPanel" name="Remover_QueijoPedido">
-
-                  <Layout>
-                    <DimensionLayout dim="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLb_Topo_menuInserir15" alignment="0" max="32767" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLayeredPane18" min="-2" pref="843" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
-                    </DimensionLayout>
-                    <DimensionLayout dim="1">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLb_Topo_menuInserir15" min="-2" pref="39" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
-                              <Component id="jLayeredPane18" pref="690" max="32767" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                    </DimensionLayout>
-                  </Layout>
-                  <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLb_Topo_menuInserir15">
-                      <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Tahoma" size="29" style="1"/>
-                        </Property>
-                        <Property name="horizontalAlignment" type="int" value="0"/>
-                        <Property name="text" type="java.lang.String" value="REMOVER QUEIJO QUE FOI PEDIDO"/>
-                        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                          <Color id="Default Cursor"/>
-                        </Property>
-                      </Properties>
-                    </Component>
-                    <Container class="javax.swing.JLayeredPane" name="jLayeredPane18">
-                      <SubComponents>
-                        <Container class="javax.swing.JPanel" name="BuscaPanAlterar6">
-
-                          <Layout>
-                            <DimensionLayout dim="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="BuscaPan12" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="0" pref="4" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                                      <Component id="jScrollPane27" min="-2" pref="794" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                            </DimensionLayout>
-                            <DimensionLayout dim="1">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="BuscaPan12" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="jScrollPane27" min="-2" pref="453" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                            </DimensionLayout>
-                          </Layout>
-                          <SubComponents>
-                            <Container class="javax.swing.JPanel" name="BuscaPan12">
-
-                              <Layout>
-                                <DimensionLayout dim="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="JTf_BuscaIIdQueijoPedido2" alignment="0" max="32767" attributes="0"/>
-                                              <Component id="Jlb_BuscaIdQueijo5" alignment="0" max="32767" attributes="0"/>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace pref="101" max="32767" attributes="0"/>
-                                                  <Component id="Jbt_LimpaIdQueijoPedido2" min="-2" pref="300" max="-2" attributes="0"/>
-                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="JBt_RemoveQueijoPedido" min="-2" pref="300" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                </DimensionLayout>
-                                <DimensionLayout dim="1">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="Jlb_BuscaIdQueijo5" min="-2" pref="35" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="JTf_BuscaIIdQueijoPedido2" min="-2" pref="49" max="-2" attributes="0"/>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="Jbt_LimpaIdQueijoPedido2" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
-                                              <Component id="JBt_RemoveQueijoPedido" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace min="0" pref="65" max="32767" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                </DimensionLayout>
-                              </Layout>
-                              <SubComponents>
-                                <Component class="javax.swing.JLabel" name="Jlb_BuscaIdQueijo5">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Tahoma" size="27" style="0"/>
-                                    </Property>
-                                    <Property name="horizontalAlignment" type="int" value="0"/>
-                                    <Property name="text" type="java.lang.String" value="Buscar pelo ID do queijo pedido"/>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JTextField" name="JTf_BuscaIIdQueijoPedido2">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Tahoma" size="18" style="0"/>
-                                    </Property>
-                                  </Properties>
-                                </Component>
-                                <Component class="javax.swing.JButton" name="Jbt_LimpaIdQueijoPedido2">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Tahoma" size="24" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="LIMPAR"/>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Jbt_LimpaIdQueijoPedido2ActionPerformed"/>
-                                  </Events>
-                                </Component>
-                                <Component class="javax.swing.JButton" name="JBt_RemoveQueijoPedido">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Tahoma" size="24" style="0"/>
-                                    </Property>
-                                    <Property name="text" type="java.lang.String" value="REMOVER"/>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_RemoveQueijoPedidoActionPerformed"/>
-                                  </Events>
-                                </Component>
-                              </SubComponents>
-                            </Container>
-                            <Container class="javax.swing.JScrollPane" name="jScrollPane27">
-
-                              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-                              <SubComponents>
-                                <Component class="javax.swing.JList" name="ListaIdQueijoPedidos2">
-                                  <Properties>
-                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                      <Font name="Tahoma" size="18" style="0"/>
-                                    </Property>
-                                    <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                                      <StringArray count="5">
-                                        <StringItem index="0" value="Item 1"/>
-                                        <StringItem index="1" value="Item 2"/>
-                                        <StringItem index="2" value="Item 3"/>
-                                        <StringItem index="3" value="Item 4"/>
-                                        <StringItem index="4" value="Item 5"/>
-                                      </StringArray>
-                                    </Property>
-                                  </Properties>
-                                  <Events>
-                                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ListaIdQueijoPedidos2MouseClicked"/>
-                                  </Events>
-                                  <AuxValues>
-                                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-                                  </AuxValues>
-                                </Component>
-                              </SubComponents>
-                            </Container>
-                          </SubComponents>
-                        </Container>
-                      </SubComponents>
-                      <LayoutCode>
-                        <CodeStatement>
-                          <CodeExpression id="17_jLayeredPane18">
-                            <CodeVariable name="jLayeredPane18" type="8194" declaredType="javax.swing.JLayeredPane"/>
-                            <ExpressionOrigin>
-                              <ExpressionProvider type="ComponentRef">
-                                <ComponentRef name="jLayeredPane18"/>
-                              </ExpressionProvider>
-                            </ExpressionOrigin>
-                          </CodeExpression>
-                          <StatementProvider type="CodeMethod">
-                            <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
-                          </StatementProvider>
-                          <Parameters>
-                            <CodeExpression id="18">
-                              <ExpressionOrigin>
-                                <ExpressionProvider type="CodeConstructor">
-                                  <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
-                                </ExpressionProvider>
-                                <Parameters>
-                                  <CodeExpression id="17_jLayeredPane18"/>
-                                </Parameters>
-                              </ExpressionOrigin>
-                            </CodeExpression>
-                          </Parameters>
-                        </CodeStatement>
-                      </LayoutCode>
-                    </Container>
-                  </SubComponents>
-                </Container>
                 <Container class="javax.swing.JPanel" name="Inserir_Pedido">
 
                   <Layout>
@@ -6634,7 +6430,7 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jTabbedPane3" alignment="0" pref="847" max="32767" attributes="0"/>
+                          <Component id="jTabbedPane3" alignment="0" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
@@ -6834,6 +6630,9 @@
                                           <Image iconType="3" name="/Interfaces/up_new.jpg"/>
                                         </Property>
                                       </Properties>
+                                      <Events>
+                                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_Id_Crescente1ActionPerformed"/>
+                                      </Events>
                                     </Component>
                                     <Component class="javax.swing.JLabel" name="JLb_Cpf3">
                                       <Properties>
@@ -6889,6 +6688,9 @@
                                           <Image iconType="3" name="/Interfaces/up_new.jpg"/>
                                         </Property>
                                       </Properties>
+                                      <Events>
+                                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_Valor_Crescente1ActionPerformed"/>
+                                      </Events>
                                     </Component>
                                     <Component class="javax.swing.JButton" name="JBt_temp_Decrescente1">
                                       <Properties>
@@ -7121,6 +6923,9 @@
                                           <Image iconType="3" name="/Interfaces/up_new.jpg"/>
                                         </Property>
                                       </Properties>
+                                      <Events>
+                                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_Id_Crescente2ActionPerformed"/>
+                                      </Events>
                                     </Component>
                                     <Component class="javax.swing.JLabel" name="JLb_Cpf5">
                                       <Properties>
@@ -7176,6 +6981,9 @@
                                           <Image iconType="3" name="/Interfaces/up_new.jpg"/>
                                         </Property>
                                       </Properties>
+                                      <Events>
+                                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_Valor_Crescente2ActionPerformed"/>
+                                      </Events>
                                     </Component>
                                     <Component class="javax.swing.JButton" name="JBt_temp_Decrescente2">
                                       <Properties>
@@ -7233,8 +7041,8 @@
                         <Container class="javax.swing.JPanel" name="Queijos_Pedidos1">
                           <Constraints>
                             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                              <JTabbedPaneConstraints tabName="Queijos Pedidos Por pedido">
-                                <Property name="tabTitle" type="java.lang.String" value="Queijos Pedidos Por pedido"/>
+                              <JTabbedPaneConstraints tabName="QUEIJOS PEDIDOS POR PEDIDO">
+                                <Property name="tabTitle" type="java.lang.String" value="QUEIJOS PEDIDOS POR PEDIDO"/>
                               </JTabbedPaneConstraints>
                             </Constraint>
                           </Constraints>
@@ -7845,7 +7653,7 @@
                       </SubComponents>
                       <LayoutCode>
                         <CodeStatement>
-                          <CodeExpression id="19_jLayeredPane9">
+                          <CodeExpression id="17_jLayeredPane9">
                             <CodeVariable name="jLayeredPane9" type="8194" declaredType="javax.swing.JLayeredPane"/>
                             <ExpressionOrigin>
                               <ExpressionProvider type="ComponentRef">
@@ -7857,13 +7665,13 @@
                             <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
                           </StatementProvider>
                           <Parameters>
-                            <CodeExpression id="20">
+                            <CodeExpression id="18">
                               <ExpressionOrigin>
                                 <ExpressionProvider type="CodeConstructor">
                                   <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
                                 </ExpressionProvider>
                                 <Parameters>
-                                  <CodeExpression id="19_jLayeredPane9"/>
+                                  <CodeExpression id="17_jLayeredPane9"/>
                                 </Parameters>
                               </ExpressionOrigin>
                             </CodeExpression>
@@ -8460,7 +8268,7 @@
                       </SubComponents>
                       <LayoutCode>
                         <CodeStatement>
-                          <CodeExpression id="21_jLayeredPane12">
+                          <CodeExpression id="19_jLayeredPane12">
                             <CodeVariable name="jLayeredPane12" type="8194" declaredType="javax.swing.JLayeredPane"/>
                             <ExpressionOrigin>
                               <ExpressionProvider type="ComponentRef">
@@ -8472,13 +8280,13 @@
                             <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
                           </StatementProvider>
                           <Parameters>
-                            <CodeExpression id="22">
+                            <CodeExpression id="20">
                               <ExpressionOrigin>
                                 <ExpressionProvider type="CodeConstructor">
                                   <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
                                 </ExpressionProvider>
                                 <Parameters>
-                                  <CodeExpression id="21_jLayeredPane12"/>
+                                  <CodeExpression id="19_jLayeredPane12"/>
                                 </Parameters>
                               </ExpressionOrigin>
                             </CodeExpression>
@@ -8667,11 +8475,218 @@
                       </SubComponents>
                       <LayoutCode>
                         <CodeStatement>
-                          <CodeExpression id="23_jLayeredPane10">
+                          <CodeExpression id="21_jLayeredPane10">
                             <CodeVariable name="jLayeredPane10" type="8194" declaredType="javax.swing.JLayeredPane"/>
                             <ExpressionOrigin>
                               <ExpressionProvider type="ComponentRef">
                                 <ComponentRef name="jLayeredPane10"/>
+                              </ExpressionProvider>
+                            </ExpressionOrigin>
+                          </CodeExpression>
+                          <StatementProvider type="CodeMethod">
+                            <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                          </StatementProvider>
+                          <Parameters>
+                            <CodeExpression id="22">
+                              <ExpressionOrigin>
+                                <ExpressionProvider type="CodeConstructor">
+                                  <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
+                                </ExpressionProvider>
+                                <Parameters>
+                                  <CodeExpression id="21_jLayeredPane10"/>
+                                </Parameters>
+                              </ExpressionOrigin>
+                            </CodeExpression>
+                          </Parameters>
+                        </CodeStatement>
+                      </LayoutCode>
+                    </Container>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="Remover_QueijoPedido">
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLb_Topo_menuInserir15" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLayeredPane18" min="-2" pref="843" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLb_Topo_menuInserir15" min="-2" pref="39" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                              <Component id="jLayeredPane18" pref="690" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JLabel" name="jLb_Topo_menuInserir15">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Tahoma" size="29" style="1"/>
+                        </Property>
+                        <Property name="horizontalAlignment" type="int" value="0"/>
+                        <Property name="text" type="java.lang.String" value="REMOVER QUEIJO QUE FOI PEDIDO"/>
+                        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                          <Color id="Default Cursor"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+                    <Container class="javax.swing.JLayeredPane" name="jLayeredPane18">
+                      <SubComponents>
+                        <Container class="javax.swing.JPanel" name="BuscaPanAlterar6">
+
+                          <Layout>
+                            <DimensionLayout dim="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="BuscaPan12" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="4" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                      <Component id="jScrollPane27" min="-2" pref="794" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                            <DimensionLayout dim="1">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="BuscaPan12" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="jScrollPane27" min="-2" pref="453" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                          </Layout>
+                          <SubComponents>
+                            <Container class="javax.swing.JPanel" name="BuscaPan12">
+
+                              <Layout>
+                                <DimensionLayout dim="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="JTf_BuscaIIdQueijoPedido2" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="Jlb_BuscaIdQueijo5" alignment="0" max="32767" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace pref="101" max="32767" attributes="0"/>
+                                                  <Component id="Jbt_LimpaIdQueijoPedido2" min="-2" pref="300" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="JBt_RemoveQueijoPedido" min="-2" pref="300" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                </DimensionLayout>
+                                <DimensionLayout dim="1">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="Jlb_BuscaIdQueijo5" min="-2" pref="35" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="JTf_BuscaIIdQueijoPedido2" min="-2" pref="49" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="Jbt_LimpaIdQueijoPedido2" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                                              <Component id="JBt_RemoveQueijoPedido" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="0" pref="65" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                </DimensionLayout>
+                              </Layout>
+                              <SubComponents>
+                                <Component class="javax.swing.JLabel" name="Jlb_BuscaIdQueijo5">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="27" style="0"/>
+                                    </Property>
+                                    <Property name="horizontalAlignment" type="int" value="0"/>
+                                    <Property name="text" type="java.lang.String" value="Buscar pelo ID do queijo pedido"/>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JTextField" name="JTf_BuscaIIdQueijoPedido2">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="18" style="0"/>
+                                    </Property>
+                                  </Properties>
+                                </Component>
+                                <Component class="javax.swing.JButton" name="Jbt_LimpaIdQueijoPedido2">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="24" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="LIMPAR"/>
+                                  </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Jbt_LimpaIdQueijoPedido2ActionPerformed"/>
+                                  </Events>
+                                </Component>
+                                <Component class="javax.swing.JButton" name="JBt_RemoveQueijoPedido">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="24" style="0"/>
+                                    </Property>
+                                    <Property name="text" type="java.lang.String" value="REMOVER"/>
+                                  </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_RemoveQueijoPedidoActionPerformed"/>
+                                  </Events>
+                                </Component>
+                              </SubComponents>
+                            </Container>
+                            <Container class="javax.swing.JScrollPane" name="jScrollPane27">
+
+                              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                              <SubComponents>
+                                <Component class="javax.swing.JList" name="ListaIdQueijoPedidos2">
+                                  <Properties>
+                                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                                      <Font name="Tahoma" size="18" style="0"/>
+                                    </Property>
+                                    <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+                                      <StringArray count="5">
+                                        <StringItem index="0" value="Item 1"/>
+                                        <StringItem index="1" value="Item 2"/>
+                                        <StringItem index="2" value="Item 3"/>
+                                        <StringItem index="3" value="Item 4"/>
+                                        <StringItem index="4" value="Item 5"/>
+                                      </StringArray>
+                                    </Property>
+                                  </Properties>
+                                  <Events>
+                                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ListaIdQueijoPedidos2MouseClicked"/>
+                                  </Events>
+                                  <AuxValues>
+                                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                                  </AuxValues>
+                                </Component>
+                              </SubComponents>
+                            </Container>
+                          </SubComponents>
+                        </Container>
+                      </SubComponents>
+                      <LayoutCode>
+                        <CodeStatement>
+                          <CodeExpression id="23_jLayeredPane18">
+                            <CodeVariable name="jLayeredPane18" type="8194" declaredType="javax.swing.JLayeredPane"/>
+                            <ExpressionOrigin>
+                              <ExpressionProvider type="ComponentRef">
+                                <ComponentRef name="jLayeredPane18"/>
                               </ExpressionProvider>
                             </ExpressionOrigin>
                           </CodeExpression>
@@ -8685,7 +8700,7 @@
                                   <CodeConstructor class="javax.swing.OverlayLayout" parameterTypes="java.awt.Container"/>
                                 </ExpressionProvider>
                                 <Parameters>
-                                  <CodeExpression id="23_jLayeredPane10"/>
+                                  <CodeExpression id="23_jLayeredPane18"/>
                                 </Parameters>
                               </ExpressionOrigin>
                             </CodeExpression>
@@ -8700,10 +8715,10 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="jLb_Topo_menuInserir11" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jLayeredPane17" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="jLb_Topo_menuInserir11" max="32767" attributes="0"/>
+                                  <Component id="jLayeredPane17" pref="839" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
@@ -8892,6 +8907,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="LIMPAR"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Jbt_LimpaPrazoActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JButton" name="JBt_BuscaPrazo">
                                   <Properties>
@@ -8911,6 +8929,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="LIMPAR"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_LimpaIDQueijoActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JButton" name="JBt_BuscaIDQueijo">
                                   <Properties>
@@ -8919,6 +8940,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="BUSCAR"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_BuscaIDQueijoActionPerformed"/>
+                                  </Events>
                                 </Component>
                               </SubComponents>
                             </Container>
@@ -8958,7 +8982,7 @@
                                                       <Component id="JLb_BuscaNome7" alignment="0" min="-2" pref="410" max="-2" attributes="0"/>
                                                       <Component id="JTf_BuscaIdQueijoPedido2" alignment="0" min="-2" pref="398" max="-2" attributes="0"/>
                                                   </Group>
-                                                  <EmptySpace pref="46" max="32767" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -9031,6 +9055,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="LIMPAR"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Jbt_LimpaIdPActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JButton" name="JBt_BuscaIdP">
                                   <Properties>
@@ -9050,6 +9077,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="LIMPAR"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_LimpaIDQPActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JButton" name="JBt_BuscaIDQP">
                                   <Properties>
@@ -9058,6 +9088,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="BUSCAR"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_BuscaIDQPActionPerformed"/>
+                                  </Events>
                                 </Component>
                               </SubComponents>
                             </Container>
@@ -9170,6 +9203,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="LIMPAR"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Jbt_LimpaCpfPActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JButton" name="JBt_BuscaCPFP">
                                   <Properties>
@@ -9189,6 +9225,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="LIMPAR"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_LimpaIDPedidoActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JButton" name="JBt_BuscaIDPedido">
                                   <Properties>
@@ -9197,6 +9236,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="BUSCAR"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_BuscaIDPedidoActionPerformed"/>
+                                  </Events>
                                 </Component>
                               </SubComponents>
                             </Container>
@@ -9278,7 +9320,7 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                                           <Component id="VoltarDashboard_BT2" min="-2" pref="365" max="-2" attributes="0"/>
-                                          <EmptySpace pref="115" max="32767" attributes="0"/>
+                                          <EmptySpace pref="46" max="32767" attributes="0"/>
                                           <Component id="BuscarNovamente_BT2" min="-2" pref="365" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                       </Group>
@@ -9399,8 +9441,13 @@
                           <Layout>
                             <DimensionLayout dim="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="BuscaPan18" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jScrollPane16" alignment="0" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="BuscaPan18" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jScrollPane16" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                             </DimensionLayout>
                             <DimensionLayout dim="1">
@@ -9439,7 +9486,7 @@
                                           </Group>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace pref="32" max="32767" attributes="0"/>
+                                                  <EmptySpace pref="20" max="32767" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                                       <Component id="JLb_BuscaNome3" alignment="0" min="-2" pref="410" max="-2" attributes="0"/>
                                                       <Group type="102" alignment="0" attributes="0">
@@ -9526,6 +9573,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="LIMPAR"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Jbt_LimpaCpf3ActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JButton" name="JBt_BuscaCPF3">
                                   <Properties>
@@ -9545,6 +9595,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="LIMPAR"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_LimpaNome3ActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JButton" name="JBt_BuscaNome3">
                                   <Properties>
@@ -9553,6 +9606,9 @@
                                     </Property>
                                     <Property name="text" type="java.lang.String" value="BUSCAR"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBt_BuscaNome3ActionPerformed"/>
+                                  </Events>
                                 </Component>
                               </SubComponents>
                             </Container>
@@ -9572,6 +9628,9 @@
                                       </StringArray>
                                     </Property>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ListaCpf_Nome3MouseClicked"/>
+                                  </Events>
                                   <AuxValues>
                                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                                   </AuxValues>
