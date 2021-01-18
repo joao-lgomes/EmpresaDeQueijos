@@ -2,6 +2,17 @@ package Interfaces;
 
 import Classes.*;
 import DAO.*;
+import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.pdf.PdfWriter;
+import java.awt.Desktop;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 import java.sql.SQLException;
 import java.time.LocalDateTime;
@@ -15,7 +26,14 @@ import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
+import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+import jxl.Workbook;
+import jxl.write.Label;
+import jxl.write.WritableSheet;
+import jxl.write.WritableWorkbook;
+import jxl.write.WriteException;
 
 public class Menu extends javax.swing.JFrame {
    
@@ -744,8 +762,17 @@ public class Menu extends javax.swing.JFrame {
         BuscarNovamente_BT4 = new javax.swing.JButton();
         Mostrar_Qtd2 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
+        ABRIR = new javax.swing.JMenu();
+        JMI_Dashboard = new javax.swing.JMenuItem();
+        JMI_Clientes = new javax.swing.JMenuItem();
+        JMI_Queijos = new javax.swing.JMenuItem();
+        JMI_Pedidos = new javax.swing.JMenuItem();
+        OPCOES = new javax.swing.JMenu();
+        JMI_Txt = new javax.swing.JMenuItem();
+        JMI_Pdf = new javax.swing.JMenuItem();
+        JMI_Xls = new javax.swing.JMenuItem();
+        INFORMACOES = new javax.swing.JMenu();
+        SAIR = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -2468,7 +2495,7 @@ public class Menu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(JP_ClientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(Lateral, javax.swing.GroupLayout.PREFERRED_SIZE, 729, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Centro, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)))
+                    .addComponent(Centro, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
         );
 
         JTP_PainelGuias.addTab("Clientes", JP_Clientes);
@@ -3368,7 +3395,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(Remover_QueijoLayout.createSequentialGroup()
                 .addComponent(jLb_Topo_menuInserir8, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
-                .addComponent(jLayeredPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
+                .addComponent(jLayeredPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 690, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -5881,7 +5908,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(Remover_PedidoLayout.createSequentialGroup()
                 .addComponent(jLb_Topo_menuInserir10, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
-                .addComponent(jLayeredPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
+                .addComponent(jLayeredPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 690, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -5997,7 +6024,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(Remover_QueijoPedidoLayout.createSequentialGroup()
                 .addComponent(jLb_Topo_menuInserir15, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
-                .addComponent(jLayeredPane18, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
+                .addComponent(jLayeredPane18, javax.swing.GroupLayout.PREFERRED_SIZE, 690, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -6425,7 +6452,7 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(Buscar_PedidosLayout.createSequentialGroup()
                 .addGroup(Buscar_PedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLb_Topo_menuInserir11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLayeredPane17, javax.swing.GroupLayout.DEFAULT_SIZE, 839, Short.MAX_VALUE))
+                    .addComponent(jLayeredPane17, javax.swing.GroupLayout.PREFERRED_SIZE, 839, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         Buscar_PedidosLayout.setVerticalGroup(
@@ -6709,13 +6736,86 @@ public class Menu extends javax.swing.JFrame {
 
         JTP_PainelGuias.addTab("Pedidos", JP_Pedidos);
 
-        jMenu1.setText("Abrir");
-        jMenu1.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        jMenuBar1.add(jMenu1);
+        ABRIR.setText("Abrir");
+        ABRIR.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
 
-        jMenu2.setText("Opções");
-        jMenu2.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        jMenuBar1.add(jMenu2);
+        JMI_Dashboard.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        JMI_Dashboard.setText("DASHBOARD");
+        JMI_Dashboard.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMI_DashboardActionPerformed(evt);
+            }
+        });
+        ABRIR.add(JMI_Dashboard);
+
+        JMI_Clientes.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        JMI_Clientes.setText("CLIENTES");
+        JMI_Clientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMI_ClientesActionPerformed(evt);
+            }
+        });
+        ABRIR.add(JMI_Clientes);
+
+        JMI_Queijos.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        JMI_Queijos.setText("QUEIJOS");
+        JMI_Queijos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMI_QueijosActionPerformed(evt);
+            }
+        });
+        ABRIR.add(JMI_Queijos);
+
+        JMI_Pedidos.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        JMI_Pedidos.setText("PEDIDOS");
+        JMI_Pedidos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMI_PedidosActionPerformed(evt);
+            }
+        });
+        ABRIR.add(JMI_Pedidos);
+
+        jMenuBar1.add(ABRIR);
+
+        OPCOES.setText("Opções");
+        OPCOES.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+
+        JMI_Txt.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        JMI_Txt.setText("SALVAR EM TXT");
+        JMI_Txt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMI_TxtActionPerformed(evt);
+            }
+        });
+        OPCOES.add(JMI_Txt);
+
+        JMI_Pdf.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        JMI_Pdf.setText("SALVAR EM PDF");
+        JMI_Pdf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMI_PdfActionPerformed(evt);
+            }
+        });
+        OPCOES.add(JMI_Pdf);
+
+        JMI_Xls.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        JMI_Xls.setText("SALVAR EM XLS");
+        JMI_Xls.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMI_XlsActionPerformed(evt);
+            }
+        });
+        OPCOES.add(JMI_Xls);
+
+        jMenuBar1.add(OPCOES);
+
+        INFORMACOES.setText("Informações");
+        INFORMACOES.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jMenuBar1.add(INFORMACOES);
+
+        SAIR.setText("Sair");
+        SAIR.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jMenuBar1.add(SAIR);
 
         setJMenuBar(jMenuBar1);
 
@@ -9889,6 +9989,498 @@ public class Menu extends javax.swing.JFrame {
         JTP_PainelGuias.setSelectedIndex(1);
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void JMI_DashboardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_DashboardActionPerformed
+        limpar();
+        JTP_PainelGuias.setSelectedIndex(0);
+    }//GEN-LAST:event_JMI_DashboardActionPerformed
+
+    private void JMI_ClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_ClientesActionPerformed
+        limpar();
+        JTP_PainelGuias.setSelectedIndex(1);
+    }//GEN-LAST:event_JMI_ClientesActionPerformed
+
+    private void JMI_QueijosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_QueijosActionPerformed
+        limpar();
+        JTP_PainelGuias.setSelectedIndex(2);
+    }//GEN-LAST:event_JMI_QueijosActionPerformed
+
+    private void JMI_PedidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_PedidosActionPerformed
+        limpar();
+        JTP_PainelGuias.setSelectedIndex(3);
+    }//GEN-LAST:event_JMI_PedidosActionPerformed
+
+    private void JMI_TxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_TxtActionPerformed
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setDialogTitle("SALVAR TXT");
+
+        //SOMENTE ARQUIVOS
+        fileChooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+
+        //FILTRO PRA ESCOLHER SOMENTE TXT
+        // FileNameExtensionFilter Filtrotxt=new FileNameExtensionFilter("txt");
+        //fileChooser.setFileFilter(Filtrotxt);
+        //ESTAMOS CHAMANDO PRA ESSA TELA
+        int retorno = fileChooser.showOpenDialog(this);
+        String Caminhao = null;
+        //SE FOR APROVADO A OPÇÃO
+        if (retorno == JFileChooser.APPROVE_OPTION) {
+            File Arquivo = fileChooser.getSelectedFile();
+            Caminhao = Arquivo.getPath();
+        }
+
+        if (Caminhao.equals("") == true) {
+            JOptionPane.showMessageDialog(null, "NÃO INSERIU O DIRETORIO.");
+        } else {
+
+            ClienteDAO clienteDAO = null;
+            try {
+                clienteDAO = new ClienteDAO();
+
+            } catch (SQLException ex) {
+                Logger.getLogger(Menu.class
+                        .getName()).log(Level.SEVERE, null, ex);
+
+            } catch (ClassNotFoundException ex) {
+                Logger.getLogger(Menu.class
+                        .getName()).log(Level.SEVERE, null, ex);
+            }
+
+            PedidoDAO pedidoDAO = null;
+            try {
+                pedidoDAO = new PedidoDAO();
+
+            } catch (SQLException ex) {
+                Logger.getLogger(Menu.class
+                        .getName()).log(Level.SEVERE, null, ex);
+
+            } catch (ClassNotFoundException ex) {
+                Logger.getLogger(Menu.class
+                        .getName()).log(Level.SEVERE, null, ex);
+            }
+
+            QueijoDAO queijoDAO = null;
+            try {
+                queijoDAO = new QueijoDAO();
+
+            } catch (SQLException ex) {
+                Logger.getLogger(Menu.class
+                        .getName()).log(Level.SEVERE, null, ex);
+
+            } catch (ClassNotFoundException ex) {
+                Logger.getLogger(Menu.class
+                        .getName()).log(Level.SEVERE, null, ex);
+            }
+
+            Queijo_PedidoDAO qp = null;
+            try {
+                qp = new Queijo_PedidoDAO();
+
+            } catch (SQLException ex) {
+                Logger.getLogger(Menu.class
+                        .getName()).log(Level.SEVERE, null, ex);
+
+            } catch (ClassNotFoundException ex) {
+                Logger.getLogger(Menu.class
+                        .getName()).log(Level.SEVERE, null, ex);
+            }
+            
+            ArrayList<Cliente> LISTADECLIENTES = new ArrayList();
+            ArrayList<Queijo> LISTADEQUEIJOS = new ArrayList();
+            ArrayList<Pedido> LISTADEPEDIDOS = new ArrayList();
+            ArrayList<Queijo_Pedido> LISTADEQJPEDIDOS = new ArrayList();
+            
+            
+            LISTADECLIENTES.clear();
+
+            LISTADECLIENTES = clienteDAO.getAll();
+
+            LISTADEQUEIJOS.clear();
+
+            LISTADEQUEIJOS = queijoDAO.getAll();
+
+            LISTADEPEDIDOS.clear();
+            LISTADEPEDIDOS = pedidoDAO.getAll();
+
+            LISTADEQJPEDIDOS.clear();
+            LISTADEQJPEDIDOS = qp.getAll();
+
+            int i;
+            String ca=Caminhao + "\\EXPORTACAOTXT.txt";
+            try {
+                String caminho = Caminhao + "\\EXPORTACAOTXT.txt";
+                FileWriter arq = new FileWriter(caminho);
+                PrintWriter gravarArq = new PrintWriter(arq);
+                gravarArq.printf("\n\t\t\tCLIENTES");
+
+                for (i = 0; i < LISTADECLIENTES.size(); i++) {
+                    gravarArq.printf("\n" + LISTADECLIENTES.get(i).toString());
+                }
+                gravarArq.printf("\n\n\n\t\t\tQUEIJOS");
+                for (i = 0; i < LISTADEQUEIJOS.size(); i++) {
+                    gravarArq.printf("\n" + LISTADEQUEIJOS.get(i).toString());
+                }
+                gravarArq.printf("\n\n\n\t\t\tPEDIDOS");
+                for (i = 0; i < LISTADEPEDIDOS.size(); i++) {
+                    gravarArq.printf("\n" + LISTADEPEDIDOS.get(i).toString());
+                }
+                gravarArq.printf("\n\n\n\t\t\tQUEIJOS PEDIDOS");
+                for (i = 0; i < LISTADEQJPEDIDOS.size(); i++) {
+                    gravarArq.printf("\n" + LISTADEQJPEDIDOS.get(i).toString());
+                }
+
+                arq.close();
+
+            } catch (IOException ex) {
+                Logger.getLogger(Menu.class
+                        .getName()).log(Level.SEVERE, null, ex);
+            }
+            
+        Desktop desktop = Desktop.getDesktop();
+        try {
+            desktop.open(new File(ca));
+        } catch (IOException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        }
+    }//GEN-LAST:event_JMI_TxtActionPerformed
+
+    private void JMI_PdfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_PdfActionPerformed
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setDialogTitle("SALVAR PDF");
+
+        //SOMENTE ARQUIVOS
+        fileChooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+
+        //FILTRO PRA ESCOLHER SOMENTE TXT
+        // FileNameExtensionFilter Filtrotxt=new FileNameExtensionFilter("txt");
+        //fileChooser.setFileFilter(Filtrotxt);
+        //ESTAMOS CHAMANDO PRA ESSA TELA
+        int retorno = fileChooser.showOpenDialog(this);
+        String Caminhao = null;
+        //SE FOR APROVADO A OPÇÃO
+        if (retorno == JFileChooser.APPROVE_OPTION) {
+            File Arquivo = fileChooser.getSelectedFile();
+            Caminhao = Arquivo.getPath();
+        }
+
+        ClienteDAO clienteDAO = null;
+        try {
+            clienteDAO = new ClienteDAO();
+
+        } catch (SQLException ex) {
+            Logger.getLogger(Menu.class
+                    .getName()).log(Level.SEVERE, null, ex);
+
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class
+                    .getName()).log(Level.SEVERE, null, ex);
+        }
+
+        PedidoDAO pedidoDAO = null;
+        try {
+            pedidoDAO = new PedidoDAO();
+
+        } catch (SQLException ex) {
+            Logger.getLogger(Menu.class
+                    .getName()).log(Level.SEVERE, null, ex);
+
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class
+                    .getName()).log(Level.SEVERE, null, ex);
+        }
+
+        QueijoDAO queijoDAO = null;
+        try {
+            queijoDAO = new QueijoDAO();
+
+        } catch (SQLException ex) {
+            Logger.getLogger(Menu.class
+                    .getName()).log(Level.SEVERE, null, ex);
+
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class
+                    .getName()).log(Level.SEVERE, null, ex);
+        }
+
+        Queijo_PedidoDAO qp = null;
+        try {
+            qp = new Queijo_PedidoDAO();
+
+        } catch (SQLException ex) {
+            Logger.getLogger(Menu.class
+                    .getName()).log(Level.SEVERE, null, ex);
+
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Menu.class
+                    .getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        ArrayList<Cliente> LISTADECLIENTES = new ArrayList();
+            ArrayList<Queijo> LISTADEQUEIJOS = new ArrayList();
+            ArrayList<Pedido> LISTADEPEDIDOS = new ArrayList();
+            ArrayList<Queijo_Pedido> LISTADEQJPEDIDOS = new ArrayList();
+        
+        LISTADECLIENTES.clear();
+
+        LISTADECLIENTES = clienteDAO.getAll();
+
+        LISTADEQUEIJOS.clear();
+
+        LISTADEQUEIJOS = queijoDAO.getAll();
+
+        LISTADEPEDIDOS.clear();
+        LISTADEPEDIDOS = pedidoDAO.getAll();
+
+        LISTADEQJPEDIDOS.clear();
+        LISTADEQJPEDIDOS = qp.getAll();
+        
+        String ca=Caminhao+"\\EXPORTACAOPDF.pdf";
+
+        Document document = new Document();
+        try {
+
+            String caminho = Caminhao + "\\EXPORTACAOPDF.pdf";
+
+            PdfWriter.getInstance(document, new FileOutputStream(caminho));
+            document.open();
+
+            /*
+         
+            SO BOTAR O ADD PRA ABRIR 
+         
+         
+         
+             */
+            int i;
+            document.add(new Paragraph("                                            BANCO DE DADOS EM FORMATO PDF"));
+            document.add(new Paragraph("                                                        CLIENTES"));
+            for (i = 0; i < LISTADECLIENTES.size(); i++) {
+                document.add(new Paragraph("\n" + LISTADECLIENTES.get(i).toString()));
+            }
+            document.add(new Paragraph("                                            QUEIJOS"));
+            for (i = 0; i < LISTADEQUEIJOS.size(); i++) {
+                document.add(new Paragraph("\n" + LISTADEQUEIJOS.get(i).toString()));
+            }
+            document.add(new Paragraph("                                            PEDIDOS"));
+            for (i = 0; i < LISTADEPEDIDOS.size(); i++) {
+                document.add(new Paragraph("\n" + LISTADEPEDIDOS.get(i).toString()));
+            }
+            document.add(new Paragraph("                                            QUEIJOS PEDIDOS"));
+            for (i = 0; i < LISTADEQJPEDIDOS.size(); i++) {
+                document.add(new Paragraph("\n" + LISTADEQJPEDIDOS.get(i).toString()));
+            }
+
+        } catch (DocumentException | FileNotFoundException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ioe) {
+            System.err.println(ioe.getMessage());
+        }
+
+        document.close();
+
+        Desktop desktop = Desktop.getDesktop();
+        try {
+            desktop.open(new File(ca));
+        } catch (IOException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_JMI_PdfActionPerformed
+
+    private void JMI_XlsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_XlsActionPerformed
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setDialogTitle("SALVAR EM XLS");   
+
+        int userSelection = fileChooser.showSaveDialog(null);
+
+        File fileToSave = null;
+        if (userSelection == JFileChooser.APPROVE_OPTION) {
+            fileToSave = fileChooser.getSelectedFile();
+        } else {
+            return;
+        }
+           ClienteDAO clienteDAO = null;
+            try {
+                clienteDAO = new ClienteDAO();
+
+            } catch (SQLException ex) {
+                Logger.getLogger(Menu.class
+                        .getName()).log(Level.SEVERE, null, ex);
+
+            } catch (ClassNotFoundException ex) {
+                Logger.getLogger(Menu.class
+                        .getName()).log(Level.SEVERE, null, ex);
+            }
+            
+            
+            ArrayList<Cliente> LISTADECLIENTES = new ArrayList();
+            ArrayList<Queijo> LISTADEQUEIJOS = new ArrayList();
+            ArrayList<Pedido> LISTADEPEDIDOS = new ArrayList();
+            ArrayList<Queijo_Pedido> LISTADEQJPEDIDOS = new ArrayList();
+          LISTADECLIENTES.clear();
+
+       
+          LISTADECLIENTES = clienteDAO.getAll();
+        
+         PedidoDAO pedidoDAO = null;
+            try {
+                pedidoDAO = new PedidoDAO();
+
+            } catch (SQLException ex) {
+                Logger.getLogger(Menu.class
+                        .getName()).log(Level.SEVERE, null, ex);
+
+            } catch (ClassNotFoundException ex) {
+                Logger.getLogger(Menu.class
+                        .getName()).log(Level.SEVERE, null, ex);
+            }
+
+            QueijoDAO queijoDAO = null;
+            try {
+                queijoDAO = new QueijoDAO();
+
+            } catch (SQLException ex) {
+                Logger.getLogger(Menu.class
+                        .getName()).log(Level.SEVERE, null, ex);
+
+            } catch (ClassNotFoundException ex) {
+                Logger.getLogger(Menu.class
+                        .getName()).log(Level.SEVERE, null, ex);
+            }
+
+            Queijo_PedidoDAO qp = null;
+            try {
+                qp = new Queijo_PedidoDAO();
+
+            } catch (SQLException ex) {
+                Logger.getLogger(Menu.class
+                        .getName()).log(Level.SEVERE, null, ex);
+
+            } catch (ClassNotFoundException ex) {
+                Logger.getLogger(Menu.class
+                        .getName()).log(Level.SEVERE, null, ex);
+            }
+
+       
+
+            LISTADEQUEIJOS.clear();
+
+            LISTADEQUEIJOS = queijoDAO.getAll();
+
+            LISTADEPEDIDOS.clear();
+            LISTADEPEDIDOS = pedidoDAO.getAll();
+
+            LISTADEQJPEDIDOS.clear();
+            LISTADEQJPEDIDOS = qp.getAll();
+       
+            WritableWorkbook relatorio = null;
+        try {
+            relatorio = Workbook.createWorkbook(new File(fileToSave.getAbsolutePath()+".xls"));
+            WritableSheet planilha = relatorio.createSheet("Sheet 1", 0);
+            
+           
+            
+            planilha.addCell(new Label(0, 0, "CPF"));
+            planilha.addCell(new Label(1, 0, "Nome"));
+            planilha.addCell(new Label(2, 0, "Telefone residencial"));
+            planilha.addCell(new Label(3, 0, "Telefone celular"));
+            planilha.addCell(new Label(4, 0, "Bairro"));
+            planilha.addCell(new Label(5, 0, "Rua"));
+            planilha.addCell(new Label(6, 0, "Numero casa"));
+            planilha.addCell(new Label(7, 0, "Instagram"));
+            planilha.addCell(new Label(8, 0, "Facebook"));
+            planilha.addCell(new Label(9, 0, "Cartão de Crédito"));
+
+            int i=0;
+            for(i=0; i<LISTADECLIENTES.size(); i++){
+                Cliente cliente = (Cliente) LISTADECLIENTES.get(i);
+                
+                planilha.addCell(new Label(0, i+1, String.valueOf(cliente.getCpf())));
+                planilha.addCell(new Label(1, i+1, String.valueOf(cliente.getNome())));
+                planilha.addCell(new Label(2, i+1, String.valueOf(cliente.getTelefone_residencial())));
+                planilha.addCell(new Label(3, i+1, String.valueOf(cliente.getTelefone_celular())));
+                planilha.addCell(new Label(4, i+1, String.valueOf(cliente.getBairro())));
+                planilha.addCell(new Label(5, i+1, String.valueOf(cliente.getRua())));
+                planilha.addCell(new Label(6, i+1, String.valueOf(cliente.getNumeroCasa())));
+                planilha.addCell(new Label(7, i+1, String.valueOf(cliente.getInstagram())));
+                planilha.addCell(new Label(8, i+1, String.valueOf(cliente.getFacebook())));
+                planilha.addCell(new Label(9, i+1, String.valueOf(cliente.getNumCartao())));
+            }
+            
+            i=i+3;
+            //int id_queijo, double peso, double valorPorKg, String tipoDoQueijo, double temperaturaIdeal
+            planilha.addCell(new Label(0, i+1, "ID_QUEIJO"));
+            planilha.addCell(new Label(1, i+1, "PESO"));
+            planilha.addCell(new Label(2, i+1, "valorKG"));
+            planilha.addCell(new Label(3, i+1, "TIPO DO QUEIJO"));
+            planilha.addCell(new Label(4, i+1, "TEMPERATURA IDEAL"));
+            int j;
+            i++;
+            for(j=0;j<LISTADEQUEIJOS.size();j++)
+            {
+                Queijo queijo=(Queijo)LISTADEQUEIJOS.get(j);
+                planilha.addCell(new Label(0, i+1, String.valueOf(queijo.getId_queijo())));
+                planilha.addCell(new Label(1, i+1, String.valueOf(queijo.getPeso())));
+                planilha.addCell(new Label(2, i+1, String.valueOf(queijo.getValorKG())));
+                planilha.addCell(new Label(3, i+1, String.valueOf(queijo.getTipo())));
+                planilha.addCell(new Label(4, i+1, String.valueOf(queijo.getTempIdeal())));
+                i++;
+            }
+            
+              i=i+3;
+            //int id_pedido, LocalDateTime data, LocalDateTime prazoParaEntrega, String fk_cpf
+            planilha.addCell(new Label(0, i+1, "ID_PEDIDO"));
+            planilha.addCell(new Label(1, i+1, "DATA"));
+            planilha.addCell(new Label(2, i+1, "PRAZO PARA ENTREGA"));
+            planilha.addCell(new Label(3, i+1, "CPF"));
+            int k;
+            i++;
+            for(k=0;k<LISTADEPEDIDOS.size();k++)
+            {
+                Pedido pedido=(Pedido)LISTADEPEDIDOS.get(k);
+                planilha.addCell(new Label(0, i+1, String.valueOf(pedido.getId_pedido())));
+                planilha.addCell(new Label(1, i+1, String.valueOf(pedido.getdata_pedido())));
+                planilha.addCell(new Label(2, i+1, String.valueOf(pedido.getPrazoEntrega())));
+                planilha.addCell(new Label(3, i+1, String.valueOf(pedido.getFk_cpf())));
+                i++;
+            }
+            
+              i=i+3;
+            //int id_queijo_pedido, int quantidade, int fk_id_pedido, int fk_id_queijo
+            planilha.addCell(new Label(0, i+1, "ID_QUEIJO_PEDIDO"));
+            planilha.addCell(new Label(1, i+1, "QUANTIDADE"));
+            planilha.addCell(new Label(2, i+1, "ID_PEDIDO"));
+            planilha.addCell(new Label(3, i+1, "ID_QUEIJO"));
+            int l;
+            i++;
+            for(l=0;l<LISTADEQJPEDIDOS.size();l++)
+            {
+                Queijo_Pedido qjpedidos=(Queijo_Pedido)LISTADEQJPEDIDOS.get(l);
+                planilha.addCell(new Label(0, i+1, String.valueOf(qjpedidos.getId_queijo_pedido())));
+                planilha.addCell(new Label(1, i+1, String.valueOf(qjpedidos.getQuantidade())));
+                planilha.addCell(new Label(2, i+1, String.valueOf(qjpedidos.getFk_id_pedido())));
+                planilha.addCell(new Label(3, i+1, String.valueOf(qjpedidos.getFk_id_queijo())));
+                i++;
+            }
+            
+            
+            
+            
+            
+            relatorio.write();
+            relatorio.close();
+            
+            System.out.print("\n XLS criado com sucesso.");
+            
+            JOptionPane.showMessageDialog(null, "XLS criado com sucesso.");
+        } catch (IOException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (WriteException ex) {
+            Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }//GEN-LAST:event_JMI_XlsActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -9931,6 +10523,7 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu ABRIR;
     private javax.swing.JButton AlterarPedido_BT;
     private javax.swing.JButton AlterarQueijoPedido_BT;
     private javax.swing.JButton AlterarQueijo_BT;
@@ -10027,6 +10620,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel FacePan2;
     private javax.swing.JTextField Face_TF;
     private javax.swing.JTextField Face_TF2;
+    private javax.swing.JMenu INFORMACOES;
     private javax.swing.JTextField IdPedido_TF;
     private javax.swing.JTextField IdPedido_TF1;
     private javax.swing.JTextField IdPedido_TF2;
@@ -10147,6 +10741,13 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JList<String> JList_Pedidos1;
     private javax.swing.JList<String> JList_Queijos;
     private javax.swing.JList<String> JList_Queijos1;
+    private javax.swing.JMenuItem JMI_Clientes;
+    private javax.swing.JMenuItem JMI_Dashboard;
+    private javax.swing.JMenuItem JMI_Pdf;
+    private javax.swing.JMenuItem JMI_Pedidos;
+    private javax.swing.JMenuItem JMI_Queijos;
+    private javax.swing.JMenuItem JMI_Txt;
+    private javax.swing.JMenuItem JMI_Xls;
     private javax.swing.JPanel JP_Clientes;
     private javax.swing.JPanel JP_Dashboard;
     private javax.swing.JPanel JP_Pedidos;
@@ -10309,6 +10910,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel NumCasaPan2;
     private javax.swing.JTextField NumCasa_TF;
     private javax.swing.JTextField NumCasa_TF2;
+    private javax.swing.JMenu OPCOES;
     private javax.swing.JPanel OrdernarPan;
     private javax.swing.JPanel OrdernarPan1;
     private javax.swing.JPanel OrdernarPan2;
@@ -10338,6 +10940,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel RuaPan6;
     private javax.swing.JTextField Rua_TF;
     private javax.swing.JTextField Rua_TF2;
+    private javax.swing.JMenu SAIR;
     private javax.swing.JList<String> TabelaEscolhaClientes;
     private javax.swing.JList<String> TabelaEscolhaClientes1;
     private javax.swing.JTable Tabela_Clientes;
@@ -10438,8 +11041,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLb_Topo_menuMostrar1;
     private javax.swing.JLabel jLb_Topo_menuMostrar2;
     private javax.swing.JLabel jLb_Topo_menuMostrar3;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
