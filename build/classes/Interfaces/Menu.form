@@ -6,6 +6,9 @@
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="ABRIR">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Interfaces/open-box_icon-icons.com_70657.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Abrir"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="24" style="0"/>
@@ -16,6 +19,9 @@
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Interfaces/1904661-building-dashboard-default-home-house-page-start_122511.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="DASHBOARD"/>
               </Properties>
@@ -28,6 +34,9 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Interfaces/CEO_icon-icons.com_76995.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="CLIENTES"/>
               </Properties>
               <Events>
@@ -38,6 +47,9 @@
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Interfaces/cheese_food_4012.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="QUEIJOS"/>
               </Properties>
@@ -50,6 +62,9 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Interfaces/8medical-report_102070.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="PEDIDOS"/>
               </Properties>
               <Events>
@@ -60,6 +75,9 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="OPCOES">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Interfaces/save_78935.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Op&#xe7;&#xf5;es"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="24" style="0"/>
@@ -70,6 +88,9 @@
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Interfaces/txt_4177.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="SALVAR EM TXT"/>
               </Properties>
@@ -82,6 +103,9 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Interfaces/pdf-file-outlined-interface-symbol_icon-icons.com_57528.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="SALVAR EM PDF"/>
               </Properties>
               <Events>
@@ -93,6 +117,9 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="18" style="0"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Interfaces/1490891087-09_82641.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="SALVAR EM XLS"/>
               </Properties>
               <Events>
@@ -103,19 +130,51 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="INFORMACOES">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Interfaces/seo-social-web-network-internet_186_icon-icons.com_61527.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Informa&#xe7;&#xf5;es"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="24" style="0"/>
             </Property>
           </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="JMI_Sobre">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Interfaces/seo-social-web-network-internet_186_icon-icons.com_61527.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="SOBRE O SISTEMA"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JMI_SobreActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
         </Menu>
         <Menu class="javax.swing.JMenu" name="SAIR">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Interfaces/signout_106525.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Sair"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="24" style="0"/>
             </Property>
           </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="JMI_Sair">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Interfaces/signout_106525.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="SAIR"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JMI_SairActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
         </Menu>
       </SubComponents>
     </Menu>
@@ -159,17 +218,25 @@
     <Container class="javax.swing.JTabbedPane" name="JTP_PainelGuias">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="20" style="0"/>
+          <Font name="Tahoma" size="27" style="0"/>
         </Property>
       </Properties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
       <SubComponents>
         <Container class="javax.swing.JPanel" name="JP_Dashboard">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="24" style="0"/>
+            </Property>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
               <JTabbedPaneConstraints tabName="Dashboard">
                 <Property name="tabTitle" type="java.lang.String" value="Dashboard"/>
+                <Property name="tabIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Interfaces/1904661-building-dashboard-default-home-house-page-start_122511.png"/>
+                </Property>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
@@ -215,7 +282,7 @@
                           <Component id="jButton3" alignment="3" min="-2" pref="117" max="-2" attributes="0"/>
                           <Component id="jButton2" alignment="3" min="-2" pref="117" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="0" pref="62" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="54" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -310,10 +377,18 @@
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="JP_Clientes">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="24" style="0"/>
+            </Property>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
               <JTabbedPaneConstraints tabName="Clientes">
                 <Property name="tabTitle" type="java.lang.String" value="Clientes"/>
+                <Property name="tabIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Interfaces/CEO_icon-icons.com_76995.png"/>
+                </Property>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
@@ -3008,10 +3083,18 @@
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="JP_Queijos">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="24" style="0"/>
+            </Property>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
               <JTabbedPaneConstraints tabName="Queijos">
                 <Property name="tabTitle" type="java.lang.String" value="Queijos"/>
+                <Property name="tabIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Interfaces/cheese_food_4012.png"/>
+                </Property>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
@@ -5256,10 +5339,18 @@
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="JP_Pedidos">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="24" style="0"/>
+            </Property>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
               <JTabbedPaneConstraints tabName="Pedidos">
                 <Property name="tabTitle" type="java.lang.String" value="Pedidos"/>
+                <Property name="tabIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Interfaces/8medical-report_102070.png"/>
+                </Property>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>

@@ -772,11 +772,15 @@ public class Menu extends javax.swing.JFrame {
         JMI_Pdf = new javax.swing.JMenuItem();
         JMI_Xls = new javax.swing.JMenuItem();
         INFORMACOES = new javax.swing.JMenu();
+        JMI_Sobre = new javax.swing.JMenuItem();
         SAIR = new javax.swing.JMenu();
+        JMI_Sair = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        JTP_PainelGuias.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        JTP_PainelGuias.setFont(new java.awt.Font("Tahoma", 0, 27)); // NOI18N
+
+        JP_Dashboard.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 43)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -859,10 +863,12 @@ public class Menu extends javax.swing.JFrame {
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 62, Short.MAX_VALUE))
+                .addGap(0, 54, Short.MAX_VALUE))
         );
 
-        JTP_PainelGuias.addTab("Dashboard", JP_Dashboard);
+        JTP_PainelGuias.addTab("Dashboard", new javax.swing.ImageIcon(getClass().getResource("/Interfaces/1904661-building-dashboard-default-home-house-page-start_122511.png")), JP_Dashboard); // NOI18N
+
+        JP_Clientes.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
 
         Menu_Principal.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -2498,7 +2504,9 @@ public class Menu extends javax.swing.JFrame {
                     .addComponent(Centro, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
         );
 
-        JTP_PainelGuias.addTab("Clientes", JP_Clientes);
+        JTP_PainelGuias.addTab("Clientes", new javax.swing.ImageIcon(getClass().getResource("/Interfaces/CEO_icon-icons.com_76995.png")), JP_Clientes); // NOI18N
+
+        JP_Queijos.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
 
         Menu_Principal1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -3871,7 +3879,9 @@ public class Menu extends javax.swing.JFrame {
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
-        JTP_PainelGuias.addTab("Queijos", JP_Queijos);
+        JTP_PainelGuias.addTab("Queijos", new javax.swing.ImageIcon(getClass().getResource("/Interfaces/cheese_food_4012.png")), JP_Queijos); // NOI18N
+
+        JP_Pedidos.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
 
         Menu_Principal2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -6734,12 +6744,14 @@ public class Menu extends javax.swing.JFrame {
                     .addComponent(Centro2, javax.swing.GroupLayout.PREFERRED_SIZE, 729, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
-        JTP_PainelGuias.addTab("Pedidos", JP_Pedidos);
+        JTP_PainelGuias.addTab("Pedidos", new javax.swing.ImageIcon(getClass().getResource("/Interfaces/8medical-report_102070.png")), JP_Pedidos); // NOI18N
 
+        ABRIR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/open-box_icon-icons.com_70657.png"))); // NOI18N
         ABRIR.setText("Abrir");
         ABRIR.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
 
         JMI_Dashboard.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        JMI_Dashboard.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/1904661-building-dashboard-default-home-house-page-start_122511.png"))); // NOI18N
         JMI_Dashboard.setText("DASHBOARD");
         JMI_Dashboard.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6749,6 +6761,7 @@ public class Menu extends javax.swing.JFrame {
         ABRIR.add(JMI_Dashboard);
 
         JMI_Clientes.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        JMI_Clientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/CEO_icon-icons.com_76995.png"))); // NOI18N
         JMI_Clientes.setText("CLIENTES");
         JMI_Clientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6758,6 +6771,7 @@ public class Menu extends javax.swing.JFrame {
         ABRIR.add(JMI_Clientes);
 
         JMI_Queijos.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        JMI_Queijos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/cheese_food_4012.png"))); // NOI18N
         JMI_Queijos.setText("QUEIJOS");
         JMI_Queijos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6767,6 +6781,7 @@ public class Menu extends javax.swing.JFrame {
         ABRIR.add(JMI_Queijos);
 
         JMI_Pedidos.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        JMI_Pedidos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/8medical-report_102070.png"))); // NOI18N
         JMI_Pedidos.setText("PEDIDOS");
         JMI_Pedidos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6777,10 +6792,12 @@ public class Menu extends javax.swing.JFrame {
 
         jMenuBar1.add(ABRIR);
 
+        OPCOES.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/save_78935.png"))); // NOI18N
         OPCOES.setText("Opções");
         OPCOES.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
 
         JMI_Txt.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        JMI_Txt.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/txt_4177.png"))); // NOI18N
         JMI_Txt.setText("SALVAR EM TXT");
         JMI_Txt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6790,6 +6807,7 @@ public class Menu extends javax.swing.JFrame {
         OPCOES.add(JMI_Txt);
 
         JMI_Pdf.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        JMI_Pdf.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/pdf-file-outlined-interface-symbol_icon-icons.com_57528.png"))); // NOI18N
         JMI_Pdf.setText("SALVAR EM PDF");
         JMI_Pdf.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6799,6 +6817,7 @@ public class Menu extends javax.swing.JFrame {
         OPCOES.add(JMI_Pdf);
 
         JMI_Xls.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        JMI_Xls.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/1490891087-09_82641.png"))); // NOI18N
         JMI_Xls.setText("SALVAR EM XLS");
         JMI_Xls.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6809,12 +6828,34 @@ public class Menu extends javax.swing.JFrame {
 
         jMenuBar1.add(OPCOES);
 
+        INFORMACOES.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/seo-social-web-network-internet_186_icon-icons.com_61527.png"))); // NOI18N
         INFORMACOES.setText("Informações");
         INFORMACOES.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+
+        JMI_Sobre.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/seo-social-web-network-internet_186_icon-icons.com_61527.png"))); // NOI18N
+        JMI_Sobre.setText("SOBRE O SISTEMA");
+        JMI_Sobre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMI_SobreActionPerformed(evt);
+            }
+        });
+        INFORMACOES.add(JMI_Sobre);
+
         jMenuBar1.add(INFORMACOES);
 
+        SAIR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/signout_106525.png"))); // NOI18N
         SAIR.setText("Sair");
         SAIR.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+
+        JMI_Sair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/signout_106525.png"))); // NOI18N
+        JMI_Sair.setText("SAIR");
+        JMI_Sair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JMI_SairActionPerformed(evt);
+            }
+        });
+        SAIR.add(JMI_Sair);
+
         jMenuBar1.add(SAIR);
 
         setJMenuBar(jMenuBar1);
@@ -10481,6 +10522,14 @@ public class Menu extends javax.swing.JFrame {
         
     }//GEN-LAST:event_JMI_XlsActionPerformed
 
+    private void JMI_SairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_SairActionPerformed
+        setVisible(false);
+    }//GEN-LAST:event_JMI_SairActionPerformed
+
+    private void JMI_SobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JMI_SobreActionPerformed
+        JOptionPane.showMessageDialog(null, "Faça sua reverência e coloque suas oferendas para o criador supremo João Luiz Gomes");
+    }//GEN-LAST:event_JMI_SobreActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -10746,6 +10795,8 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JMenuItem JMI_Pdf;
     private javax.swing.JMenuItem JMI_Pedidos;
     private javax.swing.JMenuItem JMI_Queijos;
+    private javax.swing.JMenuItem JMI_Sair;
+    private javax.swing.JMenuItem JMI_Sobre;
     private javax.swing.JMenuItem JMI_Txt;
     private javax.swing.JMenuItem JMI_Xls;
     private javax.swing.JPanel JP_Clientes;
