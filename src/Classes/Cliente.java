@@ -9,7 +9,7 @@ public class Cliente {
     private String telefone_residencial;
     private String telefone_celular;
     private String bairro;
-    private String ru; 
+    private String rua; 
     private int numeroCasa;
     private String instagram;        
     private String facebook;        
